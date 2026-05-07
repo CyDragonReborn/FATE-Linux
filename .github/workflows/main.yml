@@ -1,0 +1,73 @@
+name: Build Arch Linux executable (CMake, SDL2, OpenGL)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  release:
+    types: [created]
+
+jobs:
+  build-arch:
+    runs-on: ubuntu-latest
+    env:
+      BUILD_DIR: /work
+      OUT_DIR: /work/artifacts
+      OUT_NAME: fate-linux
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Prepare workspace
+        run: |
+          mkdir -p $BUILD_DIR
+          cp -r . $BUILD_DIR/src
+
+      - name: Pull Arch Linux image
+        run: docker pull archlinux:latest
+
+      - name: Build inside Arch container (CMake, SDL2, OpenGL)
+        run: |
+          docker run --rm \
+            -v "${BUILD_DIR}":/work \
+            -w /work/src \
+            --name build-arch \
+            archlinux:latest /bin/bash -lc "\
+              set -euo pipefail; \
+              pacman -Sy --noconfirm --needed sudo base-devel cmake gcc git pkgconf mingw-w64-x86_64-toolchain && \
+              pacman -S --noconfirm sdl2 sdl2_image sdl2_mixer sdl2_ttf glew glfw-x11 libgl libx11 libxrandr libxinerama libxcursor mesa && \
+              mkdir -p build && cd build && \
+              cmake .. -DCMAKE_BUILD_TYPE=Release && \
+              cmake --build . -- -j$(nproc) && \
+              mkdir -p /work/artifacts && \
+              # attempt to find executable
+              if [ -f ${OUT_NAME} ]; then cp ${OUT_NAME} /work/artifacts/; else \
+                # copy any new executable files from build
+                find . -maxdepth 2 -type f -executable -printf '%P\n' | while read f; do cp \"$f\" /work/artifacts/ || true; done; \
+              fi"
+
+      - name: Show artifacts
+        run: ls -la ${{ env.BUILD_DIR }}/artifacts || true
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: fate-arch-executable
+          path: ${{ env.BUILD_DIR }}/artifacts/
+
+  release-publish:
+    needs: build-arch
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: fate-arch-executable
+      - name: Create GitHub release with artifact
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            fate-linux
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
