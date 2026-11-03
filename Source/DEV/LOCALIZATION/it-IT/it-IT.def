@@ -1,0 +1,6 @@
+; it-IT.def : Declares the module parameters for the DLL.
+
+LIBRARY      "it-IT"
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,14 @@
+#animation name : first frame : last frame : FPS
+IDLE:idle.sma:30
+WALK:walk.sma:30
+RUN:walk.sma:40
+ATTACK1:attack1.sma:40
+ATTACK2:attack2.sma:40
+ATTACK3:attack3.sma:40
+CAST:cast.sma:30
+DIE:die.sma:30
+DIE1:die1.sma:30
+#animation keys <KEY>: animation the key is for : frame of the animation (can be float) : name of key
+<KEY>:ATTACK1:25:HIT
+<KEY>:ATTACK2:25:HIT
+<KEY>:ATTACK3:25:HIT

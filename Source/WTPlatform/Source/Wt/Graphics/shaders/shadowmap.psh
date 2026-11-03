@@ -1,0 +1,12 @@
+//-----------------------------------------------------------------------------
+// Pixel shader for storing normalized depth in shadow map
+//-----------------------------------------------------------------------------
+
+ps.2.0
+
+// Incoming depth
+dcl t0.x
+
+// Output depth
+mov r0, t0.x
+mov oC0, r0

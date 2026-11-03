@@ -1,0 +1,40 @@
+<Job id="BuildScript">
+<script language="JScript">
+
+	var WShell = WScript.CreateObject("WScript.Shell");
+	var RootRegKey = "HKLM\\Software\\Wow6432Node\\WildTangent\\InstalledSKUs\\TESTDEV0\\";
+
+	var KBuyURL				= "BuyURL";
+	var KDPCodeName			= "DPCodeName";
+	var KDPGUID				= "DPGUID";
+	var KExeName			= "ExeName";
+	var KHideBuyButton		= "HideBuyButton";
+	var KInstallDirectory	= "InstallDirectory";
+	var KLaunchExeName		= "LaunchExeName";
+	var KProductCodeName	= "ProductCodeName";
+	var KProductDisplayName	= "ProductDisplayName";
+	var KProductGUID		= "ProductGUID";
+	var KUseLeaderboard		= "UseLeaderboard";
+	var KUseTracking		= "UseTracking";
+
+	try
+	{
+		WShell.RegWrite ( RootRegKey + KBuyURL,				"http://rdr.wildtangent.com/product/buy.aspx?sku=TESTDEV0", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KDPCodeName,			"testdp", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KDPGUID,				"11111111-1111-1111-1111-111111111111", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KExeName,			"This value ignored for a TESTDEV0 SKU", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KHideBuyButton,		"0", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KInstallDirectory,	"This value ignored for a TESTDEV0 SKU", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KLaunchExeName,		"This value ignored for a TESTDEV0 SKU", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KProductCodeName,	"testproduct", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KProductDisplayName, "Test Product", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KProductGUID,		"11111111-1111-1111-1111-111111111111", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KUseLeaderboard,		"true", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KUseTracking,		"true", "REG_SZ");
+	}
+	catch ( e )
+	{
+		WShell.Echo ( e.message );
+	}
+</script>
+</Job>

@@ -1,0 +1,762 @@
+/*
+	buysellmenu.cpp
+
+	Copyright (C) 2004 WildTangent, Inc. 
+	All Rights Reserved
+
+	Travis Baldree
+	9/10/2004
+
+*/
+
+
+#include <D3D8.h>
+#include <d3dx8.h>
+#include <assert.h>
+#include <math.h>
+
+#include "../UTILITIES/constants.h"
+#include "../UTILITIES/macros.h"
+#include "../UTILITIES/settings.h"
+#include "../UTILITIES/loadlocalizedstring.h"
+
+#include "../GAME/gamestatemanager.h"
+
+#include "../MEDIA/refmanager.h"
+#include "../MEDIA/material.h"
+
+#include "../IO/keyhandler.h"
+
+#include "../CHARACTER/character.h"
+#include "../CHARACTER/inventory.h"
+#include "../ITEM/item.h"
+
+#include "../UI/sprite.h"
+#include "../UI/button.h"
+#include "../UI/text.h"
+
+#include "../GAMECLIENT/quest.h"
+
+#include "gameui.h"
+#include "buysellmenu.h"
+#include "bottommenu.h"
+
+CBuySellMenu::CBuySellMenu( LPDIRECT3DDEVICE8 pD3DDevice,				// direct3d device
+							  CRefManager& pRefManager,					// the reference manager, for tracking media we create
+							  CSettings& pSettings,						// the settings manager, for keeping track of card/machine capabilities
+							  CGameStateManager& pGameStateManager ) :	// to determine whether needed media exists
+																	m_pGameStateManager( pGameStateManager ),
+																	m_pRefManager( pRefManager ),
+																	m_pSettings( pSettings ),
+																	m_Open( kFalse ),
+																	m_pMerchantCharacter( NULL ),
+																	m_pButtonList	( new CLList<CButton>() ),
+																	m_pTextList		( new CLList<CText>() ),
+																	m_pSpriteList	( new CLList<CSprite>() ),
+																	m_pFontMaterial ( NULL ),
+																	m_pFontMetric( NULL ),
+																	m_pSocketSprite( NULL ),
+																	m_pSocketMaterial( NULL ),
+																	m_pMiniSprite( NULL ),
+																	m_pPlayerCharacter( NULL ),
+																	m_pBuySellMenuTop( NULL ),
+																	m_pBuySellMenuCenter( NULL ),
+																	m_pBuySellMenuBottom( NULL ),
+																	m_pErrorIconMaterial( NULL ),
+																	m_pMagicIconMaterial( NULL ),
+																	m_pUniqueIconMaterial( NULL ),
+																	m_pArtifactIconMaterial( NULL ),
+																	m_pQuestItemMaterial( NULL ),
+																	m_pGradedItemMaterial( NULL ),
+																	m_pEliteItemMaterial( NULL ),
+																	m_pUIButtons( NULL ),
+																	m_pClickSound( NULL )
+{
+	ZeroMemory ( &m_KeyHandler,		sizeof( m_KeyHandler ));
+	ZeroMemory ( &m_MouseHandler,	sizeof( m_MouseHandler ));
+
+	// initialize font texture and metric
+	m_pFontMaterial	= m_pRefManager.AddMaterialAlpha( pD3DDevice, 
+													  "FONT/font.png",
+													  "FONT/fonta.png" );
+
+	m_pFontMetric = m_pRefManager.AddFontMetric( "FONT/font.ini" );
+
+	CreateMenus( pD3DDevice );
+
+} // CBuySellMenu::CBuySellMenu()
+
+CBuySellMenu::~CBuySellMenu( void )
+{
+
+	DELETE_SAFELY( m_pSocketSprite );
+	DELETE_SAFELY( m_pSpriteList );
+	DELETE_SAFELY( m_pTextList );
+	DELETE_SAFELY( m_pButtonList );
+
+	DELETE_SAFELY( m_pMiniSprite );
+
+	m_pRefManager.RemoveSample( m_pClickSound );
+
+	m_pRefManager.RemoveFontMetric( m_pFontMetric );
+	m_pRefManager.RemoveMaterial( m_pFontMaterial );
+
+	m_pRefManager.RemoveMaterial( m_pErrorIconMaterial );
+	m_pRefManager.RemoveMaterial( m_pMagicIconMaterial );
+	m_pRefManager.RemoveMaterial( m_pUniqueIconMaterial );
+	m_pRefManager.RemoveMaterial( m_pArtifactIconMaterial );
+
+	m_pRefManager.RemoveMaterial( m_pUIButtons );
+	m_pRefManager.RemoveMaterial( m_pSocketMaterial );
+
+	m_pRefManager.RemoveMaterial( m_pBuySellMenuTop );
+	m_pRefManager.RemoveMaterial( m_pBuySellMenuBottom );
+	m_pRefManager.RemoveMaterial( m_pBuySellMenuCenter );
+	m_pRefManager.RemoveMaterial( m_pQuestItemMaterial );
+	m_pRefManager.RemoveMaterial( m_pGradedItemMaterial );
+	m_pRefManager.RemoveMaterial( m_pEliteItemMaterial );
+
+} // CBuySellMenu::~CBuySellMenu()
+
+void CBuySellMenu::FlushAll( void )
+{
+
+	m_MouseHandler.FlushAll();
+	m_KeyHandler.FlushAll();
+} // CBuySellMenu::FlushAll()
+
+void CBuySellMenu::CreateMenus( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d device
+{
+	m_pClickSound = m_pRefManager.AddSample( "SOUNDS/UI/click.wav", kFalse );
+
+	m_pUIButtons = m_pRefManager.AddMaterialAlpha( pD3DDevice,
+												   "MENUS/uibuttons.png",
+												   "MENUS/uibuttonsa.png" );
+
+	m_pSocketMaterial = m_pRefManager.AddMaterialAlpha( pD3DDevice,
+														"MENUS/socket.png",
+														"MENUS/socketa.png" );
+
+	m_pBuySellMenuTop = m_pRefManager.AddMaterial( pD3DDevice,
+													 "MENUS/selltop.png" );
+
+	m_pBuySellMenuBottom = m_pRefManager.AddMaterial( pD3DDevice,
+														"MENUS/sellbottom.png"  );
+
+	m_pBuySellMenuCenter = m_pRefManager.AddMaterial( pD3DDevice,
+														"MENUS/sellcenter.png" );
+
+	m_pErrorIconMaterial = m_pRefManager.AddMaterialAlpha( pD3DDevice,
+														   "MENUS/erroricon.png",
+														   "MENUS/erroricona.png" );
+
+	m_pMagicIconMaterial = m_pRefManager.AddMaterialAlpha( pD3DDevice,
+														   "MENUS/magicicon.png",
+														   "MENUS/modeicona.png" );
+
+	m_pUniqueIconMaterial = m_pRefManager.AddMaterialAlpha( pD3DDevice,
+														   "MENUS/uniqueicon.png",
+														   "MENUS/modeicona.png" );
+	m_pArtifactIconMaterial = m_pRefManager.AddMaterialAlpha( pD3DDevice,
+														   "MENUS/artifacticon.png",
+														   "MENUS/modeicona.png" );
+	m_pQuestItemMaterial = m_pRefManager.AddMaterialAlpha( pD3DDevice,
+														   "MENUS/questitem.png",
+														   "MENUS/questitema.png" );
+
+	m_pGradedItemMaterial = m_pRefManager.AddMaterialAlpha( pD3DDevice,
+														   "MENUS/goldstar.png",
+														   "MENUS/stara.png" );
+
+	m_pEliteItemMaterial = m_pRefManager.AddMaterialAlpha( pD3DDevice,
+														   "MENUS/elite.png",
+														   "MENUS/elitea.png" );
+
+	AddSprite( new CSprite( pD3DDevice,
+							m_pBuySellMenuTop,
+							0,
+							0,
+							512,
+							256,
+							0,
+							0,
+							1,
+							.9985f,
+							KSpriteTopLeft ) );
+
+	AddSprite( new CSprite( pD3DDevice,
+							m_pBuySellMenuCenter,
+							0,
+							256,
+							512,
+							256,
+							0,
+							.0015f,
+							1,
+							.9985f,
+							KSpriteTopLeft ) );
+
+	AddSprite( new CSprite( pD3DDevice,
+							m_pBuySellMenuBottom,
+							0,
+							512,
+							512,
+							128,
+							0,
+							.01f,
+							1,
+							1,
+							KSpriteTopLeft ) );
+
+	CButton* pButton;
+	pButton = AddButton( new CButton( pD3DDevice,
+									m_pUIButtons,
+									NULL,
+									m_pClickSound,
+									453,
+									582,
+									51,
+									51,
+									m_pUIButtons->PixelToU() * 1,
+									m_pUIButtons->PixelToV() * 1,
+									m_pUIButtons->PixelToU() * 51,
+									m_pUIButtons->PixelToV() * 51,
+									m_pUIButtons->PixelToU() * 1,
+									m_pUIButtons->PixelToV() * 52,
+									m_pUIButtons->PixelToU() * 51,
+									m_pUIButtons->PixelToV() * 102,
+									KButtonTopLeft,
+									KBottomButtonInventory) );
+	pButton->SetToolTip( LoadLocalizedString(170) );
+
+	// add invisible buttons for the item slots
+	for( uint32 i = 0; i < KMerchantInventorySlotsWide; i++ )
+	{
+		for( uint32 j = 0; j < KMerchantInventorySlotsHigh; j++ )
+		{
+			CButton* pButton = AddButton( new CButton( pD3DDevice,
+														NULL,
+														13 + i * 48.0f,
+														41 + j * 48.0f,
+														48,
+														48,
+														0,
+														0,
+														1,
+														1,
+														0,
+														0,
+														1,
+														1,
+														KButtonTopLeft,
+														KBuySellButton + KQuickSlots +
+														i + j * KMerchantInventorySlotsWide ) );
+			pButton->SetAllowClickOnEdge( kTrue );
+		}
+	}
+
+	m_pSocketSprite =  new CSprite( pD3DDevice,
+									m_pSocketMaterial,
+									0,
+									0,
+									48,
+									48,
+									0,
+									0,
+									1,
+									1,
+									KSpriteCenter );
+
+	m_pMiniSprite =  new CSprite( pD3DDevice,
+									m_pSocketMaterial,
+									0,
+									0,
+									32,
+									32,
+									0,
+									0,
+									1,
+									1,
+									KSpriteTopLeft );
+
+} // CBuySellMenu::CreateMenus()
+
+
+void CBuySellMenu::KeyEvent( UINT WMMessage,	// windows message - WM_KEYUP or WM_KEYDOWN
+							 WPARAM KeyCode )	// the wparam which will be the keycode
+{
+	if( !Open() )
+	{
+		return;
+	}
+	m_KeyHandler.KeyEvent( WMMessage, KeyCode );
+} // CBuySellMenu::KeyEvent()
+
+void CBuySellMenu::MouseEvent( UINT WMMessage,	// windows message - WM_LBUTTONDOWN, etc.
+						  WPARAM WMParam )	// the wparam which contains mousewheel info
+
+{
+	if( !Open() )
+	{
+		return;
+	}
+	m_MouseHandler.MouseEvent( WMMessage, WMParam );
+} // CBuySellMenu::KeyEvent()
+
+bool CBuySellMenu::MouseOver( void )
+{
+	if( !Open() )
+	{
+		return kFalse;
+	}
+
+	POINT MousePosition = m_MouseHandler.VirtualMousePosition( (float32)m_pSettings.GetSettings( KSetScreenWidth ),
+															   (float32)m_pSettings.GetSettings( KSetScreenHeight ),
+															   1024,
+															   768 );
+	if( MousePosition.x <= 512 )
+	{
+		return kTrue;
+	}
+	return kFalse;
+} // CBuySellMenu::MouseOver()
+
+void CBuySellMenu::ProcessInput( HWND hWnd )	// hwnd of the active window
+{
+	// update our mouse handler so it has a current position
+	m_MouseHandler.Update( hWnd );
+
+
+} // CBuySellMenu::ProcessInput()
+
+void CBuySellMenu::Update( HWND hWnd,						// hwnd of the active window
+					  float32 TimeElapsed )				// time elapsed, in seconds
+{
+	if( !Open() )
+	{
+		return;
+	}
+	ProcessInput( hWnd );
+
+
+	UpdateButtons( TimeElapsed );
+
+	// flush our keyboard handler
+	m_KeyHandler.Flush();
+	m_MouseHandler.Flush();
+} // CBuySellMenu::Update()
+
+// render any 3d elements
+void CBuySellMenu::Render( LPDIRECT3DDEVICE8 pD3DDevice,		// d3d device
+					  const D3DXMATRIX& ViewportMatrix,			// viewport matrix ( for bringing 3d objects to screen space
+					  const D3DXMATRIX& ProjectionMatrix,		// projection matrix  ( for bringing 3d objects to screen space
+					  CItem* pMouseOverItem,					// mouseover item
+					  bool ShowSockets )						// show sockets for items?
+{
+	if( !Open() )
+	{
+		return;
+	}
+	if( m_pMerchantCharacter->MerchantType() == KMerchantGambler )
+	{
+		ShowSockets = kFalse;
+	}
+	pD3DDevice->SetRenderState( D3DRS_ALPHABLENDENABLE, kFalse );
+	RenderSprites( pD3DDevice );
+	pD3DDevice->SetRenderState( D3DRS_ALPHABLENDENABLE, kTrue );
+
+	RenderButtons( pD3DDevice );
+	RenderText( pD3DDevice );
+	RenderBuySellIcons( pD3DDevice );
+	RenderBuySellIconsSockets( pD3DDevice, pMouseOverItem, ShowSockets );
+		
+
+} // CBuySellMenu::Render()
+
+
+// render any 3d elements
+void CBuySellMenu::RenderBuySellIcons( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d device
+{
+
+	CLLNode<CItemRef>* Root = m_pMerchantCharacter->Inventory()->ItemList()->GetFirst();
+	while( Root != NULL )
+	{
+		int32 Index = Root->Data()->m_SlotIndex;
+
+		if( Index >= KQuickSlots )
+		{
+			Index -= KQuickSlots;
+
+			float32 Row = floor( (float32)Index / (float32)KMerchantInventorySlotsWide );
+			float32 Column = Index - Row * KMerchantInventorySlotsWide;
+
+			if( Root->Data()->m_pItem->HasIcon() )
+			{
+				// render a purple 'haze' behind the object if it is magical
+				if( ( m_pMerchantCharacter->MerchantType() != KMerchantGambler ||
+					  Root->Data()->m_pItem->Identified() ) &&
+					( Root->Data()->m_pItem->Effects( KActivationPassive ) > 0 ||
+					  Root->Data()->m_pItem->DamageBonuses() > 0 ) )
+				{
+					if( Root->Data()->m_pItem->IsArtifact() )
+					{
+						pD3DDevice->SetTexture( 0, m_pArtifactIconMaterial->GetTexture() );
+					}
+					else if( Root->Data()->m_pItem->IsUnique() )
+					{
+						pD3DDevice->SetTexture( 0, m_pUniqueIconMaterial->GetTexture() );
+					}
+					else
+					{
+						pD3DDevice->SetTexture( 0, m_pMagicIconMaterial->GetTexture() );
+					}
+					Root->Data()->m_pItem->IconSprite()->RenderNoTexture( pD3DDevice,
+																		  13 + Column * 48,
+																		  41 + Row * 48 );		   
+				}
+				uint32 Price = Root->Data()->m_pItem->PurchaseValue();
+				if( m_pMerchantCharacter->MerchantType() == KMerchantGambler )
+				{
+					Price = Root->Data()->m_pItem->GambleValue();		
+				}
+				if( m_pMerchantCharacter->MerchantType() == KMerchantStash )
+				{
+					Price = 0;		
+				}
+				if( Price > 
+					m_pPlayerCharacter->Inventory()->Gold() )
+				{
+					pD3DDevice->SetTexture( 0, m_pErrorIconMaterial->GetTexture() );
+					Root->Data()->m_pItem->IconSprite()->RenderNoTexture( pD3DDevice,
+																		13 + Column * 48,
+																		41 + Row * 48 );		   
+				}
+
+				Root->Data()->m_pItem->IconSprite()->Render( pD3DDevice,
+															 13 + Column * 48,
+															 41 + Row * 48 );		   
+
+				for( uint32 i = 0; i < m_pPlayerCharacter->Quests(); i++ )
+				{
+					if( m_pPlayerCharacter->Quest( i )->ItemMatches( Root->Data()->m_pItem ) )
+					{
+						pD3DDevice->SetTexture( 0, m_pQuestItemMaterial->GetTexture() );
+						m_pMiniSprite->RenderNoTexture( pD3DDevice,
+														13 + Column * 48,
+														41 + Row * 48 );
+					}
+				}
+				if( Root->Data()->m_pItem->Grade() > KGradeNormal )
+				{
+
+					pD3DDevice->SetTexture( 0, m_pGradedItemMaterial->GetTexture() );
+
+					m_pMiniSprite->RenderNoTexture( pD3DDevice,
+													13 + Column * 48 + Root->Data()->m_pItem->IconSprite()->Width() - 32,
+													41 + Row * 48 );
+				}
+				if( Root->Data()->m_pItem->Rank() > KRankNormal )
+				{
+
+					pD3DDevice->SetTexture( 0, m_pEliteItemMaterial->GetTexture() );
+
+					m_pMiniSprite->RenderNoTexture( pD3DDevice,
+													13 + Column * 48 + Root->Data()->m_pItem->IconSprite()->Width() - 32,
+													41 + Row * 48 );
+				}
+			}
+		}
+		Root = Root->Next();
+	}
+
+} // CBuySellMenu::RenderBuySellIcons()
+
+// render any 3d elements
+void CBuySellMenu::RenderBuySellIconsSockets( LPDIRECT3DDEVICE8 pD3DDevice,		// d3d device
+											  CItem* pMouseOverItem,				// mouseover item
+											  bool ShowSockets )					// show sockets for items?
+{
+
+	CLLNode<CItemRef>* Root = m_pMerchantCharacter->Inventory()->ItemList()->GetFirst();
+	while( Root != NULL )
+	{
+		int32 Index = Root->Data()->m_SlotIndex;
+
+		if( Index >= KQuickSlots )
+		{
+			Index -= KQuickSlots;
+
+			float32 Row = floor( (float32)Index / (float32)KMerchantInventorySlotsWide );
+			float32 Column = Index - Row * KMerchantInventorySlotsWide;
+
+			float32 YOffset = (float32)Root->Data()->m_pItem->Sockets() * -48;
+			YOffset *= .5f;
+			YOffset += 24;
+
+			if( Root->Data()->m_pItem->HasIcon() &&
+				Root->Data()->m_pItem->Socketed() &&
+				( Root->Data()->m_pItem == pMouseOverItem ||
+				  ShowSockets ) &&
+				  m_pMerchantCharacter->MerchantType() != KMerchantGambler )
+			{
+				for( uint32 i = 0; i < Root->Data()->m_pItem->Sockets(); i++ )
+				{
+
+					m_pSocketSprite->Render( pD3DDevice,
+											 13 + Column * 48 + Root->Data()->m_pItem->IconSprite()->Width() *.5f,
+											 41 + Row * 48 + YOffset + Root->Data()->m_pItem->IconSprite()->Height() *.5f );
+					if( i < Root->Data()->m_pItem->Items() )
+					{
+						pD3DDevice->SetTexture( 0, Root->Data()->m_pItem->SubItem( i )->IconMaterial()->GetTexture() );
+						m_pSocketSprite->RenderNoTexture( pD3DDevice,
+														  13 + Column * 48 + Root->Data()->m_pItem->IconSprite()->Width() *.5f,
+														  41 + Row * 48 + YOffset + Root->Data()->m_pItem->IconSprite()->Height() *.5f );
+					}
+
+					YOffset += 48;
+				}
+			}
+		}
+		Root = Root->Next();
+	}
+} // CBuySellMenu::RenderBuySellIconsSockets()
+
+
+void CBuySellMenu::RenderText( LPDIRECT3DDEVICE8 pD3DDevice )		// d3d device
+{
+	CMaterial* pMaterial = NULL;
+	CLLNode<CText>* pNode = m_pTextList->GetFirst();
+	while( pNode != NULL )
+	{
+		if( pNode->Data()->Material() != pMaterial )
+		{
+			pNode->Data()->Render( pD3DDevice );
+			pMaterial = pNode->Data()->Material();
+		}
+		else
+		{
+			pNode->Data()->RenderNoTexture( pD3DDevice );
+		}
+		pNode = pNode->Next();
+	}
+} // CBuySellMenu::RenderText()
+
+void CBuySellMenu::RenderSprites( LPDIRECT3DDEVICE8 pD3DDevice )		// d3d device
+{
+	CMaterial* pMaterial = NULL;
+	CLLNode<CSprite>* pNode = m_pSpriteList->GetFirst();
+	while( pNode != NULL )
+	{
+		if( pNode->Data()->Material() != pMaterial )
+		{
+			pNode->Data()->Render( pD3DDevice );
+			pMaterial = pNode->Data()->Material();
+		}
+		else
+		{
+			pNode->Data()->RenderNoTexture( pD3DDevice );
+		}
+		pNode = pNode->Next();
+	}
+} // CBuySellMenu::RenderSprites()
+
+void CBuySellMenu::RenderButtons( LPDIRECT3DDEVICE8 pD3DDevice )		// d3d device
+{
+	CLLNode<CButton>* pNode = m_pButtonList->GetFirst();
+	while( pNode != NULL )
+	{
+		pNode->Data()->Render( pD3DDevice );
+		pNode = pNode->Next();
+	}
+} // CBuySellMenu::RenderButtons()
+
+// mouse handler should be updated for this to work properly
+void CBuySellMenu::UpdateButtons( float32 TimeElapsed )		// time elapsed in seconds
+{
+	if( !Open() )
+	{
+		return;
+	}
+	// update the mouse cursor sprite to match the actual cursor position
+	POINT MousePosition = m_MouseHandler.VirtualMousePosition( (float32)m_pSettings.GetSettings( KSetScreenWidth ),
+															   (float32)m_pSettings.GetSettings( KSetScreenHeight ),
+															   1024,
+															   768 );
+
+	CLLNode<CButton>* pNode = m_pButtonList->GetFirst();
+	while( pNode != NULL )
+	{
+		pNode->Data()->Update( MousePosition );
+		pNode = pNode->Next();
+	}
+} // CBuySellMenu::UpdateButtons()
+
+// mouse handler should be updated for this to work properly
+int32 CBuySellMenu::UpdateButtonPress( bool ButtonPressed )		// left mouse button pressed?
+{
+	if( !ButtonPressed || !Open() )
+	{
+		return -1;
+	}
+	// update the mouse cursor sprite to match the actual cursor position
+	POINT MousePosition = m_MouseHandler.VirtualMousePosition( (float32)m_pSettings.GetSettings( KSetScreenWidth ),
+															   (float32)m_pSettings.GetSettings( KSetScreenHeight ),
+															   1024,
+															   768 );
+
+	CLLNode<CButton>* pNode = m_pButtonList->GetFirst();
+	while( pNode != NULL )
+	{
+		int32 ReturnCode = pNode->Data()->IsOver( MousePosition );
+		if( ReturnCode != -1 )
+		{
+			pNode->Data()->Press();
+			return ReturnCode;
+		}
+		pNode = pNode->Next();
+	}
+
+	return -1;
+} // CBuySellMenu::UpdateButtonPress()
+
+// mouse handler should be updated for this to work properly
+int32 CBuySellMenu::UpdateButtonOver( void )
+{
+	if( !Open() )
+	{
+		return -1;
+	}
+	// update the mouse cursor sprite to match the actual cursor position
+	POINT MousePosition = m_MouseHandler.VirtualMousePosition( (float32)m_pSettings.GetSettings( KSetScreenWidth ),
+															   (float32)m_pSettings.GetSettings( KSetScreenHeight ),
+															   1024,
+															   768 );
+
+	CLLNode<CButton>* pNode = m_pButtonList->GetFirst();
+	while( pNode != NULL )
+	{
+		int32 ReturnCode = pNode->Data()->IsOver( MousePosition );
+		if( ReturnCode != -1 )
+		{
+			return ReturnCode;
+		}
+		pNode = pNode->Next();
+	}
+
+	return -1;
+} // CBuySellMenu::UpdateButtonOver()
+
+// mouse handler should be updated for this to work properly
+int32 CBuySellMenu::UpdateButtonOver( std::string& TooltipText )	// tooltip text to fill out
+{
+	if( !Open() )
+	{
+		return -1;
+	}
+	// update the mouse cursor sprite to match the actual cursor position
+	POINT MousePosition = m_MouseHandler.VirtualMousePosition( (float32)m_pSettings.GetSettings( KSetScreenWidth ),
+															   (float32)m_pSettings.GetSettings( KSetScreenHeight ),
+															   1024,
+															   768 );
+
+	CLLNode<CButton>* pNode = m_pButtonList->GetFirst();
+	while( pNode != NULL )
+	{
+		int32 ReturnCode = pNode->Data()->IsOver( MousePosition );
+		if( ReturnCode != -1 )
+		{
+			TooltipText = pNode->Data()->ToolTip();
+			return ReturnCode;
+		}
+		pNode = pNode->Next();
+	}
+
+	return -1;
+} // CBuySellMenu::UpdateButtonOver()
+
+CButton* CBuySellMenu::AddButton( CButton* pButton )	// button to add to the list
+{
+	m_pButtonList->Queue( pButton );
+
+	return pButton;
+} // CBuySellMenu::AddButton()
+
+void CBuySellMenu::RemoveButton( CButton* pButton )	// button to remove from the list
+{
+	CLLNode<CButton>* pNode = m_pButtonList->GetFirst();
+	while( pNode != NULL )
+	{
+		if( pNode->Data() == pButton )
+		{
+			m_pButtonList->RemoveNoDelete( pNode );
+			return;
+		}
+		pNode = pNode->Next();
+	}
+} // CBuySellMenu::RemoveButton()
+
+void CBuySellMenu::DestroyButtons( void )
+{
+	m_pButtonList->Destroy();
+} // CBuySellMenu::DestroyButtons()
+
+CText* CBuySellMenu::AddText( CText* pText )	// Text to add to the list
+{
+	m_pTextList->Queue( pText );
+
+	return pText;
+} // CBuySellMenu::AddText()
+
+void CBuySellMenu::RemoveText( CText* pText )	// Text to remove from the list
+{
+	CLLNode<CText>* pNode = m_pTextList->GetFirst();
+	while( pNode != NULL )
+	{
+		if( pNode->Data() == pText )
+		{
+			m_pTextList->RemoveNoDelete( pNode );
+			return;
+		}
+		pNode = pNode->Next();
+	}
+} // CBuySellMenu::RemoveText()
+
+void CBuySellMenu::DestroyText( void )
+{
+	m_pTextList->Destroy();
+} // CBuySellMenu::DestroyText()
+
+CSprite* CBuySellMenu::AddSprite( CSprite* pSprite )	// sprite to add to the list
+{
+	m_pSpriteList->Queue( pSprite );
+
+	return pSprite;
+} // CBuySellMenu::AddSprite()
+
+CSprite* CBuySellMenu::AddSpriteFront( CSprite* pSprite )	// sprite to add to the list
+{
+	m_pSpriteList->QueueEnd( pSprite );
+
+	return pSprite;
+} // CBuySellMenu::AddSpriteFront()
+
+void CBuySellMenu::RemoveSprite( CSprite* pSprite )	// sprite to remove from the list
+{
+	CLLNode<CSprite>* pNode = m_pSpriteList->GetFirst();
+	while( pNode != NULL )
+	{
+		if( pNode->Data() == pSprite )
+		{
+			m_pSpriteList->RemoveNoDelete( pNode );
+			return;
+		}
+		pNode = pNode->Next();
+	}
+} // CBuySellMenu::RemoveSprite()
+
+void CBuySellMenu::DestroySprites( void )
+{
+	m_pSpriteList->Destroy();
+} // CBuySellMenu::DestroySprite()
+
+

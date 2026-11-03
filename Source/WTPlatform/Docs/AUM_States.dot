@@ -1,0 +1,35 @@
+digraph AUM_States_dot
+{
+
+ratio=compress;
+
+// good states
+can_download_manifest->am_downloading_manifest [weight=1000, style=bold, fontsize=10, label="call StartDownloadManifest()"];
+am_downloading_manifest->can_download_patch [weight=100, style=bold, fontsize=10, label="automatic transition"];
+can_download_patch->am_downloading_patch [weight=1000, style=bold, fontsize=10, label="call StartDownloadPatch()"];
+am_downloading_patch->can_install_patch  [weight=100, style=bold, fontsize=10, label="automatic transition"];
+can_install_patch->InstallPatch [weight=100, style=bold, fontsize=10, label="call StartInstallPatch(); it does not \lreturn because the program exits for install\l"];
+
+// bad states
+am_notifying_bad_manifest->am_downloading_manifest [dir=back, fontsize=10, label="BAD: manifest did not download"];
+can_download_manifest->am_notifying_bad_manifest [dir=back, fontsize=10, label="call NotifiedUserOfBadManifest()"];
+
+
+am_notifying_bad_patch->am_downloading_patch [dir=back, fontsize=10, label="BAD: patch did not download\lor had a bad CRC"] ;
+can_download_patch->am_notifying_bad_patch  [dir=back, fontsize=10, label="call NotifiedUserOfBadPatch()"];
+
+//
+// Give the nodes better labels
+//
+can_download_manifest [fontsize=10, label="KCanDownloadManifest:0"];
+am_downloading_manifest [fontsize=10, label="KAmDownloadingManifest:1\lCAN CANCEL"];
+am_notifying_bad_manifest [fontsize=10, label="KAmNotifyingBadManifest:2\lYou must notify the user"];
+can_download_patch [fontsize=10, label="KCanDownloadPatch3"];
+am_downloading_patch [fontsize=10, label="KAmDownloadingPatch:4\lCAN CANCEL"];
+am_notifying_bad_patch [fontsize=10, label="KAmNotifyingBadPatch:5\lYou must notify the user"];
+can_install_patch [fontsize=10, label="KCanInstallPatch:6"];
+
+InstallPatch [label=".", shape=plaintext];
+
+Title [shape=box,style=bold,fontsize=24,label="Application Update Manager\n(version 2; wtplatform)\nState Diagram\n"];
+}

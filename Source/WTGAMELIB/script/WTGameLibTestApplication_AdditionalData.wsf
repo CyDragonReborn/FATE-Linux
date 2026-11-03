@@ -1,0 +1,24 @@
+<Job id="BuildScript">
+<script language="JScript">
+
+	var WShell = WScript.CreateObject("WScript.Shell");
+	var RootRegKey = "HKLM\\Software\\WildTangent\\InstalledSKUs\\TESTDEV0\\";
+
+	var KTestInt			= "TestInt";
+	var KTestFloat			= "TestFloat";
+	var KTestBoolTrue		= "TestBoolTrue";
+	var KTestBoolFalse		= "TestBoolFalse";
+
+	try
+	{
+		WShell.RegWrite ( RootRegKey + KTestInt,			"55", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KTestFloat,			"1.23456", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KTestBoolTrue,		"true", "REG_SZ");
+		WShell.RegWrite ( RootRegKey + KTestBoolFalse,		"false", "REG_SZ");
+	}
+	catch ( e )
+	{
+		WShell.Echo ( e.message );
+	}
+</script>
+</Job>

@@ -1,0 +1,6 @@
+; es-ES.def : Declares the module parameters for the DLL.
+
+LIBRARY      "es-ES"
+
+EXPORTS
+    ; Explicit exports can go here

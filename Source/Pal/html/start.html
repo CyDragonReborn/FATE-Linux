@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<script>
+		
+		function checkUnlock()
+		{
+			if(window.external.Unlocked)
+				document.location = "unlockedStart.html";
+		}
+		
+		function openBuyPage()
+		{
+			window.open(window.external.BuyURL, "BuyPage");
+		}
+		
+		function playNow()
+		{
+			window.external.ExitShell();
+		}
+		
+		function openUnlockPage()
+		{
+			document.location = "unlock.html?prevPage=start.html";
+		}
+		
+		window.onload = checkUnlock;
+		
+		</script>
+	</head>
+	<body scroll="auto">
+		<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" style="position:absolute;left:0px;top:0px;" ID="Table3">
+			<tr><td width="100%" height="80%" align="center" valign="center">
+				<div id="buttonDiv" style="visibility:visible">
+					<input type=button value="Buy Now" onClick="openBuyPage()" id="Button3" name=button1>
+					<input type=button value="Play Now" onClick="playNow()" id="Button2" name=button2>
+					<input type=button value="Unlock" onClick="openUnlockPage()" id="Button1" name=button3>
+				</div>
+			</td></tr>
+		</table>
+	</body>
+</html>

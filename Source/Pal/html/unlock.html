@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<SCRIPT LANGUAGE="javascript" SRC="scripts/wiresupport.js"></SCRIPT>
+		<script>
+		function unlock()
+		{
+			alert("Attempting to unlock with code: " + unlockText.value);
+			if(window.external.UnlockGame(unlockText.value))
+			{
+				document.location = "unlocked.html";
+			}
+			else
+			{
+				alert("Invalid unlock code.");
+			}
+		}
+		
+		function cancel()
+		{
+			document.location = queryField("prevPage");
+		}
+		</script>
+	</head>
+	<body scroll="auto">
+		<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" style="position:absolute;left:0px;top:0px;" ID="Table3">
+			<tr><td width="100%" height="80%" align="center" valign="center">
+				<div id="buttonDiv" style="visibility:visible">
+					<input type=button value="Unlock" onClick="unlock()" id="Button2" name=button1>
+					<input type=button value="Cancel" onClick="cancel()" id="Button1" name=button1>
+					<input type=text value="" id=unlockText>
+				</div>
+			</td></tr>
+		</table>
+	</body>
+</html>

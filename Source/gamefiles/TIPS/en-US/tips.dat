@@ -1,0 +1,53 @@
+<TIP>:Bind your spells to \bhotkeys\b by pressing \bF1 - F12\b when your cursor is over a \bspell icon\b in the \bspell foldout\b.
+<TIP>:To use \bpotions\b or \bfish\b on your pet, drag the item to the icon in the \btop-left\b of the screen.\n\nAlternately, you may hold \b<SHIFT>\b while \bright-clicking\b on them.
+<TIP>:Send your \bpet\b back to town to sell all its \bunequipped items\b! Click on the \bicon\b in the \btop-left\b of the screen to send them on their way.
+<TIP>:Hold down the \b<ALT>\b key to see any loot you might have forgotten on the ground, or toggle this feature with the \bbutton\b on the \bbottom toolbar.\b
+<TIP>:Use the \barrow keys\b to look around corners, to get a better view of your surroundings.
+<TIP>:The \bmousewheel\b allows you to zoom in or out. \bClicking\b the mousewheel will recenter the view.
+<TIP>:\b<TAB>\b toggles the \bminimap\b on or off, and cycles through the available \bzoom levels.\b
+<TIP>:Holding \b<CTRL>\b while moving will allow your character to \brun\b. You can toggle continuous \brunning\b with the \bR\b key, or the \bbutton\b on the \bbottom toolbar.\b
+<TIP>:\bFeed\b items to your \bpet\b by placing them on the icon in the \btop-left\b corner of the screen.
+<TIP>:Feeding \bfish\b to your \bpet\b can change it into other \bcreatures\b for varying durations.
+<TIP>:Holding down the \b<SHIFT>\b key while \battacking\b allows you to remain in place.
+<TIP>:Holding down the \b<SHIFT>\b key while clicking on an \bitem\b will cause your \bpet\b to pick it up.
+<TIP>:Holding down the \b<SHIFT>\b key while clicking on a \bmerchant\b will cause your \bpet\b to sell from their own inventory.
+<TIP>:Holding down the \b<SHIFT>\b key while clicking on a \bmagic fountain\b will cause your \bpet\b to drink from it.
+<TIP>:When \bbuying\b or \bselling\b from \bmerchants\b you can \binstantly\b buy or sell an item by holding the \b<SHIFT>\b key while clicking it.
+<TIP>:Feed \bpotions\b to your \bpet\b to heal it when it is fleeing. Don't worry, it can't die!
+<TIP>:Items with \bpurple text\b are \bmagical Items\b\n\nItems with \bteal highlights\b are \bunique items\b that are very valuable.\n\nItems with \byellow highlights\b are \bartifacts\b that are very rare and unique.
+<TIP>:\bUnidentified\b items may be \bidentified\b by using an \bidentify scroll\b on them.
+<TIP>:Items in the \bhotkey slots\b at the bottom of the screen may be used by pressing the \bcorresponding number.\b
+<TIP>:Watch your health! When the \bred bar\b gets low, you are close to \bdying.\b
+<TIP>:Townsfolk with an \b!\b above their heads have quests for you to perform!
+<TIP>:You can place \bfish\b in your \bquickslots\b so that they can be \bfed\b to your \bpet\b in the heat of \bbattle.\b
+<TIP>:\bLeft-click\b on monsters to \battack\b them. You can also \bleft-click and hold\b to \bcontinuously attack\b a monster.
+<TIP>:If you are being \bhit often\b in battle, you may need to \braise\b your \bDexterity,\b or purchase \bbetter armor.\b
+<TIP>:\bCritical Strikes\b cause \bdouble\b the normal amount of \bdamage\b - increasing the \bCritical Strike\b skill makes these powerful hits \bmore likely.\b
+<TIP>:If you are willing to invest in the \bCharm Skill,\b you can learn \bIdentify\b and \bTown Portal spells\b that will make common tasks much \bcheaper\b for you.
+<TIP>:\bEnchanting\b items with \bRikko the Enchanter\b is an excellent way to \benhance\b existing weapons and armor. The higher in \blevel\b you are, the \bbetter\b the enchantment that Rikko can provide.
+<TIP>:Each of the \bdifferent creatures\b your \bpet\b may be transformed into has different \bstrengths\b and \bweaknesses.\b Learn these \battributes\b to better select a form for your pet that will \bbenefit\b you the most.
+<TIP>:Learning the \bShield Battle\b skill also gives you the chance of \bblocking traps\b when they are sprung.
+<TIP>:When your \bRenown\b increases a level, you gain \b4 extra skill points\b to spend as you see fit.  \bRollo the Minstrel\b can increase your \bRenown\b for a fee - allowing you to effectively \bpurchase\b skill points!
+<TIP>:Items that you \bgamble\b for are always available for \bless gold\b than they would be at any other \bmerchant\b - often substantially so!  They may also be much \bmore potently magical\b than any \bother items\b available in town.
+<TIP>:If a \bquest-giver\b requests that an \bitem\b be returned to them, you are \bnot required\b to do so. If you like the look of the item, you can always \bcancel\b the quest and \bkeep\b it for yourself!
+<TIP>:\bElite\b and \bLegendary\b items are much more powerful than their \bmundane\b counterparts. However, these items require \bFame\b to wield!
+<TIP>:When your character gains a \blevel,\b remember to \bassign the points\b you gained!  Click on the \bLevel Up\b button in the bottom-left corner of the screen to \bdistribute\b your hard-earned points.
+<CONTEXT_TIP>:INVENTORY:This is the \binventory screen\b. Drag weapons and armor into the top slots to \bequip\b them.\n\bDrop\b items by dragging them into the view on the left.\n\bUse\b items by \bright-clicking\b on them.\n\nTo use \bpotions\b or \bfish\b on your pet, drag them to the pet's icon in the \btop-left\b of the screen, or hold \b<SHIFT>\b while \bright-clicking\b on them.
+<CONTEXT_TIP>:IDENTIFY:You have found an \bunidentified item\b! This means that the item has undiscovered \bmagical\b powers! \bIdentify\b it by \bright-clicking\b on an \bIdentify Scroll\b, then \bleft-clicking\b on the item.
+<CONTEXT_TIP>:INVENTORYFULL:Your inventory is \bfull\b.  Rearrange items to make space, or drop unwanted items.
+<CONTEXT_TIP>:HEALTHLOW:Your \blife\b is low - to \bheal\b yourself, \bright-click\b on a health potion to drink it!\nIf you have a potion in the \bquickslots\b at the bottom of the screen, you can instantly drink it by pressing the corresponding \bnumber\b on your keyboard.
+<CONTEXT_TIP>:SHOPPING:This is the \bshopping\b interface. Drag items from \bleft to right\b to \bbuy\b them. Drag from \bright to left\b to \bsell\b.\nYou may also quickly buy or sell items by holding \b<SHIFT>\b while clicking on them.\n\nYou can have your pet sell directly to merchants by holding \b<SHIFT>\b when you click on them.
+<CONTEXT_TIP>:LEVELUP:You have just gained a \blevel\b! Click on the \bred cross\b button in the bottom left to distribute points!
+<CONTEXT_TIP>:LEVELUP2:You have gained new \bpoints\b to spend! Click the \bred cross\b next to each statistic or skill you would like to improve!
+<CONTEXT_TIP>:SPELL:You have found a \bspell\b! If you meet the requirements, you can \bwrite\b it to your \bspellbook\b by \bright-clicking\b on it, making it available for use!
+<CONTEXT_TIP>:WRITESPELL:You have written a \bspell\b to your spellbook! You may now \bcast\b the spell by \bright-clicking\b in the view area.
+<CONTEXT_TIP>:GAMBLE:This is the \bgambling\b interface. The items on the left \ball\b have \bunknown magical powers\b. Once you purchase one, its powers will be instantly \brevealed\b.
+<CONTEXT_TIP>:WELCOME:Welcome to the town of \bGrove\b!\nExplore the town by \bleft-clicking\b to walk. Visit the \bshopkeepers\b, and search for \bquests\b to perform.\nWhen you are ready, enter the \bDungeon Gate\b to your right to begin your adventure!
+<CONTEXT_TIP>:GEM:You have found a \bgemstone\b! Gemstones bestow magical properties on items when installed!\nSearch for an item with \bsockets\b, and \binstall\b the gemstone by dropping it on the item.
+<CONTEXT_TIP>:PETFLEE:Your \bpet\b is \bfleeing\b! When your pet runs out of life, it becomes ineffective in \bcombat\b and won't pick up items for you anymore!\nTo \bheal\b your pet, drop a \bhealth potion\b on its icon in the top-left of the screen, or hold \b<SHIFT>\b while \bright-clicking\b on it.
+<CONTEXT_TIP>:PETINVENTORY:This is your \bpet's\b inventory.\nYou can place items here for your pet to carry. You can also have your pet pick up items in the world by holding \b<SHIFT>\b while you click on them! \nYour pet can also wear \brings\b and \bnecklaces\b to improve its powers!
+<CONTEXT_TIP>:STAMINA:You have run out of \bstamina\b and can no longer run. To \brecharge\b your stamina, you must come to a halt, and begin \bwalking\b, or remain still.\n\nYou can \binstantly\b recharge your stamina with a \bstamina potion\b
+<CONTEXT_TIP>:PETFULL:Your \bpet's inventory\b is full! Send your \bpet\b back to town to sell all its \bunequipped items\b by clicking on the \bicon\b in the \btop-left\b of the screen.
+<CONTEXT_TIP>:STASH:This is your \bStorage Trunk\b. You can place \bany items\b you like inside, and they will \balways\b be here when you return!
+<CONTEXT_TIP>:FISH:\bFishing Poles\b allow you to fish when you see a \bcloud of fireflies\b.  Feeding \bfish\b to your \bpet\b transforms it into \bmore powerful creatures\b!\nYou can find \bfishing holes\b in town and throughout the \bdungeon.\b\nYou can also find \brare items\b by fishing!
+

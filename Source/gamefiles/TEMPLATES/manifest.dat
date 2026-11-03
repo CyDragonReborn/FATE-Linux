@@ -1,0 +1,16 @@
+#################################
+# templates available for use
+#################################
+<TEMPLATE>:TEMPLATES/cellar.dat
+<TEMPLATE>:TEMPLATES/sewers.dat
+<TEMPLATE>:TEMPLATES/mines.dat
+<TEMPLATE>:TEMPLATES/caves.dat
+<TEMPLATE>:TEMPLATES/seacellar.dat
+<TEMPLATE>:TEMPLATES/mines2.dat
+<TEMPLATE>:TEMPLATES/volcano.dat
+<TEMPLATE>:TEMPLATES/wood.dat
+<TEMPLATE>:TEMPLATES/ruins.dat
+
+#################################
+# End of File
+#################################

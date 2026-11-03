@@ -1,0 +1,29 @@
+#animation name : first frame : last frame : FPS
+IDLE:idle.sma:30
+WALK:walk.sma:30
+RUN:run.sma:30
+RIGHTSLASH:slash_right.sma:40
+LEFTSLASH:slash_left.sma:40
+RIGHTSTAB:stab_right.sma:30
+LEFTSTAB:stab_left.sma:30
+DIE:die.sma:30
+DIE2:die2.sma:30
+BOW:bow.sma:30
+RIGHTPIKESTAB:pikestab.sma:30
+RIGHTPIKESTAB2:pikeslash.sma:30
+CAST:cast.sma:30
+RIGHTCROSSBOW:crossbow.sma:30
+#animation keys <KEY>: animation the key is for : frame of the animation (can be float) : name of key
+<KEY>:RUN:0:FOOTSTEP
+<KEY>:RUN:8:FOOTSTEP
+<KEY>:WALK:0:FOOTSTEP
+<KEY>:WALK:16:FOOTSTEP
+<KEY>:RIGHTSLASH:16:HIT
+<KEY>:LEFTSLASH:16:HIT
+<KEY>:RIGHTSTAB:11:HIT
+<KEY>:LEFTSTAB:11:HIT
+<KEY>:BOW:27:HIT
+<KEY>:CAST:27:CAST
+<KEY>:RIGHTCROSSBOW:21:HIT
+<KEY>:RIGHTPIKESTAB:12:HIT
+<KEY>:RIGHTPIKESTAB2:17:HIT

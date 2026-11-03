@@ -1,0 +1,9 @@
+#pragma once
+#include "ISerializable.h"
+#include "ObjectIDGenerator.h"
+#include "PropertySerializationSurrogate.h"
+#include "SerializationContext.h"
+#include "SerializationException.h"
+#include "SerializationInfo.h"
+#include "SerializationSurrogate.h"
+#include "Serialization.h"

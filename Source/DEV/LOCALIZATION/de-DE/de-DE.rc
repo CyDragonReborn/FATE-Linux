@@ -1,0 +1,1408 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING101           "Dieses Spiel läuft nur im 16- oder 32-Bit-Farbmodus.  Bitte ändern Sie die Desktop-Farbtiefe und wiederholen Sie den Versuch."
+    IDS_STRING102           "\nFür dieses Spiel ist DirectX 9.0 oder höher erforderlich.\nLaden Sie eine neue Version von http://www.microsoft.com/directx herunter und starten Sie das Spiel erneut."
+    IDS_STRING103           "Direct3D konnte nicht initialisiert werden. Sie sollten\n"
+    IDS_STRING104           "sicherstellen, dass die neueste DirectX-\n"
+    IDS_STRING105           "Version richtig auf Ihrem System installiert\n"
+    IDS_STRING106           "wurde."
+    IDS_STRING107           "Kompatibles Direct3D wurde nicht gefunden\n"
+    IDS_STRING108           "Mit den aktuellen Anzeigeeinstellungen kann\n"
+    IDS_STRING109           "dieses Spiel nicht im Desktopfenster laufen.\n"
+    IDS_STRING110           "Bitte ändern Sie die Desktop-Einstellungen\n"
+    IDS_STRING111           "auf einen 16- oder 32-Bit-Anzeigemodus und\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING112           "wiederholen Sie den Versuch."
+    IDS_STRING113           "Keine Hardware-beschleunigten\n"
+    IDS_STRING114           "Direct3D-Geräte gefunden."
+    IDS_STRING115           "Dieses Spiel erfordert Funktionalität, die\n"
+    IDS_STRING116           "von Ihrem Direct3D-Hardware-Beschleuniger\n"
+    IDS_STRING117           "nicht geliefert wird."
+    IDS_STRING118           "Der Direct3D-Hardware-Beschleuniger kann\n"
+    IDS_STRING119           "nicht in ein Fenster rendern.\n"
+    IDS_STRING120           "Bei laufender Anwendung drücken Sie auf F2,\n"
+    IDS_STRING121           "um eine Liste verfügbarer Geräte und Modi darzustellen."
+    IDS_STRING122           "Der Direct3D-Hardware-Beschleuniger kann\n"
+    IDS_STRING123           "aufgrund der aktuellen Desktop-Anzeigeeinstellungen nicht\n"
+    IDS_STRING124           "in ein Fenster rendern.\n"
+    IDS_STRING125           "Dieses Spiel erfordert Funktionalität, die\n"
+    IDS_STRING126           "von Ihrem Direct3D-Hardware-Beschleuniger\n"
+    IDS_STRING127           "mit der aktuellen Desktop-Anzeige nicht geliefert\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING128           "wird.\n"
+    IDS_STRING129           "Erforderliche Medien konnten nicht geladen werden."
+    IDS_STRING130           "Direct3D-Gerät konnte nicht zurückgesetzt werden."
+    IDS_STRING131           "Die Referenzzahl eines D3D-Objekts ist\n"
+    IDS_STRING132           "nicht Null (d.h. dass die Dinge nicht\n"
+    IDS_STRING133           "richtig bereinigt wurden)."
+    IDS_STRING134           "Warnung: Nichts wird gerendert.\n"
+    IDS_STRING135           "Das Referenz-Rendering-Gerät wurde ausgewählt, aber auf\n"
+    IDS_STRING136           "Ihrem Computer ist nur ein Referenzgerät mit reduzierter\n"
+    IDS_STRING137           "Funktionalität installiert.  \n"
+    IDS_STRING138           "Nicht genügend Memory."
+    IDS_STRING139           "Nicht genügend Video-Memory."
+    IDS_STRING140           "Im Anzeigetreiber trat ein ernsthaftes Problem auf."
+    IDS_STRING141           "Anwendungsfehler"
+    IDS_STRING142           "\n\nDieses Spiel wird jetzt beendet."
+    IDS_STRING143           "\010Texturen werden komprimiert...\010\nDas passiert nur einmal..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING144           "Statistik Spiel\010c\010harakter \010(C drücken)\010"
+    IDS_STRING145           "\010I\010nventar \010(I drücken)\010"
+    IDS_STRING146           "Zauber\010b\010uch \010(B drücken)\010"
+    IDS_STRING147           "Fertig\010k\010eiten \010(K drücken)\010"
+    IDS_STRING148           "\010J\010ournal \010(J drücken)\010"
+    IDS_STRING149           "Abenteuer \010(Q drücken)\010"
+    IDS_STRING150           "Landkarte \010(M drücken)\010"
+    IDS_STRING151           "Speichern \010(V drücken)\010"
+    IDS_STRING152           "Tränke für schnellen Zugriff abstellen"
+    IDS_STRING153           "Flüchten"
+    IDS_STRING154           "Auf \010Anbiss\010\nwarten und \010Haken setzen\010"
+    IDS_STRING155           "Haken setzen!"
+    IDS_STRING156           "Aufhören"
+    IDS_STRING157           "\010R\010ennen ein-/ausschalten\n(oder \010<STRG>\010 halten)"
+    IDS_STRING158           "Alle Gegenstände zeigen ein-/ausschalten\n(oder \010<ALT>\010 halten)"
+    IDS_STRING159           "\010\nbis Tier zurück kommt..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING160           "Leben "
+    IDS_STRING161           "Zum Punkteverteilen klicken"
+    IDS_STRING162           "Level erhöhen!"
+    IDS_STRING163           "Hilfe anzeigen"
+    IDS_STRING164           "Tränke zum Gebrauch ablegen"
+    IDS_STRING165           "Statistik \010T\010ier \010(T drücken)\010"
+    IDS_STRING166           "Inventar des Tieres \010(P drücken)\010"
+    IDS_STRING167           "Tier zur Stadt schicken"
+    IDS_STRING168           "\010Linksklicken:\010 Zauberspruch auswählen\n\010Rechtsklicken:\010 verzaubern"
+    IDS_STRING169           "\010Linksklicken:\010 \010 $1 \010 ist aktiver Zauberspruch\n\010F1-F12\010 für Hotkey"
+    IDS_STRING170           "Schließen"
+    IDS_STRING171           "Ja"
+    IDS_STRING172           "Nein"
+    IDS_STRING173           "Bestätigen?"
+    IDS_STRING174           "Auswählen"
+    IDS_STRING175           "Aus der Dunkelheit kommt das \010Schicksal\010..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING176           "\010""Wählt Euer Schicksal""\010"
+    IDS_STRING177           "Wahl 1"
+    IDS_STRING178           "Wahl 2"
+    IDS_STRING179           "Vom letzten gespeicherten Ort laden..."
+    IDS_STRING180           "Beenden"
+    IDS_STRING181           "Ich stelle Eure Stärke wieder her und lasse Euch vom aktuellen Ort fortfahren, aber das kostet Euch $1 Erfahrungs- und $2 Ruhmespunkte..."
+    IDS_STRING182           "Ich \010stelle Eure Stärke wieder her\010 und \010transportiere\010 Euch zu einem nahegelegenen Level - für \010$1 Goldstücke\010."
+    IDS_STRING183           "Ich \010stelle Eure Stärke wieder her\010 und \010transportiere\010 Euch \010drei Level\010 nach oben. Euer \010Gold\010 bleibt, wo Ihr gefallen seid... zumindest für eine Zeit..."
+    IDS_STRING184           "Ich \010stelle Eure Stärke wieder her\010 und \010transportiere\010 Euch zurück zur Stadt \010Grove\010. Euer \010Gold\010 bleibt, wo Ihr gefallen seid... zumindest für eine Zeit..."
+    IDS_STRING185           "OK"
+    IDS_STRING186           "Exzellent! Ihr habt einen Fisch gefangen - \010$1\010!"
+    IDS_STRING187           "Gut gemacht! Euer Fang: \010$1\010!"
+    IDS_STRING188           "Ihr seid dahingeschieden!"
+    IDS_STRING189           "Soll Euer Tier zur \010Stadt\010 gehen und alle Gegenstände \010verkaufen\010, die es nicht trägt?\nUm so tiefer Ihr seid, umso länger braucht das Tier."
+    IDS_STRING190           "\010$1\010 - Ruhestand auf \010Level $2\010 -"
+    IDS_STRING191           "\nmit folgendem Ruf: \010$1\010"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING192           "\n\010Gold gesammelt: \010"
+    IDS_STRING193           "\n\010Abenteuer abgeschlossen: \010"
+    IDS_STRING194           "\n\010Monster besiegt: \010"
+    IDS_STRING195           "\n\010Bosse besiegt: \010"
+    IDS_STRING196           "Alle \010Edelsteine\010 wurden entfernt!"
+    IDS_STRING197           "Gegenstand hat keine \010Edelsteine\010!"
+    IDS_STRING198           "Euer(e) \010$1\010 wurde zerstört; Ihr erhaltet folgende Edelsteine:"
+    IDS_STRING199           "Gegenstand hat keine \010Edelsteine\010!"
+    IDS_STRING200           "Er bewegt seine Hände über den/die/das \010$1\010, aber... es passiert nichts!"
+    IDS_STRING201           "Er bewegt seine Hände über den/die/das \010$1\010 - neue \010Fassungen\010!"
+    IDS_STRING202           "Er bewegt seine Hände über den/die/das \010$1\010 – Euer Gegenstand erhält extra Zauber!"
+    IDS_STRING203           "Er bewegt seine Hände über den/die/das \010$1\010 – Euer Gegenstand hat neue Kräfte!"
+    IDS_STRING204           "Er bewegt seine Hände über den/die/das \010$1\010 - und nimmt Eurem Gegenstand versehentlich alle Kräfte!"
+    IDS_STRING205           "Er bewegt seine Hände über den/die/das \010$1\010, aber... es passiert nichts!"
+    IDS_STRING206           "Ihr fühlt Euch erfrischt!"
+    IDS_STRING207           "Ich habe im Moment keine \010Botengänge\010 für Euch... Kommt \010später wieder!\010"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING208           "Annehmen"
+    IDS_STRING209           "Ablehnen"
+    IDS_STRING210           "Bitte kommt wieder, wenn Ihr nicht \010so viel zu tun habt\010 - Eure Aufgabe wartet..."
+    IDS_STRING211           "\010Abenteuer abgeschlossen\010! Kehrt zu \010$1\010 zurück für Eure \010Belohnung\010!"
+    IDS_STRING212           "Eure \010Reise\010 ist \010zu Ende\010! \010$1\010 wurde endlich \010besiegt\010! Kehrt zu \010$2\010 zurück für Eure \010Belohnung\010 und den \010Beifall\010 der Stadt!"
+    IDS_STRING213           "Speichern/Beenden"
+    IDS_STRING214           "Mit Spiel fortfahren"
+    IDS_STRING215           "Elite "
+    IDS_STRING216           "Legendary "
+    IDS_STRING217           "Spieldauer"
+    IDS_STRING218           "Schritte"
+    IDS_STRING219           "Gold gesammelt"
+    IDS_STRING220           "Abenteuer abgeschlossen"
+    IDS_STRING221           "Tiefste Tiefe"
+    IDS_STRING222           "Tode"
+    IDS_STRING223           "Monster besiegt"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING224           "Bosse besiegt"
+    IDS_STRING225           "Zaubersprüche"
+    IDS_STRING226           "Truhen geöffnet"
+    IDS_STRING227           "Fallen ausgelöst"
+    IDS_STRING228           "Fässer zerbrochen"
+    IDS_STRING229           "Tränke benutzt"
+    IDS_STRING230           "Portale benutzt"
+    IDS_STRING231           "Fische gefangen"
+    IDS_STRING232           "Glücksspiele"
+    IDS_STRING233           "Superior "
+    IDS_STRING234           "Exceptional "
+    IDS_STRING235           "Flawless "
+    IDS_STRING236           "Unknown"
+    IDS_STRING237           "Tolerated"
+    IDS_STRING238           "Unremarkable"
+    IDS_STRING239           "Respected"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING240           "Local Hero"
+    IDS_STRING241           "Local Legend"
+    IDS_STRING242           "Well Known"
+    IDS_STRING243           "Folk Hero"
+    IDS_STRING244           "Rising Star"
+    IDS_STRING245           "Distinguished"
+    IDS_STRING246           "Prestigious"
+    IDS_STRING247           "Famous"
+    IDS_STRING248           "Renowned"
+    IDS_STRING249           "Glorious"
+    IDS_STRING250           "Legendary"
+    IDS_STRING251           "Fabled"
+    IDS_STRING252           "Mythic"
+    IDS_STRING253           "Immortal"
+    IDS_STRING254           "Demigod"
+    IDS_STRING255           "Unattainable"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING256           "Page"
+    IDS_STRING257           "Abenteurer"
+    IDS_STRING258           "Held"
+    IDS_STRING259           "Legende"
+    IDS_STRING260           "Angriffszauber"
+    IDS_STRING261           "Verteidigungszauber"
+    IDS_STRING262           "Zauberformelmagie"
+    IDS_STRING263           "Stichschaden"
+    IDS_STRING264           "Hiebschaden"
+    IDS_STRING265           "Zerquetschungsschaden"
+    IDS_STRING266           "Zauberschaden"
+    IDS_STRING267           "Feuerschaden"
+    IDS_STRING268           "Eisschaden"
+    IDS_STRING269           "Elektrizitätsschaden"
+    IDS_STRING270           "Untotenschaden"
+    IDS_STRING271           "Stichwiderstand"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING272           "Hiebwiderstand"
+    IDS_STRING273           "Zerquetschungswiderstand"
+    IDS_STRING274           "Zauberwiderstand"
+    IDS_STRING275           "Feuerwiderstand"
+    IDS_STRING276           "Eiswiderstand"
+    IDS_STRING277           "Elektrizitätswiderstand"
+    IDS_STRING278           "Feuerwiderstand"
+    IDS_STRING279           "Stichschwäche"
+    IDS_STRING280           "Hiebschwäche"
+    IDS_STRING281           "Zerquetschungsschwäche"
+    IDS_STRING282           "Zauberschwäche"
+    IDS_STRING283           "Feuerschwäche"
+    IDS_STRING284           "Eisschwäche"
+    IDS_STRING285           "Elektrizitätsschwäche"
+    IDS_STRING286           "Untotenschwäche"
+    IDS_STRING287           "Flaming "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING288           "Icy "
+    IDS_STRING289           "Shocking "
+    IDS_STRING290           "Holy "
+    IDS_STRING291           "Stärke"
+    IDS_STRING292           "Gewandtheit"
+    IDS_STRING293           "Vitalität"
+    IDS_STRING294           "Zauber"
+    IDS_STRING295           "Level"
+    IDS_STRING296           "Ruf"
+    IDS_STRING297           "Abstammung"
+    IDS_STRING298           "Schwert"
+    IDS_STRING299           "Knüppel/Morgenstern"
+    IDS_STRING300           "Hammer"
+    IDS_STRING301           "Axt"
+    IDS_STRING302           "Speer"
+    IDS_STRING303           "Stab"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING304           "Stangenwaffe"
+    IDS_STRING305           "Bogen/Armbrust"
+    IDS_STRING306           "Kritische Schläge"
+    IDS_STRING307           "Zaubersprüche"
+    IDS_STRING308           "Doppelwaffe"
+    IDS_STRING309           "Schildkampf"
+    IDS_STRING310           "Angriffszauber"
+    IDS_STRING311           "Verteidigungszauber"
+    IDS_STRING312           "Zauberformelmagie"
+    IDS_STRING313           "Am langsamsten"
+    IDS_STRING314           "Langsam"
+    IDS_STRING315           "Normal"
+    IDS_STRING316           "Schnell"
+    IDS_STRING317           "Am schnellsten"
+    IDS_STRING318           "Verbessert Angriffsstufe und Schaden mit Schwertern"
+    IDS_STRING319           "Verbessert Angriffsstufe und Schaden mit Knüppeln/Morgensternen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING320           "Verbessert Angriffsstufe und Schaden mit Hämmern"
+    IDS_STRING321           "Verbessert Angriffsstufe und Schaden mit Äxten"
+    IDS_STRING322           "Verbessert Angriffsstufe und Schaden mit Speeren"
+    IDS_STRING323           "Verbessert Angriffsstufe und Schaden mit Stöcken"
+    IDS_STRING324           "Verbessert Angriffsstufe und Schaden mit Stangenwaffen"
+    IDS_STRING325           "Verbessert Angriffsstufe und Schaden mit Bogen und Armbrüsten"
+    IDS_STRING326           "Verbessert die Chance für kritischen Hieb"
+    IDS_STRING327           "Verringert Dauer, bis Zaubersprüche wirken"
+    IDS_STRING328           "Verbessert Geschwindigkeit und Schaden untergeordneter Waffen"
+    IDS_STRING329           "Verbessert die Abwehrchance mit Schildern"
+    IDS_STRING330           "Verbessert Stärke des Angriffszaubers um 1 Level"
+    IDS_STRING331           "Verbessert Stärke des Verteidigungszaubers um 1 Level"
+    IDS_STRING332           "Verbessert Stärke der Zauberformelmagie um 1 Level"
+    IDS_STRING333           "Schwertklasse"
+    IDS_STRING334           "Knüppel-/Morgensternklasse"
+    IDS_STRING335           "Helm"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING336           "Schild"
+    IDS_STRING337           "Speerklasse"
+    IDS_STRING338           "Bogen-/Armbrustklasse"
+    IDS_STRING339           "Gürtel"
+    IDS_STRING340           "Schmuck"
+    IDS_STRING341           "Handschuhe"
+    IDS_STRING342           "Stiefel"
+    IDS_STRING343           "Rüstung"
+    IDS_STRING344           "Stangenwaffenklasse"
+    IDS_STRING345           "Axtklasse"
+    IDS_STRING346           "Hammerklasse"
+    IDS_STRING347           "Stabklasse"
+    IDS_STRING348           "Bogen-/Armbrustklasse"
+    IDS_STRING349           "Caster"
+    IDS_STRING350           "Kreatur"
+    IDS_STRING351           "Gebiet"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING352           "Gegenstand"
+    IDS_STRING353           "Kreaturgebiet"
+    IDS_STRING354           "Zaubergebiet"
+    IDS_STRING355           "Lakaien des Zauberers"
+    IDS_STRING356           "Lakaien der Kreatur"
+    IDS_STRING357           "Zauberer und Lakaien"
+    IDS_STRING358           "Kreatur und Lakaien"
+    IDS_STRING359           "Projektil"
+    IDS_STRING360           "% Stärke"
+    IDS_STRING361           "% Gewandtheit"
+    IDS_STRING362           "% Vitalität"
+    IDS_STRING363           "% Zauber"
+    IDS_STRING364           "% Mana"
+    IDS_STRING365           "% Leben"
+    IDS_STRING366           "% Ausdauer"
+    IDS_STRING367           "% Bewegungsgeschwindigkeit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING368           "% Angriffsgeschwindigkeit"
+    IDS_STRING369           "% Verteidigungsstufe"
+    IDS_STRING370           "% Angriffsstufe"
+    IDS_STRING371           "% hinzugefügter Schaden"
+    IDS_STRING372           "% erlittener Schaden"
+    IDS_STRING373           "% verbesserte Chance, magische Gegenstände zu finden"
+    IDS_STRING374           "% mehr Gold, das Feinde fallen ließen"
+    IDS_STRING375           "% bessere Zaubergeschwindigkeit"
+    IDS_STRING376           "% Leben pro Hieb gestohlen"
+    IDS_STRING377           "% Mana pro Hieb gestohlen"
+    IDS_STRING378           "% Schaden auf Feind widergespiegelt"
+    IDS_STRING379           "% verbesserte Abwehrchance"
+    IDS_STRING380           "% verringerte Gegenstandserfordernisse"
+    IDS_STRING381           "% Stichwiderstand"
+    IDS_STRING382           "% Hiebwiderstand"
+    IDS_STRING383           "% Zerquetschungswiderstand"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING384           "% Zauberwiderstand"
+    IDS_STRING385           "% Feuerwiderstand"
+    IDS_STRING386           "% Eiswiderstand"
+    IDS_STRING387           "% Elektrizitätswiderstand"
+    IDS_STRING388           "k.A."
+    IDS_STRING389           "Effekt entfernen"
+    IDS_STRING390           "Rückwurf-Effekt"
+    IDS_STRING391           "Gegenstand identifizieren"
+    IDS_STRING392           "Zauberspruch notieren"
+    IDS_STRING393           "Kreatur herbeirufen"
+    IDS_STRING394           "Elementaren Schaden hinzufügen"
+    IDS_STRING395           "Kreatur transformieren"
+    IDS_STRING396           "Transformierung rückgängig machen"
+    IDS_STRING397           "Öffnet Stadtportal"
+    IDS_STRING398           "Aktuellen Verlieslevel feststellen"
+    IDS_STRING399           "Gegner in die Flucht schlagen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING400           "Ziel verzaubern"
+    IDS_STRING401           "Gerufenes Monster bannen"
+    IDS_STRING402           "Gerufenes Feindmonster bannen"
+    IDS_STRING403           "Stärkebonus"
+    IDS_STRING404           "Gewandtheitsbonus"
+    IDS_STRING405           "Vitalitätsbonus"
+    IDS_STRING406           "Zauberbonus"
+    IDS_STRING407           "Manabonus"
+    IDS_STRING408           "Lebensbonus"
+    IDS_STRING409           "Ausdauer"
+    IDS_STRING410           "Mana wiedererlangt"
+    IDS_STRING411           "HP wiedererlangt"
+    IDS_STRING412           "Ausdauer wiedererlangt"
+    IDS_STRING413           "Verteidigungsbonus"
+    IDS_STRING414           "Angriffsbonus"
+    IDS_STRING415           "Bonus für Schaden"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING416           "Erlittener Schaden reduziert"
+    IDS_STRING417           "Rückwurf"
+    IDS_STRING418           "Fertigkeitsbonus Schwert"
+    IDS_STRING419           "Fertigkeitsbonus Knüppel/Morgenstern"
+    IDS_STRING420           "Fertigkeitsbonus Hammer"
+    IDS_STRING421           "Fertigkeitsbonus Axt"
+    IDS_STRING422           "Fertigkeitsbonus Speer"
+    IDS_STRING423           "Fertigkeitsbonus Stab"
+    IDS_STRING424           "Fertigkeitsbonus Stangenwaffe"
+    IDS_STRING425           "Fertigkeitsbonus Bogen/Armbrust"
+    IDS_STRING426           "Fertigkeitsbonus kritische Schläge"
+    IDS_STRING427           "Fertigkeitsbonus Zaubersprüche"
+    IDS_STRING428           "Fertigkeitsbonus Doppelwaffe"
+    IDS_STRING429           "Fertigkeitsbonus Schildkampf"
+    IDS_STRING430           "Fertigkeitsbonus Angriffszauber"
+    IDS_STRING431           "Fertigkeitsbonus Verteidigungszauber"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING432           "Fertigkeitsbonus Zauberformelmagie"
+    IDS_STRING433           "% Stärkebonus"
+    IDS_STRING434           "% Gewandtheitsbonus"
+    IDS_STRING435           "% Vitalitätsbonus"
+    IDS_STRING436           "% Zauberbonus"
+    IDS_STRING437           "% Manabonus"
+    IDS_STRING438           "% Lebensbonus"
+    IDS_STRING439           "% Ausdauerbonus"
+    IDS_STRING440           "% Bewegungsgeschwindigkeitsbonus"
+    IDS_STRING441           "% Angriffsgeschwindigkeitsbonus"
+    IDS_STRING442           "% Verteidigungsbonus"
+    IDS_STRING443           "% Angriffsbonus"
+    IDS_STRING444           "% Bonus für Schaden"
+    IDS_STRING445           "% erlittener Schaden reduziert"
+    IDS_STRING446           "% Chance, magische Gegenstände zu finden"
+    IDS_STRING447           "% mehr Gold, das Feinde fallen ließen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING448           "% bessere Zaubergeschwindigkeit"
+    IDS_STRING449           "% Leben pro Hieb gestohlen"
+    IDS_STRING450           "% Mana pro Hieb gestohlen"
+    IDS_STRING451           "% Schaden auf Feind widergespiegelt"
+    IDS_STRING452           "% verbesserte Abwehrchance"
+    IDS_STRING453           "% verringerte Gegenstandserfordernisse"
+    IDS_STRING454           "% Stichwiderstandsbonus"
+    IDS_STRING455           "% Hiebwiderstandsbonus"
+    IDS_STRING456           "% Zerquetschungswiderstandsbonus"
+    IDS_STRING457           "% Zauberwiderstandsbonus"
+    IDS_STRING458           "% Feuerwiderstandsbonus"
+    IDS_STRING459           "% Eiswiderstandsbonus"
+    IDS_STRING460           "% Elektrizitätswiderstandsbonus"
+    IDS_STRING461           "k.A."
+    IDS_STRING462           "Effekt entfernen"
+    IDS_STRING463           "Rückwurf-Effekt"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING464           "Gegenstand identifizieren"
+    IDS_STRING465           "Zauberspruch notieren"
+    IDS_STRING466           "Kreatur herbeirufen"
+    IDS_STRING467           "Elementaren Schaden hinzufügen"
+    IDS_STRING468           "Kreatur transformieren"
+    IDS_STRING469           "Transformierung rückgängig machen"
+    IDS_STRING470           "Öffnet Stadtportal"
+    IDS_STRING471           "Aktuellen Level feststellen"
+    IDS_STRING472           "Gegner in die Flucht schlagen"
+    IDS_STRING473           "Ziel verzaubern"
+    IDS_STRING474           "Gerufenes Monster bannen"
+    IDS_STRING475           "Stärkestrafe"
+    IDS_STRING476           "Gewandtheitsstrafe"
+    IDS_STRING477           "Vitalitätsstrafe"
+    IDS_STRING478           "Zauberstrafe"
+    IDS_STRING479           "Manastrafe"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING480           "Lebensstrafe"
+    IDS_STRING481           "Ausdauerstrafe"
+    IDS_STRING482           "Manaverlust"
+    IDS_STRING483           "HP-Schaden"
+    IDS_STRING484           "Ausdauerverlust"
+    IDS_STRING485           "Verteidigungsstrafe"
+    IDS_STRING486           "Angriffsstrafe"
+    IDS_STRING487           "Strafe für hinzugefügten Schaden"
+    IDS_STRING488           "Erlittener Schaden erhöht"
+    IDS_STRING489           "Rückwurf"
+    IDS_STRING490           "Fertigkeitsstrafe Schwert"
+    IDS_STRING491           "Fertigkeitsstrafe Knüppel/Morgenstern"
+    IDS_STRING492           "Fertigkeitsstrafe Hammer"
+    IDS_STRING493           "Fertigkeitsstrafe Axt"
+    IDS_STRING494           "Fertigkeitsstrafe Speer"
+    IDS_STRING495           "Fertigkeitsstrafe Stab"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING496           "Fertigkeitsstrafe Stangenwaffe"
+    IDS_STRING497           "Fertigkeitsstrafe Bogen/Armbrust"
+    IDS_STRING498           "Fertigkeitsstrafe kritische Schläge"
+    IDS_STRING499           "Fertigkeitsstrafe Zaubersprüche"
+    IDS_STRING500           "Fertigkeitsstrafe Doppelwaffen"
+    IDS_STRING501           "Fertigkeitsstrafe Schildkampf"
+    IDS_STRING502           "Fertigkeitsstrafe Angriffszauber"
+    IDS_STRING503           "Fertigkeitsstrafe Verteidigungszauber"
+    IDS_STRING504           "Fertigkeitsstrafe Zauberformelmagie"
+    IDS_STRING505           "% Stärkestrafe"
+    IDS_STRING506           "% Gewandtheitsstrafe"
+    IDS_STRING507           "% Vitalitätsstrafe"
+    IDS_STRING508           "% Zauberstrafe"
+    IDS_STRING509           "% Manastrafe"
+    IDS_STRING510           "% Lebensstrafe"
+    IDS_STRING511           "% Ausdauerstrafe"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING512           "% Bewegungsgeschwindigkeitsstrafe"
+    IDS_STRING513           "% Angriffsgeschwindigkeitsstrafe"
+    IDS_STRING514           "% Verteidigungsstrafe"
+    IDS_STRING515           "% Angriffsstrafe"
+    IDS_STRING516           "% Strafe für hinzugefügten Schaden"
+    IDS_STRING517           "% erlittener Schaden erhöht"
+    IDS_STRING518           "% verringerte Chance, magische Gegenstände zu finden"
+    IDS_STRING519           "% weniger Gold, das Feinde fallen ließen"
+    IDS_STRING520           "% schlechtere Zaubergeschwindigkeit"
+    IDS_STRING521           "% Leben pro Hieb verloren"
+    IDS_STRING522           "% Mana pro Hieb verloren"
+    IDS_STRING523           "% Schaden auf Feind widergespiegelt"
+    IDS_STRING524           "% verringerte Abwehrchance"
+    IDS_STRING525           "% erhöhte Gegenstandserfordernisse"
+    IDS_STRING526           "% Stichwiderstandsstrafe"
+    IDS_STRING527           "% Hiebwiderstandsstrafe"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING528           "% Zerquetschungswiderstandsstrafe"
+    IDS_STRING529           "% Zauberwiderstandsstrafe"
+    IDS_STRING530           "% Feuerwiderstandsstrafe"
+    IDS_STRING531           "% Eiswiderstandsstrafe"
+    IDS_STRING532           "% Elektrizitätswiderstandsstrafe"
+    IDS_STRING533           "k.A."
+    IDS_STRING534           "Effekt entfernen"
+    IDS_STRING535           "Rückwurf-Effekt"
+    IDS_STRING536           "Gegenstand identifizieren"
+    IDS_STRING537           "Zauberspruch notieren"
+    IDS_STRING538           "Kreatur herbeirufen"
+    IDS_STRING539           "Elementaren Schaden hinzufügen"
+    IDS_STRING540           "Kreatur transformieren"
+    IDS_STRING541           "Transformierung rückgängig machen"
+    IDS_STRING542           "Öffnet Stadtportal"
+    IDS_STRING543           "Aktuellen Level feststellen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING544           "Gegner in die Flucht schlagen"
+    IDS_STRING545           "Ziel verzaubern"
+    IDS_STRING546           "Gerufenes Monster bannen"
+    IDS_STRING547           "Gerufenes Feindmonster bannen"
+    IDS_STRING548           "Strong"
+    IDS_STRING549           "Mighty"
+    IDS_STRING550           "Legendary"
+    IDS_STRING551           "Titanic"
+    IDS_STRING552           "Godly"
+    IDS_STRING553           "Nimble"
+    IDS_STRING554           "Quick"
+    IDS_STRING555           "Swift"
+    IDS_STRING556           "Blinding"
+    IDS_STRING557           "Humming"
+    IDS_STRING558           "Heavy"
+    IDS_STRING559           "Crushing"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING560           "Barbaric"
+    IDS_STRING561           "Deep"
+    IDS_STRING562           "Robust"
+    IDS_STRING563           "Lighted"
+    IDS_STRING564           "Ancient"
+    IDS_STRING565           "Runic"
+    IDS_STRING566           "Charmed"
+    IDS_STRING567           "Wrought"
+    IDS_STRING568           "Gilded"
+    IDS_STRING569           "Jeweled"
+    IDS_STRING570           "Gemmed"
+    IDS_STRING571           "Encrusted"
+    IDS_STRING572           "Divine"
+    IDS_STRING573           "Healthy"
+    IDS_STRING574           "Hearty"
+    IDS_STRING575           "Vital"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING576           "Swarthy"
+    IDS_STRING577           "Vigorous"
+    IDS_STRING578           "Hard"
+    IDS_STRING579           "Solid"
+    IDS_STRING580           "Enduring"
+    IDS_STRING581           "Endless"
+    IDS_STRING582           "Eternal"
+    IDS_STRING583           "Shining"
+    IDS_STRING584           "Gleaming"
+    IDS_STRING585           "Glittering"
+    IDS_STRING586           "Glowing"
+    IDS_STRING587           "Shimmering"
+    IDS_STRING588           "Soothing"
+    IDS_STRING589           "Healing"
+    IDS_STRING590           "Curing"
+    IDS_STRING591           "Medicinal"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING592           "Miraculous"
+    IDS_STRING593           "Horse's"
+    IDS_STRING594           "Antelope's"
+    IDS_STRING595           "Gazelle's"
+    IDS_STRING596           "Cheeta's"
+    IDS_STRING597           "Lightning's"
+    IDS_STRING598           "Hardened"
+    IDS_STRING599           "Hammered"
+    IDS_STRING600           "Thickened"
+    IDS_STRING601           "Plated"
+    IDS_STRING602           "Crafted"
+    IDS_STRING603           "Guiding"
+    IDS_STRING604           "Aiding"
+    IDS_STRING605           "Accurate"
+    IDS_STRING606           "Targeted"
+    IDS_STRING607           "Enchanted"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING608           "Smiting"
+    IDS_STRING609           "Piercing"
+    IDS_STRING610           "Destroying"
+    IDS_STRING611           "Grinding"
+    IDS_STRING612           "Mashing"
+    IDS_STRING613           "Shielding"
+    IDS_STRING614           "Protecting"
+    IDS_STRING615           "Auraed"
+    IDS_STRING616           "Benevolent"
+    IDS_STRING617           "Blessed"
+    IDS_STRING618           "Forceful"
+    IDS_STRING619           "Thrusting"
+    IDS_STRING620           "Hammering"
+    IDS_STRING621           "Blasting"
+    IDS_STRING622           "Hurling"
+    IDS_STRING623           "Novice's"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING624           "Disciple's"
+    IDS_STRING625           "Journeyman's"
+    IDS_STRING626           "Craftsman's"
+    IDS_STRING627           "Master's"
+    IDS_STRING628           "Strength"
+    IDS_STRING629           "Might"
+    IDS_STRING630           "Power"
+    IDS_STRING631           "Giants"
+    IDS_STRING632           "Titans"
+    IDS_STRING633           "Dexterity"
+    IDS_STRING634           "Quickness"
+    IDS_STRING635           "Dodging"
+    IDS_STRING636           "Avoidance"
+    IDS_STRING637           "Blur"
+    IDS_STRING638           "Life"
+    IDS_STRING639           "Vitality"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING640           "Force"
+    IDS_STRING641           "Health"
+    IDS_STRING642           "Immortality"
+    IDS_STRING643           "the Crone"
+    IDS_STRING644           "the Mage"
+    IDS_STRING645           "the Wizard"
+    IDS_STRING646           "the Sorceror"
+    IDS_STRING647           "the Enchanter"
+    IDS_STRING648           "Seasons"
+    IDS_STRING649           "Years"
+    IDS_STRING650           "Ages"
+    IDS_STRING651           "Aeons"
+    IDS_STRING652           "Epochs"
+    IDS_STRING653           "the Fox"
+    IDS_STRING654           "the Jaguar"
+    IDS_STRING655           "the Eagle"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING656           "the Wolf"
+    IDS_STRING657           "the Tiger"
+    IDS_STRING658           "the Tortoise"
+    IDS_STRING659           "the Tusk"
+    IDS_STRING660           "the Rhino"
+    IDS_STRING661           "the Giant"
+    IDS_STRING662           "the Leviathan"
+    IDS_STRING663           "the Hare"
+    IDS_STRING664           "the Lizard"
+    IDS_STRING665           "the Cheetah"
+    IDS_STRING666           "Lightning"
+    IDS_STRING667           "Light"
+    IDS_STRING668           "the Grand"
+    IDS_STRING669           "the Mighty"
+    IDS_STRING670           "the Chivalrous"
+    IDS_STRING671           "the Legendary"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING672           "the Gods"
+    IDS_STRING673           "Stone"
+    IDS_STRING674           "the Plains"
+    IDS_STRING675           "the Hills"
+    IDS_STRING676           "the Mountains"
+    IDS_STRING677           "the Earth"
+    IDS_STRING678           "Bronze"
+    IDS_STRING679           "Iron"
+    IDS_STRING680           "Steel"
+    IDS_STRING681           "Silver"
+    IDS_STRING682           "Gold"
+    IDS_STRING683           "Warriors"
+    IDS_STRING684           "Soldiers"
+    IDS_STRING685           "Lords"
+    IDS_STRING686           "Knights"
+    IDS_STRING687           "Mastery"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING688           "Protection"
+    IDS_STRING689           "Absorption"
+    IDS_STRING690           "Deflection"
+    IDS_STRING691           "Glancing"
+    IDS_STRING692           "Osmosis"
+    IDS_STRING693           "Luck"
+    IDS_STRING694           "Fortune"
+    IDS_STRING695           "Discovery"
+    IDS_STRING696           "Favor"
+    IDS_STRING697           "Providence"
+    IDS_STRING698           "Greed"
+    IDS_STRING699           "Wealth"
+    IDS_STRING700           "Prosperity"
+    IDS_STRING701           "Affluence"
+    IDS_STRING702           "Opulence"
+    IDS_STRING703           "the Magician"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING704           "the Conjurer"
+    IDS_STRING705           "the Mage"
+    IDS_STRING706           "the Wizard"
+    IDS_STRING707           "the Sorceror"
+    IDS_STRING708           "Sapping"
+    IDS_STRING709           "Draining"
+    IDS_STRING710           "Deep Draughts"
+    IDS_STRING711           "Leeching"
+    IDS_STRING712           "the Vampire"
+    IDS_STRING713           "the Lizard"
+    IDS_STRING714           "the Snake"
+    IDS_STRING715           "the Serpent"
+    IDS_STRING716           "the Wyrm"
+    IDS_STRING717           "the Dragon"
+    IDS_STRING718           "Spines"
+    IDS_STRING719           "Spikes"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING720           "Nails"
+    IDS_STRING721           "Spears"
+    IDS_STRING722           "Lances"
+    IDS_STRING723           "Blocking"
+    IDS_STRING724           "Blocking"
+    IDS_STRING725           "Blocking"
+    IDS_STRING726           "Deflection"
+    IDS_STRING727           "Deflection"
+    IDS_STRING728           "Basics"
+    IDS_STRING729           "Smoothness"
+    IDS_STRING730           "Facility"
+    IDS_STRING731           "Clarity"
+    IDS_STRING732           "Lucidity"
+    IDS_STRING733           "Elements"
+    IDS_STRING734           "Frail"
+    IDS_STRING735           "Weak"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING736           "Clumsy"
+    IDS_STRING737           "Stumbling"
+    IDS_STRING738           "Diseased"
+    IDS_STRING739           "Ill"
+    IDS_STRING740           "Foolish"
+    IDS_STRING741           "Simpleton's"
+    IDS_STRING742           "Mindless"
+    IDS_STRING743           "Fool's"
+    IDS_STRING744           "Drained"
+    IDS_STRING745           "Corpse's"
+    IDS_STRING746           "Exhausted"
+    IDS_STRING747           "Weary"
+    IDS_STRING748           "Stupefying"
+    IDS_STRING749           "Lobotomizing"
+    IDS_STRING750           "Draining"
+    IDS_STRING751           "Leeching"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING752           "Quivering"
+    IDS_STRING753           "Panting"
+    IDS_STRING754           "Brittle"
+    IDS_STRING755           "Crumbling"
+    IDS_STRING756           "Blind"
+    IDS_STRING757           "Sightless"
+    IDS_STRING758           "Troubled"
+    IDS_STRING759           "Corrupted"
+    IDS_STRING760           "Invalid's"
+    IDS_STRING761           "Sickened"
+    IDS_STRING762           "Frailty"
+    IDS_STRING763           "Weakness"
+    IDS_STRING764           "Clumsiness"
+    IDS_STRING765           "Shakes"
+    IDS_STRING766           "Disease"
+    IDS_STRING767           "Corruption"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING768           "Stupidity"
+    IDS_STRING769           "Lunacy"
+    IDS_STRING770           "Insanity"
+    IDS_STRING771           "the Idiot"
+    IDS_STRING772           "Illness"
+    IDS_STRING773           "Quivering"
+    IDS_STRING774           "Panting"
+    IDS_STRING775           "Gasps"
+    IDS_STRING776           "Slowness"
+    IDS_STRING777           "Creeping"
+    IDS_STRING778           "Slugs"
+    IDS_STRING779           "Snails"
+    IDS_STRING780           "the Brittle"
+    IDS_STRING781           "Flaking"
+    IDS_STRING782           "Blindness"
+    IDS_STRING783           "the Broken"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING784           "Dullness"
+    IDS_STRING785           "Weakness"
+    IDS_STRING786           "Vulnerability"
+    IDS_STRING787           "Rust"
+    IDS_STRING788           "Affliction"
+    IDS_STRING789           "Affliction"
+    IDS_STRING790           "the Pauper"
+    IDS_STRING791           "the Beggar"
+    IDS_STRING792           "Slow Casting"
+    IDS_STRING793           "Slow Casting"
+    IDS_STRING794           "Bleeding"
+    IDS_STRING795           "Wounds"
+    IDS_STRING796           "Depletion"
+    IDS_STRING797           "Bereavement"
+    IDS_STRING798           "Reflection"
+    IDS_STRING799           "Reflection"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING800           "Failure"
+    IDS_STRING801           "Incompetence"
+    IDS_STRING802           "Obtuseness"
+    IDS_STRING803           "Opacity"
+    IDS_STRING804           "Achilles"
+    IDS_STRING805           "Verzauberungskosten\n\010$1 Goldstücke\010"
+    IDS_STRING806           "Legt den \010Gegenstand\010\nan diese Stelle, um \n\010ihn zu verzaubern\010"
+    IDS_STRING807           "Ihr seid viel zu \010berühmt\010 für meine bescheidene Kunst!"
+    IDS_STRING808           "\n\nWürdet Ihr \010$1 GP\010 zahlen, um zum Rang \010$2 aufzusteigen?\010\n( Ruf-Level $3)"
+    IDS_STRING809           "Ihr seid viel zu \010berühmt\010 für meine bescheidene Kunst!"
+    IDS_STRING810           "Legt einen \010Gegenstand\010 an diese Stelle, um alle \010gefassten Edelsteine zu zerstören\010"
+    IDS_STRING811           "Zerbrechen"
+    IDS_STRING812           "Abbrechen"
+    IDS_STRING813           "Legt einen \010Gegenstand\010 an diese Stelle, um ihn zu zerstören und \010die Edelsteine zu entnehmen\010"
+    IDS_STRING814           "Entnehmen"
+    IDS_STRING815           "Verzaubern"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING816           "Gegenstand für Eure Nachkommen hier ablegen!"
+    IDS_STRING817           "Ruhestand"
+    IDS_STRING818           "Verzauberung muss auf ein Ziel gerichtet sein!"
+    IDS_STRING819           "Ziel ist nicht richtig ausgerichtet!"
+    IDS_STRING820           "Die Stadt Grove"
+    IDS_STRING821           "Level $1"
+    IDS_STRING822           "Herbeigerufen: \010$1/$2\010"
+    IDS_STRING823           "Level $1"
+    IDS_STRING824           "Zum Verzaubern von $3 mit $2 ist Fertigkeitsstufe ($1) zu gering\nZum Abbrechen rechtsklicken"
+    IDS_STRING825           "Zum Verzaubern von $2 mit $1 linksklicken\nZum Abbrechen rechtsklicken"
+    IDS_STRING826           "Zum Verzaubern mit $1 linksklicken\nZum Abbrechen rechtsklicken"
+    IDS_STRING827           "Linksklicken: $1, Ziel: $2\n Zum Abbrechen rechtsklicken"
+    IDS_STRING828           "Linksklicken: $1\nZum Abbrechen rechtsklicken"
+    IDS_STRING829           "ZAUBERSPRUCH FUNKTIONIERT NICHT IM MENÜ\n"
+    IDS_STRING830           "ZUM VERZAUBERN KLICKEN\n"
+    IDS_STRING831           "LINKSKLICKEN, UM ALS AKTIVEN ZAUBERSPRUCH FESTZULEGEN\nZAUBERSPRUCH FUNKTIONIERT NICHT IM MENÜ\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING832           "LINKSKLICKEN, UM ALS AKTIVEN ZAUBERSPRUCH FESTZULEGEN\nZUM VERZAUBERN RECHTSKLICKEN\n"
+    IDS_STRING833           "\nAngriffszauber"
+    IDS_STRING834           "\nVerteidigungszauber"
+    IDS_STRING835           "\nZauberformelmagie"
+    IDS_STRING836           "\nZiel: "
+    IDS_STRING837           "\nVerzauberungsdauer: $1 Sekunden"
+    IDS_STRING838           "\nMana-Kosten: "
+    IDS_STRING839           "\nSofortige Wirkung"
+    IDS_STRING840           "\nDauer: $1 Sekunden"
+    IDS_STRING841           "$1% Chance von "
+    IDS_STRING842           "$1 pro Sekunde"
+    IDS_STRING843           "$1% Chance - "
+    IDS_STRING844           "$1 falls Level unter $2"
+    IDS_STRING845           "$1, falls Verlieslevel $2 oder höher"
+    IDS_STRING846           "$1 von Identifizierungslevel $2 und darunter"
+    IDS_STRING847           "$1 von Level $2 und darunter"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING848           "$1 von Level $2 für $3 Sekunden"
+    IDS_STRING849           "\nErforderlich: $1"
+    IDS_STRING850           "Spielpreis: "
+    IDS_STRING851           "Preis: "
+    IDS_STRING852           "Verkaufspreis: "
+    IDS_STRING853           "\nGefasst: $1 leere Fassungen"
+    IDS_STRING854           "\nGefasst: 1 leere Fassung"
+    IDS_STRING855           "\nZweihändig -"
+    IDS_STRING856           "\nAngriffsschaden: "
+    IDS_STRING857           "\nVerteidigung: "
+    IDS_STRING858           "\nZur Installation auf Gegenstand mit Fassung legen"
+    IDS_STRING859           "\n+$1 $2 werden/wird zur Rüstung hinzugefügt, wenn installiert"
+    IDS_STRING860           "\n+$1 $2 werden zur Waffe hinzugefügt, wenn installiert"
+    IDS_STRING861           "\n$1 $2"
+    IDS_STRING862           "$1, wenn installiert"
+    IDS_STRING863           "\nNicht identifiziert!\nIdentifizierungslevel: $1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING864           "\nErforderlicher Ruf: $1"
+    IDS_STRING865           "\nErforderlich: $2 $1"
+    IDS_STRING866           "\nErforderlich: $1 $2"
+    IDS_STRING867           "\nRechtsklicken, um einen Eintrag im Zauberbuch zu machen"
+    IDS_STRING868           "\nDieser Zauberspruch ist Euch bereits bekannt."
+    IDS_STRING869           "\nEure Plätze für $1 sind voll\nZum Erlernen dieses Spruchs muss ein Zauberspruch $2 entfernt werden."
+    IDS_STRING870           "\nVerwendung: "
+    IDS_STRING871           "\nKann in der Stadt nicht verwendet werden"
+    IDS_STRING872           "\nAuf Tiersymbol ablegen oder rechtsklicken, um Tier zu füttern"
+    IDS_STRING873           "\nStellt ursprüngliche Tierform wieder her"
+    IDS_STRING874           "\nTransformiert Tier in: $1"
+    IDS_STRING875           "$1 - permanent"
+    IDS_STRING876           "$1 - $2 Sekunden lang"
+    IDS_STRING877           "\nStärke verbessert: \010+$1\010"
+    IDS_STRING878           "\nStärke verschlechtert: \010$1\010"
+    IDS_STRING879           "\nGewandtheit verbessert: \010+$1\010"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING880           "\nGewandtheit verschlechtert: \010$1\010"
+    IDS_STRING881           "\nVitalität verbessert: \010+$1\010"
+    IDS_STRING882           "\nVitalität verschlechtert: \010$1\010"
+    IDS_STRING883           "\nZauber verbessert: \010+$1\010"
+    IDS_STRING884           "\nZauber verschlechtert: \010$1\010"
+    IDS_STRING885           "\nRüstung verbessert: \010+$1\010"
+    IDS_STRING886           "\nRüstung verschlechtert: \010$1\010"
+    IDS_STRING887           "\nZum Benutzen rechtsklicken"
+    IDS_STRING888           "Hilfe schließen"
+    IDS_STRING889           "Hilfemenü"
+    IDS_STRING890           "\010Linksklicken\010: bewegen, angreifen und mit Gegenständen interagieren\n\010Rechtsklicken\010: verzaubern (falls Zaubersprüche gelernt)\n\010<STRG>\010 gedrückt halten: rennen\n\010<ALT>\010 gedrückt halten: Gegenstände auf dem Boden markieren\n\010<UMSCHALT>\010-Taste halten: beim Angriff an gleicher Stelle bleiben\n\010<UMSCHALT>\010-Taste halten u. auf Gegenst. kl.: Tier hebt ihn auf\n\010<UMSCHALT>\010-Taste halten u. auf Händler kl.: Tier-Inventar verkaufen\n\010<TABULATOR>\010: Landkarte ein-/ausschalten\n\010V\010 drücken: Speichermenü\n\010H\010 drücken: Hilfemenü ein-/ausschalten\n\010<ESC>\010 drücken: Pause machen oder Speichermenü anzeigen"
+    IDS_STRING891           "Gesundheit des Tieres"
+    IDS_STRING892           "Tier hier füttern\n(Fische ablegen)"
+    IDS_STRING893           "Gesundheitsleiste"
+    IDS_STRING894           "Manaleiste"
+    IDS_STRING895           "Euer Gold"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING896           "Ausdauerleiste"
+    IDS_STRING897           "Erfahrungsleiste"
+    IDS_STRING898           "Rennen"
+    IDS_STRING899           "Beute ein-/ausblenden"
+    IDS_STRING900           "Schnellablageplätze"
+    IDS_STRING901           "Untermenü-Buttons"
+    IDS_STRING902           "Helm zum Tragen an diese Stelle ziehen"
+    IDS_STRING903           "Rüstung zum Tragen an diese Stelle ziehen"
+    IDS_STRING904           "Schild oder Waffe zum Tragen an diese Stelle ziehen"
+    IDS_STRING905           "Waffe zur Benutzung an diese Stelle ziehen"
+    IDS_STRING906           "Schild oder Waffe zum Tragen an diese Stelle ziehen"
+    IDS_STRING907           "Handschuhe zum Tragen an diese Stelle ziehen"
+    IDS_STRING908           "Halskette zum Tragen an diese Stelle ziehen"
+    IDS_STRING909           "Stiefel zum Tragen an diese Stelle ziehen"
+    IDS_STRING910           "Ring zum Tragen an diese Stelle ziehen"
+    IDS_STRING911           "Ring zum Tragen an diese Stelle ziehen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING912           "Gürtel zum Tragen an diese Stelle ziehen"
+    IDS_STRING913           "Journal"
+    IDS_STRING914           "$1 h $2 min $3 s"
+    IDS_STRING915           "Fertig"
+    IDS_STRING916           "Level"
+    IDS_STRING917           "Erfahrung"
+    IDS_STRING918           "Nächster Level"
+    IDS_STRING919           "Schaden"
+    IDS_STRING920           "Angriff"
+    IDS_STRING921           "Verteidigung"
+    IDS_STRING922           "Ausdauer"
+    IDS_STRING923           "Leben"
+    IDS_STRING924           "Zauber"
+    IDS_STRING925           "Mana"
+    IDS_STRING926           "\010Stärke\010 wirkt sich auf \010verursachten Schaden\010 aus"
+    IDS_STRING927           "\010Gewandtheit\010 beeinflusst Wahrscheinlichkeit, einen Gegner \010zu schlagen\010\nund die Wahrscheinlichkeit, einem Angriff \010auszuweichen\010"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING928           "\010Vitalität\010 bestimmt das verfügbare \010Leben\010\nund die \010Ausdauer\010"
+    IDS_STRING929           "\010Zauber\010 bestimmt die verfügbaren \010Manapunkte\010\nund verbessert den von Zaubersprüchen \010verursachten Schaden\010"
+    IDS_STRING930           "Schadensreichweite bei einem erfolgreichen Hieb"
+    IDS_STRING931           "Wahrscheinlichkeit des Zuschlagens"
+    IDS_STRING932           "Wahrscheinlichkeit des Ausweichens"
+    IDS_STRING933           "verfügbare Ausdauer"
+    IDS_STRING934           "verfügbares Leben"
+    IDS_STRING935           "verfügbares Mana"
+    IDS_STRING936           "$1s Abenteuer"
+    IDS_STRING937           "Bitte kommt wieder, sobald die Aufgabe abgeschlossen ist!"
+    IDS_STRING938           "Endlich! \010$1\010 wurde zerstört! Eure \010Reise\010 ist abgeschlossen!\n\nIhr erhaltet:\n\010$2 Erfahrung\010\n\010$3 Ruhm\010\n\010$4 Goldstücke\010\n\nKommt wieder und \010sprecht\010 mit mir, wenn Ihr Euch \010zur Ruhe setzen möchtet!\010"
+    IDS_STRING939           "\010$1\010 the \010$2\010 erwartet Euch noch auf \010Level $3\010. Kehrt nach Eurem \010Sieg\010 wieder..."
+    IDS_STRING940           "Zerstört \010$1\010 the\010$2\010 und \010$3\010 Lakaien auf \010Level $4\010."
+    IDS_STRING941           "Seid gedankt für Euren Sieg gegen \010$1\010 und seine/ihre \010Lakaien\010! Hier ist Eure Belohnung!\n\nIhr erhaltet:\n\010$2 Erfahrung\010\n\010$3 Ruhm\010\n\010$4 Goldstücke\010"
+    IDS_STRING942           "Bitte kehrt zurück, sobald Ihr \010$1\010 und seine/ihre \010Lakaien\010 besiegt habt."
+    IDS_STRING943           "Zerstört \010$1\010 the\010$2\010 und \010$3\010 Lakaien auf \010Level $4\010."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING944           "Seid gedankt, dass Ihr den/die/das \010$1\010 von \010$2\010 und seinen/ihren \010Lakaien\010 gerettet habt! Hier ist Eure Belohnung!\n\nIhr erhaltet:\n\010$3 Erfahrung\010\n\010$4 Ruhm\010\n\010$5 Goldstücke\010"
+    IDS_STRING945           "Bitte kehrt zurück, wenn Ihr \010$1\010 und seine/ihre \010Lakaien\010 besiegt und den/die/das \010$2\010 gefunden habt."
+    IDS_STRING946           "Zerstört \010$1\010 the \010$2\010 und seine/ihre \010$3\010 Lakaien auf \010Level $4\010 und bringt den/die/das \010$5\010 zurück."
+    IDS_STRING947           "Seid gedankt für Euren Sieg gegen \010$1\010! Hier ist Eure Belohnung!\n\nIhr erhaltet:\n\010$2 Erfahrung\010\n\010$3 Ruhm\010\n\010$4 Goldstücke\010"
+    IDS_STRING948           "Bitte kehrt zurück, sobald Ihr \010$1\010 besiegt habt."
+    IDS_STRING949           "Zerstört \010$1\010 the \010$2\010 auf \010Level $3\010."
+    IDS_STRING950           "Seid gedankt, dass Ihr diese Plage beseitigt habt! Hier ist Eure Belohnung!\n\nIhr erhaltet:\n\010$1 Erfahrung\010\n\010$2 Ruhm\010\n\010$3 Goldstücke\010"
+    IDS_STRING951           "Bitte kehrt nach dem Töten aller \010$1s\010 zurück."
+    IDS_STRING952           "Zerstört die \010$1 $2s\010 auf \010Level $3\010."
+    IDS_STRING953           "Ah! Ihr habt den/die/das \010$1\010 gefunden! Und hier ist Eure Belohnung. Seid gedankt!\n\nIhr erhaltet:\n\010$2 Erfahrung\010\n\010$3 Ruhm\010\n\010$4 Goldstücke\010"
+    IDS_STRING954           "Zerstört \010$1\010 the \010$2\010 auf \010Level $3\010 und bringt unser(e/n) \010$4\010 zurück."
+    IDS_STRING955           "Bitte kehrt zurück, sobald Ihr den/die/das \010$1\010 gefunden habt."
+    IDS_STRING956           "Welch ein Glück! Ihr habt den/die/das \010$1\010 gefunden! Und hier ist Eure Belohnung. Seid gedankt!\n\nIhr erhaltet:\n\010$2 Erfahrung\010\n\010$3 Ruhm\010\n\010$4 Goldstücke\010"
+    IDS_STRING957           "Findet den/die/das \010$1\010 auf \010Level $2\010."
+    IDS_STRING958           "Bitte kehrt zurück, sobald Ihr den/die/das \010$1\010 gefunden habt."
+    IDS_STRING959           "Eure Belohnung: \010$1\010."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING960           "$1 erhalten\010"
+    IDS_STRING961           " Zur Belohnung gebe ich Euch dies(e/s/n) \010$1\010!"
+    IDS_STRING962           "\n\nDen \010Eingang zum Verlies\010 findet Ihr im \010Osten\010 der Stadt..."
+    IDS_STRING963           "Aktive Abenteuer"
+    IDS_STRING964           "Belohnung"
+    IDS_STRING965           "Gold"
+    IDS_STRING966           "Ruhm"
+    IDS_STRING967           "Gegenstand"
+    IDS_STRING968           "Name des Abenteuers"
+    IDS_STRING969           "$1 abbrechen?"
+    IDS_STRING970           "Dieses Abenteuer abbrechen"
+    IDS_STRING971           "ABBRECHEN"
+    IDS_STRING972           "$1 - Beendet!"
+    IDS_STRING973           "\n\nAbenteuer abgeschlossen! Kehrt zu \010$1\010 zurück, um Eure \010Belohnung\010 zu erhalten!"
+    IDS_STRING974           "\n($1) Monster übrig. $2"
+    IDS_STRING975           "Sie befinden sich im Demomodus. Ihr Spielcharakter kann nur Level $1 erreichen."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING976           "Restliche Punkte"
+    IDS_STRING977           "Mit dieser Waffe wird dem Schaden \0101 Punkt\010 hinzugefügt\n Mit dieser Waffe wird dem Angriff \0101 Punkt\010 hinzugefügt\010"
+    IDS_STRING978           "Chance eines kritischen Hiebs steigt von \010$1%\010 auf \010$2%\010"
+    IDS_STRING979           "Abwehrchance mit Schild steigt von \010$1%\010 auf \010$2%\010"
+    IDS_STRING980           "Verringerung der Zaubergeschwindigkeit ändert sich von \010$1%\010 auf \010$2%\010"
+    IDS_STRING981           "Schaden mit der rechten Hand stieg von \010$1%\010 auf \010$2% an\n\010Schaden mit der linken Hand stieg von \010$3%\010 auf \010$4% an\010"
+    IDS_STRING982           "Aktiver Zauberspruch"
+    IDS_STRING983           "Angriffszauber"
+    IDS_STRING984           "Verteidigungszauber"
+    IDS_STRING985           "Zauberformelmagie"
+    IDS_STRING986           "Zur permanenten Entfernung eines Zauberspruchs \nSTRG gedrückt halten und linksklicken"
+    IDS_STRING987           "Ruf"
+    IDS_STRING988           "Angriff"
+    IDS_STRING989           "$1 the $2 \010($3)\010"
+    IDS_STRING990           "$1 the $2"
+    IDS_STRING991           "Tipps anzeigen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING992           "\n\010-gefasst-\010"
+    IDS_STRING993           "Abgewehrt!"
+    IDS_STRING994           "$1 Gold"
+    IDS_STRING995           "Gescheitert!"
+    IDS_STRING996           "Zurück zur Stadt?"
+    IDS_STRING997           "Die Treppen steigen?"
+    IDS_STRING998           "In das Verlies?"
+    IDS_STRING999           "Tiefer in das Verlies steigen?"
+    IDS_STRING1000          "Im Demomodus können Sie sich nur $1 Level in die Tiefe des Verlieses wagen."
+    IDS_STRING1001          "Zurück zum Verlies?"
+    IDS_STRING1002          "Getts the Traveler"
+    IDS_STRING1003          "Pikko the Fisherman"
+    IDS_STRING1004          "Schwierigkeitsgrad auswählen"
+    IDS_STRING1005          "Page"
+    IDS_STRING1006          "Schwierigkeitsgrade: am niedrigsten"
+    IDS_STRING1007          "Abenteurer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1008          "Schwierigkeitsgrad: normal"
+    IDS_STRING1009          "Held"
+    IDS_STRING1010          "Schwierigkeitsgrad: hoch"
+    IDS_STRING1011          "Legende"
+    IDS_STRING1012          "Schwierigkeitsgrad: am höchsten"
+    IDS_STRING1013          "Zurück"
+    IDS_STRING1014          "Name des Nachkommens"
+    IDS_STRING1015          "Geschlecht: Mann"
+    IDS_STRING1016          "Zufallsname"
+    IDS_STRING1017          "Zufallsmerkmale"
+    IDS_STRING1018          "Frisur auswählen"
+    IDS_STRING1019          "Gesicht auswählen"
+    IDS_STRING1020          "Name des Tieres"
+    IDS_STRING1021          "Tier: Hund"
+    IDS_STRING1022          "Tier: Katze"
+    IDS_STRING1023          "\010IM RUHESTAND\010\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1024          "\nSchwierigkeitsgrad: \010$1\010"
+    IDS_STRING1025          "Weiter spielen"
+    IDS_STRING1026          "Spiel löschen"
+    IDS_STRING1027          "Soll \010$1\010 wirklich permanent gelöscht werden?"
+    IDS_STRING1028          "Löschen"
+    IDS_STRING1029          "Abbrechen"
+    IDS_STRING1030          "\010-Produzenten-\010\nJay Minn\nTravis Baldree"
+    IDS_STRING1031          "\010-Design/Programmierung-\010\nTravis Baldree"
+    IDS_STRING1032          "\010-Künstlerischer Leiter-\010\nTravis Baldree"
+    IDS_STRING1033          "\010-Grafiker-\010\nJason Beck, Kevin Green, Jeff Selbig, Mike Fisher\nDavid Johnson, Travis Baldree, Martin Bartsch, Tito Pagan\nLiquid Development, Donnavon Webb, Nikitova, Jurgen Brenkert, David Helsby"
+    IDS_STRING1034          "\010-Testleiter-\010\nMarcus King"
+    IDS_STRING1035          "\010-Tester-\010\nScott Branston, Greg Brown, Tony Case\nBill Dennes, John Dunbar, Todd Dyment\nDeon Miyoi, Chris Mosconi, Sergio Sanchez"
+    IDS_STRING1036          "\010-Audio-\010\nMarc Pospisil, Travis Baldree\nWeitere Musik unter Lizenz von LicenseMusic.com\nSprecher Henry Dardennes, Lynn McManus, Dave White, John Patrick Lowrie"
+    IDS_STRING1037          "Schon seit Menschengedenken steht das \010Tor zum Verlies\010 im Herzen des \010alten Waldes\010. Dieses Tor führt zu unendlichen Möglichkeiten, zu \010unterirdischen Ländern\010, die in Fabeln und Sagen überliefert werden. Viele \010Abenteurer\010 haben diese altertümliche Schwelle überschritten – einige fanden \010Ruhm\010, \010Ehre\010 und \010Reichtum\010 ohnegleichen, andere hingegen \010kehrten niemals wieder\010. Die Stadt \010Grove\010 war von jeher die Zuflucht am Eingang zum Verlies – eine Oase und eine Raststätte für müde Abenteuer. Hier werden am Kamin des Gasthofs Geschichten erzählt, \010Reisen\010 geplant und \010Vermächtnisse\010 geschaffen. Die \010Barden\010 singen von den großen Taten längst verstorbener \010Helden\010 und die den Ortsplatz umgebenden \010Statuen\010 zeugen von ihren Handlungen. Nach einer langen, harten Reise kommt Ihr mit Eurem treuen \010Begleiter\010 in der sagenumwobenen Stadt im Wald an, die unter dem Schatten des \010Tors\010 auf Euch wartet. Innerhalb dieser Wände führt der Pfad zu \010unendlichen Abenteuern\010. An dieser Stelle beweist Ihr Euren Wert und kommt unterwegs möglicherweise zu \010Reichtum\010 und \010Ehre\010. Hier\nbestimmt Ihr Euer \010Schicksal\010."
+    IDS_STRING1038          "Fortfahren..."
+    IDS_STRING1039          "Schon seit Menschengedenken steht das \010Tor zum Verlies\010 im Herzen des \010alten Waldes\010. Dieses Tor führt zu unendlichen Möglichkeiten, zu \010unterirdischen Ländern\010, die in Fabeln und Sagen überliefert werden. Viele \010Abenteurer\010 haben diese altertümliche Schwelle überschritten – einige fanden \010Ruhm\010, \010Ehre\010 und \010Reichtum\010 ohnegleichen, andere hingegen \010kehrten niemals wieder\010. Die Stadt \010Grove\010 war von jeher die Zuflucht am Eingang zum Verlies – eine Oase und eine Raststätte für müde Abenteuer. Hier werden am Kamin des Gasthofs Geschichten erzählt, \010Reisen\010 geplant und \010Vermächtnisse\010 geschaffen. Die \010Barden\010 singen von den großen Taten längst verstorbener \010Helden\010 und die den Ortsplatz umgebenden \010Statuen\010 zeugen von ihren Handlungen. Nach einer langen, harten Reise kommt Ihr mit Eurem treuen \010Begleiter\010 in der sagenumwobenen Stadt im Wald an, die unter dem Schatten des \010Tors\010 auf Euch wartet. Innerhalb dieser Wände führt der Pfad zu \010unendlichen Abenteuern\010. An dieser Stelle beweist Ihr Euren Wert und kommt unterwegs möglicherweise zu \010Reichtum\010 und \010Ehre\010. Hier bestimmt Ihr Euer \010Schicksal\010."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1040          "Demoversion"
+    IDS_STRING1041          "Ve\010rsi\010on $1b"
+    IDS_STRING1042          "Neues Spiel"
+    IDS_STRING1043          "Mit Spiel fortfahren"
+    IDS_STRING1044          "Optionen"
+    IDS_STRING1045          "Credits"
+    IDS_STRING1046          "Hilfe"
+    IDS_STRING1047          "PlayFate.com"
+    IDS_STRING1048          "Name"
+    IDS_STRING1049          "Bildschirmauflösung"
+    IDS_STRING1050          "800x600"
+    IDS_STRING1051          "Leichter Blur"
+    IDS_STRING1052          "Ein"
+    IDS_STRING1053          "Schatten"
+    IDS_STRING1054          "Alle Gegenstände"
+    IDS_STRING1055          "Schattendetail"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1056          "Hoch"
+    IDS_STRING1057          "Partikel"
+    IDS_STRING1058          "VSYNC"
+    IDS_STRING1059          "Aus"
+    IDS_STRING1060          "Nebel"
+    IDS_STRING1061          "Anti-Aliasing"
+    IDS_STRING1062          "Helligkeit"
+    IDS_STRING1063          "Lautstärke Soundeffekt"
+    IDS_STRING1064          "Lautstärke Musik"
+    IDS_STRING1065          "Tipps anzeigen"
+    IDS_STRING1066          "640x480"
+    IDS_STRING1067          "1024x768"
+    IDS_STRING1068          "1152x864"
+    IDS_STRING1069          "1280x1024"
+    IDS_STRING1070          "1600x1200"
+    IDS_STRING1071          "1280x768(breit)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1072          "1920x1200(breit)"
+    IDS_STRING1073          "Nur Spieler"
+    IDS_STRING1074          "Nur Spielcharaktere"
+    IDS_STRING1075          "Alle"
+    IDS_STRING1076          "Einfach"
+    IDS_STRING1077          "Animiert"
+    IDS_STRING1078          "Endlich ist Eure \010Reise\010 abgeschlossen...  \010Erschöpft\010 nach vielen 010abenteuerlichen\010 Jahren setzt Ihr Euch letztendlich zur Ruhe und gebt Euer \010Vermächtnis\010 an einen \010jüngeren\010 Helden weiter. Er wird Euren Namen \010weiterführen\010, neue Schlachten \010kämpfen\010, altes Unrecht \010wieder gutmachen\010 und sein \010Schicksal\010finden..."
+    IDS_STRING1079          "Nachkommen erstellen"
+    IDS_STRING1080          "Auf immer zur Ruhe setzen"
+    IDS_STRING1081          "Endlich ist Eure \010Reise\010 abgeschlossen...  \010Erschöpft\010 nach vielen 010abenteuerlichen\010 Jahren setzt Ihr Euch letztendlich zur Ruhe und gebt Euer \010Vermächtnis\010 an einen \010jüngeren\010 Helden weiter. Er wird Euren Namen \010weiterführen\010, neue Schlachten \010kämpfen\010, altes Unrecht \010wieder gutmachen\010 und sein \010Schicksal\010finden...\n\n"
+    IDS_STRING1082          "Fertigkeitsstufe $1 reicht zur Verzauberung nicht aus!"
+    IDS_STRING1083          "Verzauberung muss auf einen Gegenstand gerichtet sein!"
+    IDS_STRING1084          "Nichts passiert!"
+    IDS_STRING1085          "Hervorragend! $1 wurde um\n\010$2 Punkte verbessert!\010"
+    IDS_STRING1086          "Auch das noch! $1 wurde um\n\010$2 Punkte reduziert!\010"
+    IDS_STRING1087          "Zwei \010$1\010-Edelsteine kommen aus der \010Statue\010!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1088          "Während Ihr die Edelsteine \010herausbrecht\010, hört Ihr ein dumpfes \010Grollen\010 in der Erde! \010$1\010 wurde zur Verteidigung der \010Statue\010 herbeigerufen!"
+    IDS_STRING1089          "Ihr legt Eure(n) \010$1\010 auf den \010Amboss\010, aber... nichts!"
+    IDS_STRING1090          "Ein \010geisterhafter Hammer\010 fällt auf den/die/das \010$1\010 – und Ihr entdeckt neue \010Fassungen\010!"
+    IDS_STRING1091          "Ein \010geisterhafter Hammer\010 fällt auf den/die/das \010$1\010 – und Euer Gegenstand wurde noch mehr verzaubert!"
+    IDS_STRING1092          "Ein \010geisterhafter Hammer\010 fällt auf den/die/das \010$1\010 – und Eurem Gegenstand wurden einzigartige Kräfte verliehen!"
+    IDS_STRING1093          "Ein \010geisterhafter Hammer\010 fällt auf den/die/das \010$1\010 – und nimmt Eurem Gegenstand alle Kräfte!"
+    IDS_STRING1094          "Ihr legt den/die/das \010$1\010 auf den \010Amboss\010, aber... nichts!"
+    IDS_STRING1095          "Ihr fühlt Euch gesund!"
+    IDS_STRING1096          "Euer Geist ist klarer!"
+    IDS_STRING1097          "Ihr fühlt Euch ausgeruht!"
+    IDS_STRING1098          "\010Fates Statue\010 wartet...\nWerdet Ihr \010das Schicksal herausfordern\010 und die Edelsteine aus der Statue \010herausbrechen\010?"
+    IDS_STRING1099          "Ja"
+    IDS_STRING1100          "Nein"
+    IDS_STRING1101          "Der \010Tempel des Lernens\010 erwartet den geduldigen Studenten...\nWerdet Ihr \010das Schicksal herausfordern\010 und den altertümlichen Text lesen?"
+    IDS_STRING1102          "Legt einen Gegenstand auf den \010Zauberamboss\010"
+    IDS_STRING1103          "Zum Angeln braucht Ihr eine Angel."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1104          "Euer Tier trifft Euch in der Stadt und hat Euch\nvom Verkauf einiger Dinge\n\010$1 Goldstücke\010 gebracht!"
+    IDS_STRING1105          "Euer Tier ist aus der Stadt wieder zurückgekehrt und\nhat Euch vom Verkauf einiger Dinge\n\010$1 Goldstücke\010 gebracht!"
+    IDS_STRING1106          "Euer Tier trifft Euch in der Stadt."
+    IDS_STRING1107          "Euer Tier ist aus der Stadt zurückgekehrt."
+    IDS_STRING1108          "VERBANNT!"
+    IDS_STRING1109          "+$1 HP"
+    IDS_STRING1110          "-$1 HP"
+    IDS_STRING1111          "Fehlschlag"
+    IDS_STRING1112          "Auf der Flucht!"
+    IDS_STRING1113          "$1 HP"
+    IDS_STRING1114          "$1 herbeigerufen"
+    IDS_STRING1115          "Zurück zu Level $1 im Verlies"
+    IDS_STRING1116          "Zurück zur Stadt"
+    IDS_STRING1117          "Keine Wirkung"
+    IDS_STRING1118          "-$1 HP"
+    IDS_STRING1119          "+$1 XP"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1120          "Level nach oben!"
+    IDS_STRING1121          "+$1 RUHM"
+    IDS_STRING1122          "Euer \010Ruhm\010 wuchs an! Ihr habt folgenden Rang erzielt: \010$1\010. Dafür erhaltet Ihr \010extra Fertigkeitspunkte!\010"
+    IDS_STRING1123          "  "
+    IDS_STRING1124          "Das Tier ist bereits in der Stadt!"
+    IDS_STRING1125          "Vergiftet!"
+    IDS_STRING1126          "Manawiedergewinnung"
+    IDS_STRING1127          "Lebenserholung"
+    IDS_STRING1128          "Ausdauererholung"
+    IDS_STRING1129          "Verteidigungsstufe"
+    IDS_STRING1130          "Angerichteter Schaden"
+    IDS_STRING1131          "Erlittener Schaden"
+    IDS_STRING1132          "Abenteuer anzeigen"
+    IDS_STRING1133          "Niedrig"
+    IDS_STRING1134          "Mittel"
+    IDS_STRING1135          "Hoch"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1136          "Ultra"
+    IDS_STRING1137          "Town Portal Scroll"
+    IDS_STRING1138          "Light Handaxe"
+    IDS_STRING1139          "Health Potion"
+    IDS_STRING1140          "Identify Scroll"
+    IDS_STRING1141          "Cat"
+    IDS_STRING1142          "Leben $1/$2"
+    IDS_STRING1143          "Mana $1/$2"
+    IDS_STRING1144          "Ausdauer $1/$2"
+    IDS_STRING1145          "Erfahrung $1/$2"
+    IDS_STRING1146          "$1 von $2"
+    IDS_STRING1147          "Angeln gehen!"
+    IDS_STRING1148          "Treppen nach oben"
+    IDS_STRING1149          "Treppen nach unten"
+    IDS_STRING1150          "$1's \n$2"
+    IDS_STRING1151          " of $1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1152          "$1$2$3"
+    IDS_STRING1153          "$1$2"
+    IDS_STRING1154          "$1$2"
+    IDS_STRING1155          "$1$2"
+    IDS_STRING1156          "$1 "
+    IDS_STRING1157          "In das Verlies"
+    IDS_STRING1158          "Abenteuer anzeigen"
+    IDS_STRING1159          "Verwunschenes Schwert"
+    IDS_STRING1160          "KRITISCHER SCHLAG"
+    IDS_STRING1161          "Hilfe anzeigen"
+    IDS_STRING1162          "$1 GP"
+    IDS_STRING1163          "steigern"
+    IDS_STRING1164          "ABGEWEHRT"
+    IDS_STRING1165          "Book of Identify"
+    IDS_STRING1166          "Book of Town Portals"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1500          "DE-DE-Enabling cheats will disable achievements permanently. Do you want to continue?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

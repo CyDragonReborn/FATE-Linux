@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<wt:root version="1" type="WT::System::Net::CMasterUpdate" objectref="true" objectid="1" xmlns:wt="http://www.wildtangent.org/wtplatform/xml/ns">
+	<wt:object type="WT::System::Net::CUpdateMaster" objectref="false" objectid="1" classversion="1">
+		<PatchManifestUrl type="std::string">http://localhost/updates/myprogram/updates/download/patchmanifest.xml</PatchManifestUrl>
+	</wt:object>
+</wt:root>

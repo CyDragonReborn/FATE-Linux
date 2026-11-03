@@ -1,0 +1,5 @@
+#animation name : first frame : last frame : FPS
+FISHCAST:cast.sma:30
+FISHIDLE:fishidle.sma:30
+FISHBITE:bite.sma:30
+FISHPULL:pull.sma:30

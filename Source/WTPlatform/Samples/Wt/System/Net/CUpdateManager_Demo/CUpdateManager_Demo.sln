@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CUpdateManager_Demo", "CUpdateManager_Demo.vcproj", "{1CC2C82C-3C9E-4C9D-8B7E-47D734C845F8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1CC2C82C-3C9E-4C9D-8B7E-47D734C845F8}.Debug.ActiveCfg = Debug|Win32
+		{1CC2C82C-3C9E-4C9D-8B7E-47D734C845F8}.Debug.Build.0 = Debug|Win32
+		{1CC2C82C-3C9E-4C9D-8B7E-47D734C845F8}.Release.ActiveCfg = Release|Win32
+		{1CC2C82C-3C9E-4C9D-8B7E-47D734C845F8}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

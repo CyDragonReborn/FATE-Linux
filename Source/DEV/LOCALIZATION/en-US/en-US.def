@@ -1,0 +1,6 @@
+; en-US.def : Declares the module parameters for the DLL.
+
+LIBRARY      "en-US"
+
+EXPORTS
+    ; Explicit exports can go here

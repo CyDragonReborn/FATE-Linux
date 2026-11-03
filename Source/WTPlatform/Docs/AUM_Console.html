@@ -1,0 +1,1301 @@
+<html>
+<head>
+<title>AUM Console -- Common Tasks and Reference</title>
+<STYLE TYPE="text/css">
+BR.PAGEBREAK { page-break-after: always }
+p.TOC { margin-left: 1cm }
+div.TOC { margin-left: 1cm ; margin-top: .5cm ; margin-bottom: .5cm }
+div.code { margin-left: 1cm ; margin-top: .5cm ; margin-bottom: .5cm ; font-family: "Courier New"}
+</STYLE>
+</head>
+<body>
+<h1>AUM Console Introduction</h1>
+<p/>AUM, the Application Update Manager, is a (2005) version of a project to mostly automatically patch our games.  It contains feature to handle making the patch.exe proper, the metadata that is used to describe the patch, and the server component to actually make the patch availible.  The overall project also includes doucmentation and a sample program that uses many of the AUM features.  
+
+<p/>The AUM Console (AUM_Console.exe) is a command-line program that can either interactively or non-interacticly handle many of the tasks that AUM needs.  In particular, it can
+<ul>
+<li/><b>Compare</b> directories and make a list of added/changed/deleted/same files
+<li/><b>Convert</b> that list into an NSIS installation script
+<li/><b>Run</b> NSIS on that script, generating the <b>Patch.exe</b> that will upgrade a user
+<li/><b>Make</b> a simple patch manifest with a description of the patch
+<li/><b>Add</b> language-specific information to the patch description
+<li/><b>Add</b> extra game-specific information (e.g.: some games might have an audio description of a patch)
+<li/><b>Update</b> the patch manifest when the patch.exe or extra data changes
+</ul>
+
+<h2>AUM_Console commands: alphabetical</h2>
+<div class="TOC">
+<p/><b><a href="#add" />add</a></b>
+<a href="#add patchmanifestaboutlong" />patchmanifestaboutlong</a>
+<a href="#add patchmanifestaboutshort" />patchmanifestaboutshort</a>
+<a href="#add patchmanifestextension" />patchmanifestextension</a>
+
+<p/><b><a href="#download" />download</a></b>
+<a href="#download patch" />patch</a>
+<a href="#download patchmanifest" />patchmanifest</a>
+
+<p/><b><a href="#dump" />dump</a></b>
+<a href="#dump DFV" />DFV</a>
+<a href="#dump masterdirectory" />masterdirectory</a>
+<a href="#dump masterupdate" />masterupdate</a>
+<a href="#dump nsisfile" />nsisfile</a>
+<a href="#dump patchexefile" />patchexefile</a>
+<a href="#dump patchmanifest" />patchmanifest</a>
+<a href="#dump version" />version</a>
+
+<p/><b><a href="#exit" />exit</a></b>
+
+<p/><b><a href="#make" />make</a></b>
+<a href="#make masterdirectory" />masterdirectory</a>
+<a href="#make masterupdate"/>masterupdate</a>
+<a href="#make nsis" />nsis</a>
+<a href="#make originaldirectory" />originaldirectory</a>
+<a href="#make patchmanifest"/>patchmanifest</a>
+
+<p/><b><a href="#read" />read</a></b>
+<a href="#read commands">commands</a>
+<a href="#read masterdirectory">masterdirectory</a>
+<a href="#read masterupdate">masterupdate</a>
+<a href="#read patchmanifest">patchmanifest</a>
+
+<p/><b><a href="#run" />run</a></b>
+<a href="#run checkconnection" />checkconnection</a>
+<a href="#run dos" />dos</a>
+<a href="#run external" />external</a>
+<a href="#run nsis" />nsis</a>
+<a href="#run prune" />prune</a>
+<a href="#run tests" />tests</a>
+<a href="#run updatepatchmanifest" />updatepatchmanifest</a>
+
+<p/><b><a href="#set" />set</a></b>
+<a href="#set DFV" />DFV</a>
+<a href="#set height" />height</a>
+<a href="#set nsisfile" />nsisfile</a>
+<a href="#set patchexefile" />patchexefile</a>
+
+<p/><b><a href="#write" />write</a></b>
+<a href="#write cls" />cls</a>
+<a href="#write masterdirectory" />masterdirectory</a>
+<a href="#write masterupdate" />masterupdate</a>
+<a href="#write patchmanifest" />patchmanifest</a>
+<a href="#write patchmanifestautowrite" />patchmanifestautowrite</a>
+<a href="#write printscreen" />printscreen</a>
+
+<p/><b><a href="#other">other commands:</a></b>
+<a href="#sd" />!SD!</a>
+<a href="#semicolon" />semicolon</a>
+</div>
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<h1>AUM Console Common Tasks</h1>
+
+	<p/>This section will help you understand what the AUM_Console
+	is for command AUM_Console tasks.  The tasks are:
+	<ul>
+	<li/><a href="#task starting getting help exit">Starting/Getting Help and How to Exit</a>
+	<li/><a href="#task make patch.exe">Make a Patch.exe</a>
+	<li/><a href="#task make patchmanifest.xml">Make a simple Patch Manifest</a>
+	<li/><a href="#task deploy to server">Deploy to Server</a>
+	<li/><a href="#task make masterupdate.xml">Make a masterupdate.xml File</a>
+	</ul>
+
+<a name="task starting getting help exit" />
+<h2>Starting/Getting Help/Exit</h2>
+
+<p/>Run AUM_Console.exe from any Command prompt to start.  A question mark will, at most prompts, 
+give you some information.  Type <b>exit</b> to quit.
+<div align="center"><img src="AUM_images\help.bmp" /></div>
+
+<a name="make patch.exe example" />
+<a name="task make patch.exe" />
+<h2>Make a Patch.exe</h2>
+
+<p/>To make a patch, you need to start with two directories: a disk image of the
+game as it appears on an end-user's machine and a disk image of
+the game as you would like it to appear.  If there have been a series of patches,
+and you have a series of disk images as they appear on the end-user's machine,
+you can use the series of disk images to make a more accurate patch.
+
+<p/>In this series of examples, the end-user will have the "Demo" game installed
+at "C:\PF\Demo\".  You as the developer will have the game installed there normally.
+In addition, you've made a directory "C:\PF\Demo_Patch\" that has the new and improved 
+game.  The Demo_Patch directory contains an update directory with "junk" in it.
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<p />Without further ado, here are the steps you have to do to make a patch.exe
+
+<ol>
+<a name="make masterdirectory example" />
+<li/><b><a href="#make masterdirectory">make masterdirectory</a></b>  There is a single option, "root", which is the 
+	starting directory.  Note that it must end in a backslash.  After you make the 
+	masterdirectory, try <b>dump masterdirectory</b> which will list each file, 
+	whether it exists (they all should), and gives an MD5 hash of the file.  
+	You should see something like this: 
+	<div align="center"><img src="AUM_images\masterdirectory_start.bmp" /></div>
+
+	<p/>As always, just because the sample puts all the data into one giant
+	line doesn't mean you have to!  You can type a partial command at any point
+	and you will be prompted for any extra data.  You can even type a '?' at
+	any prompt for a more detailed help.
+
+	<p />Lastly, a <b>warning</b>: the patchmanifest file may not be done yet!
+	In particular, it must have the CRC and SIZE information set; if these
+	are not set the manifest will FAIL.  These values are updated with the
+	<a href="#run updatepatchmanifest">run updatepatchmanifest</a> command
+	which will be automatically run if you've also just made a patch.
+
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="make originaldirectory example" />
+<li/><b><a href="#make originaldirectory">make originaldirectory</a></b>  This also has a "root" option which is the 
+	original game.  Unlike 'make masterdirectory', the 'originaldirectory' 
+	doesn't make a new object; it modifies the original.  Dumping the masterdirectory 
+	now show you that some files have been changed and others deleted:
+
+	<div align="center"><img src="AUM_images\masterdirectory_update.bmp" /></div>
+
+	<p/>As always, just because the sample puts all the data into one giant
+	line doesn't mean you have to!  You can type a partial command at any point
+	and you will be prompted for any extra data.  You can even type a '?' at
+	any prompt for a more detailed help.
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="run prune example" />
+<li/><b><a href="#run prune">run prune</a></b>.  The make masterdirectory and make originaldirectory commands
+	are designed to be non-smart: they don't know, for example, that the 
+	'update' directory in the game is special and the files in it must be
+	avoided.  The 'run prune' command fixes up the 'masterdirectory'
+	object and removed files that should not be part of the update.
+
+	<div align="center"><img src="AUM_images\masterdirectory_prune.bmp" /></div>
+
+	<br/>In this case, the masterdirectory has been pruned a bit -- there
+	had been a 'new' directory with a couple of files that has been 
+	removed. Note, however, that the files (but not directories) in the
+	updates directory have been kept -- in particular, the masterupdate.xml
+	and the wtrerunprogramutility.exe.   
+		
+	<p/>As always, just because the sample puts all the data into one giant
+	line doesn't mean you have to!  You can type a partial command at any point
+	and you will be prompted for any extra data.  You can even type a '?' at
+	any prompt for a more detailed help.
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="make nsis example" />
+<li/><b><a href="#make nsis">make nsis</a></b>.  Once the masterdirctory object is perfect, you can generate
+	an NSIS script.  You need to supply several paramters: ofile for the 
+	name of the generated script file, oexe for the exe that nsis will
+	generate when it runs (this must be supplied because nsis scripts 
+	include their output .exe name in the script file), the gameroot 
+	which is the location of the game on the end-user's machine 
+	(this can always be ".\"),
+	and the masterroot which is the location of the game files on
+	your machine (when nsis is run it will need to read these files
+	to generate the actual patch). The make nsis command looks like
+	this: 
+
+	<div align="center"><img src="AUM_images\nsis_make.bmp"></div>
+
+	<p/>As always, just because the sample puts all the data into one giant
+	line doesn't mean you have to!  You can type a partial command at any point
+	and you will be prompted for any extra data.  You can even type a '?' at
+	any prompt for a more detailed help.
+
+	<p />The end result is an .nsis file like this one:
+	<div align="center"><img src="AUM_images\nsis_file.bmp" /></div>
+	
+<BR CLASS="PAGEBREAK" />
+<a name="run nsis example" />
+<li/><b><a href="#run nsis">run nsis</a></b>.  Now that the nsis file has been generated,
+	you can run nsis to make the actual nsis exe file.
+	As of 2/12/2005, AUM_Console runs only one particular version
+	of NSIS: C:\Projects\Resources\software\toolsutilities\nsis\2.07\makensis.exe
+	where the "Resources" directory can be simply downloaded from
+	the \\wtcfs01\dev\resources directory.  This is a standard
+	directory for the Webdriver Engineering group (hah!).
+	NSIS tends to be very verbose in its output; here's the 
+	results from running the command:
+
+	<div align="center"><img src="AUM_images\nsis_run.bmp" /></div>
+
+	<p/>As always, just because the sample puts all the data into one giant
+	line doesn't mean you have to!  You can type a partial command at any point
+	and you will be prompted for any extra data.  You can even type a '?' at
+	any prompt for a more detailed help.
+
+
+<li/><b>Done!</b>  You are now done; you have a patch.exe file
+	in the directory you specified.  In order for you to 
+	install that patch, you need a 'patchmanifest.xml'
+	file which is made in the next section.  You have
+	to install both the patch.exe in the url location
+	specified by patchmanifest.xml; patchmanifest.xml
+	in turn is in the url location specified in the 
+	masterupdate.xml file. 
+</ol>
+
+<BR CLASS="PAGEBREAK" />
+<a name="task make patchmanifest.xml" />
+<a name="make patchmanifest.xml example" />
+<a name="make patchmanifest example" />
+<h2>Make a simple Patch Manifest</h2>
+	<p />a patch manifest is an XML file, normally called
+	"patchmanifest.xml", which is downloaded by a game and 
+	used to decide if a patch should be downloaded and used
+	to contain user-visible information that describes a
+	patch.  It also contains a url that points to the 
+	patch.exe file and CRC and size information which is used
+	to verify that the patch is correct.
+
+	<p />Each patch manifest contains a significant amount
+	of marketing data.  Normally a developer will make a
+	temporary patchmanifest.xml file only to verify that
+	their patch.exe is correct.
+
+	<p />To make a patchmanifest.xml file, run the
+	<a href="#make patchmanifest">make patchmanifest</a>
+	command.  You will need the following information:
+
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>url</b></td><td>url pointing to the patch.exe.  
+		You will generally use some local http directory WHEN TESTING.
+		http://local/updates/myprogram/updates/download/patch.exe
+		is what I generally use.  Note that the url must eventually be
+		one good directory which must be an external web site.
+		</td></tr>
+
+      <tr><td><b>ofile</b></td><td>Actual output file 
+		that you can directly reach via the filesystem.
+		You will generally use some local directory 
+		underneath your IIS directory -- something like 
+		C:\Inetpub\wwwroot\updates\myprogram\updates\download\patchmanifest.xml
+		is what I generally use.
+		</td></tr>
+
+      <tr><td><b>versionto</b></td><td>version number that this patch will bump your
+		program to.  As of 2-DEC-2005, AUM has a very weak ability to
+		compare versions; either your program's version number is
+		identical to this value, or it isn't.  (Your program's
+		version number is passed into the AUM code; there's
+		no way for AUM to guess how to get the version number
+		from a program in general).
+		</td></tr>
+
+      <tr><td><b>aboutshort</b></td><td>The default short description of the update.  
+		You can add short descriptions in specific laguanges with the 
+		add patchmanifestaboutshort command.  
+		Technically, the aboutshort and aboutlong features are used in
+		cooperation with the actual game; it's theoretically possible to
+		not bother with the about short / about long descriptions, or
+		use various sorts of rich media instead of plain text.  However,
+		this is strongly discouraged.
+		</td></tr>
+      <tr><td><b>aboutlong</b></td><td>The default long description of the update
+		You can add long descriptions in specific laguanges with the 
+		add patchmanifestaboutlong command.
+		Technically, the aboutshort and aboutlong features are used in
+		cooperation with the actual game; it's theoretically possible to
+		not bother with the about short / about long descriptions, or
+		use various sorts of rich media instead of plain text.  However,
+		this is strongly discouraged.
+		</td></tr>
+      <table>
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+	And here's a sample of making a patchmanifest -- it includes both
+	the make command and the resulting dump.
+
+	<div align="center"><img src="AUM_images\patchmanifest_make.bmp" /></div>
+
+	<p/>As always, just because the sample puts all the data into one giant
+	line doesn't mean you have to!  You can type a partial command at any point
+	and you will be prompted for any extra data.  You can even type a '?' at
+	any prompt for a more detailed help.
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="task deploy to server" />
+<h2>Deploy to the Server</h2>
+	<p />AUM_Console does not have any commands to deploy to server.  In general,
+	all that a patch needs to be deployed is for the static files 
+	patch.exe and patchmanifest.xml be added to the server; my basic scheme
+	is to place files in http://server/updates/<i>programname</i>/updates/download
+	so that they match their location on the end-users machine.
+
+	<p />However, there is one step that must be done: the patch manifest must be
+	updated to include technical details about the patch.exe (in particular, the
+	patch.exe's CRC and SIZE).  This is done with the 
+	<a href="#update patchmanifest">update patchmanifest</a> command.  Note that 
+	you must first have a patch manifest loaded (
+	<a href="#read patchmanifest">read patchmanifest</a>
+	or <a href="#make patchmanifest">make patchmanifest</a>) and the patch exe 
+	must be known (<a href="#set patchexefile">set patchexefile</a> or 
+	<a href="#make nsis">make nsis</a>).
+	
+	
+
+	<p />If you use the scripting capabilities of AUM_Console,
+	it might make sense to put your standard copy command into
+	the script file using the <a href="#run external">run external</a>
+	or <a href="#run dos">run dos</a> command.
+	
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="task make masterupdate.xml" />
+<a name="make masterupdate.xml example" />
+<a name="make masterupdate example" />
+<h2>Make a masterupdate.xml file</h2>
+	<p/><i>"And the first shall be last, and the last first"</i>
+
+	<p/>The masterupdate.xml file is a very trivial file
+	that you must ship with your original game.  All it 
+	contains is the URL to download the patchmanifest.xml file	
+	from.  <b>Each game needs a unique masterupdate.xml file.</b>
+	In addition, you may sometimes decide that a patch is
+	such a radical change to your game that you want to
+	specify a whole new update location -- this lets very
+	old clients get a patch to update them to a new (ish)
+	version using one update, but newer games get a 
+	different patch.
+
+	<p/>The basic <a href="#make masterupdate"><b>make masterupdate</b></a>
+	command has just two options: an url
+	and an ofile which is the location to drop the
+	file into.  Here's a screenshot of the command:
+	<div align="center"><img src="AUM_images\masterupdate_make.bmp" /></div>
+
+	<p/>As always, just because the sample puts all the data into one giant
+	line doesn't mean you have to!  You can type a partial command at any point
+	and you will be prompted for any extra data.  You can even type a '?' at
+	any prompt for a more detailed help.
+	
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<h1>AUM Console Reference Manual</h1>
+
+<a name="internationalization" />
+<h2>Internationalization</h2>
+	<p/>Some of the strings and data in the patch manifest file
+	are internationalized.  This means that each value
+	(for example, the 'about short' value) is a series of
+	language/value pairs.  The language should be in 'setlocale'
+	format (example: "English_United States").  When your game
+	runs, and it needs an internationalized string, the
+	AUM code will
+	<ul>
+	<li/>Find out the current locale (using setlocale(LC_ALL, 0)).  For
+		example, setlocale might return "English_United States.1252".
+	<li/>Break that string into sections (English + United States + 1252)
+	<li/>Look through all of the language/value pairs and try to find the
+		best match.  The best match will have the most number of
+		sections which match: "English_United States" matches
+		more closely than "English_Canada" because two sections match.
+	<li/>If there are several possible matches (e.g., you only have
+		English_UK and English_Canada and the locale is English_United States)
+		then the first match will be selected.
+	<li/>A minor exception is that a language with a star (*) in will take
+		priority over a language without a star.  This means that if you
+		want a default English, you should use "English_*".  Similarly,
+		you should use "*" as the language name to make the global
+		bakup string to display when nothing else matches
+	</ul>
+
+	<p />The extension mechanism is internationalized, too.  Each 
+	extension item can also have a language.  Note that the languages
+	can be different than the about short (and in turn, that can be
+	different than the about long).
+
+	<p />Some extension items are '_autowrite' values.  It's important
+	to know that both the name of the autowrite file and the actual
+	data are versioned.  Not only that, but if, when the patchmanifest.xml
+	is downloaded, the game is one locale, and later you switch to a 
+	different locale, the file on disk is not updated.
+
+	<p />To add non-ASCII characters to the aboutshort, etc values,
+	use this syntax: "This is a U+0F20 Tibetan character".  
+	Values that understand this syntax are the <a href="#add">add</a>
+	commands.
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="work flow" />
+<h2>Work Flow with AUM_Console</h2>
+
+	<p />AUM_Console is used to make three basic types of files:
+	the masterupdate.xml file, the patchmanifest.xml file, and
+	the patch.exe file.  Each is made with a different set of 
+	commands.
+
+	<p/>Work flow to make the masterupdate.xml file;
+	<br><a href="#make masterupdate">make masterupdate</a>
+
+	<p />Work flow to make the patch.exe file:
+	<br><a href="#make masterdirectory">make masterdirectory</a>
+	<br><a href="#make originaldirectory">make originaldirectory</a>
+	<br><i>optional: <a href="#write masterdirectory">write masterdirectory</a></i> to keep an updatable record of your directory hierarchy
+	<br><a href="#run prune">run prune</a>
+	<br><a href="#make nsis">make nsis</a>
+	<br><a href="#run nsis">run nsis</a>
+
+	<p/>Work flow to make the patchmanifest.xml file:
+	<br><a href="#make patchmanifest
+	<br><a href="#add patchmanifestaboutshort">add patchmanifestaboutshort</a> (and <i>aboutlong</i>)
+	<br><a href="#add patchmanifestextension">add patchmanifestextension</a>
+	<br><i>optional: <a href="#read patchmanifest">read patchmanifest<a/></i> if this is a new session seperate from the <i>make patch.exe</i> session (which it probably will be)
+	<br><a href="#run updatepatchmanifest">run updatepatchmanifest</a>
+	<br><a href="#write patchmanifest">write patchmanifest</a>
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<h2>Command Reference</h2>
+
+	<p />Following is a listing, by name, of each of the commands that
+	is understood by AUM_Console.  As of 2-DEC-2005, not all commands
+	are fully documented.
+
+<a name="add" />
+<h3>add</h3>
+
+	<p/>The add command in general lets you add more information into
+	an existing object.  For example, add patchmanifestaboutlong lets
+	you modify the patchmanifest object's "aboutlong" field.
+
+	<p/>add commands are:
+	<ul>
+	<li/><a href="#add patchmanifestaboutshort">add patchmanifestaboutlong</a>
+	<li/><a href="#add patchmanifestaboutlong">add patchmanifestaboutshort</a>
+	<li/><a href="#add patchmanifestextension">add patchmanifestextension</a>
+	</ul>
+
+
+<p /><hr />
+<a name="add patchmanifestaboutlong" />
+<a name="add patchmanifestaboutshort" />
+<h3>add patchmanifestaboutlong and add patchmanifestaboutshort</h3>
+
+	<p/>The add patchmanifestaboutlong and add patchmanifestaboutshort commands 
+	let you specify a language specific long or short description of your patch; 
+	you can also overwrite an earlier description that was specified either in the
+	original make patchmanifest or in an earlier add patchmanifestaboutlong or 
+	add patchmanifestaboutshort.
+
+	<p/>Work flow for add patchmanifestaboutshort/long:
+	<br/>Previous command: <a href="#make patchmanifest">make patchmanifest</a> or possibly <a href="#read patchmanifest">read patchmanifest</a>
+	<br/>Next command: <a href="#add patchmanifestextension">add patchmanifestextension</a>
+
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>language</b></td><td>The language that the about is in; must be in Language_Country.CodePage format like the format used by 'setlocale'</td></tr>
+      <tr><td><b>value</b></td><td>New long or short value to add.  With a little luck, these will actually work in multi-byte languages, etc.</td></tr>
+      <tr><td><b>charset</b></td><td>[DFV 3+] The character set to use; DEFAULT is a good choice for english.  Can be the english equivilent of the Microsoft values:
+		ANSI, BALTIC, CHINESEBIG5, DEFAULT, EASTEUROPE, GB2312, GREEK, 
+		HANGUL, MAC, OEM, RUSSIAN, SHIFTJIS, SYMBOL, TURKISH, VIETNAMESE, 
+		JOHAB, ARABIC, HEBREW, THAI.
+		Can also be the numeric value of the above (recommended only
+		for automation system which run off of the windows header files)
+		</td></tr>
+      <tr><td><b>font</b></td><td>[DFV 3+]</td></tr>
+      <tr><td><b>height</b></td><td>[DFV 3+]</td></tr>
+      <table>
+
+	<p /><b>Don't forget</b> to run <a href="#write patchmanifest">write patchmanifest</a> after this command!
+
+
+	<p />Learn more about languages in the <a href="#internationalization" >Internationalization</a>
+	(I18N) topic.
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="add patchmanifestextension" />
+<h3>add patchmanifestextension</h3>
+
+	<p />The patch manifest includes an extension mechanism so that you
+	can add data specific to your game in the patch.  The data might
+	be workflow data to help the patch process; it might be rich 
+	media to be displayed with an update.  Whatever it is, it contains
+	a name (like "author" or "created on" or "videoclip"), a 
+	language (in the same format as the aboutlong and aboutshort)
+	and a value (like "Peter", "5-DEC-2005", or a BASE-64 string).
+
+
+	<p/>Work flow for add patchmanifestextension:
+	<br/>Previous command: <a href="#add patchmanifestaboutshort">add patchmanifestaboutshort</a>
+	<br/>Next command: <a href="#run updatepatchmanifest">run updatepatchmanifest</a>
+
+	<p />The AUM_Console does not currently enforce any particular
+	scheme for extension data except that names that include
+	"_auto" may be treated specially either by AUM_Console or data
+	by the game.  If WildTangent marketing decides that certain
+	must always be provided with a patch, then part of the work
+	in implementing such a decision should include updating
+	AUM_Console to enforce those requirements.
+
+	<p />All <b>*_autoread</b> extensions will be expanded out with the 
+	<a href="#run updatepatchmanifest">run updatepatchmanifest</a> command.
+	The value in the *_autoread extensions is assumed to be a filename;
+	that file will be read in and converted into a BASE64 string.
+	That string will then be added in as an extension with the 
+	name "*".
+
+	<p />Some technical details: the * is, of course, to be read
+	as "any string" -- for example, "videofile" would be turned
+	into an auto-read extension by calling it "videofile_autoread".
+	Secondly, since extensions are internationalized, it stands to
+	reason that the _autoread variable won't just be looked up; 
+	instead each of the languages that make up the _autoread
+	extension will be looked up and each of the files will be
+	found.  Thus, if there's a sound_autorun and it has three
+	languages, then after the run updatepatchmanifest is run
+	the sound extension will also consist of three languages.
+	Lastly, the run updatepatchmanifest command will first delete
+	all of the autorun variables -- so if you first set 
+	sound_autoread with one language, and run updatepatchmanifest,
+	and then change the language to something else and run
+	updatepatchmanifest, your original setting and the addition
+	to the sound extension will be lost.
+
+	<p />All <b>*_autowrite</b> variables will be handled on
+	the end-users systems.  Each *_autowrite variable will be converted
+	from BASE64 back into a regular file; the name of the file is
+	the one mentioned in the *_autowrite extension. Note that
+	only one file will be written out: if you have an extension with
+	multiple languages (e.g., "videofile") you can add a single
+	videofile_autowrite with a single language (use '*') and a single
+	value ("videofile.avi") and the one file prefered by the user 
+	will be written out.  The file is written out when the patchmanifest.xml
+	file is downloaded (when the state machine is in state 1
+	'amdownloadingmanifest').
+	
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>name</b></td><td>name of the extension to add</td></tr>
+      <tr><td><b>language</b></td><td>The language that the extension is in; must be in Language_Country.CodePage format like the format used by 'setlocale'</td></tr>
+      <tr><td><b>value</b></td><td>New value to add.  With a little luck, these will actually work in multi-byte languages, etc.</td></tr>
+      <table>
+
+	<p /><b>Don't forget</b> to run <a href="#write patchmanifest">write patchmanifest</a> after this command!
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="download" />
+<h3>download</h3>
+
+	<p />The download command lets you try out the basic AUM download
+	facilities.  There are two things that are downloaded
+	by a game; the download command lets you download both of them.
+
+	<p/>download commands are:
+	<ul>
+	<li/><a href="#download patch">download patch</a>
+	<li/><a href="#download patchmanifest">download patchmanifest</a>
+	</ul>
+
+
+<p /><hr />
+<a name="download patch" />
+<h3>download patch</h3>
+	<p/>Downloads a patch.exe based on the current patchmanifest object.  In general the
+	patchmanifest object will have been created for your current AUM_Console session
+	with the <a href="#read patchmanifest">read patchmanifest</a> or 
+	<a href="#download patchmanifest">download patchmanifest</a> commands.
+
+<p /><hr />
+<a name="download patchmanifest" />
+<h3>download patchmanifest</h3>
+	<p/>Downloads a patchmanifest.xml based on the current masterupdate object.  In general the
+	masterupdate object will have been created for your current AUM_Console session
+	with the <a href="#read masterupdate">read masterupdate</a> command.
+
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="dump" />
+<h3>dump</h3>
+
+	<p/>The dump command is a simple way to examine some of the characteristics
+	of the various objects you have created and let you look at the 
+	version of the AUM_Console.
+
+	<p/>dump commands are:
+	<ul>
+	<li/><a href="#dump DFV">dump DFV</a>
+	<li/><a href="#dump masterdirectory">dump masterdirectory</a>
+	<li/><a href="#dump masterupdate">dump masterupdate</a>
+	<li/><a href="#dump nsisfile">dump nsisfile</a>
+	<li/><a href="#dump patchexefile">dump patchexefile</a>
+	<li/><a href="#dump patchmanifest">dump patchmanifest</a>
+	</ul>
+
+<p /><hr />
+<a name="dump DFV" />
+<h3>dump DFV</h3>
+	<p />The dump DFV command (perhaps the only capitalized command)
+	shows the current state of the 'designed for version' variable.
+	It is intended that as the AUM_Console grows and changes,
+	the command language can mimic earlier versions.  This lets us
+	keep around old command file while still moving the project forward.
+
+	<p />The first real command of each command file must be
+	a set DFV command.
+
+<p /><hr />
+<a name="dump nsisfile" />
+<h3>dump nsisfile</h3>
+	
+	<p />The dump nsisfile command will print the current nsisfile
+	variable to the screen.  When AUM_Console starts this value is
+	empty and will display as a blank.  The variable is set under
+	different circumstances; see <a href="#set nsisfile">set nsisfile</a>
+	for full details.
+
+	<p />Note: this just dumps the name of the file, not the
+	entire contents of the file.  
+
+<p /><hr />
+<a name="dump patchexefile" />
+<h3>dump patchexefile</h3>
+	
+	<p />The dump patchexefile command will print the current
+	patch exe file name to the screen.  Unlike the nsisfile the variable
+	is stored in the patchmanifest object; unless you make one of those
+	you will not have the ability to dump or set this variable.
+
+	<p />See the discussion in <a href="#set patchexefile">set patchexefile</a>
+	for dull details.
+
+	<p />Note: this just dumps the name of the file, not the
+	entire contents of the file.  
+
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="dump masterdirectory" />
+<a name="dump masterupdate" />
+<a name="dump patchmanifest" />
+<h3>dump masterdirectory</h3>
+<h3>dump masterupdate</h3>
+<h3>dump patchmanifest</h3>
+
+	<p />All of the dump commands work in the same way: they will
+	print an interpreted version of the corresponding object to
+	the screen.  To write an object to a file in the official
+	format use the <a href="#write">write</a> command.
+
+	<p />An example of a dump of a masterupdate is:
+	<div align="center"><img src="AUM_images\masterupdate_dump.bmp"  /></div>
+
+	<p/>As always, just because the sample puts all the data into one giant
+	line doesn't mean you have to!  You can type a partial command at any point
+	and you will be prompted for any extra data.  You can even type a '?' at
+	any prompt for a more detailed help.
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="exit" />
+<h3>exit</h3>
+
+	<p />The exit command exits the AUM_Console program.  If you are
+	using the 'read commands' command, you do not have to have an
+	exit command at the end; AUM_Console will exit automatically.
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="make" />
+<h3>make</h3>
+
+	<p/>The make command, in general, creates new things: new objects
+	(like make masterdirectory) or files (make nsis).  All of the make
+	commands are used to generate patches and patch manifests.
+
+	make commands are:
+	<ul>
+	<li/><a href="#make masterdirectory">make masterdirectory</a> (patch.exe)
+	<li/><a href="#make masterupdate">make masterupdate</a> (masterupdate.xml)
+	<li/><a href="#make nsis">make nsis</a> (patch.exe)
+	<li/><a href="#make originaldirectory">make originaldirectory</a> (patch.exe)
+	<li/><a href="#make patchmanifest">make patchmanifest</a> (patchmanifest.xml)
+	</ul>
+
+
+<p /><hr />
+<a name="make masterdirectory" />
+<h4>make masterdirectory</h4>
+	<p/>The make masterdirectory command will make a new 'masterdirectory'
+	object -- a list of all of the file and directories underneath the
+	starting (root) directory
+	
+	<p/>Work flow for make masterdirectory:
+	<br/>Previous command: none; this is usually the first command in making a patch.exe
+	<br/>Next command: <a href="#make originaldirectory">make originaldirectory</a>
+
+	<p/>The make masterdirectory command takes in the following arguments:
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>root</b></td><td>Root directory of the master directory.  Must end in '\'.  This is your NEW game directory, not the original game directory.</td></tr>
+      <table>
+	<br/>
+
+<p /><hr />
+<a name="make masterupdate"/>
+<h4>make masterupdate</h4>
+	<p/>The make masterupdate command generates the masterupdate.xml file
+	that each game <i>must originally ship with</i> (and is therefore one 
+	of the two files that each game must ship with: 
+	<i>game_directory</i>/updates/masterupdate.xml and
+	<i>game_directory</i>/updates/WTRerunProgramUtility.exe.  (The WTRerunProgramUtility.exe
+	is simply part of the wtplatform SDK; you should always just include the latest.)
+
+	<p/>Work flow for make masterupdate:
+	<br/>Previous command: none; this is the first and last command to make a masterupdate
+	<br/>Next command: none; this is the first and last command to make a masterupdate
+
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>ofile</b></td><td>file to create; will generally be in your development area, in an "updates" directory with the name "masterupdate.xml"</td></tr>
+      <tr><td><b>url</b></td><td>url that the program will go to to get new patchmanifest.xml files</td></tr>
+      <table>
+
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="make nsis" />
+<h4>make nsis</h4>
+	<p/>The make nsis command generates an NSIS installer script 
+	(<a href="http://nsis.sourceforge.net/Main_Page">NSIS home page</a>) which will
+	be used to generate the patch.exe that will actually update a user's machine.
+	As of 12/2/2005 the script is pretty bare-bones; it will be improved as needed.
+	(for example, it's not templatized at all).
+
+	<p/>Work flow for make nsis:
+	<br/>Previous command: <a href="#run prune">run prune</a>
+	<br/>Next command: <a href="#run nsis">run nsis</a>
+
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>ofile</b></td><td>output .nsi file to generate.  </td></tr>
+      <tr><td><b>oexe</b></td><td>name of the patch to make; should be a complete path like c:\mygame\updates\v234\patch.exe</td></tr>
+      <tr><td><b>gameroot</b></td><td>location of the game on the end-user's machine.  Should always be ".\" since patch.exe always runs with a default directory at the game.exe location.</td></tr>
+      <tr><td><b>masterroot</b></td><td>location of the game on your machine.  This is where NSIS will find all of the files that it has to put into the patch.  The value must end with a backslash.</td></tr>
+      <table>
+
+
+<p /><hr />
+<a name="make originaldirectory" />
+<h4>make originaldirectory</h4>
+	<p>The make originaldirectory command will modify an existing make masterdirectory 
+	object; the idea is that each file in the originaldirectory that is also in
+	the masterdirectory (and whose MD5 hash matches) is marked as 'same'; files
+	that are different are marked 'different'; file can also be 'added' and 'deleted'.
+	
+	<p/>Work flow for make originaldirectory:
+	<br/>Previous command: <a href="#make masterdirectory">make masterdirectory</a>
+	<br/>Next command: <a href="#run prune">run prune</a>
+	
+
+	<p/>The make originaldirectory command takes in the following arguments:
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>root</b></td><td>Root directory of the master directory.  Must end in '\'.  This is your NEW game directory, not the original game directory.</td></tr>
+      <table>
+	<br/>
+	<br/>
+
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="make patchmanifest"/>
+<h4>make patchmanifest</h4>
+
+	<p />A patch manifest is an XML file, normally called
+	"patchmanifest.xml", which is downloaded by a game and 
+	used to decide if a patch should be downloaded and used
+	to contain user-visible information that describes a
+	patch.  It also contains a url that points to the 
+	patch.exe file and CRC and size information which is used
+	to verify that the patch is correct.
+
+
+	<p/>Work flow for make patchmanifest:
+	<br/>Previous command: none; this is the first command to make a patchmanifest
+	<br/>Next command: <a href="#add patchmanifestaboutlong">add patchmanifestaboutlong</a> 
+		(or the 'aboutshort which is documented in the same place)
+	<br/><b>Alternate Next command:</b> <a href="#run updatepatchmanifest">run updatepatchmanifest</a> 
+
+
+	<p />Each patch manifest contains a significant amount
+	of marketing data.  Normally a developer will make a
+	temporary patchmanifest.xml file only to verify that
+	their patch.exe is correct.
+
+	<p /><b>Note</b>: the patch manifest made by this command is almost always incomplete.
+	In particular, patch manifests made by this command often do not have the CRC and SIZE
+	information that is required for a correct patch.  You must
+	<ul>
+		<li/><a href="#set patchexefile">set patchexefile</a> (or <a href="#make nsis">'make nsis'</a>)
+		<li/><a href="#run updatepatchmanifest">run updatepatchmanifest</a>
+	</ul>
+	to update the patch manifest with these values.  The reason for this is that the patch 
+	manifests are generally created by Marketing, not by a developer.  Splitting the 
+	creation of the patch manifest into two steps reduces the dependencies of one department 
+	on the other.
+
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><div align="right">continued on next page</div>
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+	<p/>The make patchmanifest command takes in the following arguments:
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>url</b></td><td>url pointing to the patch.exe.  
+		You will generally use some local http directory.
+		http://updates/myprogram/updates/download/patch.exe
+		is what I generally use.
+		</td></tr>
+
+      <tr><td><b>ofile</b></td><td>Actual output file 
+		that you can directly reach via the filesystem.
+		You will generally use some local directory 
+		underneath your IIS directory -- something like 
+		C:\Inetpub\wwwroot\updates\myprogram\updates\download\patchmanifest.xml
+		is what I generally use.
+		</td></tr>
+
+      <tr><td><b>versionto</b></td><td>version number that this patch will bump your
+		program to.  As of 2-DEC-2005, AUM has a very weak ability to
+		compare versions; either your program's version number is
+		identical to this value, or it isn't.  (Your program's
+		version number is passed into the AUM code; there's
+		no way for AUM to guess how to get the version number
+		from a program in general).
+		</td></tr>
+
+      <tr><td><b>aboutshort</b></td><td>The default short description of the update.  
+		You can add short descriptions in specific laguanges with the 
+		add patchmanifestaboutshort command.  
+		Technically, the aboutshort and aboutlong features are used in
+		cooperation with the actual game; it's theoretically possible to
+		not bother with the about short / about long descriptions, or
+		use various sorts of rich media instead of plain text.  However,
+		this is strongly discouraged.
+		</td></tr>
+      <tr><td><b>aboutlong</b></td><td>The default long description of the update
+		You can add long descriptions in specific laguanges with the 
+		add patchmanifestaboutlong command.
+		Technically, the aboutshort and aboutlong features are used in
+		cooperation with the actual game; it's theoretically possible to
+		not bother with the about short / about long descriptions, or
+		use various sorts of rich media instead of plain text.  However,
+		this is strongly discouraged.
+		</td></tr>
+      <table>
+
+	<p />See the <a href="#make patchmanifest example">example</a> for details.
+
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="read" />
+<h3>read</h3>
+
+	<p />The read command, along with the write command, lets you
+	read objects you have created (generally with the various
+	<a href="#make">make</a>commands) and written out (with the 
+	<a href="#write">write<a>command) back into the AUM_Console.
+	By doing this you can spread an AUM_Console session out
+	over several days or weeks.  This is especially important
+	since part of each patch is specified by a programmer but
+	the rest must be specified by marketing.
+
+	<p />You can also create a command file for AUM_Console
+	and read it in with the <a href="#read commands">read commands</a>
+	command.
+
+	<p/>read commands are:
+	<ul>
+	<li/><a href="#read commands">read commands</a>
+	<li/><a href="#read masterdirectory">read masterdirectory</a>
+	<li/><a href="#read masterupdate">read masterupdate</a>
+	<li/><a href="#read patchmanifest">read patchmanifest</a>
+	</ul>
+
+<p/>Note: if you preceed a command with an '@' and you are use
+the 'read commands' command, the command will not be echoed.
+
+<p /><hr />
+<a name="read commands">
+<h3>read commands</h3>
+
+	<p />The read commands command will read in an external file
+	full of AUM_Console commands and read them. Note that
+	AUM_Console is not like some programs which silently
+	interchange between interactive mode and file mode: you must
+	specify a complete command in each line of the text file.
+	If you fail to specify all of the arguments for a command,
+	AUM_Console will prompt for the remaining arguments
+	even if they are really just on the next line.
+
+	<p />There are two special features of the command file
+	that will help you write good batch files.
+	
+	<p />Firstly, <b>@</b> will cause the line to not be echoed.
+	This is just like Microsoft's DOS environment.  
+	
+	<p />Secondly, the <b>backslash (\)</b> character lets you run
+	a command over multiple lines.  In particular, whenever
+	the read commands command reads in a file, and a line end
+	with a backslash, the backslash is removed and the next
+	line appended on except that all whitespace at the start
+	of the next line (spaces and tabs only are whitespace)
+	are ignored.  This lets you make nicely indented command lines.
+	Note that strings will automatically flow over the
+	end of line (see the make patchmanifest 
+	<a href="#make patchmanifest example">example</a> for a sample
+	of strings running over lines.
+	
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>ifile</b></td><td>file to read in</td></tr>
+      <table>
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="read masterdirectory">
+<h3>read masterdirectory</h3>
+<a name="read masterupdate">
+<h3>read masterupdate</h3>
+<a name="read patchmanifest">
+<h3>read patchmanifest</h3>
+	
+	<p />All of the read object commands work the same way: you specify
+	the object to read in (masterdirectory, etc) and the name of the
+	file that contains the object.  If you specify the wrong file, or
+	a file that doesn't exist, then as of 5-DEC-2005 AUM_Console will
+	die horribly with an exception.
+
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>ifile</b></td><td>file to read in</td></tr>
+      <table>
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="run" />
+<h3>run</h3>
+
+	<p />The run command is something of a catchall command.
+	On the one hand, sometimes external program run -- either
+	explicitly like with run external or run dos, and sometimes implicitly
+	like run nsis.  Others process an existing object like
+	run prune and run updatepatchmanifest.
+
+	<p/>run commands are:
+	<ul>
+	<li/><a href="#run checkconnection">run checkconnection</a>
+	<li/><a href="#run dos">run dos</a>
+	<li/><a href="#run external">run external</a>
+	<li/><a href="#run nsis">run nsis</a>
+	<li/><a href="#run prune">run prune</a>
+	<li/><a href="#run tests">run tests</a>
+	<li/><a href="#run updatepatchmanifest">run updatepatchmanifest</a>
+	</ul>
+
+
+<p /><hr />
+<a name="run checkconnection" />
+<h4>run checkconnection</h4>
+	<p />The run checkconnection command calls the WTPlatform 
+	'WTPlatform::System::Net::CInfo::IsConnected' method and prints out the return value.
+	This command is intended more for the QA group than as part of the work flow for AUM.
+
+<p /><hr />
+<a name="run dos" />
+<a name="run external" />
+<h4>run external and run dos</h4>
+	<p/>The run dos and run external commands will run an external program by 
+	spawning a new process and waiting for it to complete.  This
+	lets you integrate other processes into your AUM_Console
+	built script.  The difference between them is that the "run external"
+	command needs an actual program to run (like "notepad.exe") but the
+	"run dos" command automatically runs the DOS shell (cmd.exe)(with the /C
+	switch).
+
+	<p />If you want to just view an XML file, try <tt>run dos command "start c:\foo.xml"</tt>
+
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>command</b></td><td>command to run</td></tr>
+      <table>
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="run nsis" />
+<h4>run nsis</h4>
+	<p />The run nsis command will spawn a new process to run
+	the basic NSIS compiler.  For this to work, it needs to
+	know only two things: the location of the 'makensis'
+	program and the location of the nsis script file that
+	makensis is going to run.  (The location of the output
+	patch.exe file is set by the NSIS script itself and
+	will have been set by the <a href="#make nsis">make nsis</a>
+	command).
+
+
+	<p/>Work flow for run nsis:
+	<br/>Previous command: <a href="#make nsis">make nsis</a>
+	<br/>Next command: none; this is the last command to make a patch.exe
+
+	<p />The location of makensis, as of 2-DEC-2005, is fixed
+	as C:\Projects\Resources\software\toolsutilities\nsis\2.07\makensis.exe 
+	The Resources directory is simply downloaded in whole from
+	\\wtcfs01\dev\resources (it's the original "resources" directory
+	used by the WebDriver engineering team).
+
+	<p />The location of the NSIS script file which contains
+	the commands that will be used to build the patch.exe
+	is determined in one of two ways:
+	<ol>
+		<li/>If you've already run the <a href="#make nsis">make nsis</a>
+		command, the ofile parameter from that command is 
+		saved and used in this command.
+
+		<li />If you need to just run the nsis program,
+		you can run the <a href="#set nsisfile">set nsisfile</a>
+		command.
+	</ol>
+	
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="run prune" />
+<h4>run prune</h4>
+	<p/>The run prune command takes the masterdirectory (from a 
+	<a href="#read masterdirectory">read masterdirectory</a> or
+	<a href="#make masterdirectory">make masterdirectory</a>
+	command and strips out the pieces that are not appropriate
+	for a patch.  As of 2-DEC-2005, this is all of the
+	subdirectories underneath the "updates" directory
+
+	<p/>Work flow for run prune:
+	<br/>Previous command: <a href="#make originaldirectory">make originaldirectory</a>
+	<br/>Next command: <a href="#make nsis">make nsis</a> 
+
+<p /><hr />
+<a name="run tests" />
+<h4>run tests</h4>
+	<p />The run tests command runs some internal tests.  If the
+	tests fail, AUM_Console will abort() with a nasty message.
+	The exact nature of the tests varies considerably from one
+	build to the next.
+
+<p /><hr />
+<a name="run updatepatchmanifest" />
+<h4>run updatepatchmanifest</h4>
+
+	<p />The run updatepatchmanifest command will update the 
+	patchmanifest object in two ways:  firstly, the patch.exe
+	CRC and size will be filled in, and secondly the patch
+	extensions (set in <a href="#add patchmanifestextension">
+	add patchmanifestextension</a>) with _autoread are filled in.
+
+
+	<p/>Work flow for run updatepatchmanifest:
+	<br/>Previous command: <a href="#add patchmanifestextension">add patchmanifestextension</a>
+	<br/>Next command: <a href="#write patchmanifest">write patchmanifest</a>
+
+	<p />You should always run updatepatchmanifest before
+	you deploy the patch manifest.  Otherwise the values for
+	patch.exe CRC and size and the _autoread values might
+	be incorrect.
+
+	<p />However, for the update to work the AUM_Console
+	must know where the generated patch.exe is.  This is
+	either set automatically when you make the patch.exe
+	(using the <a href="#make nsis">make nsis</a> command)
+	or you can use the <a href="#set patchexefile">set patchexefile</a>
+	command.  In addition, the actual value is stored in 
+	the patchmanifest so if the value has been previously
+	set in a patchmanifest, and the patchmanifest was written
+	to a file (which it usually is), and if you've read the
+	patchmanifest back in (which you usually will), then
+	the value should be set already.
+
+	<p />You can examine the current value with the
+	<a href="#dump patchmanifest">dump patchmanifest</a>
+	command.
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="set" />
+<h3>set</h3>
+	<p />The set command lets you set the value of different variables
+	that are normally set by one command and then used by another
+	command. The philosophy of AUM_Console is that each basic command
+	must both have a good "flow" (which means saving information from
+	one command to the next so that no information needs to be 
+	entered twice) and must be partitionable so that each step
+	can be done by different people on different days.
+
+	<p/>set commands are:
+	<ul>
+	<li/><a href="#set DFV">set DFV</a> (designed-for-version value)
+	<li/><a href="#set height">set height</a> (height of screen)
+	<li/><a href="#set nsisfile">set nsisfile</a> (file to use in run nsis)
+	<li/><a href="#set patchexefile">set patchexefile</a> (file to use in run updatepatchmanifest)
+	</ul>
+
+	<p/>You can see what all of these value are with the
+	<a href="#dump">dump</a> command.  For example, dump DFV
+	will show you what you set the set DFV command.
+
+
+<p /><hr />
+<a name="set DFV" />
+<h4>set DFV</h4>
+	<p />Sets the 'designed for version' value.  All scripts must have,
+	as their first real line, a set DFV value so that we can change
+	the AUM_Console as our needs grow.  AUM_Console starts off with
+	the DFV set to 1; however you cannot set the value to
+	anything less than 2.  In addition, it cannot be set to a value
+	greater than the current AUM_Console version number.
+
+	<p />See also <a href="#dump DFV">dump DFV</a> and 
+	<a href="#dump version">dump version</a> to find out the
+	current DFV value.
+
+
+<p /><hr />
+<a name="set height" />
+<h4>set height</h4>
+	<p />Sets the height of the console screen in lines.  This is most
+	useful when creating screenshots.  Note that you cannot make the
+	screen infinitely large -- this just calls into the <i>SetConsoleWindowInfo</i>
+	Platform SDK function and hopes for the best.
+	(see <a href="#write printscreen">write printscreen</a>).
+
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="set nsisfile" />
+<h4>set nsisfile</h4>
+	<p />The nsisfile value is used by <a href="#run nsis">run nsis</a>
+	to find the .nsi file that the nsis command needs to generate
+	a patch.exe file.	 The value is automatically set with
+	the <a href="#make nsis">make nsis</a> command.
+
+
+<p /><hr />
+<a name="set patchexefile" />
+<h4>set patchexefile</h4>
+	<p />The patchexefile value is used by 
+	<a href="#run updatepatchmanifest">run updatepatchmanifest</a>
+	to find the patch.exe file; that exact file will have its
+	CRC and file size calculated and placed into the patch manifest.
+	The value is automatically set with the <a href="#make nsis">make nsis</a> command.
+
+	<p />Unlike the nsisfile value, the patchexefile value is
+	actually stored in the patchmanifest.xml file; this means
+	it is also automatically set when you read in a patchmanifest
+	whose patchexefile has been set.
+
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="write" />
+<h3>write</h3>
+	<p />The write commands in general create an output file
+	containing some information.  You can write each of the 
+	XML AUM objects that AUM_Console can make (write masterupdate,
+	and write patchmanifest), plus the masterdirectory
+	intermediate object.  In addition, there are some useful
+	other write commands.
+
+	<p/>write commands are:
+	<ul>
+	<li/><a href="#write cls">write cls</a>
+	<li/><a href="#write masterdirectory">write masterdirectory</a>
+	<li/><a href="#write masterupdate">write masterupdate</a>
+	<li/><a href="#write patchmanifest">write patchmanifest</a>
+	<li/><a href="#write patchmanifestautowrite">write patchmanifestautowrite</a>
+	<li/><a href="#write printscreen">write printscreen</a>
+	</ul>
+
+<p /><hr />
+<a name="write cls" />
+<h4>write cls</h4>
+	<p />The write cls command attempts to clear the screen.  It does so by
+	simple writing a series of '\n' (new lines) to the screen; 
+	for most purposes this is good enough.
+
+	<p />Note to QA: unless this not-quite-right behaviour
+	actually interferes with some other objective, bugs will
+	not be entertained on this subject.
+
+<p /><hr />
+<a name="write masterdirectory" />
+<a name="write masterupdate" />
+<a name="write patchmanifest" />
+<h4>write masterdirectory</h4>
+<h4>write masterupdate</h4>
+<h4>write patchmanifest</h4>
+	<p />All of these write commands simply write the existing
+	objects out to a file specified by an 'ofile' parameter.
+	In the case of masterupdate it's not really needed: the
+	<a href="make masterupdate">make masterupdate</a> command
+	will make the object and write it into a file for you
+	and there are no commands to modify an existing masterupdate.
+	In the case of masterdirectory and patchmanifest, however,
+	there are commands to modify the object at which point you
+	will probably want to write out the object.
+
+	<p/>Work flow for write patchmanifest:
+	<br/>Previous command: <a href="#run updatepatchmanifest">run updatepatchmanifest</a>
+	<br/>Next command: none; this is the last command in making a patchmanifest.
+
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>ofile</b></td><td>file to write to</td></tr>
+      <table>
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="write patchmanifestautowrite" />
+<h4>write patchmanifestautowrite</h4>
+	<p />The write patchmanifestautowrite command will write all
+	of the "_autowrite" extensions out to a directory.  This 
+	mimics what the game will do when the patchmanifest is downloaded
+	and lets you have more confidence that the files embedded in
+	the patch manifest are correct.
+
+	<p />See also <a href="#add patchmanifestextension">add patchmanifestextension</a>
+	for more details.
+
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>odir</b></td><td>directory to place autowrite files in</td></tr>
+      <table>
+	<br/>
+	<br/>
+
+
+<p /><hr />
+<a name="write printscreen" />
+<h4>write printscreen</h4>
+	<p />The write printscreen command is used primarily to make this
+	documentation.  It makes a very inefficient BMP bitmap
+	file which is a screen dump of just the command windows that
+	the AUM_Console is running in.
+
+      <table align="center" width="80%" border="1">
+      <tr><th>option</th><th>meaning</th></tr>
+      <tr><td><b>ofile</b></td><td>output .BMP file</td></tr>
+      <table>
+
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<a name="sd" />
+<h3>!SD!</h3>
+
+</p>The very special !SD! command does a screen dump.  This has not been tested
+and should be considered a candidate for removal.  Note to QA: unless this command
+causes actual issues, bugs will not be entertained on this issue.
+
+<a name="semicolon" />
+<h3>; comment</h3>
+	<p />The AUM_Console will ignore any line that starts with a 
+	semicolon; you can therefore make nice batch files which 
+
+<br/><br/><BR CLASS="PAGEBREAK" />
+<h2>Rebuilding AUM_Console.exe</h2>
+
+<p/>The AUM Console is part of the WTPlatform solution.
+      <ul>
+      <li/><b>VSS Database</b> (Visual Source Safe) is the \\wtcfs01\vssdt "vssdt" database
+      <li/><b>VSS Project</b> is $/ --> WTPlatform using the working directory C:\Projects\WTPlatform . It is easiest to simply get the entire project
+      <li/>You will first need to build <b>WTPlatform</b> since AUM_Console uses the platform for many tasks; use the Visual Studio 2003 .NET solution file C:\Projects\WTPlatform\WTPlatform.sln project WTPlatform; build both the Debug and Release version
+      <li/><b>Visual Studio 2003 .NET</b> solution file is C:\Projects\WTPlatform\ToolsUtilities\AUM_Console\AUM_Console.sln
+      <li/>Within that solution there is just one project; AUM_Console
+      <li/><b>Exe file</b> is C:\Projects\WTPlatform\ToolsUtilities\AUM_Console\Debug\AUM_Console.exe (I normally use the DEBUG exe; you can use either)
+      </ul>
+</body>
+</html>

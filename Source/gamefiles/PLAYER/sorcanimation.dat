@@ -1,0 +1,4 @@
+#animation name : first frame : last frame : FPS
+IDLE:sorcidle.sma:18
+WALK:sorcwalk.sma:30
+#animation keys <KEY>: animation the key is for : frame of the animation (can be float) : name of key

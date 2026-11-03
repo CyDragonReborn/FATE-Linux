@@ -1,0 +1,11 @@
+#animation name : first frame : last frame : FPS
+IDLE:42:111:30
+WALK:1:42:15
+RUN:1:42:30
+ATTACK1:112:180:30
+DIE:181:229:30
+DIE2:231:280:30
+#animation keys <KEY>: animation the key is for : frame of the animation (can be float) : name of key
+<KEY>:ATTACK1:129:HIT
+<KEY>:WALK:3:STEP
+<KEY>:RUN:3:STEP

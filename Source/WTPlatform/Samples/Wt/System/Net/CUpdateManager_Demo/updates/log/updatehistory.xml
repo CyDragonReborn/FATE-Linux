@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<wt:root version="1" type="WT::System::Net::CUpdateHistory" objectref="true" objectid="1" xmlns:wt="http://www.wildtangent.org/wtplatform/xml/ns">
+	<wt:object type="WT::System::Net::CUpdateHistory" objectref="false" objectid="1" classversion="1">
+		<MaxData type="WT::int32">0</MaxData>
+		<Data type="WT::System::Serialization::Container" size="0"></Data>
+	</wt:object>
+</wt:root>

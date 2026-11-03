@@ -1,0 +1,172 @@
+/*
+	questmenu.h
+
+	Copyright (C) 2004 WildTangent, Inc. 
+	All Rights Reserved
+
+	Travis Baldree
+	7/7/2004
+
+*/
+
+
+#ifndef _QUESTMENU_H
+#define _QUESTMENU_H
+
+#include "../IO/keyhandler.h"
+#include "../IO/mousehandler.h"
+#include "../GAME/gamestatemanager.h"
+#include "../CHARACTER/character.h"
+class CKeyHandler;
+class CSprite;
+class CMaterial;
+class CGameStateManager;
+class CCharacter;
+class CButton;
+class CText;
+class CItem;
+class CGameUI;
+
+const int32 KQuestButton( 50000 );
+const int32 KQuestCancelButton( 60000 );
+
+// manage the ingame ui and events
+
+class CQuestMenu
+{
+public:
+				CQuestMenu( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
+							CRefManager& pRefManager,		// the reference manager, for tracking media we create
+							CSettings& pSettings,			//we need this for tracking user preferences
+							CGameStateManager& GameStateManager );	// to determine whether needed media exists
+
+
+				~CQuestMenu( void );
+
+	void	Update( HWND hWnd,								// hwnd of the active window
+					float32 TimeElapsed );					// time elapsed, in seconds
+
+
+	void	Render( LPDIRECT3DDEVICE8 pD3DDevice,			// d3d device
+					CGameUI& pGameUI,						// parent game ui
+				    const D3DXMATRIX& ViewportMatri,		// viewport matrix ( for bringing 3d objects to screen space
+					const D3DXMATRIX& ProjectionMatrix );	// projection matrix  ( for bringing 3d objects to screen space
+
+
+	void	KeyEvent( UINT WMMessage,	// windows message - WM_KEYUP or WM_KEYDOWN
+					  WPARAM KeyCode );	// the wparam which will be the keycode
+
+	void	MouseEvent( UINT WMMessage,		// windows message - WM_LBUTTONUP, etc.
+					    WPARAM WMParam );	// the wparam which contains mousewheel info
+
+
+////////////////////////////////////////////////////////////////////////
+// ACCESSORS
+////////////////////////////////////////////////////////////////////////
+	
+	bool	Open( void )			{	return m_Open;		};
+
+	bool	MouseOver( void );
+
+
+////////////////////////////////////////////////////////////////////////
+// MUTATORS
+////////////////////////////////////////////////////////////////////////
+	void	FlushAll( void );
+
+	void	SetPlayerCharacter( CCharacter* pCharacter )		{	m_pPlayerCharacter = pCharacter;		};
+
+	void	SetOpen( bool Open );							// state
+
+	int32	UpdateButtonPress( bool ButtonPressed );	// is the left mouse button pressed?
+
+	int32	UpdateButtonOver( void );
+
+	int32	UpdateButtonOver( std::string& TooltipText );	// tooltip text to fill out
+
+	void	ProcessConfirmation( int32 ButtonPressed );	// confirmation button pressed
+
+private:
+	void	CreateMenus( LPDIRECT3DDEVICE8 pD3DDevice );	// d3d device
+
+	void	ProcessInput( HWND hWnd );						// hwnd of the active window
+
+	void			BringToFront( CSprite* pSprite );			// pointer to sprite in the internal list
+
+	CSprite*		AddSprite( CSprite* pSprite );				// pointer to sprite to add to internal list
+
+	CSprite*		AddSpriteFront( CSprite* pSprite );			// pointer to sprite to add to internal list
+
+	void			RemoveSprite( CSprite* pSprite );			// pointer to sprite to remove from internal list
+
+	void			DestroySprites( void );
+
+	void			RenderSprites( LPDIRECT3DDEVICE8 pD3DDevice );	// d3d device
+
+	CButton*		AddButton( CButton* pButton );			// pointer to button to add to internal list
+
+	void			RemoveButton( CButton* pButton );		// pointer to button to remove from internal list
+
+	void			UpdateButtons( float32 TimeElapsed );		// time elapsed in seconds
+
+	void			DestroyButtons();
+
+	void			RenderButtons( LPDIRECT3DDEVICE8 pD3DDevice );	// d3d device
+
+	CText*			AddText( CText* pText );			// pointer to text to add to internal list
+
+	void			RemoveText( CText* pText );			// pointer to text to remove from internal list
+
+	void			DestroyText();
+
+	void			RenderText( LPDIRECT3DDEVICE8 pD3DDevice );	// d3d device
+
+	CKeyHandler				m_KeyHandler;
+	CMouseHandler			m_MouseHandler;
+
+	CSettings&				m_pSettings;		
+	CRefManager&			m_pRefManager;
+	CGameStateManager&		m_pGameStateManager;
+
+	CLList<CButton>*		m_pButtonList;
+	CLList<CSprite>*		m_pSpriteList;
+	CLList<CText>*			m_pTextList;
+
+	// font texture and metric
+	CMaterial*		m_pFontMaterial;
+	CFontMetric*	m_pFontMetric;
+
+
+	CCharacter*		m_pPlayerCharacter;
+
+	// Quest menu
+	CMaterial*		m_pQuestMenuTop;
+	CMaterial*		m_pQuestMenuCenter;
+	CMaterial*		m_pQuestMenuBottom;
+
+	CMaterial*		m_pUIButtons;
+	CMaterial*		m_pPopupButtons;
+
+
+	CText*					m_pQuestDescriptionText;
+	CText*					m_pGoldRewardText;
+	CText*					m_pExperienceRewardText;
+	CText*					m_pFameRewardText;
+	CText*					m_pItemRewardText;
+
+	bool			m_Open;
+
+	std::vector< CButton* >	m_pCancelButtons;
+
+	FSOUND_SAMPLE*	m_pClickSound;
+
+	CText*					m_pQuestText[KMaximumActiveQuests];
+	CButton*				m_pQuestButton[KMaximumActiveQuests];
+	CButton*				m_pQuestCancelButton[KMaximumActiveQuests];
+
+
+	uint32					m_SelectedQuest;
+	bool					m_RequestConfirmation;
+};
+
+#endif

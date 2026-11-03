@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameTrackingSample", "GameTrackingSample.vcproj", "{38258F4F-8655-4DCD-AA79-C9797DF6018F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+		SolutionUniqueID = {661CEE41-C078-43CC-8A0F-75B5088B9A8D}
+		SccProjectUniqueName1 = GameTrackingSample.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{38258F4F-8655-4DCD-AA79-C9797DF6018F}.Debug.ActiveCfg = Debug|Win32
+		{38258F4F-8655-4DCD-AA79-C9797DF6018F}.Debug.Build.0 = Debug|Win32
+		{38258F4F-8655-4DCD-AA79-C9797DF6018F}.Release.ActiveCfg = Release|Win32
+		{38258F4F-8655-4DCD-AA79-C9797DF6018F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

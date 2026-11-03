@@ -1,0 +1,87 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WTGameLibTestApplication", "WTGameLibTestApplication.vcproj", "{91DBA7FD-DA83-4B05-8A67-ABB525E12705}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug - MT - VC6 - (_MBCS) = Debug - MT - VC6 - (_MBCS)
+		Debug - MT - VC6 - (_UNICODE) = Debug - MT - VC6 - (_UNICODE)
+		Debug - MT - VC6 - (char) = Debug - MT - VC6 - (char)
+		Debug - MT - VC7 - (_MBCS) = Debug - MT - VC7 - (_MBCS)
+		Debug - MT - VC7 - (_UNICODE) = Debug - MT - VC7 - (_UNICODE)
+		Debug - MT - VC7 - (char) = Debug - MT - VC7 - (char)
+		Debug - ST - VC6 - (_MBCS) = Debug - ST - VC6 - (_MBCS)
+		Debug - ST - VC6 - (_UNICODE) = Debug - ST - VC6 - (_UNICODE)
+		Debug - ST - VC6 - (char) = Debug - ST - VC6 - (char)
+		Debug - ST - VC7 - (_MBCS) = Debug - ST - VC7 - (_MBCS)
+		Debug - ST - VC7 - (_UNICODE) = Debug - ST - VC7 - (_UNICODE)
+		Debug - ST - VC7 - (char) = Debug - ST - VC7 - (char)
+		Release - MT - VC6 - (_MBCS) = Release - MT - VC6 - (_MBCS)
+		Release - MT - VC6 - (_UNICODE) = Release - MT - VC6 - (_UNICODE)
+		Release - MT - VC6 - (char) = Release - MT - VC6 - (char)
+		Release - MT - VC7 - (_MBCS) = Release - MT - VC7 - (_MBCS)
+		Release - MT - VC7 - (_UNICODE) = Release - MT - VC7 - (_UNICODE)
+		Release - MT - VC7 - (char) = Release - MT - VC7 - (char)
+		Release - ST - VC6 - (_MBCS) = Release - ST - VC6 - (_MBCS)
+		Release - ST - VC6 - (_UNICODE) = Release - ST - VC6 - (_UNICODE)
+		Release - ST - VC6 - (char) = Release - ST - VC6 - (char)
+		Release - ST - VC7 - (_MBCS) = Release - ST - VC7 - (_MBCS)
+		Release - ST - VC7 - (_UNICODE) = Release - ST - VC7 - (_UNICODE)
+		Release - ST - VC7 - (char) = Release - ST - VC7 - (char)
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC6 - (_MBCS).ActiveCfg = Debug - MT - VC6 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC6 - (_MBCS).Build.0 = Debug - MT - VC6 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC6 - (_UNICODE).ActiveCfg = Debug - MT - VC6 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC6 - (_UNICODE).Build.0 = Debug - MT - VC6 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC6 - (char).ActiveCfg = Debug - MT - VC6 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC6 - (char).Build.0 = Debug - MT - VC6 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC7 - (_MBCS).ActiveCfg = Debug - MT - VC7 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC7 - (_MBCS).Build.0 = Debug - MT - VC7 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC7 - (_UNICODE).ActiveCfg = Debug - MT - VC7 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC7 - (_UNICODE).Build.0 = Debug - MT - VC7 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC7 - (char).ActiveCfg = Debug - MT - VC7 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - MT - VC7 - (char).Build.0 = Debug - MT - VC7 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC6 - (_MBCS).ActiveCfg = Debug - ST - VC6 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC6 - (_MBCS).Build.0 = Debug - ST - VC6 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC6 - (_UNICODE).ActiveCfg = Debug - ST - VC6 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC6 - (_UNICODE).Build.0 = Debug - ST - VC6 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC6 - (char).ActiveCfg = Debug - ST - VC6 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC6 - (char).Build.0 = Debug - ST - VC6 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC7 - (_MBCS).ActiveCfg = Debug - ST - VC7 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC7 - (_MBCS).Build.0 = Debug - ST - VC7 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC7 - (_UNICODE).ActiveCfg = Debug - ST - VC7 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC7 - (_UNICODE).Build.0 = Debug - ST - VC7 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC7 - (char).ActiveCfg = Debug - ST - VC7 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Debug - ST - VC7 - (char).Build.0 = Debug - ST - VC7 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC6 - (_MBCS).ActiveCfg = Release - MT - VC6 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC6 - (_MBCS).Build.0 = Release - MT - VC6 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC6 - (_UNICODE).ActiveCfg = Release - MT - VC6 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC6 - (_UNICODE).Build.0 = Release - MT - VC6 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC6 - (char).ActiveCfg = Release - MT - VC6 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC6 - (char).Build.0 = Release - MT - VC6 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC7 - (_MBCS).ActiveCfg = Release - MT - VC7 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC7 - (_MBCS).Build.0 = Release - MT - VC7 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC7 - (_UNICODE).ActiveCfg = Release - MT - VC7 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC7 - (_UNICODE).Build.0 = Release - MT - VC7 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC7 - (char).ActiveCfg = Release - MT - VC7 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - MT - VC7 - (char).Build.0 = Release - MT - VC7 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC6 - (_MBCS).ActiveCfg = Release - ST - VC6 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC6 - (_MBCS).Build.0 = Release - ST - VC6 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC6 - (_UNICODE).ActiveCfg = Release - ST - VC6 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC6 - (_UNICODE).Build.0 = Release - ST - VC6 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC6 - (char).ActiveCfg = Release - ST - VC6 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC6 - (char).Build.0 = Release - ST - VC6 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC7 - (_MBCS).ActiveCfg = Release - ST - VC7 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC7 - (_MBCS).Build.0 = Release - ST - VC7 - (_MBCS)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC7 - (_UNICODE).ActiveCfg = Release - ST - VC7 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC7 - (_UNICODE).Build.0 = Release - ST - VC7 - (_UNICODE)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC7 - (char).ActiveCfg = Release - ST - VC7 - (char)|Win32
+		{91DBA7FD-DA83-4B05-8A67-ABB525E12705}.Release - ST - VC7 - (char).Build.0 = Release - ST - VC7 - (char)|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

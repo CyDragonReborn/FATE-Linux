@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<wt:root version="1" type="WT::System::Net::CPatchManifest" objectref="true" objectid="1" xmlns:wt="http://www.wildtangent.org/wtplatform/xml/ns">
+	<wt:object type="WT::System::Net::CPatchManifest" objectref="false" objectid="1" classversion="1">
+		<PatchExeUrl type="std::string">http://localhost/updates/myprogram/updates/download/patch.exe</PatchExeUrl>
+		<VersionTo type="std::string">11/3/2005 3:57</VersionTo>
+		<AboutShort type="WT::System::Net::CStringI18N" objectref="false" objectid="2" classversion="1">
+			<StringList type="WT::System::Serialization::Container" size="1">
+				<item type="WT::System::Net::CStringI18N_single" objectref="false" objectid="3" classversion="1">
+					<Language type="std::string">English_America</Language>
+					<Value type="std::string">This is an all-the-way-through patch</Value>
+				</item>
+			</StringList>
+		</AboutShort>
+		<AboutLong type="WT::System::Net::CStringI18N" objectref="false" objectid="4" classversion="1">
+			<StringList type="WT::System::Serialization::Container" size="1">
+				<item type="WT::System::Net::CStringI18N_single" objectref="false" objectid="5" classversion="1">
+					<Language type="std::string">English_America</Language>
+					<Value type="std::string">this is a quick sample of how to make a patch</Value>
+				</item>
+			</StringList>
+		</AboutLong>
+		<ExpansionType type="WT::System::Net::CStringI18N" objectref="false" objectid="6" classversion="1">
+			<StringList type="WT::System::Serialization::Container" size="0"></StringList>
+		</ExpansionType>
+		<Expansion type="WT::System::Serialization::Container" size="0"></Expansion>
+	</wt:object>
+</wt:root>

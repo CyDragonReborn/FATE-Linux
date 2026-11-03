@@ -1,0 +1,1408 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING101           "This game must be run in 16- or 32-bit color mode. Please change your desktop color depth and try again."
+    IDS_STRING102           "\nTo play this game, you need DirectX 9.0 or higher.\nDownload a new version of DirectX from http://www.microsoft.com/directx and launch the game again."
+    IDS_STRING103           "Could not initialise Direct3D. You may\n"
+    IDS_STRING104           "want to check that the latest version of\n"
+    IDS_STRING105           "DirectX is correctly installed on your\n"
+    IDS_STRING106           "system."
+    IDS_STRING107           "Could not find any compatible Direct3D\n"
+    IDS_STRING108           "This game cannot run in a desktop\n"
+    IDS_STRING109           "window with the current display settings.\n"
+    IDS_STRING110           "Please change your desktop settings to a\n"
+    IDS_STRING111           "16- or 32-bit display mode and re-run this\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING112           "sample."
+    IDS_STRING113           "No hardware-accelerated Direct3D devices\n"
+    IDS_STRING114           "were found."
+    IDS_STRING115           "This game requires functionality which is\n"
+    IDS_STRING116           "not available on your Direct3D hardware\n"
+    IDS_STRING117           "accelerator."
+    IDS_STRING118           "Your Direct3D hardware accelerator cannot\n"
+    IDS_STRING119           "render into a window.\n"
+    IDS_STRING120           "Press F2 while the app is running to see a\n"
+    IDS_STRING121           "list of available devices and modes."
+    IDS_STRING122           "Your Direct3D hardware accelerator cannot\n"
+    IDS_STRING123           "render into a window with the current\n"
+    IDS_STRING124           "desktop display settings.\n"
+    IDS_STRING125           "This game requires functionality which is\n"
+    IDS_STRING126           "not available on your Direct3D hardware\n"
+    IDS_STRING127           "accelerator with the current desktop display\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING128           "settings.\n"
+    IDS_STRING129           "Could not load required media."
+    IDS_STRING130           "Could not reset the Direct3D device."
+    IDS_STRING131           "A D3D object has a non-zero reference\n"
+    IDS_STRING132           "count (meaning things were not properly\n"
+    IDS_STRING133           "cleaned up)."
+    IDS_STRING134           "Warning: Nothing will be rendered.\n"
+    IDS_STRING135           "The reference rendering device was selected, but your\n"
+    IDS_STRING136           "computer only has a reduced-functionality reference device\n"
+    IDS_STRING137           "installed.  \n"
+    IDS_STRING138           "Not enough memory."
+    IDS_STRING139           "Not enough video memory."
+    IDS_STRING140           "A serious problem occured inside the display driver."
+    IDS_STRING141           "Application Error"
+    IDS_STRING142           "\n\nThis game will now exit."
+    IDS_STRING143           "\010Compressing Textures...\010\nThis will only happen once..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING144           "\010C\010haracter Stats \010(Press C)\010"
+    IDS_STRING145           "\010I\010nventory \010(Press I)\010"
+    IDS_STRING146           "Spell\010b\010ook \010(Press B)\010"
+    IDS_STRING147           "S\010k\010ills \010(Press K)\010"
+    IDS_STRING148           "\010J\010ournal \010(Press J)\010"
+    IDS_STRING149           "\010Q\010uests \010(Press Q)\010"
+    IDS_STRING150           "\010M\010ap \010(Press M)\010"
+    IDS_STRING151           "Sa\010v\010e \010(Press V)\010"
+    IDS_STRING152           "Place Potions Here For Quick Access"
+    IDS_STRING153           "Fleeing"
+    IDS_STRING154           "Wait for a \010bite\010\nand \010set the hook\010"
+    IDS_STRING155           "Set Hook!"
+    IDS_STRING156           "Stop Fishing"
+    IDS_STRING157           "Toggle \010R\010un\n( or hold \010<CTRL>\010 )"
+    IDS_STRING158           "Toggle Reveal All Items\n( or hold \010<ALT>\010 )"
+    IDS_STRING159           "\010\nuntil pet returns..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING160           "Life "
+    IDS_STRING161           "Click To Distribute Points"
+    IDS_STRING162           "Level Up!"
+    IDS_STRING163           "View Help"
+    IDS_STRING164           "Drop Potions Here To Use"
+    IDS_STRING165           "Pe\010t\010 Stats \010(Press T)\010"
+    IDS_STRING166           "\010P\010et Inventory \010(Press P)\010"
+    IDS_STRING167           "Send Pet To Town"
+    IDS_STRING168           "\010Left-Click\010 to select spell\n\010Right-Click\010 casts active spell"
+    IDS_STRING169           "\010Left-Click\010 to set \010 $1 \010 As Active Spell\n\010F1-F12\010 assigns to hotkey"
+    IDS_STRING170           "Close"
+    IDS_STRING171           "Yes"
+    IDS_STRING172           "No"
+    IDS_STRING173           "Confirm?"
+    IDS_STRING174           "Choose"
+    IDS_STRING175           "Out of the darkness, \010Fate\010 approaches..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING176           "\010""Choose Your Fate""\010"
+    IDS_STRING177           "Choice 1"
+    IDS_STRING178           "Choice 2"
+    IDS_STRING179           "Load from the last saved location..."
+    IDS_STRING180           "Quit"
+    IDS_STRING181           "I will \010heal\010 you to full strength, and allow you to continue at your \010current location\010 - however, I will require \010$1 Experience\010 and \010$2 Fame\010 as compensation..."
+    IDS_STRING182           "I will \010heal\010 you to full strength, and \010transport\010 you to a nearby level, but you must pay me \010$1 Gold\010 in return."
+    IDS_STRING183           "I will \010heal\010 you to full strength, and \010transport\010 you \010three levels\010 up, but your \010gold\010 must remain here where you have fallen...for a time..."
+    IDS_STRING184           "I will \010heal\010 you to full strength, and \010transport\010 you back to the town of \010Grove\010, but your \010gold\010 must remain here where you have fallen...for a time..."
+    IDS_STRING185           "OK"
+    IDS_STRING186           "Wow! You caught a fish and found a \010$1\010 in it!"
+    IDS_STRING187           "Great fishing! You caught a \010$1\010!"
+    IDS_STRING188           "You have perished!"
+    IDS_STRING189           "Will you send your pet to \010Town\010 to \010sell\010 any items it is not wearing?\nThe deeper you are, the longer it will take for your pet to return."
+    IDS_STRING190           "\010$1\010 retired at \010Level $2\010"
+    IDS_STRING191           "\nwith a Renown of \010$1\010"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING192           "\n\010Gold Gathered : \010"
+    IDS_STRING193           "\n\010Quests Completed : \010"
+    IDS_STRING194           "\n\010Monsters Defeated : \010"
+    IDS_STRING195           "\n\010Bosses Defeated : \010"
+    IDS_STRING196           "All \010gems\010 have been removed!"
+    IDS_STRING197           "There are no \010gems\010 in this item!"
+    IDS_STRING198           "Your \010$1\010 was destroyed, returning the following gems to you:"
+    IDS_STRING199           "There are no \010gems\010 in this item!"
+    IDS_STRING200           "The \010Enchanter\010 waves his hands over the \010$1\010 but ... nothing happens!"
+    IDS_STRING201           "The \010Enchanter\010 waves his hands over the \010$1\010 - and new \010Sockets\010 are added!"
+    IDS_STRING202           "The \010Enchanter\010 waves his hands over the \010$1\010 - and your item receives extra enchantment!"
+    IDS_STRING203           "The \010Enchanter\010 waves his hands over the \010$1\010 - and your item is imbued with unique powers!"
+    IDS_STRING204           "The \010Enchanter\010 waves his hands over the \010$1\010 - and accidentally removes all powers from your item!"
+    IDS_STRING205           "The \010Enchanter\010 waves his hands over the \010$1\010 but ... nothing happens!"
+    IDS_STRING206           "You Feel Refreshed!"
+    IDS_STRING207           "I do not have any \010errands\010 for you right now... Come back \010later!\010"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING208           "Accept"
+    IDS_STRING209           "Decline"
+    IDS_STRING210           "Please come back when you are not so \010busy\010 and I will have a task for you..."
+    IDS_STRING211           "\010Quest Completed\010! Return to \010$1\010 to receive your \010reward\010!"
+    IDS_STRING212           "Your \010journey\010 is \010complete\010! \010$1\010 is at last \010defeated\010! Return to \010$2\010 to receive your \010reward\010, and the \010adulation\010 of the town!"
+    IDS_STRING213           "Save and Exit"
+    IDS_STRING214           "Resume Game"
+    IDS_STRING215           "Elite "
+    IDS_STRING216           "Legendary "
+    IDS_STRING217           "Time Played"
+    IDS_STRING218           "Steps Taken"
+    IDS_STRING219           "Gold Gathered"
+    IDS_STRING220           "Quests Completed"
+    IDS_STRING221           "Deepest Depth"
+    IDS_STRING222           "Deaths"
+    IDS_STRING223           "Monsters Defeated"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING224           "Bosses Defeated"
+    IDS_STRING225           "Spells Cast"
+    IDS_STRING226           "Chests Opened"
+    IDS_STRING227           "Traps Sprung"
+    IDS_STRING228           "Barrels Broken"
+    IDS_STRING229           "Potions Used"
+    IDS_STRING230           "Portals Used"
+    IDS_STRING231           "Fish Caught"
+    IDS_STRING232           "Times Gambled"
+    IDS_STRING233           "Superior "
+    IDS_STRING234           "Exceptional "
+    IDS_STRING235           "Flawless "
+    IDS_STRING236           "Unknown"
+    IDS_STRING237           "Tolerated"
+    IDS_STRING238           "Unremarkable"
+    IDS_STRING239           "Respected"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING240           "Local Hero"
+    IDS_STRING241           "Local Legend"
+    IDS_STRING242           "Well Known"
+    IDS_STRING243           "Folk Hero"
+    IDS_STRING244           "Rising Star"
+    IDS_STRING245           "Distinguished"
+    IDS_STRING246           "Prestigious"
+    IDS_STRING247           "Famous"
+    IDS_STRING248           "Renowned"
+    IDS_STRING249           "Glorious"
+    IDS_STRING250           "Legendary "
+    IDS_STRING251           "Fabled"
+    IDS_STRING252           "Mythic"
+    IDS_STRING253           "Immortal"
+    IDS_STRING254           "Demigod"
+    IDS_STRING255           "Unattainable"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING256           "Page"
+    IDS_STRING257           "Adventurer"
+    IDS_STRING258           "Hero"
+    IDS_STRING259           "Legend"
+    IDS_STRING260           "Attack Magic"
+    IDS_STRING261           "Defense Magic"
+    IDS_STRING262           "Charm Magic"
+    IDS_STRING263           "Piercing Damage"
+    IDS_STRING264           "Slashing Damage"
+    IDS_STRING265           "Crushing Damage"
+    IDS_STRING266           "Magical Damage"
+    IDS_STRING267           "Fire Damage"
+    IDS_STRING268           "Ice Damage"
+    IDS_STRING269           "Electrical Damage"
+    IDS_STRING270           "Damage to Undead"
+    IDS_STRING271           "Piercing Resistance"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING272           "Slashing Resistance"
+    IDS_STRING273           "Crushing Resistance"
+    IDS_STRING274           "Magical Resistance"
+    IDS_STRING275           "Fire Resistance"
+    IDS_STRING276           "Ice Resistance"
+    IDS_STRING277           "Electrical Resistance"
+    IDS_STRING278           "Fire Resistance"
+    IDS_STRING279           "Piercing Weakness"
+    IDS_STRING280           "Slashing Weakness"
+    IDS_STRING281           "Crushing Weakness"
+    IDS_STRING282           "Magical Weakness"
+    IDS_STRING283           "Fire Weakness"
+    IDS_STRING284           "Ice Weakness"
+    IDS_STRING285           "Electrical Weakness"
+    IDS_STRING286           "Undead Weakness"
+    IDS_STRING287           "Flaming "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING288           "Icy "
+    IDS_STRING289           "Shocking "
+    IDS_STRING290           "Holy "
+    IDS_STRING291           "Strength"
+    IDS_STRING292           "Dexterity"
+    IDS_STRING293           "Vitality"
+    IDS_STRING294           "Magic"
+    IDS_STRING295           "Level"
+    IDS_STRING296           "Renown"
+    IDS_STRING297           "Lineage"
+    IDS_STRING298           "Sword Skill"
+    IDS_STRING299           "Club & Mace Skill"
+    IDS_STRING300           "Hammer Skill"
+    IDS_STRING301           "Axe Skill"
+    IDS_STRING302           "Spear Skill"
+    IDS_STRING303           "Staff Skill"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING304           "Polearm Skill"
+    IDS_STRING305           "Bow & Crossbow Skill"
+    IDS_STRING306           "Critical Strike Skill"
+    IDS_STRING307           "Spell Casting Skill"
+    IDS_STRING308           "Dual-Wielding Skill"
+    IDS_STRING309           "Shield Battle Skill"
+    IDS_STRING310           "Attack Magic Skill"
+    IDS_STRING311           "Defense Magic Skill"
+    IDS_STRING312           "Charm Magic Skill"
+    IDS_STRING313           "Slowest"
+    IDS_STRING314           "Slow"
+    IDS_STRING315           "Normal"
+    IDS_STRING316           "Fast"
+    IDS_STRING317           "Fastest"
+    IDS_STRING318           "Increases Attack Rating and Damage Dealt with Swords"
+    IDS_STRING319           "Increases Attack Rating and Damage Dealt with Clubs and Maces"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING320           "Increases Attack Rating and Damage Dealt with Hammers"
+    IDS_STRING321           "Increases Attack Rating and Damage Dealt with Axes"
+    IDS_STRING322           "Increases Attack Rating and Damage Dealt with Spears"
+    IDS_STRING323           "Increases Attack Rating and Damage Dealt with Staves"
+    IDS_STRING324           "Increases Attack Rating and Damage Dealt with Polearms"
+    IDS_STRING325           "Increases Attack Rating and Damage Dealt with Bows and Crossbows"
+    IDS_STRING326           "Increases Chance of Dealing a Critical Strike"
+    IDS_STRING327           "Decreases Time Required to Cast Spells"
+    IDS_STRING328           "Increases Speed and Damage of Secondary Weapon Strikes"
+    IDS_STRING329           "Increases Chance of Blocking When Shields are Used"
+    IDS_STRING330           "Increases Potency of Attack Magic by 1 Level"
+    IDS_STRING331           "Increases Potency of Defense Magic by 1 Level"
+    IDS_STRING332           "Increases Potency of Charm Magic by 1 Level"
+    IDS_STRING333           "Sword Class"
+    IDS_STRING334           "Club & Mace Class"
+    IDS_STRING335           "Helmet"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING336           "Shield"
+    IDS_STRING337           "Spear Class"
+    IDS_STRING338           "Bow & Crossbow Class"
+    IDS_STRING339           "Belt"
+    IDS_STRING340           "Jewellery"
+    IDS_STRING341           "Gloves"
+    IDS_STRING342           "Boots"
+    IDS_STRING343           "Body Armour"
+    IDS_STRING344           "Polearm Class"
+    IDS_STRING345           "Axe Class"
+    IDS_STRING346           "Hammer Class"
+    IDS_STRING347           "Staff Class"
+    IDS_STRING348           "Bow & Crossbow Class"
+    IDS_STRING349           "Caster"
+    IDS_STRING350           "Creature"
+    IDS_STRING351           "Area"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING352           "Item"
+    IDS_STRING353           "Creature Area"
+    IDS_STRING354           "Caster Area"
+    IDS_STRING355           "Caster's Minions"
+    IDS_STRING356           "Creature's Minions"
+    IDS_STRING357           "Caster and Minions"
+    IDS_STRING358           "Creature and Minions"
+    IDS_STRING359           "Projectile"
+    IDS_STRING360           "% Strength"
+    IDS_STRING361           "% Dexterity"
+    IDS_STRING362           "% Vitality"
+    IDS_STRING363           "% Magic"
+    IDS_STRING364           "% Mana"
+    IDS_STRING365           "% Life"
+    IDS_STRING366           "% Stamina"
+    IDS_STRING367           "% Movement Speed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING368           "% Attack Speed"
+    IDS_STRING369           "% Defense Rating"
+    IDS_STRING370           "% Attack Rating"
+    IDS_STRING371           "% Damage Dealt"
+    IDS_STRING372           "% Damage Taken"
+    IDS_STRING373           "% Improved Chance of Finding Magical Items"
+    IDS_STRING374           "% More Gold Dropped By Enemies"
+    IDS_STRING375           "% Faster Casting Speed"
+    IDS_STRING376           "% Life Stolen Per Hit"
+    IDS_STRING377           "% Mana Stolen Per Hit"
+    IDS_STRING378           "% Damage Reflected To Enemy"
+    IDS_STRING379           "% Improved Chance Of Block"
+    IDS_STRING380           "% Reduced Item Requirements"
+    IDS_STRING381           "% Piercing Resistance"
+    IDS_STRING382           "% Slashing Resistance"
+    IDS_STRING383           "% Crushing Resistance"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING384           "% Magical Resistance"
+    IDS_STRING385           "% Fire Resistance"
+    IDS_STRING386           "% Ice Resistance"
+    IDS_STRING387           "% Electric Resistance"
+    IDS_STRING388           "N/A"
+    IDS_STRING389           "Remove Effect"
+    IDS_STRING390           "Knockback Effect"
+    IDS_STRING391           "Identify Item"
+    IDS_STRING392           "Write Spell"
+    IDS_STRING393           "Summon Creature"
+    IDS_STRING394           "Add Elemental Damage"
+    IDS_STRING395           "Transform Creature"
+    IDS_STRING396           "Revert Transformation"
+    IDS_STRING397           "Opens Town Portal"
+    IDS_STRING398           "Discover Current Dungeon Level"
+    IDS_STRING399           "Cause Target to Flee"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING400           "Charm Target"
+    IDS_STRING401           "Dispel Summoned Monster"
+    IDS_STRING402           "Dispel Summoned Enemy Monster"
+    IDS_STRING403           "Strength Bonus"
+    IDS_STRING404           "Dexterity Bonus"
+    IDS_STRING405           "Vitality Bonus"
+    IDS_STRING406           "Magic Bonus"
+    IDS_STRING407           "Mana Bonus"
+    IDS_STRING408           "Life Bonus"
+    IDS_STRING409           "Stamina"
+    IDS_STRING410           "Mana Recovered"
+    IDS_STRING411           "HP Recovered"
+    IDS_STRING412           "Stamina Recovered"
+    IDS_STRING413           "Defense Bonus"
+    IDS_STRING414           "Attack Bonus"
+    IDS_STRING415           "Damage Dealt Bonus"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING416           "Damage Taken Reduced"
+    IDS_STRING417           "Knockback"
+    IDS_STRING418           "Sword Skill Bonus"
+    IDS_STRING419           "Club & Mace Skill Bonus"
+    IDS_STRING420           "Hammer Skill Bonus"
+    IDS_STRING421           "Axe Skill Bonus"
+    IDS_STRING422           "Spear Skill Bonus"
+    IDS_STRING423           "Staff Skill Bonus"
+    IDS_STRING424           "Polearm Skill Bonus"
+    IDS_STRING425           "Bow & Crossbow Skill Bonus"
+    IDS_STRING426           "Critical Strike Skill Bonus"
+    IDS_STRING427           "Spell Casting Skill Bonus"
+    IDS_STRING428           "Dual-Wielding Skill Bonus"
+    IDS_STRING429           "Shield Battle Skill Bonus"
+    IDS_STRING430           "Attack Magic Skill Bonus"
+    IDS_STRING431           "Defense Magic Skill Bonus"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING432           "Charm Magic Skill Bonus"
+    IDS_STRING433           "% Strength Bonus"
+    IDS_STRING434           "% Dexterity Bonus"
+    IDS_STRING435           "% Vitality Bonus"
+    IDS_STRING436           "% Magic Bonus"
+    IDS_STRING437           "% Mana Bonus"
+    IDS_STRING438           "% Life Bonus"
+    IDS_STRING439           "% Stamina Bonus"
+    IDS_STRING440           "% Movement Speed Bonus"
+    IDS_STRING441           "% Attack Speed Bonus"
+    IDS_STRING442           "% Defense Bonus"
+    IDS_STRING443           "% Attack Bonus"
+    IDS_STRING444           "% Damage Dealt Bonus"
+    IDS_STRING445           "% Damage Taken Reduced"
+    IDS_STRING446           "% Chance of Finding Magical Items"
+    IDS_STRING447           "% More Gold Dropped By Enemies"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING448           "% Faster Casting Speed"
+    IDS_STRING449           "% Life Stolen Per Hit"
+    IDS_STRING450           "% Mana Stolen Per Hit"
+    IDS_STRING451           "% Damage Reflected To Enemy"
+    IDS_STRING452           "% Improved Chance Of Block"
+    IDS_STRING453           "% Reduced Item Requirements"
+    IDS_STRING454           "% Piercing Resistance Bonus"
+    IDS_STRING455           "% Slashing Resistance Bonus"
+    IDS_STRING456           "% Crushing Resistance Bonus"
+    IDS_STRING457           "% Magical Resistance Bonus"
+    IDS_STRING458           "% Fire Resistance Bonus"
+    IDS_STRING459           "% Ice Resistance Bonus"
+    IDS_STRING460           "% Electric Resistance Bonus"
+    IDS_STRING461           "N/A"
+    IDS_STRING462           "Remove Effect"
+    IDS_STRING463           "Knockback Effect"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING464           "Identify Item"
+    IDS_STRING465           "Write Spell"
+    IDS_STRING466           "Summon Creature"
+    IDS_STRING467           "Add Elemental Damage"
+    IDS_STRING468           "Transform Creature"
+    IDS_STRING469           "Revert Transformation"
+    IDS_STRING470           "Opens Town Portal"
+    IDS_STRING471           "Discover Current Level"
+    IDS_STRING472           "Cause Target to Flee"
+    IDS_STRING473           "Charm Target"
+    IDS_STRING474           "Dispel Summoned Monster"
+    IDS_STRING475           "Strength Penalty"
+    IDS_STRING476           "Dexterity Penalty"
+    IDS_STRING477           "Vitality Penalty"
+    IDS_STRING478           "Magic Penalty"
+    IDS_STRING479           "Mana Penalty"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING480           "Life Penalty"
+    IDS_STRING481           "Stamina Penalty"
+    IDS_STRING482           "Mana Drained"
+    IDS_STRING483           "HP Damage"
+    IDS_STRING484           "Stamina Drained"
+    IDS_STRING485           "Defense Penalty"
+    IDS_STRING486           "Attack Penalty"
+    IDS_STRING487           "Damage Dealt Penalty"
+    IDS_STRING488           "Damage Taken Increased"
+    IDS_STRING489           "Knockback"
+    IDS_STRING490           "Sword Skill Penalty"
+    IDS_STRING491           "Club & Mace Skill Penalty"
+    IDS_STRING492           "Hammer Skill Penalty"
+    IDS_STRING493           "Axe Skill Penalty"
+    IDS_STRING494           "Spear Skill Penalty"
+    IDS_STRING495           "Staff Skill Penalty"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING496           "Polearm Skill Penalty"
+    IDS_STRING497           "Bow & Crossbow Skill Penalty"
+    IDS_STRING498           "Critical Strike Skill Penalty"
+    IDS_STRING499           "Spell Casting Skill Penalty"
+    IDS_STRING500           "Dual-Wielding Skill Penalty"
+    IDS_STRING501           "Shield Battle Skill Penalty"
+    IDS_STRING502           "Attack Magic Skill Penalty"
+    IDS_STRING503           "Defense Magic Skill Penalty"
+    IDS_STRING504           "Charm Magic Skill Penalty"
+    IDS_STRING505           "% Strength Penalty"
+    IDS_STRING506           "% Dexterity Penalty"
+    IDS_STRING507           "% Vitality Penalty"
+    IDS_STRING508           "% Magic Penalty"
+    IDS_STRING509           "% Mana Penalty"
+    IDS_STRING510           "% Life Penalty"
+    IDS_STRING511           "% Stamina Penalty"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING512           "% Movement Speed Penalty"
+    IDS_STRING513           "% Attack Speed Penalty"
+    IDS_STRING514           "% Defense Penalty"
+    IDS_STRING515           "% Attack Penalty"
+    IDS_STRING516           "% Damage Dealt Penalty"
+    IDS_STRING517           "% Damage Taken Increased"
+    IDS_STRING518           "% Reduced Chance of Finding Magical Items"
+    IDS_STRING519           "% Less Gold Dropped By Enemies"
+    IDS_STRING520           "% Slower Casting Speed"
+    IDS_STRING521           "% Life Drained Per Hit"
+    IDS_STRING522           "% Mana Drained Per Hit"
+    IDS_STRING523           "% Damage Reflected To Enemy"
+    IDS_STRING524           "% Reduced Chance Of Block"
+    IDS_STRING525           "% Increased Item Requirements"
+    IDS_STRING526           "% Piercing Resistance Penalty"
+    IDS_STRING527           "% Slashing Resistance Penalty"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING528           "% Crushing Resistance Penalty"
+    IDS_STRING529           "% Magical Resistance Penalty"
+    IDS_STRING530           "% Fire Resistance Penalty"
+    IDS_STRING531           "% Ice Resistance Penalty"
+    IDS_STRING532           "% Electric Resistance Penalty"
+    IDS_STRING533           "N/A"
+    IDS_STRING534           "Remove Effect"
+    IDS_STRING535           "Knockback Effect"
+    IDS_STRING536           "Identify Item"
+    IDS_STRING537           "Write Spell"
+    IDS_STRING538           "Summon Creature"
+    IDS_STRING539           "Add Elemental Damage"
+    IDS_STRING540           "Transform Creature"
+    IDS_STRING541           "Revert Transformation"
+    IDS_STRING542           "Opens Town Portal"
+    IDS_STRING543           "Discover Current Level"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING544           "Cause Target to Flee"
+    IDS_STRING545           "Charm Target"
+    IDS_STRING546           "Dispel Summoned Monster"
+    IDS_STRING547           "Dispel Summoned Enemy Monster"
+    IDS_STRING548           "Strong"
+    IDS_STRING549           "Mighty"
+    IDS_STRING550           "Legendary "
+    IDS_STRING551           "Titanic"
+    IDS_STRING552           "Godly"
+    IDS_STRING553           "Nimble"
+    IDS_STRING554           "Quick"
+    IDS_STRING555           "Swift"
+    IDS_STRING556           "Blinding"
+    IDS_STRING557           "Humming"
+    IDS_STRING558           "Heavy"
+    IDS_STRING559           "Crushing"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING560           "Barbaric"
+    IDS_STRING561           "Deep"
+    IDS_STRING562           "Robust"
+    IDS_STRING563           "Lighted"
+    IDS_STRING564           "Ancient"
+    IDS_STRING565           "Runic"
+    IDS_STRING566           "Charmed"
+    IDS_STRING567           "Wrought"
+    IDS_STRING568           "Gilded"
+    IDS_STRING569           "Jewelled"
+    IDS_STRING570           "Gemmed"
+    IDS_STRING571           "Encrusted"
+    IDS_STRING572           "Divine"
+    IDS_STRING573           "Healthy"
+    IDS_STRING574           "Hearty"
+    IDS_STRING575           "Vital"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING576           "Swarthy"
+    IDS_STRING577           "Vigorous"
+    IDS_STRING578           "Hard"
+    IDS_STRING579           "Solid"
+    IDS_STRING580           "Enduring"
+    IDS_STRING581           "Endless"
+    IDS_STRING582           "Eternal"
+    IDS_STRING583           "Shining"
+    IDS_STRING584           "Gleaming"
+    IDS_STRING585           "Glittering"
+    IDS_STRING586           "Glowing"
+    IDS_STRING587           "Shimmering"
+    IDS_STRING588           "Soothing"
+    IDS_STRING589           "Healing"
+    IDS_STRING590           "Curing"
+    IDS_STRING591           "Medicinal"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING592           "Miraculous"
+    IDS_STRING593           "Horse's"
+    IDS_STRING594           "Antelope's"
+    IDS_STRING595           "Gazelle's"
+    IDS_STRING596           "Cheeta's"
+    IDS_STRING597           "Lightning's"
+    IDS_STRING598           "Hardened"
+    IDS_STRING599           "Hammered"
+    IDS_STRING600           "Thickened"
+    IDS_STRING601           "Plated"
+    IDS_STRING602           "Crafted"
+    IDS_STRING603           "Guiding"
+    IDS_STRING604           "Aiding"
+    IDS_STRING605           "Accurate"
+    IDS_STRING606           "Targeted"
+    IDS_STRING607           "Enchanted"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING608           "Smiting"
+    IDS_STRING609           "Piercing"
+    IDS_STRING610           "Destroying"
+    IDS_STRING611           "Grinding"
+    IDS_STRING612           "Mashing"
+    IDS_STRING613           "Shielding"
+    IDS_STRING614           "Protecting"
+    IDS_STRING615           "Auraed"
+    IDS_STRING616           "Benevolent"
+    IDS_STRING617           "Blessed"
+    IDS_STRING618           "Forceful"
+    IDS_STRING619           "Thrusting"
+    IDS_STRING620           "Hammering"
+    IDS_STRING621           "Blasting"
+    IDS_STRING622           "Hurling"
+    IDS_STRING623           "Novice's"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING624           "Disciple's"
+    IDS_STRING625           "Journeyman's"
+    IDS_STRING626           "Craftsman's"
+    IDS_STRING627           "Master's"
+    IDS_STRING628           "Strength"
+    IDS_STRING629           "Might"
+    IDS_STRING630           "Power"
+    IDS_STRING631           "Giants"
+    IDS_STRING632           "Titans"
+    IDS_STRING633           "Dexterity"
+    IDS_STRING634           "Quickness"
+    IDS_STRING635           "Dodging"
+    IDS_STRING636           "Avoidance"
+    IDS_STRING637           "Blur"
+    IDS_STRING638           "Life "
+    IDS_STRING639           "Vitality"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING640           "Force"
+    IDS_STRING641           "Health"
+    IDS_STRING642           "Immortality"
+    IDS_STRING643           "the Crone"
+    IDS_STRING644           "the Mage"
+    IDS_STRING645           "the Wizard"
+    IDS_STRING646           "the Sorcerer"
+    IDS_STRING647           "the Enchanter"
+    IDS_STRING648           "Seasons"
+    IDS_STRING649           "Years"
+    IDS_STRING650           "Ages"
+    IDS_STRING651           "Aeons"
+    IDS_STRING652           "Epochs"
+    IDS_STRING653           "the Fox"
+    IDS_STRING654           "the Jaguar"
+    IDS_STRING655           "the Eagle"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING656           "the Wolf"
+    IDS_STRING657           "the Tiger"
+    IDS_STRING658           "the Tortoise"
+    IDS_STRING659           "the Tusk"
+    IDS_STRING660           "the Rhino"
+    IDS_STRING661           "the Giant"
+    IDS_STRING662           "the Leviathan"
+    IDS_STRING663           "the Hare"
+    IDS_STRING664           "the Lizard"
+    IDS_STRING665           "the Cheetah"
+    IDS_STRING666           "Lightning"
+    IDS_STRING667           "Light"
+    IDS_STRING668           "the Grand"
+    IDS_STRING669           "the Mighty"
+    IDS_STRING670           "the Chivalrous"
+    IDS_STRING671           "the Legendary"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING672           "the Gods"
+    IDS_STRING673           "Stone"
+    IDS_STRING674           "the Plains"
+    IDS_STRING675           "the Hills"
+    IDS_STRING676           "the Mountains"
+    IDS_STRING677           "the Earth"
+    IDS_STRING678           "Bronze"
+    IDS_STRING679           "Iron"
+    IDS_STRING680           "Steel"
+    IDS_STRING681           "Silver"
+    IDS_STRING682           "Gold"
+    IDS_STRING683           "Warriors"
+    IDS_STRING684           "Soldiers"
+    IDS_STRING685           "Lords"
+    IDS_STRING686           "Knights"
+    IDS_STRING687           "Mastery"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING688           "Protection"
+    IDS_STRING689           "Absorption"
+    IDS_STRING690           "Deflection"
+    IDS_STRING691           "Glancing"
+    IDS_STRING692           "Osmosis"
+    IDS_STRING693           "Luck"
+    IDS_STRING694           "Fortune"
+    IDS_STRING695           "Discovery"
+    IDS_STRING696           "Favor"
+    IDS_STRING697           "Providence"
+    IDS_STRING698           "Greed"
+    IDS_STRING699           "Wealth"
+    IDS_STRING700           "Prosperity"
+    IDS_STRING701           "Affluence"
+    IDS_STRING702           "Opulence"
+    IDS_STRING703           "the Magician"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING704           "the Conjurer"
+    IDS_STRING705           "the Mage"
+    IDS_STRING706           "the Wizard"
+    IDS_STRING707           "the Sorcerer"
+    IDS_STRING708           "Sapping"
+    IDS_STRING709           "Draining"
+    IDS_STRING710           "Deep Draughts"
+    IDS_STRING711           "Leeching"
+    IDS_STRING712           "the Vampire"
+    IDS_STRING713           "the Lizard"
+    IDS_STRING714           "the Snake"
+    IDS_STRING715           "the Serpent"
+    IDS_STRING716           "the Wyrm"
+    IDS_STRING717           "the Dragon"
+    IDS_STRING718           "Spines"
+    IDS_STRING719           "Spikes"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING720           "Nails"
+    IDS_STRING721           "Spears"
+    IDS_STRING722           "Lances"
+    IDS_STRING723           "Blocking"
+    IDS_STRING724           "Blocking"
+    IDS_STRING725           "Blocking"
+    IDS_STRING726           "Deflection"
+    IDS_STRING727           "Deflection"
+    IDS_STRING728           "Basics"
+    IDS_STRING729           "Smoothness"
+    IDS_STRING730           "Facility"
+    IDS_STRING731           "Clarity"
+    IDS_STRING732           "Lucidity"
+    IDS_STRING733           "Elements"
+    IDS_STRING734           "Frail"
+    IDS_STRING735           "Weak"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING736           "Clumsy"
+    IDS_STRING737           "Stumbling"
+    IDS_STRING738           "Diseased"
+    IDS_STRING739           "Ill"
+    IDS_STRING740           "Foolish"
+    IDS_STRING741           "Simpleton's"
+    IDS_STRING742           "Mindless"
+    IDS_STRING743           "Fool's"
+    IDS_STRING744           "Drained"
+    IDS_STRING745           "Corpse's"
+    IDS_STRING746           "Exhausted"
+    IDS_STRING747           "Weary"
+    IDS_STRING748           "Stupefying"
+    IDS_STRING749           "Lobotomizing"
+    IDS_STRING750           "Draining"
+    IDS_STRING751           "Leeching"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING752           "Quivering"
+    IDS_STRING753           "Panting"
+    IDS_STRING754           "Brittle"
+    IDS_STRING755           "Crumbling"
+    IDS_STRING756           "Blind"
+    IDS_STRING757           "Sightless"
+    IDS_STRING758           "Troubled"
+    IDS_STRING759           "Corrupted"
+    IDS_STRING760           "Invalid's"
+    IDS_STRING761           "Sickened"
+    IDS_STRING762           "Frailty"
+    IDS_STRING763           "Weakness"
+    IDS_STRING764           "Clumsiness"
+    IDS_STRING765           "Shakes"
+    IDS_STRING766           "Disease"
+    IDS_STRING767           "Corruption"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING768           "Stupidity"
+    IDS_STRING769           "Lunacy"
+    IDS_STRING770           "Insanity"
+    IDS_STRING771           "the Idiot"
+    IDS_STRING772           "Illness"
+    IDS_STRING773           "Quivering"
+    IDS_STRING774           "Panting"
+    IDS_STRING775           "Gasps"
+    IDS_STRING776           "Slowness"
+    IDS_STRING777           "Creeping"
+    IDS_STRING778           "Slugs"
+    IDS_STRING779           "Snails"
+    IDS_STRING780           "the Brittle"
+    IDS_STRING781           "Flaking"
+    IDS_STRING782           "Blindness"
+    IDS_STRING783           "the Broken"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING784           "Dullness"
+    IDS_STRING785           "Weakness"
+    IDS_STRING786           "Vulnerability"
+    IDS_STRING787           "Rust"
+    IDS_STRING788           "Affliction"
+    IDS_STRING789           "Affliction"
+    IDS_STRING790           "the Pauper"
+    IDS_STRING791           "the Beggar"
+    IDS_STRING792           "Slow Casting"
+    IDS_STRING793           "Slow Casting"
+    IDS_STRING794           "Bleeding"
+    IDS_STRING795           "Wounds"
+    IDS_STRING796           "Depletion"
+    IDS_STRING797           "Bereavement"
+    IDS_STRING798           "Reflection"
+    IDS_STRING799           "Reflection"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING800           "Failure"
+    IDS_STRING801           "Incompetence"
+    IDS_STRING802           "Obtuseness"
+    IDS_STRING803           "Opacity"
+    IDS_STRING804           "Achilles"
+    IDS_STRING805           "Enchant cost\n\010$1 Gold\010"
+    IDS_STRING806           "Place an \010item\010\nhere to\n\010enchant it\010"
+    IDS_STRING807           "You are far too \010famous\010 to benefit from my humble art!"
+    IDS_STRING808           "\n\nWill you pay \010$1 GP\010 to advance to the rank of \010$2?\010\n( Renown Level $3)"
+    IDS_STRING809           "You are far too \010famous\010 to benefit from my humble art!"
+    IDS_STRING810           "Place an \010item\010 here to destroy any \010socketed gems\010"
+    IDS_STRING811           "Break"
+    IDS_STRING812           "Cancel"
+    IDS_STRING813           "Place an \010item\010 here to destroy it and \010extract gems\010"
+    IDS_STRING814           "Extract"
+    IDS_STRING815           "Enchant"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING816           "Place an \010item\010 to pass on to your \010descendent\010!"
+    IDS_STRING817           "Retire"
+    IDS_STRING818           "Spell must be cast on a target!"
+    IDS_STRING819           "Target is not the right alignment!"
+    IDS_STRING820           "The Town of Grove"
+    IDS_STRING821           "Level $1"
+    IDS_STRING822           "Summoned : \010$1/$2\010"
+    IDS_STRING823           "level $1"
+    IDS_STRING824           "Insufficient $1 Skill Level To Cast #2 on $3\nRight Click to Cancel"
+    IDS_STRING825           "Left Click to Cast $1 on $2\nRight Click to Cancel"
+    IDS_STRING826           "Left Click to Cast $1\nRight Click to Cancel"
+    IDS_STRING827           "Left Click to $1 $2\nRight Click to Cancel"
+    IDS_STRING828           "Left Click to $1\nRight Click to Cancel"
+    IDS_STRING829           "SPELL CANNOT BE CAST IN MENU\n"
+    IDS_STRING830           "CLICK TO CAST\n"
+    IDS_STRING831           "LEFT CLICK TO SET AS ACTIVE SPELL\nSPELL CANNOT BE CAST IN MENU\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING832           "LEFT CLICK TO SET AS ACTIVE SPELL\nRIGHT CLICK TO CAST\n"
+    IDS_STRING833           "\nAttack Magic"
+    IDS_STRING834           "\nDefense Magic"
+    IDS_STRING835           "\nCharm Magic"
+    IDS_STRING836           "\nTarget : "
+    IDS_STRING837           "\nCasting Time : $1 seconds"
+    IDS_STRING838           "\nMana Cost : "
+    IDS_STRING839           "\nInstant Effect"
+    IDS_STRING840           "\nDuration : $1 seconds"
+    IDS_STRING841           "$1% Chance of "
+    IDS_STRING842           "$1 per second"
+    IDS_STRING843           "$1% Chance to "
+    IDS_STRING844           "$1 if Level is below $2"
+    IDS_STRING845           "$1 if Dungeon Level is $2 or above"
+    IDS_STRING846           "$1 of Identification Level $2 and below"
+    IDS_STRING847           "$1 of Level $2 and Below"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING848           "$1 of Level $2 for $3 Seconds"
+    IDS_STRING849           "\nRequires $1"
+    IDS_STRING850           "Gamble Price : "
+    IDS_STRING851           "Price : "
+    IDS_STRING852           "Sell Price : "
+    IDS_STRING853           "\nSocketed : $1 free sockets"
+    IDS_STRING854           "\nSocketed : 1 free socket"
+    IDS_STRING855           "\nTwo Handed"
+    IDS_STRING856           "\nAttack Damage : "
+    IDS_STRING857           "\nDefense : "
+    IDS_STRING858           "\nPlace on socketed item to install"
+    IDS_STRING859           "\nAdds +$1 $2 to armour when installed"
+    IDS_STRING860           "\nAdds +$1 $2 to weapon when installed"
+    IDS_STRING861           "\nAdds $1 $2"
+    IDS_STRING862           "$1 when installed"
+    IDS_STRING863           "\nNot Identified!\nIdentification Level : $1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING864           "\nRequires Renown of $1"
+    IDS_STRING865           "\nRequires $1 $2"
+    IDS_STRING866           "\nRequires $2 $1"
+    IDS_STRING867           "\nRight Click to Write To Spellbook"
+    IDS_STRING868           "\nYou have already learned this spell."
+    IDS_STRING869           "\nYour $1 slots are full\nYou must remove a $2 spell to learn this spell."
+    IDS_STRING870           "\nUses : "
+    IDS_STRING871           "\nNot Usable in Town"
+    IDS_STRING872           "\nPlace on pet's icon or right click to feed to pet"
+    IDS_STRING873           "\nReturns pet to original form"
+    IDS_STRING874           "\nTransforms pet into $1"
+    IDS_STRING875           "$1 permanently"
+    IDS_STRING876           "$1 for $2 seconds"
+    IDS_STRING877           "\nStrength Improved : \010+$1\010"
+    IDS_STRING878           "\nStrength Reduced : \010$1\010"
+    IDS_STRING879           "\nDexterity Improved : \010+$1\010"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING880           "\nDexterity Reduced : \010$1\010"
+    IDS_STRING881           "\nVitality Improved : \010+$1\010"
+    IDS_STRING882           "\nVitality Reduced : \010$1\010"
+    IDS_STRING883           "\nMagic Improved : \010+$1\010"
+    IDS_STRING884           "\nMagic Reduced : \010$1\010"
+    IDS_STRING885           "\nArmour Improved : \010+$1\010"
+    IDS_STRING886           "\nArmour Reduced : \010$1\010"
+    IDS_STRING887           "\nRight Click to Use"
+    IDS_STRING888           "Close Help"
+    IDS_STRING889           "Help Menu"
+    IDS_STRING890           "\010Left Click\010 to Move, Attack, and Interact with items\n\010Right Click\010 to cast spells (when learned)\nHold \010<CTRL>\010 to Run\nHold \010<ALT>\010 to highlight items on the ground\nHold \010<SHIFT>\010 to remain stationary while attacking\nHold \010<SHIFT>\010 while clicking on items to have your pet take them\nHold \010<SHIFT>\010 while clicking merchants to sell directly from pet's inventory\n\010<TAB>\010 toggles the AutoMap\nPress \010V\010 for the Save Menu\nPress \010H\010 to toggle this Help Menu\nPress \010<ESC>\010 to pause or view the Save Menu"
+    IDS_STRING891           "Pet's Health"
+    IDS_STRING892           "Drop Items Here\nTo Feed To Pet"
+    IDS_STRING893           "Health Bar"
+    IDS_STRING894           "Mana Bar"
+    IDS_STRING895           "Your Gold"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING896           "Stamina Bar"
+    IDS_STRING897           "Experience Bar"
+    IDS_STRING898           "Toggle Run"
+    IDS_STRING899           "Toggle Show Loot"
+    IDS_STRING900           "Quick Item Slots"
+    IDS_STRING901           "Sub-Menu Buttons"
+    IDS_STRING902           "Drag Helmet Here To Wear"
+    IDS_STRING903           "Drag Armour Here To Wear"
+    IDS_STRING904           "Drag Shield Or Weapon Here To Wear"
+    IDS_STRING905           "Drag Weapon Here To Wield"
+    IDS_STRING906           "Drag Shield Or Weapon Here To Wear"
+    IDS_STRING907           "Drag Gloves Here To Wear"
+    IDS_STRING908           "Drag Necklace Here To Wear"
+    IDS_STRING909           "Drag Boots Here To Wear"
+    IDS_STRING910           "Drag Ring Here To Wear"
+    IDS_STRING911           "Drag Ring Here To Wear"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING912           "Drag Belt Here To Wear"
+    IDS_STRING913           "Journal"
+    IDS_STRING914           "$1hrs $2mins $3secs"
+    IDS_STRING915           "Done"
+    IDS_STRING916           "Level"
+    IDS_STRING917           "Experience"
+    IDS_STRING918           "Next Level"
+    IDS_STRING919           "Damage"
+    IDS_STRING920           "Attack Rating"
+    IDS_STRING921           "Defense"
+    IDS_STRING922           "Stamina"
+    IDS_STRING923           "Life "
+    IDS_STRING924           "Magic"
+    IDS_STRING925           "Mana"
+    IDS_STRING926           "\010Strength\010 affects \010damage dealt\010"
+    IDS_STRING927           "\010Dexterity\010 affects likelihood of \010striking\010 an opponent\nas well as likelihood of \010dodging\010 an attack"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING928           "\010Vitality\010 determines the amount of \010life\010 available\nas well as the amount of \010stamina\010"
+    IDS_STRING929           "\010Magic\010 determines the amount of \010mana points\010 available\nand increases \010damage dealt\010 by spells"
+    IDS_STRING930           "range of damage dealt on a successful strike"
+    IDS_STRING931           "rating of the likelihood that you will strike"
+    IDS_STRING932           "rating of the likelihood that you will dodge"
+    IDS_STRING933           "amount of stamina available"
+    IDS_STRING934           "amount of life available"
+    IDS_STRING935           "amount of mana available"
+    IDS_STRING936           "$1's Quest"
+    IDS_STRING937           "Please return when the task is complete!"
+    IDS_STRING938           "At last! \010$1\010 has been destroyed! Your \010journey\010 is complete!\n\nYou receive\n\010$2 Experience\010\n\010$3 Fame\010\n\010$4 Gold\010\n\nCome back and \010speak\010 to me when you would like to \010retire!\010"
+    IDS_STRING939           "\010$1\010 the \010$2\010 still awaits you on \010level $3\010. Return when you have \010defeated\010 it..."
+    IDS_STRING940           "Destroy \010$1\010 the \010$2\010 and its \010$3\010 minions on \010level $4\010."
+    IDS_STRING941           "You have my gratitude for dispatching \010$1\010 and its \010minions\010! Here is your reward!\n\nYou receive\n\010$2 Experience\010\n\010$3 Fame\010\n\010$4 Gold\010"
+    IDS_STRING942           "Please return when you have defeated \010$1\010 and its \010minions\010."
+    IDS_STRING943           "Destroy \010$1\010 the \010$2\010 and its \010$3\010 minions on \010level $4\010."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING944           "Thank you for retrieving the \010$1\010 from \010$2\010 and its \010minions\010! Here is your reward!\n\nYou receive\n\010$3 Experience\010\n\010$4 Fame\010\n\010$5 Gold\010"
+    IDS_STRING945           "Please return when you have defeated \010$1\010 and its \010minions\010 and found the \010$2\010."
+    IDS_STRING946           "Destroy \010$1\010 the \010$2\010 and its \010$3\010 minions on \010level $4\010 and return the \010$5\010."
+    IDS_STRING947           "You have my thanks for defeating \010$1!\010 - here is your reward!\n\nYou receive\n\010$2 Experience\010\n\010$3 Fame\010\n\010$4 Gold\010"
+    IDS_STRING948           "Please return when you have defeated \010$1\010."
+    IDS_STRING949           "Destroy \010$1\010 the \010$2\010 on \010level $3\010."
+    IDS_STRING950           "Thank you for clearing out that infestation for me! Here is your reward!\n\nYou receive\n\010$1 Experience\010\n\010$2 Fame\010\n\010$3 Gold\010"
+    IDS_STRING951           "Please return when all of the \010$1s\010 have been killed."
+    IDS_STRING952           "Destroy \010$1 $2s\010 on \010level $3\010."
+    IDS_STRING953           "Ah! You have found the \010$1!\010 And here is your reward. My thanks to you!\n\nYou receive\n\010$2 Experience\010\n\010$3 Fame\010\n\010$4 Gold\010"
+    IDS_STRING954           "Destroy \010$1\010 the \010$2\010 on \010level $3\010 and retrieve \010$4\010."
+    IDS_STRING955           "Please return when you have found the \010$1\010."
+    IDS_STRING956           "Thank goodness! You have found the \010$1\010! And here is your reward. My thanks to you!\n\nYou receive\n\010$2 Experience\010\n\010$3 Fame\010\n\010$4 Gold\010"
+    IDS_STRING957           "Retrieve \010$1\010 from \010level $2\010."
+    IDS_STRING958           "Please return when you have found the \010$1\010."
+    IDS_STRING959           "Your reward is a \010$1\010."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING960           "$1 Received\010"
+    IDS_STRING961           " I will give you this \010$1\010 as reward!"
+    IDS_STRING962           "\n\nYou can find the \010Dungeon Entrance\010 on the \010east\010 side of town..."
+    IDS_STRING963           "Active Quests"
+    IDS_STRING964           "Reward"
+    IDS_STRING965           "Gold"
+    IDS_STRING966           "Fame"
+    IDS_STRING967           "Item"
+    IDS_STRING968           "Quest Name"
+    IDS_STRING969           "Cancel $1?"
+    IDS_STRING970           "Cancel this Quest"
+    IDS_STRING971           "CANCEL"
+    IDS_STRING972           "$1 - Complete!"
+    IDS_STRING973           "\n\nQuest completed! Return to \010$1\010 to receive your reward!\010"
+    IDS_STRING974           "\n($1) $2\010 Remaining."
+    IDS_STRING975           "You are in Demo Mode. Your Character can only reach level $1."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING976           "Points Remaining"
+    IDS_STRING977           "Adds \0101 point\010 to Damage when wielding this weapon\n Adds \0101 point\010 to Attack when wielding this weapon\010"
+    IDS_STRING978           "Chance of Critical Strike increases from \010$1%\010 to \010$2%\010"
+    IDS_STRING979           "Chance of Block with Shield increases from \010$1%\010 to \010$2%\010"
+    IDS_STRING980           "Spellcasting speed decrease changes from \010$1%\010 to \010$2%\010"
+    IDS_STRING981           "Right-Hand Damage increased from \010$1%\010 to \010$2%\n\010Left-Hand Damage increased from \010$3%\010 to \010$4%\010"
+    IDS_STRING982           "Active Spell"
+    IDS_STRING983           "Attack Magic"
+    IDS_STRING984           "Defense Magic"
+    IDS_STRING985           "Charm Magic"
+    IDS_STRING986           "Hold CTRL and Left Click to\npermanently remove a spell"
+    IDS_STRING987           "Renown"
+    IDS_STRING988           "Attack"
+    IDS_STRING989           "$1 the $2 \010($3)\010"
+    IDS_STRING990           "$1 the $2"
+    IDS_STRING991           "Display Tips"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING992           "\n\010-socketed-\010"
+    IDS_STRING993           "Blocked!"
+    IDS_STRING994           "$1 gold"
+    IDS_STRING995           "Failed!"
+    IDS_STRING996           "Return to town?"
+    IDS_STRING997           "Ascend the stairs?"
+    IDS_STRING998           "Enter the dungeon?"
+    IDS_STRING999           "Descend deeper into the dungeon?"
+    IDS_STRING1000          "In Demo Mode you are only allowed to venture down $1 dungeon levels."
+    IDS_STRING1001          "Return to the dungeon?"
+    IDS_STRING1002          "Getts the Traveller"
+    IDS_STRING1003          "Pikko the Fisherman"
+    IDS_STRING1004          "Select Difficulty"
+    IDS_STRING1005          "Page"
+    IDS_STRING1006          "Easiest difficulty level"
+    IDS_STRING1007          "Adventurer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1008          "Normal difficulty level"
+    IDS_STRING1009          "Hero"
+    IDS_STRING1010          "Hard difficulty level"
+    IDS_STRING1011          "Legend"
+    IDS_STRING1012          "Hardest difficulty level"
+    IDS_STRING1013          "Back"
+    IDS_STRING1014          "Descendent Name"
+    IDS_STRING1015          "Set Gender to Male"
+    IDS_STRING1016          "Random Name"
+    IDS_STRING1017          "Random Features"
+    IDS_STRING1018          "Select Hairstyle"
+    IDS_STRING1019          "Select Face"
+    IDS_STRING1020          "Pet's Name"
+    IDS_STRING1021          "Select Dog as Pet"
+    IDS_STRING1022          "Select Cat as Pet"
+    IDS_STRING1023          "\010RETIRED\010\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1024          "\nDifficulty : \010$1\010"
+    IDS_STRING1025          "Continue Playing"
+    IDS_STRING1026          "Delete Game"
+    IDS_STRING1027          "Really delete \010$1\010 forever?"
+    IDS_STRING1028          "Delete"
+    IDS_STRING1029          "Cancel"
+    IDS_STRING1030          "\010-Producers-\010\nJay Minn\nTravis Baldree"
+    IDS_STRING1031          "\010-Design/Programming-\010\nTravis Baldree"
+    IDS_STRING1032          "\010-Art Direction-\010\nTravis Baldree"
+    IDS_STRING1033          "\010-Artists-\010\nJason Beck, Kevin Green, Jeff Selbig, Mike Fisher\nDavid Johnson, Travis Baldree, Martin Bartsch, Tito Pagan\nLiquid Development, Donnavon Webb, Nikitova, Jurgen Brenkert, David Helsby"
+    IDS_STRING1034          "\010-Test Lead-\010\nMarcus King"
+    IDS_STRING1035          "\010-Testers-\010\nScott Branston, Greg Brown, Tony Case\nBill Dennes, John Dunbar, Todd Dyment\nDeon Miyoi, Chris Mosconi, Sergio Sanchez"
+    IDS_STRING1036          "\010-Audio-\010\nMarc Pospisil, Travis Baldree\nAdditional Music Licensed from LicenseMusic.com\nVoice Talents of Henry Dardennes, Lynn McManus, Dave White, John Patrick Lowrie"
+    IDS_STRING1037          "Since oldest living memory, the \010Dungeon Gate\010 has been standing in the heart of the \010Old Wood\010.  Its doorway leads to infinite possibility, to \010subterranean lands\010 fabled in stories and myths.  Many \010adventurers\010 have passed over that ancient threshold - some to find \010fame\010, \010glory\010, and \010wealth\010 beyond telling, and others \010never to return\010.\n\nThe town of \010Grove\010 has forever been the safe haven at the Dungeon's mouth - a watering hole and resting place for weary adventurers.  Here great tales are told by the Inn's fire.  \010Journeys\010 are planned, and \010legacies\010 are made.  \010Minstrels\010 sing of the great feats of \010heroes\010 long gone, and \010statues\010 ring the square, a testament to their deeds.\n\nAfter travelling many hard and dusty days, you and your faithful \010companion\010 arrive at last in the fabled forest town, which awaits beneath the long shadow of the \010Gate\010.\n\nWithin these walls lies the path to \010infinite adventure\010. It is here that you will test your worth, and perhaps find \010fortune\010 and \010glory\010 along the way. It is here that you will determine your \010Fate...\010"
+    IDS_STRING1038          "Continue..."
+    IDS_STRING1039          "Since oldest living memory, the \010Dungeon Gate\010 has been standing in the heart of the \010Old Wood\010.  Its doorway leads to infinite possibility, to \010subterranean lands\010 fabled in stories and myths.  Many \010adventurers\010 have passed over that ancient threshold - some to find \010fame\010, \010glory\010, and \010wealth\010 beyond telling, and others \010never to return\010.\n\nThe town of \010Grove\010 has forever been the safe haven at the Dungeon's mouth - a watering hole and resting place for weary adventurers.  Here great tales are told by the Inn's fire.  \010Journeys\010 are planned, and \010legacies\010 are made.  \010Minstrels\010 sing of the great feats of \010heroes\010 long gone, and \010statues\010 ring the square, a testament to their deeds.\n\nAfter travelling many hard and dusty days, you and your faithful \010companion\010 arrive at last in the fabled forest town, which awaits beneath the long shadow of the \010Gate\010.\n\nWithin these walls lies the path to \010infinite adventure\010. It is here that you will test your worth, and perhaps find \010fortune\010 and \010glory\010 along the way. It is here that you will determine your \010Fate...\010"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1040          "Demo Version"
+    IDS_STRING1041          "Version $1b"
+    IDS_STRING1042          "New Game"
+    IDS_STRING1043          "Continue Game"
+    IDS_STRING1044          "Options"
+    IDS_STRING1045          "Credits"
+    IDS_STRING1046          "Help"
+    IDS_STRING1047          "Visit PlayFate.com"
+    IDS_STRING1048          "Name"
+    IDS_STRING1049          "Screen Resolution"
+    IDS_STRING1050          "800x600"
+    IDS_STRING1051          "Light Blur"
+    IDS_STRING1052          "On"
+    IDS_STRING1053          "Shadows"
+    IDS_STRING1054          "All Objects"
+    IDS_STRING1055          "Shadow Detail"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1056          "High"
+    IDS_STRING1057          "Particles"
+    IDS_STRING1058          "VSYNC"
+    IDS_STRING1059          "Off"
+    IDS_STRING1060          "Fog"
+    IDS_STRING1061          "Antialiasing"
+    IDS_STRING1062          "Brightness"
+    IDS_STRING1063          "Sound Effect Volume"
+    IDS_STRING1064          "Music Volume"
+    IDS_STRING1065          "Display Tips"
+    IDS_STRING1066          "640x480"
+    IDS_STRING1067          "1024x768"
+    IDS_STRING1068          "1152x864"
+    IDS_STRING1069          "1280x1024"
+    IDS_STRING1070          "1600x1200"
+    IDS_STRING1071          "1280x768(wide)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1072          "1920x1200(wide)"
+    IDS_STRING1073          "Player Only"
+    IDS_STRING1074          "Characters Only"
+    IDS_STRING1075          "All"
+    IDS_STRING1076          "Plain"
+    IDS_STRING1077          "Animated"
+    IDS_STRING1078          "At last, your \010journey\010 is complete...  \010Wearied\010 from your long years of \010adventure\010, you at last settle down, and pass your \010legacy\010 onto a \010younger\010 hero. They will \010carry on\010 your name, \010fighting\010 new battles, \010righting\010 old wrongs, and pursuing their \010Fate\010..."
+    IDS_STRING1079          "Create Descendent"
+    IDS_STRING1080          "Retire Forever"
+    IDS_STRING1081          "At last, your \010journey\010 is complete...  \010Wearied\010 from your long years of \010adventure\010, you at last settle down, and pass your \010legacy\010 onto a \010younger\010 hero. They will \010carry on\010 your name, \010fighting\010 new battles, \010righting\010 old wrongs, and pursuing their own \010Fate...\010\n\n"
+    IDS_STRING1082          "Insufficient $1 Skill Level To Cast!"
+    IDS_STRING1083          "Spell must be cast on an item!"
+    IDS_STRING1084          "Nothing happens!"
+    IDS_STRING1085          "Excellent! Your $1 has been raised by\n\010$2 Points!\010"
+    IDS_STRING1086          "Oh no! Your $1 has been reduced by\n\010$2 Points!\010"
+    IDS_STRING1087          "Two \010$1\010 gemstones pop from the \010Statue\010!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1088          "As you \010pry\010 at the gemstones, a deep \010rumbling\010 echoes from the ground! \010$1\010 has been summoned to defend the \010Statue\010!"
+    IDS_STRING1089          "You place your \010$1\010 upon the \010Anvil\010 but ... nothing happens!"
+    IDS_STRING1090          "A \010spectral hammer\010 crashes down upon your \010$1\010 - and you discover that new \010Sockets\010 have been added!"
+    IDS_STRING1091          "A \010spectral hammer\010 crashes down upon your \010$1\010 - and your item receives extra enchantment!"
+    IDS_STRING1092          "A \010spectral hammer\010 crashes down upon your \010$1\010 - and your item is imbued with unique powers!"
+    IDS_STRING1093          "A \010spectral hammer\010 crashes down upon your \010$1\010 - and removes all powers from your item!"
+    IDS_STRING1094          "You place your \010$1\010 upon the \010Anvil\010 but ... nothing happens!"
+    IDS_STRING1095          "You Feel Healthy!"
+    IDS_STRING1096          "You Mind Feels Clearer!"
+    IDS_STRING1097          "You Feel Rested!"
+    IDS_STRING1098          "\010Fate's Statue\010 looms...\nWill you \010tempt Fate\010 and \010pry\010 the gems from the statue?"
+    IDS_STRING1099          "Pry"
+    IDS_STRING1100          "Leave"
+    IDS_STRING1101          "The \010Shrine of Learning\010 awaits the patient student...\nWill you \010tempt Fate\010 and read from the ancient text?"
+    IDS_STRING1102          "Place an item on the \010Magic Anvil\010"
+    IDS_STRING1103          "You must have a fishing pole to go fishing."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1104          "Your pet meets you in town, and has brought you\n\010$1 Gold\010\nfrom the sale of items!"
+    IDS_STRING1105          "Your pet has returned from town, and has brought you\n\010$1 Gold\010\nfrom the sale of items!"
+    IDS_STRING1106          "Your pet meets you in town."
+    IDS_STRING1107          "Your pet has returned from town."
+    IDS_STRING1108          "DISPELLED!"
+    IDS_STRING1109          "+$1 HP"
+    IDS_STRING1110          "-$1 HP"
+    IDS_STRING1111          "Miss"
+    IDS_STRING1112          "Fleeing!"
+    IDS_STRING1113          "$1 HP"
+    IDS_STRING1114          "Summoned $1"
+    IDS_STRING1115          "Return To Dungeon Level $1"
+    IDS_STRING1116          "Return To Town"
+    IDS_STRING1117          "No Effect"
+    IDS_STRING1118          "-$1 hp"
+    IDS_STRING1119          "+$1 XP"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1120          "LEVEL UP!"
+    IDS_STRING1121          "+$1 FAME"
+    IDS_STRING1122          "Your \010Fame\010 has increased! You have attained the rank of \010$1\010. You receive \010extra Skill Points to spend!\010"
+    IDS_STRING1123          " "
+    IDS_STRING1124          "Your pet is already in town!"
+    IDS_STRING1125          "Poisoned!"
+    IDS_STRING1126          "Mana Recovered"
+    IDS_STRING1127          "Life Recovery"
+    IDS_STRING1128          "Stamina Recovery"
+    IDS_STRING1129          "Defense Rating"
+    IDS_STRING1130          "Damage Dealt"
+    IDS_STRING1131          "Damage Taken"
+    IDS_STRING1132          "View this Quest"
+    IDS_STRING1133          "Low"
+    IDS_STRING1134          "Medium"
+    IDS_STRING1135          "High"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1136          "Ultra"
+    IDS_STRING1137          "Town Portal Scroll"
+    IDS_STRING1138          "Light Handaxe"
+    IDS_STRING1139          "Health Potion"
+    IDS_STRING1140          "Identify Scroll"
+    IDS_STRING1141          "Cat"
+    IDS_STRING1142          "Life $1/$2"
+    IDS_STRING1143          "Mana $1/$2"
+    IDS_STRING1144          "Stamina $1/$2"
+    IDS_STRING1145          "Experience $1/$2"
+    IDS_STRING1146          "$1 of $2"
+    IDS_STRING1147          "Go Fishing!"
+    IDS_STRING1148          "Ascend Stairs"
+    IDS_STRING1149          "Descend Stairs"
+    IDS_STRING1150          "$1's \n$2"
+    IDS_STRING1151          " of $1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1152          "$1$2$3"
+    IDS_STRING1153          "$1$2"
+    IDS_STRING1154          "$1$2"
+    IDS_STRING1155          "$1$2"
+    IDS_STRING1156          "$1 "
+    IDS_STRING1157          "Descend Into Dungeon"
+    IDS_STRING1158          "View this Quest"
+    IDS_STRING1159          "Cursed Sword"
+    IDS_STRING1160          "CRITICAL STRIKE"
+    IDS_STRING1161          "Click to View Help"
+    IDS_STRING1162          "$1 GP"
+    IDS_STRING1163          "Upgrade"
+    IDS_STRING1164          "BLOCKED"
+    IDS_STRING1165          "Book of Identify"
+    IDS_STRING1166          "Book of Town Portals"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1500          "Enabling cheats will disable achievements permanently. Do you want to continue?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,47 @@
+;
+; data file for the AUM Console -- makes a patch automatically.
+; Original file: Vversion_AUMC.dat
+;
+; Must run this with wtpp with the following defined:
+; DIR = C:\Projects\WTPlatform\Samples\Wt\System\Net\CUpdateManager_Demo\Installer\
+; VERSION = version number (10, 20, etc)
+; SHORT = short description
+; LONG = long description
+;
+; Patch Vversion %VERSION%: a small, simple patch (should be about 32k)
+;
+set DFV 3
+make masterdirectory root "C:\PF\Demo_Patch\"
+make originaldirectory root "C:\PF\Demo\"
+run prune
+write masterdirectory ofile "%DIR%Build\V%VERSION%_patch_masterdirectory.xml"
+;;ORIG -- uses better directory names make nsis ofile "%DIR%Build\V%VERSION%_patch.nsis" oexe "%DIR%Build\V%VERSION%_patch.exe" gameroot ".\" masterroot "C:\Program Files\CUpdateManager_Demo_Patch\"
+make nsis ofile "%DIR%Build\V%VERSION%_patch.nsis" oexe "%DIR%Build\V%VERSION%_patch.exe" gameroot ".\" masterroot "C:\PF\Demo_Patch\"
+run nsis
+make patchmanifest url http://localhost/updates/myprogram/updates/download/patch.exe ofile "%DIR%Build\V%VERSION%_patchmanifest_marketing.xml" versionto %VERSION% aboutshort "%SHORT%" aboutlong "%LONG%" 
+add patchmanifestaboutshort language "English_United States" value "Changes the color to blue" charset DEFAULT font "Brush Script MT" height 20
+add patchmanifestaboutshort language "English_Canada" value "Changes the color to blue, eh" charset DEFAULT font "Brush Script MT" height 20
+add patchmanifestaboutshort language "French_France" value "L'application c'est blue, non?" charset DEFAULT font "Brush Script MT" height 20
+
+add patchmanifestaboutlong language "English" value "This brilliant new patch will change the color to blue (american/canadian)" charset DEFAULT font "Castellar" height 35
+add patchmanifestaboutlong language "French_France" value "L'application c'est blue, non?  Oui, mais je ne parle les Francais, so the rest of this comment is in english" charset DEFAULT font "Castellar" height 35
+
+add patchmanifestextension name sound_autoread language "English_United States" value "%DIR%..\update_simple\sound_en_us.wav" noi18n
+add patchmanifestextension name sound_autoread language "English_Candata" value "%DIR%..\update_simple\sound_en_ca.wav" noi18n
+add patchmanifestextension name sound_autoread language "French" value "%DIR%..\update_simple\sound_fr.wav" noi18n
+add patchmanifestextension name sound_autowrite language * value sound.wav noi18n
+
+add patchmanifestextension name picture_autoread language "*" value "%DIR%..\update_simple\picture_en.bmp" noi18n
+add patchmanifestextension name picture_autowrite language * value picture.bmp noi18n
+
+write patchmanifest ofile "%DIR%Build\V%VERSION%_patchmanifest_marketing.xml"
+;
+;update the patch manifest with the patch data
+;
+read patchmanifest ifile "%DIR%Build\V%VERSION%_patchmanifest_marketing.xml"
+set patchexefile "%DIR%Build\V%VERSION%_patch.exe"
+run updatepatchmanifest
+set patchexefile "--hidden--"
+write patchmanifest ofile "%DIR%Build\V%VERSION%_patchmanifest.xml"
+;done!
+exit

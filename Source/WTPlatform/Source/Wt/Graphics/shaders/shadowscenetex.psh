@@ -1,0 +1,25 @@
+//-----------------------------------------------------------------------------
+// Pixel shader for rendering shadowed diffuse light contribution 
+// This takes into account the vertex and texture colors of the receiving material
+//-----------------------------------------------------------------------------
+
+ps.2.0
+
+dcl v0.rgba
+dcl t0.xy
+dcl t1.xy
+dcl t2.x //Calculated distance from fragment to light; also includes Z bias
+
+dcl_2d s0
+dcl_2d s7
+
+texld r0, t0, s0
+mul_pp r0, r0, v0
+
+//Use the shadow map to look up the shortest distance from light to an object for this fragment
+texld r1, t1, s7
+sub r1, r1.r, t2.x
+texkill r1
+
+//Output
+mov oC0, r0

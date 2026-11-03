@@ -1,0 +1,24 @@
+<header>
+<title>WTRerunProgramUtility Program</title>
+</header>
+<body>
+<h1>AUM: Application Update Manager (2!)</h1>
+<img src="Banner.bmp" />
+
+<h2>About the WTRerunProgramUtility Progam</h2>
+
+<p>This utility program is shipped with each game that needs to
+update itself.  It takes in, through some environment variables,
+a list of commands to run; the commands include
+<table border=1>
+<tr><td><b>Command</b></td><td><b>Explanation</b></td></tr>
+<tr><td><b>D</b><i>directory</i></td><td>Sets the default directory for subsequent commands</td></tr>
+<tr><td><b>PW</b><i>program</i></td><td>runs a program and waits for the result</td></tr>
+<tr><td><b>PI</b><i>program</i></td><td>runs a program and keeps going</td></tr>
+<tr><td><b>W</b><i>pid</i> <i>maxtime</i></td><td>waits until process <i>pid</i> has exited, for a maximum time of <i>maxtime<i> milliseconds</td></tr>
+</table>
+
+<p>This program is used by, e.g., the <b>CUpdateMgr::Bounce</b> method
+
+<p>The <b>sample</b> directory contains samples of commands and shows how you can set 
+environment variables from a batch (.bat) file to test out your commands.

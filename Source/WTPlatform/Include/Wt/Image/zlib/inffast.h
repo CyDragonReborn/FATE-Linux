@@ -1,0 +1,25 @@
+//9/1/05 WildTangent modifications: upgraded code to C++ and added namespaces. Added
+//use of precompiled header file.
+
+/* inffast.h -- header to use inffast.c
+ * Copyright (C) 1995-2003 Mark Adler
+ * For conditions of distribution and use, see copyright notice in zlib.h
+ */
+
+/* WARNING: this file should *not* be used by applications. It is
+   part of the implementation of the compression library and is
+   subject to change. Applications should only use zlib.h.
+ */
+
+namespace WT
+{
+namespace Graphics
+{
+namespace zlib
+{
+
+void inflate_fast OF((z_streamp strm, unsigned start));
+
+} //namespace zlib
+} //namespace Graphics
+} //namespace WT

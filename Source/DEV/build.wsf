@@ -1,0 +1,171 @@
+<Job id="BuildScript">
+<script language="JScript" src="../../Resources/BuildLibraries/Library0104/Library0104.js"/>
+<Script language="JScript">
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+	build.wsf
+
+	Copyright (C) 2004 WildTangent, Inc. 
+	All Rights Reserved
+
+	Brent Orford
+	1/27/2004
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	try
+	{
+
+AB_LogCommands = true;
+AB_DisableChangeReport =true;
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// Specify variables you use for running the build script locally.
+		{
+							// Formal builds use C:\Program Files\Microsoft Visual Studio .NET 2003\Common7\IDE\devenv.exe
+							// If you installed Visual Studio 2003 to a different directory you may uncomment this variable 
+							// and set it to point at your local devenv.exe.  
+							
+							// [Your settings will not effect the server.]
+			DevelopmentEnvironmentPath = "C:\\Program Files\\Microsoft Visual Studio .NET 2003\\Common7\\IDE\\devenv.exe";
+
+
+							// Formal builds get delivered to an archived directory based on the build version and buildmode.
+							// ex.  \\Finalbuild\BB2\1.0.0.34\release - DRM3
+							//      \\Finalbuild\BB2\1.0.0.34\release - Trymedia
+							// If you want to have builds delivered to a specific folder on your machine, you may uncomment the
+							// variable below.
+							
+							// [Your settings will not effect the server.]
+							// RootBuildDeliveryPath = "C:\\Deliveries\\TestProject\\";
+			RootBuildDeliveryPath = "Z:\\TestDelivery";
+		}
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// Certain files may wind up being part of the delivered build despite your best efforts to the contrary.
+		// If there is are specific files that should not be part of your delivery anywhere, you may add them here.
+		{
+			CBS_AddFileToExclude ( ".get_date.dat" );
+			CBS_AddFileToExclude ( "Thumbs.db" );
+			CBS_AddFileToExclude ( "vssver.scc" );
+			CBS_AddFileToExclude ( "desktop.ini" );
+			CBS_AddFileToExclude ( "*.obj" );
+			CBS_AddFileToExclude ( "*.idb" );
+			CBS_AddFileToExclude ( "*.ilk" );
+			//CBS_AddFileToExclude ( "*.exe" );
+			CBS_AddFileToExclude ( "game.ncb" );
+			CBS_AddFileToExclude ( "game.opt" );
+			CBS_AddFileToExclude ( "game.plg" );
+			CBS_AddFileToExclude ( "pal_developmentd.dll" );
+			//CBS_AddFileToExclude ( "*.c" );
+			//CBS_AddFileToExclude ( "*.cpp" );
+			//CBS_AddFileToExclude ( "*.h" );
+			//CBS_AddFileToExclude ( "*.rc" );
+		}
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// For your convienence, you may specify delivery files for all delivery steps here
+		{
+							// CBS_AddDirectoryToDeliver ( Source, Destination )
+							//		Source: This directory is relative to the build script.
+							//		Destination: This directory is appended to the RootBuildDeliveryPath.  
+							//				ex.		if RootBuildDeliveryPath = \\data1\wildtangent\contentbuilds\BuildsForQA\MyAlienbrainProject\1_0_0_155\
+							//				and		we add "media" to "release", we end appending the destination, adding the directory to deliver as a subdir and
+							//						end up delivering: \\data1\wildtangent\contentbuilds\BuildsForQA\MyAlienbrainProject\1_0_0_155\release\media
+			CBS_AddDirectoryToDeliver ( "../gamefiles", "." );
+		}
+		
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// Specify the build steps here.  
+		{
+			CBS_PreBuildStep();
+			CBS_SetVersionFile( "Dungeon\\DEV\\version.h" );
+			
+							// Get the latest version from Alienbrain.
+							// CBS_GetDirectoryFromSourceControl ( AlienbrainProjectFolder );
+							// Specify the directory as it is specified in Alienbrain from the root node:
+							// i.e. \ProjectName\Subdirectory
+			CBS_GetDirectoryFromSourceControl ( "\\Dungeon\\gamefiles" );
+			CBS_GetDirectoryFromSourceControl ( "\\Dungeon\\DEV" );
+			CBS_GetDirectoryFromSourceControl ( "\\Dungeon\\FMOD" );
+			CBS_GetDirectoryFromSourceControl ( "\\Dungeon\\WTGAMELIB" );
+			CBS_GetDirectoryFromSourceControl ( "\\Dungeon\\WTPlatform" );
+
+							// CBS_Compile ( SolutionFile, BuildMode )
+							//	SolutionFile: This file is relative to the build script location.  If the sln was in a subdirectory called 'source'
+							//				  you would specify this variable as "source\\MyAlienbrainProject.sln".
+							//	BuildMode: The name of the build configuration you wish to compile.
+
+							// CBS_AddFileToDeliver ( SourceFile, DestinationFile )
+							//		SourceFile: The file, relative to the build script that you wish to deliver.
+							//					You may specify existing files, or files that are created during compile.
+							//		DestinationFile: Where to deliver the file within RootBuildDeliveryPath.
+							//					ex.		if RootBuildDeliveryPath = \\data1\wildtangent\contentbuilds\BuildsForQA\MyAlienbrainProject\1_0_0_155\
+							//					we would end up delivering to: \\data1\wildtangent\contentbuilds\BuildsForQA\MyAlienbrainProject\1_0_0_155\debug\TemplateD.exe
+
+							// CBS_AddBuildDescriptionToDeliver ( Destination )
+							//		Destination: This is a valid directory, appended to RootBuildDeliveryPath for which you want a build description created.
+							//				ex. If we specify "debug" this function will make a build description for the folder:
+							//					\\data1\wildtangent\contentbuilds\BuildsForQA\MyAlienbrainProject\1_0_0_155\debug
+
+			SCR_DeleteFile ( "..\\gamefiles\\Fate.exe" );
+
+
+			CBS_Compile( "Game.sln", "release" );
+
+			var ReleaseAssembly = new Assembly( "gamefiles", "Game", "Release" ); 
+
+			ReleaseAssembly.SetDescription ( "Game assembly for FATE" );
+
+			ReleaseAssembly.AddOutputConnection ( "ExecutableFile", "Fate.exe", "File", "FATE executable", false );
+			ReleaseAssembly.AddOutputConnection ( "IconFile", "fate.ico", "File", "FATE icon", false );
+			ReleaseAssembly.AddOutputConnection ( "ProtectorEncryptSeed", 2175736, "integer", "Seed for re-protecting", false );
+			ReleaseAssembly.AddOutputConnection ( "WTDRMLicenseGUID", "4B39DF83-1063-4fcc-B1B4-0E116120D387", "string", "WildTangent DRM License ID used in the game through PAL", false, false );
+
+			ReleaseAssembly.AddOutputFileList ( "FileList", "." );
+
+			CBS_Deliver();
+		}
+
+	}
+	catch ( Exception )
+	{
+		try{ Log("Failure:\nException in build script body.  Exception="+Exception);} catch(e){}
+	}	
+
+	CBS_PostBuildStep();
+
+	function SCR_DeleteFile( FileName )
+	{
+		try
+		{
+			FileName = GetCurrentWorkingDirectory() + "\\" + FileName;
+
+			Log ( "Attempting to delete: " + FileName );
+			var SCR_FSO = new ActiveXObject("Scripting.FileSystemObject");
+			if ( SCR_FSO.FileExists ( FileName ) )
+			{
+				var FileHandle = SCR_FSO.GetFile( FileName );
+				if ( FileHandle.Attributes & 1 )
+				{
+					// If read only, remove the read only flag.
+					FileHandle.Attributes = FileHandle.Attributes - 1;					
+				}
+
+				// Delete the file.
+				FileHandle.Delete();
+			}
+			else
+			{
+				Log ( "File: " + FileName + " does not exist." );
+			}
+		}
+		catch ( Exception )
+		{
+			try{ Log("Failure:\nException deleting file: " + FileName + ".  Exception="+Exception);} catch(e){}
+		}
+	}
+
+</Script>
+</Job>

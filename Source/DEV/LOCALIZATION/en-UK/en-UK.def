@@ -1,0 +1,6 @@
+; en-UK.def : Declares the module parameters for the DLL.
+
+LIBRARY      "en-UK"
+
+EXPORTS
+    ; Explicit exports can go here

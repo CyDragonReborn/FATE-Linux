@@ -1,0 +1,6 @@
+; fr-FR.def : Declares the module parameters for the DLL.
+
+LIBRARY      "fr-FR"
+
+EXPORTS
+    ; Explicit exports can go here

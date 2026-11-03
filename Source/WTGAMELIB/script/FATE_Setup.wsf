@@ -1,0 +1,67 @@
+<Job id="BuildScript">
+<script language="JScript">
+
+	var WShell = WScript.CreateObject("WScript.Shell");
+	
+	function regKeyExists(key)
+	{
+		try
+		{
+			var entry = WShell.RegRead(key);
+			return true;
+		}
+		catch (e)
+		{			
+			return false;
+		}
+	}
+	
+	var Root32RegKey = "HKLM\\Software\\WildTangent\\InstalledSKUs\\FATE_STEAM\\";
+	var Root64RegKey = "HKLM\\Software\\Wow6432Node\\WildTangent\\InstalledSKUs\\FATE_STEAM\\";
+	var realRegKey = "";
+	
+	if(regKeyExists("HKLM\\Software\\Wow6432Node\\"))
+	{
+		WScript.Echo ("Using WOW64 Registry Keys");
+		realRegKey = Root64RegKey;
+	}
+	else
+	{
+		WScript.Echo ("Using 32 bit Registry keys");
+		realRegKey = Root32RegKey;
+	}
+
+	var KBuyURL				= "BuyURL";
+	var KDPCodeName			= "DPCodeName";
+	var KDPGUID				= "DPGUID";
+	var KExeName			= "ExeName";
+	var KHideBuyButton		= "HideBuyButton";
+	var KInstallDirectory	= "InstallDirectory";
+	var KLaunchExeName		= "LaunchExeName";
+	var KProductCodeName	= "ProductCodeName";
+	var KProductDisplayName	= "ProductDisplayName";
+	var KProductGUID		= "ProductGUID";
+	var KUseLeaderboard		= "UseLeaderboard";
+	var KUseTracking		= "UseTracking";
+
+	try
+	{
+		WShell.RegWrite ( realRegKey + KBuyURL,				"http://put.here.steam.url", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KDPCodeName,			"fate_steam", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KDPGUID,				"11111111-1111-1111-1111-111111111112", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KExeName,			"Fate.exe", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KHideBuyButton,		"0", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KInstallDirectory,	"D:\\Ivan\\Documents\\Projects\\BLGGames\\FATE\\Source\\gamefiles", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KLaunchExeName,		"Fate.exe", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KProductCodeName,	"FATE_Steam", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KProductDisplayName, "Fate Steam", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KProductGUID,		"11111111-1111-1111-1111-111111111113", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KUseLeaderboard,		"false", "REG_SZ");
+		WShell.RegWrite ( realRegKey + KUseTracking,		"false", "REG_SZ");
+	}
+	catch ( e )
+	{
+		WScript.Echo ( e.message );
+	}
+</script>
+</Job>

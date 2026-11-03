@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CUpdateManager_Bounce", "CUpdateManager_Bounce.vcproj", "{1DC63124-2FAC-4F6E-925A-A0A1EF0C9D2A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Patch", "Patch\Patch.vcproj", "{E17FC5A5-4DC9-451F-8ED9-B31AB7123E47}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1DC63124-2FAC-4F6E-925A-A0A1EF0C9D2A}.Debug.ActiveCfg = Debug|Win32
+		{1DC63124-2FAC-4F6E-925A-A0A1EF0C9D2A}.Debug.Build.0 = Debug|Win32
+		{1DC63124-2FAC-4F6E-925A-A0A1EF0C9D2A}.Release.ActiveCfg = Release|Win32
+		{1DC63124-2FAC-4F6E-925A-A0A1EF0C9D2A}.Release.Build.0 = Release|Win32
+		{E17FC5A5-4DC9-451F-8ED9-B31AB7123E47}.Debug.ActiveCfg = Debug|Win32
+		{E17FC5A5-4DC9-451F-8ED9-B31AB7123E47}.Debug.Build.0 = Debug|Win32
+		{E17FC5A5-4DC9-451F-8ED9-B31AB7123E47}.Release.ActiveCfg = Release|Win32
+		{E17FC5A5-4DC9-451F-8ED9-B31AB7123E47}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

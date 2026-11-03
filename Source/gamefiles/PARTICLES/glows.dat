@@ -1,0 +1,358 @@
+#########################################
+# GLOW DEFINITION FILE
+# defines all glow types supported
+#########################################
+
+[GLOW]
+<NAME>:FIREGLOW
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:PARTICLES/lantern.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:15
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:1
+<MAX_STARTING_SCALE>:10
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+[GLOW]
+<NAME>:GREENGLOW
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:PARTICLES/greenlantern.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:15
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:1
+<MAX_STARTING_SCALE>:10
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+[GLOW]
+<NAME>:ICEGLOW
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:IMAGES/bluelight.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:15
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:1
+<MAX_STARTING_SCALE>:10
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+[GLOW]
+<NAME>:LANTERN
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:PARTICLES/lantern.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:15
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:1
+<MAX_STARTING_SCALE>:10
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+[GLOW]
+<NAME>:LANTERNBLUE
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:PARTICLES/bluelantern.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:15
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:1
+<MAX_STARTING_SCALE>:10
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+[GLOW]
+<NAME>:LANTERNGREEN
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:PARTICLES/greenlantern.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:15
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:1
+<MAX_STARTING_SCALE>:10
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+[GLOW]
+<NAME>:FIREFLY
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:PARTICLES/lantern.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:3
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-80
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:80
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:1
+<MAX_STARTING_SCALE>:10
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+[GLOW]
+<NAME>:SMALLLANTERN
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:PARTICLES/lantern.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:7
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:.5
+<MAX_STARTING_SCALE>:1.25
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+[GLOW]
+<NAME>:FATEEYE
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:PARTICLES/lantern.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:2
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:.5
+<MAX_STARTING_SCALE>:1.25
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+[GLOW]
+<NAME>:BLUEEYE
+# does motion blur?
+<BLUR>:0
+#	<TEXTURE>:base:alpha:additive
+<TEXTURE>:NONE:NONE:PARTICLES/bluelantern.png:
+#	<SIZE>:worldspace unit width
+<SIZE>:2
+#	<FADE_SPEED>:in rgb/second
+<FADE_SPEED>:0
+#	<FRAMES>:for flipbooks - 0 for none
+<FRAMES>:0
+#	<FRAME_SPEED>:seconds per frame
+<FRAME_SPEED>:0
+#	<SCALE_SPEED>:units/second
+<SCALE_SPEED>:1
+#	<MIN_ROTATION_SPEED>:in degrees/second
+<MIN_ROTATION_SPEED>:-40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MAX_ROTATION_SPEED>:40
+#	<MAX_ROTATION_SPEED>:in degrees/second
+<MIN_SCALE_MAGNITUDE>:.5
+<MAX_SCALE_MAGNITUDE>:1
+<MAX_ROTATION_SPEED>:100
+<MIN_STARTING_SCALE>:.5
+<MAX_STARTING_SCALE>:1.25
+<MIN_STARTING_ZORIENTATION>:0
+<MAX_STARTING_ZORIENTATION>:360
+<MIN_STARTING_OPACITY>:255
+<MAX_STARTING_OPACITY>:255
+# 	the following are for flipbooks only
+<MIN_STARTING_FRAME>:0
+<MAX_STARTING_FRAME>:0
+[/GLOW]
+
+#########################################
+# END OF FILE
+#########################################
