@@ -37,6 +37,7 @@ if(FATE_BUILD_FMOD_COMPAT)
 endif()
 
 add_library(fate_platform STATIC
+	PLATFORM/gl_renderer.cpp
 	PLATFORM/sdl_platform.cpp
 )
 
