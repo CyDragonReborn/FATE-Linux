@@ -21,6 +21,8 @@ public:
 	SDL_Window* Window() const;
 	SDL_GLContext Context() const;
 	SDL_Gamepad* Gamepad() const;
+	bool GamepadButtonDown(SDL_GamepadButton button) const;
+	float GamepadAxisValue(SDL_GamepadAxis axis) const;
 
 private:
 	SDL_Window* m_window = nullptr;

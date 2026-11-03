@@ -115,3 +115,20 @@ SDL_Gamepad* SdlPlatform::Gamepad() const
 {
 	return m_gamepad;
 }
+
+bool SdlPlatform::GamepadButtonDown(SDL_GamepadButton button) const
+{
+	return m_gamepad != nullptr && SDL_GetGamepadButton(m_gamepad, button);
+}
+
+float SdlPlatform::GamepadAxisValue(SDL_GamepadAxis axis) const
+{
+	if (m_gamepad == nullptr)
+	{
+		return 0.0f;
+	}
+	const Sint16 axisValue = SDL_GetGamepadAxis(m_gamepad, axis);
+	return axisValue < 0
+		? static_cast<float>(axisValue) / 32768.0f
+		: static_cast<float>(axisValue) / 32767.0f;
+}
