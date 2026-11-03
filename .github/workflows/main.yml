@@ -19,6 +19,6 @@ jobs:
             -w /work/src \
             archlinux:latest /bin/bash -lc "\
               set -euo pipefail; \
-              pacman -Sy --noconfirm --needed base-devel cmake gcc pkgconf ninja sdl3 mesa && \
+              pacman -Sy --noconfirm --needed base-devel cmake gcc pkgconf ninja sdl3 mesa libpng libjpeg-turbo && \
               cmake -S . -B /tmp/fate-build -G Ninja -DCMAKE_BUILD_TYPE=Release -DFATE_BUILD_FMOD_COMPAT=OFF && \
               cmake --build /tmp/fate-build --parallel"

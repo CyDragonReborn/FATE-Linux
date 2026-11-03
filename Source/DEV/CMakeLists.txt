@@ -4,6 +4,8 @@ project(FateLinuxPlatform LANGUAGES CXX)
 
 find_package(SDL3 CONFIG REQUIRED)
 find_package(OpenGL REQUIRED)
+find_package(JPEG REQUIRED)
+find_package(PNG REQUIRED)
 
 set(FMOD_SDK_ROOT "" CACHE PATH "Path to the FMOD Engine SDK root")
 if(NOT FMOD_SDK_ROOT AND DEFINED ENV{FMOD_SDK_ROOT})
@@ -38,6 +40,7 @@ endif()
 
 add_library(fate_platform STATIC
 	PLATFORM/gl_renderer.cpp
+	PLATFORM/gl_texture.cpp
 	PLATFORM/sdl_platform.cpp
 )
 
@@ -48,6 +51,8 @@ target_include_directories(fate_platform PUBLIC
 target_link_libraries(fate_platform PUBLIC
 	SDL3::SDL3
 	OpenGL::GL
+	JPEG::JPEG
+	PNG::PNG
 )
 
 if(FATE_BUILD_FMOD_COMPAT)
