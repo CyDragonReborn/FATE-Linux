@@ -1393,10 +1393,7 @@ FSOUND_SAMPLE* CRefManager::AddSample( std::string SamplePath,	//  path to sound
 									   bool Looping )			// looping sample? (default = kFalse)
 {
 	// find the absolute path to the model
-	SamplePath = AssembleAbsolutePath( m_ExecutablePath, SamplePath );
-#ifdef _WIN32
-	SamplePath = StringUpper( SamplePath );
-#endif
+	SamplePath = StringUpper( AssembleAbsolutePath( m_ExecutablePath, SamplePath ) );
 	SamplePath = CleanPath( SamplePath );
 
 	// find a previously existing sample
