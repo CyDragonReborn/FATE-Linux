@@ -1,0 +1,1173 @@
+ninja: Entering directory `/mnt/Media2/FATE-Linux/fate_src/DEV/build'
+[1/133] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmeshsegment.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmeshsegment.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmeshsegment.cpp.obj -MF CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmeshsegment.cpp.obj.d -o CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmeshsegment.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedmeshsegment.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedmeshsegment.cpp:19:10: fatal error: D3D8.h: No such file or directory
+   19 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[2/133] Building CXX object CMakeFiles/Fate.dir/CDA/cdamanager.cpp.obj
+[3/133] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedsubmesh.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedsubmesh.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/ANIMATEDMESH/animatedsubmesh.cpp.obj -MF CMakeFiles/Fate.dir/ANIMATEDMESH/animatedsubmesh.cpp.obj.d -o CMakeFiles/Fate.dir/ANIMATEDMESH/animatedsubmesh.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedsubmesh.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedsubmesh.cpp:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[4/133] Building CXX object CMakeFiles/Fate.dir/GAME/gamestatemanager.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAME/gamestatemanager.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAME/gamestatemanager.cpp.obj -MF CMakeFiles/Fate.dir/GAME/gamestatemanager.cpp.obj.d -o CMakeFiles/Fate.dir/GAME/gamestatemanager.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAME/gamestatemanager.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAME/gamestatemanager.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[5/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/bottommenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/bottommenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/bottommenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/bottommenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/bottommenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/bottommenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/bottommenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[6/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/buysellmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/buysellmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/buysellmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/buysellmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/buysellmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/buysellmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/buysellmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[7/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/confirmmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/confirmmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/confirmmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/confirmmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/confirmmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/confirmmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/confirmmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[8/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/enchantmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/enchantmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/enchantmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/enchantmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/enchantmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/enchantmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/enchantmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[9/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/fatemenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/fatemenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/fatemenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/fatemenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/fatemenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/fatemenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/fatemenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[10/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameui.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameui.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[11/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/helpmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/helpmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/helpmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/helpmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/helpmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/helpmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/helpmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[12/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/gameoptionsmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/gameoptionsmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/gameoptionsmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/gameoptionsmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/gameoptionsmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameoptionsmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameoptionsmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[13/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/inventorymenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/inventorymenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[14/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/gameclient.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/gameclient.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/gameclient.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/gameclient.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/gameclient.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameclient.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameclient.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[15/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/messagemenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/messagemenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[16/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/journalmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/journalmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[17/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/petsellinventorymenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/petsellinventorymenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/petsellinventorymenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/petsellinventorymenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/petsellinventorymenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petsellinventorymenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petsellinventorymenu.cpp:14:10: fatal error: D3D8.h: No such file or directory
+   14 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[18/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petinventorymenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petinventorymenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[19/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petstatsmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petstatsmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[20/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/questmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/questmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/questmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/questmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/questmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/questmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/questmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[21/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/spellmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/spellmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[22/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/skillmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/skillmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[23/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/statsmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/statsmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[24/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/tipmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/tipmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/tipmenu.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/tipmenu.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/tipmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/tipmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/tipmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[25/133] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/blurlayer.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMEOBJECTS/blurlayer.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMEOBJECTS/blurlayer.cpp.obj -MF CMakeFiles/Fate.dir/GAMEOBJECTS/blurlayer.cpp.obj.d -o CMakeFiles/Fate.dir/GAMEOBJECTS/blurlayer.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/blurlayer.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/blurlayer.cpp:12:10: fatal error: D3D8.h: No such file or directory
+   12 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[26/133] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj -MF CMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj.d -o CMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/camera.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/camera.cpp:17:10: fatal error: D3D8.h: No such file or directory
+   17 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[27/133] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/fillshadow.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMEOBJECTS/fillshadow.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMEOBJECTS/fillshadow.cpp.obj -MF CMakeFiles/Fate.dir/GAMEOBJECTS/fillshadow.cpp.obj.d -o CMakeFiles/Fate.dir/GAMEOBJECTS/fillshadow.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/fillshadow.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/fillshadow.cpp:12:10: fatal error: D3D8.h: No such file or directory
+   12 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[28/133] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/genericmodel.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMEOBJECTS/genericmodel.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMEOBJECTS/genericmodel.cpp.obj -MF CMakeFiles/Fate.dir/GAMEOBJECTS/genericmodel.cpp.obj.d -o CMakeFiles/Fate.dir/GAMEOBJECTS/genericmodel.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/genericmodel.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/genericmodel.cpp:14:10: fatal error: D3D8.h: No such file or directory
+   14 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[29/133] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/lightmanager.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMEOBJECTS/lightmanager.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMEOBJECTS/lightmanager.cpp.obj -MF CMakeFiles/Fate.dir/GAMEOBJECTS/lightmanager.cpp.obj.d -o CMakeFiles/Fate.dir/GAMEOBJECTS/lightmanager.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/lightmanager.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/lightmanager.cpp:17:10: fatal error: D3D8.h: No such file or directory
+   17 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[30/133] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/screenfade.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMEOBJECTS/screenfade.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMEOBJECTS/screenfade.cpp.obj -MF CMakeFiles/Fate.dir/GAMEOBJECTS/screenfade.cpp.obj.d -o CMakeFiles/Fate.dir/GAMEOBJECTS/screenfade.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/screenfade.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/screenfade.cpp:12:10: fatal error: D3D8.h: No such file or directory
+   12 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[31/133] Building CXX object CMakeFiles/Fate.dir/GLOWS/glowmanager.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GLOWS/glowmanager.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GLOWS/glowmanager.cpp.obj -MF CMakeFiles/Fate.dir/GLOWS/glowmanager.cpp.obj.d -o CMakeFiles/Fate.dir/GLOWS/glowmanager.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GLOWS/glowmanager.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GLOWS/glowmanager.cpp:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[32/133] Building CXX object CMakeFiles/Fate.dir/GLOWS/glowsystem.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GLOWS/glowsystem.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GLOWS/glowsystem.cpp.obj -MF CMakeFiles/Fate.dir/GLOWS/glowsystem.cpp.obj.d -o CMakeFiles/Fate.dir/GLOWS/glowsystem.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GLOWS/glowsystem.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/GLOWS/glowsystem.cpp:14:10: fatal error: D3D8.h: No such file or directory
+   14 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[33/133] Building CXX object CMakeFiles/Fate.dir/DIRECT3D/d3denumeration.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/DIRECT3D/d3denumeration.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/DIRECT3D/d3denumeration.cpp.obj -MF CMakeFiles/Fate.dir/DIRECT3D/d3denumeration.cpp.obj.d -o CMakeFiles/Fate.dir/DIRECT3D/d3denumeration.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/DIRECT3D/d3denumeration.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/DIRECT3D/d3denumeration.cpp:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[34/133] Building CXX object CMakeFiles/Fate.dir/DIRECT3D/dx8app.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/DIRECT3D/dx8app.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/DIRECT3D/dx8app.cpp.obj -MF CMakeFiles/Fate.dir/DIRECT3D/dx8app.cpp.obj.d -o CMakeFiles/Fate.dir/DIRECT3D/dx8app.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/DIRECT3D/dx8app.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/DIRECT3D/dx8app.cpp:24:10: fatal error: D3D8.h: No such file or directory
+   24 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[35/133] Building CXX object CMakeFiles/Fate.dir/IO/joystick.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/IO/joystick.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/IO/joystick.cpp.obj -MF CMakeFiles/Fate.dir/IO/joystick.cpp.obj.d -o CMakeFiles/Fate.dir/IO/joystick.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/IO/joystick.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/IO/joystick.cpp:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[36/133] Building CXX object CMakeFiles/Fate.dir/GAME/game.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAME/game.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAME/game.cpp.obj -MF CMakeFiles/Fate.dir/GAME/game.cpp.obj.d -o CMakeFiles/Fate.dir/GAME/game.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAME/game.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/GAME/game.cpp:21:
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAME/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[37/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/tips.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/tips.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/tips.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/tips.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/tips.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/tips.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/tips.cpp:21:
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[38/133] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj -MF CMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj.d -o CMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedgeometry.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedgeometry.cpp:54:
+/mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[39/133] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj -MF CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj.d -o CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedmesh.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedmesh.cpp:38:
+/mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[40/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/templatemanifest.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/templatemanifest.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/templatemanifest.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/templatemanifest.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/templatemanifest.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/templatemanifest.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/templatemanifest.cpp:18:
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[41/133] Building CXX object CMakeFiles/Fate.dir/ITEM/itemgold.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/ITEM/itemgold.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/ITEM/itemgold.cpp.obj -MF CMakeFiles/Fate.dir/ITEM/itemgold.cpp.obj.d -o CMakeFiles/Fate.dir/ITEM/itemgold.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemgold.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemgold.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[42/133] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/questdescriptions.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/GAMECLIENT/questdescriptions.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/GAMECLIENT/questdescriptions.cpp.obj -MF CMakeFiles/Fate.dir/GAMECLIENT/questdescriptions.cpp.obj.d -o CMakeFiles/Fate.dir/GAMECLIENT/questdescriptions.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/questdescriptions.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/questdescriptions.cpp:21:
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[43/133] Building CXX object CMakeFiles/Fate.dir/ITEM/itemblank.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/ITEM/itemblank.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/ITEM/itemblank.cpp.obj -MF CMakeFiles/Fate.dir/ITEM/itemblank.cpp.obj.d -o CMakeFiles/Fate.dir/ITEM/itemblank.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemblank.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemblank.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[44/133] Building CXX object CMakeFiles/Fate.dir/DIRECT3D/getdxver.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/DIRECT3D/getdxver.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/DIRECT3D/getdxver.cpp.obj -MF CMakeFiles/Fate.dir/DIRECT3D/getdxver.cpp.obj.d -o CMakeFiles/Fate.dir/DIRECT3D/getdxver.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/DIRECT3D/getdxver.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/DIRECT3D/getdxver.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[45/133] Building CXX object CMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj -MF CMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj.d -o CMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/spelltemplate.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/spelltemplate.cpp:12:10: fatal error: D3D8.h: No such file or directory
+   12 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[46/133] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelmesh.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/LEVEL/levelmesh.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/LEVEL/levelmesh.cpp.obj -MF CMakeFiles/Fate.dir/LEVEL/levelmesh.cpp.obj.d -o CMakeFiles/Fate.dir/LEVEL/levelmesh.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelmesh.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelmesh.cpp:12:10: fatal error: D3D8.h: No such file or directory
+   12 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[47/133] Building CXX object CMakeFiles/Fate.dir/LEVEL/level.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/LEVEL/level.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/LEVEL/level.cpp.obj -MF CMakeFiles/Fate.dir/LEVEL/level.cpp.obj.d -o CMakeFiles/Fate.dir/LEVEL/level.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/level.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/level.cpp:12:10: fatal error: D3D8.h: No such file or directory
+   12 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[48/133] Building CXX object CMakeFiles/Fate.dir/LEVEL/modeltemplate.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/LEVEL/modeltemplate.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/LEVEL/modeltemplate.cpp.obj -MF CMakeFiles/Fate.dir/LEVEL/modeltemplate.cpp.obj.d -o CMakeFiles/Fate.dir/LEVEL/modeltemplate.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/modeltemplate.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/modeltemplate.cpp:12:10: fatal error: D3D8.h: No such file or directory
+   12 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[49/133] Building CXX object CMakeFiles/Fate.dir/MEDIA/bitmap.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MEDIA/bitmap.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MEDIA/bitmap.cpp.obj -MF CMakeFiles/Fate.dir/MEDIA/bitmap.cpp.obj.d -o CMakeFiles/Fate.dir/MEDIA/bitmap.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/bitmap.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/bitmap.cpp:11:10: fatal error: D3D8.h: No such file or directory
+   11 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[50/133] Building CXX object CMakeFiles/Fate.dir/LEVEL/template.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/LEVEL/template.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/LEVEL/template.cpp.obj -MF CMakeFiles/Fate.dir/LEVEL/template.cpp.obj.d -o CMakeFiles/Fate.dir/LEVEL/template.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/template.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/template.cpp:11:10: fatal error: D3D8.h: No such file or directory
+   11 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[51/133] Building CXX object CMakeFiles/Fate.dir/MEDIA/cubemap.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MEDIA/cubemap.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MEDIA/cubemap.cpp.obj -MF CMakeFiles/Fate.dir/MEDIA/cubemap.cpp.obj.d -o CMakeFiles/Fate.dir/MEDIA/cubemap.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/cubemap.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/cubemap.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[52/133] Building CXX object CMakeFiles/Fate.dir/MEDIA/material.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MEDIA/material.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MEDIA/material.cpp.obj -MF CMakeFiles/Fate.dir/MEDIA/material.cpp.obj.d -o CMakeFiles/Fate.dir/MEDIA/material.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/material.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/material.cpp:32:10: fatal error: D3D8.h: No such file or directory
+   32 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[53/133] Building CXX object CMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj -MF CMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj.d -o CMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/refmanager.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/refmanager.cpp:36:10: fatal error: D3D8.h: No such file or directory
+   36 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[54/133] Building CXX object CMakeFiles/Fate.dir/MEDIA/movie.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MEDIA/movie.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MEDIA/movie.cpp.obj -MF CMakeFiles/Fate.dir/MEDIA/movie.cpp.obj.d -o CMakeFiles/Fate.dir/MEDIA/movie.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/movie.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/movie.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[55/133] Building CXX object CMakeFiles/Fate.dir/MEDIA/texture.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MEDIA/texture.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MEDIA/texture.cpp.obj -MF CMakeFiles/Fate.dir/MEDIA/texture.cpp.obj.d -o CMakeFiles/Fate.dir/MEDIA/texture.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/texture.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/texture.cpp:24:10: fatal error: D3D8.h: No such file or directory
+   24 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[56/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestordifficultymenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestordifficultymenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[57/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestormenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestormenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestormenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestormenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestormenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestormenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestormenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[58/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestorpetmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestorpetmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestorpetmenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestorpetmenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestorpetmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestorpetmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestorpetmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[59/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/continuegamemenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/continuegamemenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/continuegamemenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/continuegamemenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/continuegamemenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/continuegamemenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/continuegamemenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[60/133] Building CXX object CMakeFiles/Fate.dir/ITEM/item.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/ITEM/item.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/ITEM/item.cpp.obj -MF CMakeFiles/Fate.dir/ITEM/item.cpp.obj.d -o CMakeFiles/Fate.dir/ITEM/item.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/item.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/item.cpp:16:
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[61/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/creditsmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/creditsmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[62/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/intromenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/intromenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/intromenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/intromenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/intromenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/intromenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/intromenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[63/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/difficultymenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/difficultymenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/difficultymenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/difficultymenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/difficultymenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/difficultymenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/difficultymenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[64/133] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelmeshpatch.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/LEVEL/levelmeshpatch.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/LEVEL/levelmeshpatch.cpp.obj -MF CMakeFiles/Fate.dir/LEVEL/levelmeshpatch.cpp.obj.d -o CMakeFiles/Fate.dir/LEVEL/levelmeshpatch.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelmeshpatch.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelmeshpatch.cpp:16:
+/mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[65/133] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj -MF CMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj.d -o CMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelprop.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelprop.cpp:16:
+/mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[66/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/mainmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/mainmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/mainmenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/mainmenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/mainmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/mainmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/mainmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[67/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/logomenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/logomenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/logomenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/logomenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/logomenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/logomenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/logomenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[68/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/introquestmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/introquestmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/introquestmenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/introquestmenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/introquestmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/introquestmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/introquestmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[69/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/newgamemenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/newgamemenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[70/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/optionsmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/optionsmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/optionsmenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/optionsmenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/optionsmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/optionsmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/optionsmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[71/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/retiremenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/retiremenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/retiremenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/retiremenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/retiremenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/retiremenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/retiremenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[72/133] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/newpetmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/SUBMENUS/newpetmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/SUBMENUS/newpetmenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/SUBMENUS/newpetmenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/SUBMENUS/newpetmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/newpetmenu.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/newpetmenu.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[73/133] Building CXX object CMakeFiles/Fate.dir/MENU/dropdown.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/dropdown.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/dropdown.cpp.obj -MF CMakeFiles/Fate.dir/MENU/dropdown.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/dropdown.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/dropdown.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/dropdown.cpp:12:
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/dropdown.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[74/133] Building CXX object CMakeFiles/Fate.dir/MENU/loadingmenu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/loadingmenu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/loadingmenu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/loadingmenu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/loadingmenu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/loadingmenu.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/loadingmenu.cpp:12:
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/loadingmenu.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[75/133] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelhistory.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/LEVEL/levelhistory.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/LEVEL/levelhistory.cpp.obj -MF CMakeFiles/Fate.dir/LEVEL/levelhistory.cpp.obj.d -o CMakeFiles/Fate.dir/LEVEL/levelhistory.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelhistory.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelhistory.cpp:16:
+/mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/../UTILITIES/quadtree.h:21:10: fatal error: D3D8.h: No such file or directory
+   21 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[76/133] Building CXX object CMakeFiles/Fate.dir/MENU/menu.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/menu.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/menu.cpp.obj -MF CMakeFiles/Fate.dir/MENU/menu.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/menu.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/menu.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/menu.cpp:12:
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/menu.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[77/133] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelcollision.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/LEVEL/levelcollision.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/LEVEL/levelcollision.cpp.obj -MF CMakeFiles/Fate.dir/LEVEL/levelcollision.cpp.obj.d -o CMakeFiles/Fate.dir/LEVEL/levelcollision.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelcollision.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelcollision.cpp:16:
+/mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/../UTILITIES/quadtree.h:21:10: fatal error: D3D8.h: No such file or directory
+   21 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[78/133] Building CXX object CMakeFiles/Fate.dir/MODEL/model.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MODEL/model.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MODEL/model.cpp.obj -MF CMakeFiles/Fate.dir/MODEL/model.cpp.obj.d -o CMakeFiles/Fate.dir/MODEL/model.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/model.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/model.cpp:54:10: fatal error: D3D8.h: No such file or directory
+   54 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[79/133] Building CXX object CMakeFiles/Fate.dir/LEVEL/maze.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/LEVEL/maze.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/LEVEL/maze.cpp.obj -MF CMakeFiles/Fate.dir/LEVEL/maze.cpp.obj.d -o CMakeFiles/Fate.dir/LEVEL/maze.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/maze.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelmeshpatch.h:15,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/maze.cpp:22:
+/mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/../UTILITIES/vertexdefinitions.h:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[80/133] Building CXX object CMakeFiles/Fate.dir/MODEL/submodel.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MODEL/submodel.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MODEL/submodel.cpp.obj -MF CMakeFiles/Fate.dir/MODEL/submodel.cpp.obj.d -o CMakeFiles/Fate.dir/MODEL/submodel.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/submodel.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/submodel.cpp:30:10: fatal error: D3D8.h: No such file or directory
+   30 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[81/133] Building CXX object CMakeFiles/Fate.dir/MEDIA/soundmanager.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MEDIA/soundmanager.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MEDIA/soundmanager.cpp.obj -MF CMakeFiles/Fate.dir/MEDIA/soundmanager.cpp.obj.d -o CMakeFiles/Fate.dir/MEDIA/soundmanager.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/soundmanager.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/soundmanager.cpp:26:
+/mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[82/133] Building CXX object CMakeFiles/Fate.dir/MODEL/submodelsegment.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MODEL/submodelsegment.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MODEL/submodelsegment.cpp.obj -MF CMakeFiles/Fate.dir/MODEL/submodelsegment.cpp.obj.d -o CMakeFiles/Fate.dir/MODEL/submodelsegment.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/submodelsegment.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/submodelsegment.cpp:20:10: fatal error: D3D8.h: No such file or directory
+   20 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[83/133] Building CXX object CMakeFiles/Fate.dir/OBJECTS/curve.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/OBJECTS/curve.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/OBJECTS/curve.cpp.obj -MF CMakeFiles/Fate.dir/OBJECTS/curve.cpp.obj.d -o CMakeFiles/Fate.dir/OBJECTS/curve.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/OBJECTS/curve.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/OBJECTS/curve.cpp:15:
+/mnt/Media2/FATE-Linux/fate_src/DEV/OBJECTS/../UTILITIES/math3d.h:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[84/133] Building CXX object CMakeFiles/Fate.dir/PARTICLES/particlemanager.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/PARTICLES/particlemanager.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/PARTICLES/particlemanager.cpp.obj -MF CMakeFiles/Fate.dir/PARTICLES/particlemanager.cpp.obj.d -o CMakeFiles/Fate.dir/PARTICLES/particlemanager.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/PARTICLES/particlemanager.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/PARTICLES/particlemanager.cpp:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[85/133] Building CXX object CMakeFiles/Fate.dir/OBJECTS/path.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/OBJECTS/path.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/OBJECTS/path.cpp.obj -MF CMakeFiles/Fate.dir/OBJECTS/path.cpp.obj.d -o CMakeFiles/Fate.dir/OBJECTS/path.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/OBJECTS/path.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/OBJECTS/path.cpp:19:
+/mnt/Media2/FATE-Linux/fate_src/DEV/OBJECTS/../UTILITIES/math3d.h:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[86/133] Building CXX object CMakeFiles/Fate.dir/POSITIONALAUDIO/positionalaudiomanager.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/POSITIONALAUDIO/positionalaudiomanager.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/POSITIONALAUDIO/positionalaudiomanager.cpp.obj -MF CMakeFiles/Fate.dir/POSITIONALAUDIO/positionalaudiomanager.cpp.obj.d -o CMakeFiles/Fate.dir/POSITIONALAUDIO/positionalaudiomanager.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/POSITIONALAUDIO/positionalaudiomanager.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/POSITIONALAUDIO/positionalaudiomanager.cpp:12:10: fatal error: D3D8.h: No such file or directory
+   12 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[87/133] Building CXX object CMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj -MF CMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj.d -o CMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/PATHFINDING/astar.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/PATHFINDING/astar.cpp:11:10: fatal error: assert.H: No such file or directory
+   11 | #include <assert.H>
+      |          ^~~~~~~~~~
+compilation terminated.
+[88/133] Building CXX object CMakeFiles/Fate.dir/PARTICLES/particlesystem.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/PARTICLES/particlesystem.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/PARTICLES/particlesystem.cpp.obj -MF CMakeFiles/Fate.dir/PARTICLES/particlesystem.cpp.obj.d -o CMakeFiles/Fate.dir/PARTICLES/particlesystem.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/PARTICLES/particlesystem.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/PARTICLES/particlesystem.cpp:14:10: fatal error: D3D8.h: No such file or directory
+   14 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[89/133] Building CXX object CMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj -MF CMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj.d -o CMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/subscenesegment.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/subscenesegment.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[90/133] Building CXX object CMakeFiles/Fate.dir/SCENE/collisionscene.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/SCENE/collisionscene.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/SCENE/collisionscene.cpp.obj -MF CMakeFiles/Fate.dir/SCENE/collisionscene.cpp.obj.d -o CMakeFiles/Fate.dir/SCENE/collisionscene.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/collisionscene.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/collisionscene.cpp:23:10: fatal error: D3D8.h: No such file or directory
+   23 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[91/133] Building CXX object CMakeFiles/Fate.dir/SCENE/scene.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/SCENE/scene.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/SCENE/scene.cpp.obj -MF CMakeFiles/Fate.dir/SCENE/scene.cpp.obj.d -o CMakeFiles/Fate.dir/SCENE/scene.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/scene.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/scene.cpp:50:10: fatal error: D3D8.h: No such file or directory
+   50 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[92/133] Building CXX object CMakeFiles/Fate.dir/SCENE/subscene.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/SCENE/subscene.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/SCENE/subscene.cpp.obj -MF CMakeFiles/Fate.dir/SCENE/subscene.cpp.obj.d -o CMakeFiles/Fate.dir/SCENE/subscene.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/subscene.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/subscene.cpp:11:10: fatal error: D3D8.h: No such file or directory
+   11 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[93/133] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmeshsegment.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmeshsegment.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmeshsegment.cpp.obj -MF CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmeshsegment.cpp.obj.d -o CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmeshsegment.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedmeshsegment.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedmeshsegment.cpp:12:10: fatal error: D3D8.h: No such file or directory
+   12 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[94/133] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj -MF CMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj.d -o CMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedsubmesh.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedsubmesh.cpp:19:10: fatal error: D3D8.h: No such file or directory
+   19 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[95/133] Building CXX object CMakeFiles/Fate.dir/UI/button.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/UI/button.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/UI/button.cpp.obj -MF CMakeFiles/Fate.dir/UI/button.cpp.obj.d -o CMakeFiles/Fate.dir/UI/button.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/UI/button.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/UI/button.cpp:11:10: fatal error: D3D8.h: No such file or directory
+   11 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[96/133] Building CXX object CMakeFiles/Fate.dir/UI/sprite.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/UI/sprite.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/UI/sprite.cpp.obj -MF CMakeFiles/Fate.dir/UI/sprite.cpp.obj.d -o CMakeFiles/Fate.dir/UI/sprite.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/UI/sprite.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/UI/sprite.cpp:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[97/133] Building CXX object CMakeFiles/Fate.dir/UI/text.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/UI/text.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/UI/text.cpp.obj -MF CMakeFiles/Fate.dir/UI/text.cpp.obj.d -o CMakeFiles/Fate.dir/UI/text.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/UI/text.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/UI/text.cpp:25:10: fatal error: D3D8.h: No such file or directory
+   25 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[98/133] Building CXX object CMakeFiles/Fate.dir/MENU/menumanager.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MENU/menumanager.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MENU/menumanager.cpp.obj -MF CMakeFiles/Fate.dir/MENU/menumanager.cpp.obj.d -o CMakeFiles/Fate.dir/MENU/menumanager.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/menumanager.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/menumanager.cpp:17:
+/mnt/Media2/FATE-Linux/fate_src/DEV/MENU/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[99/133] Building CXX object CMakeFiles/Fate.dir/MODEL/shadowvolume.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MODEL/shadowvolume.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MODEL/shadowvolume.cpp.obj -MF CMakeFiles/Fate.dir/MODEL/shadowvolume.cpp.obj.d -o CMakeFiles/Fate.dir/MODEL/shadowvolume.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/shadowvolume.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/shadowvolume.cpp:20:
+/mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/../UTILITIES/math3D.h:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[100/133] Building CXX object CMakeFiles/Fate.dir/IO/keyhandler.cpp.obj
+[101/133] Building CXX object CMakeFiles/Fate.dir/NAMES/namegenerator.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/NAMES/namegenerator.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/NAMES/namegenerator.cpp.obj -MF CMakeFiles/Fate.dir/NAMES/namegenerator.cpp.obj.d -o CMakeFiles/Fate.dir/NAMES/namegenerator.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/NAMES/namegenerator.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/NAMES/namegenerator.cpp:21:
+/mnt/Media2/FATE-Linux/fate_src/DEV/NAMES/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[102/133] Building CXX object CMakeFiles/Fate.dir/MODEL/facelist.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/MODEL/facelist.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/MODEL/facelist.cpp.obj -MF CMakeFiles/Fate.dir/MODEL/facelist.cpp.obj.d -o CMakeFiles/Fate.dir/MODEL/facelist.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/facelist.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/facelist.cpp:20:
+/mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/../UTILITIES/math3D.h:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[103/133] Building CXX object CMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj -MF CMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj.d -o CMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/math3D.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/math3D.cpp:15:
+/mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/math3d.h:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[104/133] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj -MF CMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj.d -o CMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedgeometry.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedgeometry.cpp:21:
+/mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/../UTILITIES/settings.h:16:10: fatal error: D3D8.h: No such file or directory
+   16 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[105/133] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmesh.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmesh.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmesh.cpp.obj -MF CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmesh.cpp.obj.d -o CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmesh.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedmesh.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/../MEDIA/refmanager.h:15,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedmesh.cpp:26:
+/mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/../MEDIA/../UTILITIES/math3d.h:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[106/133] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj -MF CMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj.d -o CMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedanimation.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/../MEDIA/RefManager.h:15,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedgeometry.h:18,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedanimation.cpp:17:
+/mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/../MEDIA/../UTILITIES/math3d.h:15:10: fatal error: D3D8.h: No such file or directory
+   15 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[107/133] Building CXX object CMakeFiles/Fate.dir/character/character.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/character/character.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/character/character.cpp.obj -MF CMakeFiles/Fate.dir/character/character.cpp.obj.d -o CMakeFiles/Fate.dir/character/character.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/character.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/character.cpp:23:10: fatal error: D3D8.h: No such file or directory
+   23 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[108/133] Building CXX object CMakeFiles/Fate.dir/IO/mousehandler.cpp.obj
+[109/133] Building CXX object CMakeFiles/Fate.dir/character/inventory.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/character/inventory.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/character/inventory.cpp.obj -MF CMakeFiles/Fate.dir/character/inventory.cpp.obj.d -o CMakeFiles/Fate.dir/character/inventory.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/inventory.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/inventory.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[110/133] Building CXX object CMakeFiles/Fate.dir/character/monster.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/character/monster.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/character/monster.cpp.obj -MF CMakeFiles/Fate.dir/character/monster.cpp.obj.d -o CMakeFiles/Fate.dir/character/monster.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/monster.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/monster.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[111/133] Building CXX object CMakeFiles/Fate.dir/character/player.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/character/player.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/character/player.cpp.obj -MF CMakeFiles/Fate.dir/character/player.cpp.obj.d -o CMakeFiles/Fate.dir/character/player.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/player.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/player.cpp:13:10: fatal error: D3D8.h: No such file or directory
+   13 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[112/133] Building CXX object CMakeFiles/Fate.dir/UTILITIES/settings.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/UTILITIES/settings.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/UTILITIES/settings.cpp.obj -MF CMakeFiles/Fate.dir/UTILITIES/settings.cpp.obj.d -o CMakeFiles/Fate.dir/UTILITIES/settings.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/settings.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/settings.cpp:20:10: fatal error: D3D8.h: No such file or directory
+   20 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[113/133] Building CXX object CMakeFiles/Fate.dir/UTILITIES/capabilities.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/UTILITIES/capabilities.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/UTILITIES/capabilities.cpp.obj -MF CMakeFiles/Fate.dir/UTILITIES/capabilities.cpp.obj.d -o CMakeFiles/Fate.dir/UTILITIES/capabilities.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/capabilities.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/capabilities.cpp:14:10: fatal error: D3D8.h: No such file or directory
+   14 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[114/133] Building CXX object CMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj -MF CMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj.d -o CMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/StatsAndAchievements.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/../CHARACTER/character.h:21,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/StatsAndAchievements.h:16,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/StatsAndAchievements.cpp:13:
+/mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/../CHARACTER/../UTILITIES/cullingbounds.h:25:10: fatal error: D3D8.h: No such file or directory
+   25 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[115/133] Building CXX object CMakeFiles/Fate.dir/utilities/Spawn.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/utilities/Spawn.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/utilities/Spawn.cpp.obj -MF CMakeFiles/Fate.dir/utilities/Spawn.cpp.obj.d -o CMakeFiles/Fate.dir/utilities/Spawn.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/utilities/Spawn.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/Spawn.cpp:15:10: fatal error: ..\UTILITIES\constants.h: No such file or directory
+   15 | #include "..\UTILITIES\constants.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[116/133] Building CXX object CMakeFiles/Fate.dir/character/gamesave.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/character/gamesave.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/character/gamesave.cpp.obj -MF CMakeFiles/Fate.dir/character/gamesave.cpp.obj.d -o CMakeFiles/Fate.dir/character/gamesave.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/gamesave.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/character/character.h:21,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/character/gamesave.h:14,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/character/gamesave.cpp:11:
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../UTILITIES/cullingbounds.h:25:10: fatal error: D3D8.h: No such file or directory
+   25 | #include <D3D8.h>
+      |          ^~~~~~~~
+compilation terminated.
+[117/133] Building CXX object CMakeFiles/Fate.dir/utilities/randomizer.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/utilities/randomizer.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/utilities/randomizer.cpp.obj -MF CMakeFiles/Fate.dir/utilities/randomizer.cpp.obj.d -o CMakeFiles/Fate.dir/utilities/randomizer.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/utilities/randomizer.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/utilities/randomizer.cpp:2:
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/constants.h:32:17: error: ‘size_t’ does not name a type
+   32 | typedef         size_t                  PtrSz;
+      |                 ^~~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/constants.h:1:1: note: ‘size_t’ is defined in header ‘<cstddef>’; this is probably fixable by adding ‘#include <cstddef>’
+  +++ |+#include <cstddef>
+    1 | /*
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/randomizer.cpp: In member function ‘void CRandomizer::ComputeOdds()’:
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/randomizer.cpp:47:11: error: ‘i’ was not declared in this scope
+   47 |     for ( i = 0; i < (int32)m_Odds.size(); i++ )
+      |           ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/randomizer.cpp: In member function ‘int32 CRandomizer::GetRandom()’:
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/randomizer.cpp:65:30: error: ‘rand’ was not declared in this scope; did you mean ‘Random’?
+   65 |     float32 Random( (float32)rand() / (float32)RAND_MAX );
+      |                              ^~~~
+      |                              Random
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/randomizer.cpp:65:48: error: ‘RAND_MAX’ was not declared in this scope
+   65 |     float32 Random( (float32)rand() / (float32)RAND_MAX );
+      |                                                ^~~~~~~~
+[118/133] Building CXX object CMakeFiles/Fate.dir/utilities/vistafileutilities.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/utilities/vistafileutilities.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/utilities/vistafileutilities.cpp.obj -MF CMakeFiles/Fate.dir/utilities/vistafileutilities.cpp.obj.d -o CMakeFiles/Fate.dir/utilities/vistafileutilities.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/utilities/vistafileutilities.cpp
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/vistafileutilities.cpp:3:10: fatal error: .\constants.h: No such file or directory
+    3 | #include ".\constants.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+[119/133] Building RC object CMakeFiles/Fate.dir/RESOURCES/WinMain.rc.res
+[120/133] Building CXX object CMakeFiles/Fate.dir/UTILITIES/UserLocaleInfo.cpp.obj
+[121/133] Building CXX object CMakeFiles/Fate.dir/ITEM/itemtemplate.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/ITEM/itemtemplate.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/ITEM/itemtemplate.cpp.obj -MF CMakeFiles/Fate.dir/ITEM/itemtemplate.cpp.obj.d -o CMakeFiles/Fate.dir/ITEM/itemtemplate.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/effect.h:19,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp:19:
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:23:1: error: ‘const’ can only be specified for objects and functions
+   23 | const enum ERank
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:94:1: error: ‘const’ can only be specified for objects and functions
+   94 | const enum EHighlightColor
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:109:1: error: ‘const’ can only be specified for objects and functions
+  109 | const enum EGrade
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:118:1: error: ‘const’ can only be specified for objects and functions
+  118 | const enum EJournalStatistic
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:228:1: error: ‘const’ can only be specified for objects and functions
+  228 | const enum EGender
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:235:1: error: ‘const’ can only be specified for objects and functions
+  235 | const enum EDifficulty
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:284:1: error: ‘const’ can only be specified for objects and functions
+  284 | const enum EQuestType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:299:1: error: ‘const’ can only be specified for objects and functions
+  299 | const enum EMiniMapDolly
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:320:1: error: ‘const’ can only be specified for objects and functions
+  320 | const enum ETrapType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:330:1: error: ‘const’ can only be specified for objects and functions
+  330 | const enum EAlignment
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:347:1: error: ‘const’ can only be specified for objects and functions
+  347 | const enum ESFXType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:378:1: error: ‘const’ can only be specified for objects and functions
+  378 | const enum ETactic
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:396:1: error: ‘const’ can only be specified for objects and functions
+  396 | const enum EMagicSphere
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:419:1: error: ‘const’ can only be specified for objects and functions
+  419 | const enum EAttackSpeed
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:429:1: error: ‘const’ can only be specified for objects and functions
+  429 | const enum EDamageType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:526:1: error: ‘const’ can only be specified for objects and functions
+  526 | const enum EStatistic
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:624:1: error: ‘const’ can only be specified for objects and functions
+  624 | const enum ESkill
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:701:1: error: ‘const’ can only be specified for objects and functions
+  701 | const enum EItemCategory
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:714:1: error: ‘const’ can only be specified for objects and functions
+  714 | const enum EItemType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:765:1: error: ‘const’ can only be specified for objects and functions
+  765 | const enum EMerchant
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:1254:1: error: ‘const’ can only be specified for objects and functions
+ 1254 | const enum EEffectActivation
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:1267:1: error: ‘const’ can only be specified for objects and functions
+ 1267 | const enum ETarget
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:1314:1: error: ‘const’ can only be specified for objects and functions
+ 1314 | const enum EEffectType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:1404:1: error: ‘const’ can only be specified for objects and functions
+ 1404 | const enum EBonusType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:1411:1: error: ‘const’ can only be specified for objects and functions
+ 1411 | const enum EBonusPositive
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/../GAMECLIENT/gamerules.h:2426:1: error: ‘const’ can only be specified for objects and functions
+ 2426 | const enum EEffectTarget
+      | ^~~~~
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp:21:
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.h: In destructor ‘CItemDescription::~CItemDescription()’:
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.h:130:22: error: ‘i’ was not declared in this scope
+  130 |                 for( i = 0; i < m_pSFX.size(); i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp: In destructor ‘CItemTemplate::~CItemTemplate()’:
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp:42:14: error: ‘i’ was not declared in this scope
+   42 |         for( i = 0; i < KItemTypes; i++ )
+      |              ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp:47:14: error: ‘i’ was not declared in this scope
+   47 |         for( i = 0; i < KItemCategories; i++ )
+      |              ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp: In member function ‘void CItemTemplate::ParseTemplate(const std::string&, ERank)’:
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp:670:69: error: ‘Requirement’ was not declared in this scope; did you mean ‘Requirements’?
+  670 |                 pSubGroup = pMasterGroup->GetSubDataGroup( "GRADE", Requirement );
+      |                                                                     ^~~~~~~~~~~
+      |                                                                     Requirements
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp:755:22: error: ‘i’ was not declared in this scope
+  755 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp:807:22: error: ‘i’ was not declared in this scope
+  807 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp:814:22: error: ‘i’ was not declared in this scope
+  814 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp:821:22: error: ‘i’ was not declared in this scope
+  821 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+[122/133] Building CXX object CMakeFiles/Fate.dir/UTILITIES/loadlocalizedstring.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/UTILITIES/loadlocalizedstring.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/UTILITIES/loadlocalizedstring.cpp.obj -MF CMakeFiles/Fate.dir/UTILITIES/loadlocalizedstring.cpp.obj.d -o CMakeFiles/Fate.dir/UTILITIES/loadlocalizedstring.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/loadlocalizedstring.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/loadlocalizedstring.h:14,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/loadlocalizedstring.cpp:12:
+/mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/../UTILITIES/constants.h:32:17: error: ‘size_t’ does not name a type
+   32 | typedef         size_t                  PtrSz;
+      |                 ^~~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/../UTILITIES/constants.h:1:1: note: ‘size_t’ is defined in header ‘<cstddef>’; this is probably fixable by adding ‘#include <cstddef>’
+  +++ |+#include <cstddef>
+    1 | /*
+[123/133] Building CXX object CMakeFiles/Fate.dir/UTILITIES/textfile.cpp.obj
+[124/133] Building CXX object CMakeFiles/Fate.dir/main.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/main.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/main.cpp.obj -MF CMakeFiles/Fate.dir/main.cpp.obj.d -o CMakeFiles/Fate.dir/main.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/main.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/main.cpp:24:
+/mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/demorules.h:19:1: error: ‘const’ can only be specified for objects and functions
+   19 | const enum EDemoStats
+      | ^~~~~
+[125/133] Building C object CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/shim_stb_vorbis.c.obj
+[126/133] Building CXX object CMakeFiles/Fate.dir/utilities/SaveFile.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/utilities/SaveFile.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/utilities/SaveFile.cpp.obj -MF CMakeFiles/Fate.dir/utilities/SaveFile.cpp.obj.d -o CMakeFiles/Fate.dir/utilities/SaveFile.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/utilities/SaveFile.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/utilities/SaveFile.cpp:14:
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/SaveFile.h:24:26: error: use of enum ‘Enum’ without previous declaration
+   24 | namespace FileMode {enum Enum;}
+      |                          ^~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/SaveFile.h:25:28: error: use of enum ‘Enum’ without previous declaration
+   25 | namespace FileAccess {enum Enum;}
+      |                            ^~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/SaveFile.h:26:27: error: use of enum ‘Enum’ without previous declaration
+   26 | namespace FileShare {enum Enum;}
+      |                           ^~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/SaveFile.h:28:1: error: ‘const’ can only be specified for objects and functions
+   28 | const enum FileMode1
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/SaveFile.h:37:1: error: ‘const’ can only be specified for objects and functions
+   37 | const enum FileAccess1
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/SaveFile.h:43:1: error: ‘const’ can only be specified for objects and functions
+   43 | const enum FileShare1
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/utilities/SaveFile.h:49:1: error: ‘const’ can only be specified for objects and functions
+   49 | const enum EType
+      | ^~~~~
+[127/133] Building CXX object CMakeFiles/Fate.dir/character/charactertemplate.cpp.obj
+FAILED: [code=1] CMakeFiles/Fate.dir/character/charactertemplate.cpp.obj 
+/usr/bin/i686-w64-mingw32-g++ -DNDEBUG -DNO_STEAM -DWIN32 -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam -O3 -DNDEBUG -std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2 -MD -MT CMakeFiles/Fate.dir/character/charactertemplate.cpp.obj -MF CMakeFiles/Fate.dir/character/charactertemplate.cpp.obj.d -o CMakeFiles/Fate.dir/character/charactertemplate.cpp.obj -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/effect.h:19,
+                 from /mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:19:
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:23:1: error: ‘const’ can only be specified for objects and functions
+   23 | const enum ERank
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:94:1: error: ‘const’ can only be specified for objects and functions
+   94 | const enum EHighlightColor
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:109:1: error: ‘const’ can only be specified for objects and functions
+  109 | const enum EGrade
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:118:1: error: ‘const’ can only be specified for objects and functions
+  118 | const enum EJournalStatistic
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:228:1: error: ‘const’ can only be specified for objects and functions
+  228 | const enum EGender
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:235:1: error: ‘const’ can only be specified for objects and functions
+  235 | const enum EDifficulty
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:284:1: error: ‘const’ can only be specified for objects and functions
+  284 | const enum EQuestType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:299:1: error: ‘const’ can only be specified for objects and functions
+  299 | const enum EMiniMapDolly
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:320:1: error: ‘const’ can only be specified for objects and functions
+  320 | const enum ETrapType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:330:1: error: ‘const’ can only be specified for objects and functions
+  330 | const enum EAlignment
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:347:1: error: ‘const’ can only be specified for objects and functions
+  347 | const enum ESFXType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:378:1: error: ‘const’ can only be specified for objects and functions
+  378 | const enum ETactic
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:396:1: error: ‘const’ can only be specified for objects and functions
+  396 | const enum EMagicSphere
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:419:1: error: ‘const’ can only be specified for objects and functions
+  419 | const enum EAttackSpeed
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:429:1: error: ‘const’ can only be specified for objects and functions
+  429 | const enum EDamageType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:526:1: error: ‘const’ can only be specified for objects and functions
+  526 | const enum EStatistic
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:624:1: error: ‘const’ can only be specified for objects and functions
+  624 | const enum ESkill
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:701:1: error: ‘const’ can only be specified for objects and functions
+  701 | const enum EItemCategory
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:714:1: error: ‘const’ can only be specified for objects and functions
+  714 | const enum EItemType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:765:1: error: ‘const’ can only be specified for objects and functions
+  765 | const enum EMerchant
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:1254:1: error: ‘const’ can only be specified for objects and functions
+ 1254 | const enum EEffectActivation
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:1267:1: error: ‘const’ can only be specified for objects and functions
+ 1267 | const enum ETarget
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:1314:1: error: ‘const’ can only be specified for objects and functions
+ 1314 | const enum EEffectType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:1404:1: error: ‘const’ can only be specified for objects and functions
+ 1404 | const enum EBonusType
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:1411:1: error: ‘const’ can only be specified for objects and functions
+ 1411 | const enum EBonusPositive
+      | ^~~~~
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/../ITEM/../GAMECLIENT/gamerules.h:2426:1: error: ‘const’ can only be specified for objects and functions
+ 2426 | const enum EEffectTarget
+      | ^~~~~
+In file included from /mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:23:
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.h: In constructor ‘CAttackDescription::CAttackDescription(CAttackDescription*)’:
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.h:75:22: error: ‘i’ was not declared in this scope
+   75 |                 for( i = 0; i < KActivationTypes; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.h: In constructor ‘CCharacterDescription::CCharacterDescription(const std::string&, const std::string&, const std::string&, const std::string&, EAlignment, float32, float32, float32, float32, float32, float32, float32, uint32, uint32, uint32, uint32, uint32, uint32, uint32, uint32, uint32)’:
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.h:289:22: error: ‘i’ was not declared in this scope
+  289 |                 for( i = 0; i < KSkills; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.h: In destructor ‘CCharacterDescription::~CCharacterDescription()’:
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.h:306:22: error: ‘i’ was not declared in this scope
+  306 |                 for( i = 0; i < m_UnarmedAttacks.size(); i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp: In member function ‘void CCharacterTemplate::ParseTemplate(CParticleManager&, const std::string&, ERank)’:
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:554:22: error: ‘r’ was not declared in this scope
+  554 |                 for( r = 0; r < Skills; r++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:645:22: error: ‘i’ was not declared in this scope
+  645 |                 for( i = 0; i < Greetings; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:677:22: error: ‘i’ was not declared in this scope
+  677 |                 for( i = 0; i < PreferredWeapons; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:684:22: error: ‘i’ was not declared in this scope
+  684 |                 for( i = 0; i < PreferredArmor; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:691:22: error: ‘i’ was not declared in this scope
+  691 |                 for( i = 0; i < PreferredShield; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1070:22: error: ‘i’ was not declared in this scope
+ 1070 |                 for( i = 0; i < Idles; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1077:22: error: ‘i’ was not declared in this scope
+ 1077 |                 for( i = 0; i < Spells; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1084:22: error: ‘i’ was not declared in this scope
+ 1084 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1091:22: error: ‘i’ was not declared in this scope
+ 1091 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1098:22: error: ‘i’ was not declared in this scope
+ 1098 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1105:22: error: ‘i’ was not declared in this scope
+ 1105 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1112:22: error: ‘i’ was not declared in this scope
+ 1112 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1119:22: error: ‘i’ was not declared in this scope
+ 1119 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1126:22: error: ‘i’ was not declared in this scope
+ 1126 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1133:22: error: ‘i’ was not declared in this scope
+ 1133 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1140:22: error: ‘i’ was not declared in this scope
+ 1140 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+/mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp:1147:22: error: ‘i’ was not declared in this scope
+ 1147 |                 for( i = 0; i < Sounds; i++ )
+      |                      ^
+[128/133] Building CXX object CMakeFiles/Fate.dir/utilities/datafile.cpp.obj
+[129/133] Building CXX object CMakeFiles/Fate.dir/UTILITIES/utilities.cpp.obj
+[130/133] Building CXX object CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/d3dx8_shim.cpp.obj
+[131/133] Building CXX object CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/fmod_shim.cpp.obj
+[132/133] Linking CXX static library libfateshims.a
+ninja: build stopped: cannot make progress due to previous errors.

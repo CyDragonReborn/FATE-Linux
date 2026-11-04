@@ -72,10 +72,12 @@ public:
 	void Disable();
 	bool Enabled();
 
+#ifndef NO_STEAM
 	//Steam Callback Declarations
 	STEAM_CALLBACK( CStatsAndAchievements, OnUserStatsReceived, UserStatsReceived_t, m_CallbackUserStatsReceived );
 	STEAM_CALLBACK( CStatsAndAchievements, OnUserStatsStored, UserStatsStored_t, m_CallbackUserStatsStored );
 	STEAM_CALLBACK( CStatsAndAchievements, OnAchievementStored, UserAchievementStored_t, m_CallbackAchievementStored );	
+#endif
 
 	static CStatsAndAchievements* GetInstance()
 	{
@@ -92,6 +94,7 @@ private:
 	// Store stats
 	void StoreStatsIfNecessary();
 
+#ifndef NO_STEAM
 	// our GameID
 	CGameID m_GameID;
 
@@ -100,6 +103,7 @@ private:
 
 	// Steam UserStats interface
 	ISteamUserStats *m_pSteamUserStats;
+#endif
 
 	// Did we get the stats from Steam?
 	bool m_bRequestedStats;

@@ -1,0 +1,4 @@
+/mnt/Media2/FATE-Linux/fate_src/DEV/build/CMakeFiles/fateshims.dir
+/mnt/Media2/FATE-Linux/fate_src/DEV/build/CMakeFiles/Fate.dir
+/mnt/Media2/FATE-Linux/fate_src/DEV/build/CMakeFiles/edit_cache.dir
+/mnt/Media2/FATE-Linux/fate_src/DEV/build/CMakeFiles/rebuild_cache.dir

@@ -46,17 +46,21 @@ CStatsAndAchievements* CStatsAndAchievements::m_pStatsAndAchievements = NULL;
 #pragma warning( disable : 4355 ) 
 CStatsAndAchievements::CStatsAndAchievements( )
 	: 
+#ifndef NO_STEAM
 	m_pSteamUser( NULL ),
 	m_pSteamUserStats( NULL ),
 	m_GameID( SteamUtils()->GetAppID() ),
 	m_CallbackUserStatsReceived( this, &CStatsAndAchievements::OnUserStatsReceived ),
 	m_CallbackUserStatsStored( this, &CStatsAndAchievements::OnUserStatsStored ),
 	m_CallbackAchievementStored( this, &CStatsAndAchievements::OnAchievementStored ),
+#endif
 	m_pPlayer( NULL ),
 	m_bAchivementsEnabled(true)
 {
+#ifndef NO_STEAM
 	m_pSteamUser = SteamUser();
 	m_pSteamUserStats = SteamUserStats();
+#endif
 
 	m_bRequestedStats = false;
 	m_bStatsValid = false;
@@ -81,6 +85,7 @@ CStatsAndAchievements::CStatsAndAchievements( )
 }
 #pragma warning( pop )
 
+#ifndef NO_STEAM
 void CStatsAndAchievements::Initialize()
 {
 	if ( !m_bRequestedStats )
@@ -100,6 +105,12 @@ void CStatsAndAchievements::Initialize()
 		m_bRequestedStats = bSuccess;
 	}
 }
+#else
+void CStatsAndAchievements::Initialize()
+{
+	m_bRequestedStats = true;
+}
+#endif
 
 bool CStatsAndAchievements::Enabled()
 { 
@@ -212,6 +223,7 @@ void CStatsAndAchievements::EvaluateAchievement( Achievement_t &achievement )
 //-----------------------------------------------------------------------------
 // Purpose: Unlock this achievement
 //-----------------------------------------------------------------------------
+#ifndef NO_STEAM
 void CStatsAndAchievements::UnlockAchievement( Achievement_t &achievement )
 {
 	achievement.m_bAchieved = true;
@@ -222,10 +234,17 @@ void CStatsAndAchievements::UnlockAchievement( Achievement_t &achievement )
 	// Store stats end of frame
 	m_bStoreStats = true;
 }
+#else
+void CStatsAndAchievements::UnlockAchievement( Achievement_t &achievement )
+{
+	achievement.m_bAchieved = true;
+}
+#endif
 
 //-----------------------------------------------------------------------------
 // Purpose: Store stats in the Steam database
 //-----------------------------------------------------------------------------
+#ifndef NO_STEAM
 void CStatsAndAchievements::StoreStatsIfNecessary()
 {
 	if ( m_bStoreStats )
@@ -243,8 +262,15 @@ void CStatsAndAchievements::StoreStatsIfNecessary()
 		m_bStoreStats = !bSuccess;
 	}
 }
+#else
+void CStatsAndAchievements::StoreStatsIfNecessary()
+{
+	m_bStoreStats = false;
+}
+#endif
 
 
+#ifndef NO_STEAM
 //-----------------------------------------------------------------------------
 // Purpose: We have stats data from Steam. It is authoritative, so update
 //			our data with those results now.
@@ -324,6 +350,8 @@ void CStatsAndAchievements::OnAchievementStored( UserAchievementStored_t *pCallb
 		}
 	}
 }
+
+#endif // NO_STEAM
 
 //------------------------------------------------------
 // Stats Accessors

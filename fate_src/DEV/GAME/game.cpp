@@ -162,6 +162,10 @@ CGame::~CGame( void )
 //[BLG] IF Initialize Steam Before D3D Objects
 bool CGame::InitializeSteam()
 {
+#ifdef NO_STEAM
+    m_bSteamInitialized = true;
+    return true;
+#endif
 	if(!m_bSteamInitialized)
 	{
 		if ( SteamAPI_RestartAppIfNecessary( k_uAppIdInvalid ) )
@@ -192,7 +196,9 @@ bool CGame::InitializeSteam()
 void CGame::ShutDownSteam()
 {
 	// Shutdown the SteamAPI
+#ifndef NO_STEAM
 	SteamAPI_Shutdown();
+#endif
 }
 
 void CGame::SetFullscreenAfterPal()
@@ -513,7 +519,9 @@ HRESULT CGame::FrameMove( void )
 	m_pGameStateManager->Update( TimeElapsed );
 
 	// [BLG] IF Steam Process
+#ifndef NO_STEAM
 	SteamAPI_RunCallbacks();
+#endif
 
 	//CStatsAndAchievements::GetInstance()->Update();
 

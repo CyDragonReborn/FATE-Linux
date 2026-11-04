@@ -1,0 +1,13 @@
+# ninja log v7
+3	16	1793755917784393341	CMakeFiles/Fate.dir/CDA/cdamanager.cpp.obj	b42ee5101ab22c3a
+193	1035	1793755917973909802	CMakeFiles/Fate.dir/IO/keyhandler.cpp.obj	c17510daf2265bdf
+291	1271	1793755918071905706	CMakeFiles/Fate.dir/IO/mousehandler.cpp.obj	2abc65b16c7a58c1
+1572	1604	1793755919352852160	CMakeFiles/Fate.dir/RESOURCES/WinMain.rc.res	18cd30b115e0cb50
+1000	1653	1793755918780876070	CMakeFiles/Fate.dir/UTILITIES/UserLocaleInfo.cpp.obj	bac916b50916f4e8
+1065	1992	1793755918845873353	CMakeFiles/Fate.dir/UTILITIES/textfile.cpp.obj	1709b247943e4e2
+2	2561	1793755917783771671	CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/shim_stb_vorbis.c.obj	27cad8461c5f651f
+1415	2630	1793755919195858723	CMakeFiles/Fate.dir/utilities/datafile.cpp.obj	f8c4af50d5c8feb9
+1156	2717	1793755918936869549	CMakeFiles/Fate.dir/UTILITIES/utilities.cpp.obj	a1a09451e0638f02
+2	4693	1793755917782917785	CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/d3dx8_shim.cpp.obj	c6d14f323fb26a5
+2	14367	1793755917783647654	CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/fmod_shim.cpp.obj	2302a49189557e09
+14367	14425	1793755932147317199	libfateshims.a	cd1c0b9e8a7154cb
