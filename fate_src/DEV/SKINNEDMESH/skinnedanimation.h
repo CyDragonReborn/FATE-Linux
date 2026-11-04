@@ -13,6 +13,8 @@
 #ifndef _SKINNEDANIMATION_H
 #define _SKINNEDANIMATION_H
 
+#include "d3dx8_shim.h"
+
 
 #include <string>
 #include <assert.h>

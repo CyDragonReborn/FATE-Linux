@@ -12,6 +12,8 @@
 #ifndef _POSITIONALAUDIOMANAGER_H
 #define _POSITIONALAUDIOMANAGER_H
 
+#include "d3dx8_shim.h"
+
 #include "fmod.h"
 
 #include "../UTILITIES/llist.h"

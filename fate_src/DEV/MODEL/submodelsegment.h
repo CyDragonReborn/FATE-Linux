@@ -11,6 +11,8 @@
 
 #ifndef _SUBMODELSEGMENT_H
 #define _SUBMODELSEGMENT_H
+
+#include "d3dx8_shim.h"
 #include "submodel.h"
 //class	CSubModel;
 class	CMaterial;

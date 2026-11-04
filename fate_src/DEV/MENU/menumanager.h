@@ -12,6 +12,8 @@
 #ifndef _MENUMANAGER_H
 #define _MENUMANAGER_H
 
+#include "d3dx8_shim.h"
+
 #include "../IO/keyhandler.h"
 #include "../IO/mousehandler.h"
 #include "../UTILITIES/frustum.h"

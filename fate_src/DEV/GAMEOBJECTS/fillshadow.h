@@ -11,6 +11,8 @@
 #ifndef _FILLSHADOW_H
 #define _FILLSHADOW_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/constants.h"
 class CSettings;
 

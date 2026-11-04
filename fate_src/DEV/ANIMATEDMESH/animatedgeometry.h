@@ -1,3 +1,5 @@
+
+#include "d3dx8_shim.h"
 /*
 	animatedgeometry.cpp
 

@@ -12,6 +12,8 @@
 #ifndef _SPELLTEMPLATE_H
 #define _SPELLTEMPLATE_H
 
+#include "d3dx8_shim.h"
+
 
 #include "../UTILITIES/constants.h"
 #include "../UTILITIES/macros.h"

@@ -12,6 +12,8 @@
 #ifndef _MAZE_H
 #define _MAZE_H
 
+#include "d3dx8_shim.h"
+
 class CTemplate;
 class CPropInstance;
 

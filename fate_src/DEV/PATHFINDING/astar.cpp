@@ -1,3 +1,4 @@
+#include "d3dx8_shim.h"
 /*
 	astar.cpp
 
@@ -10,7 +11,7 @@
 */
 #include <assert.H>
 #include <math.H>
-#include <d3dx.h>
+#include "d3dx8.h"
 
 #include "../UTILITIES/macros.H"
 #include "../UTILITIES/utilities.H"

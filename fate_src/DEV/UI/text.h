@@ -12,6 +12,8 @@
 #ifndef _TEXT_H
 #define _TEXT_H
 
+#include "d3dx8_shim.h"
+
 #include <string>
 #include "../UTILITIES/constants.h"
 #include "fontmetric.h"

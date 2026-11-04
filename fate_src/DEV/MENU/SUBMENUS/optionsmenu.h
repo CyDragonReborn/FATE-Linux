@@ -9,6 +9,9 @@
 
 */
 
+#include <windows.h>
+#include "d3d8.h"
+#include "d3d8types.h"
 
 #ifndef _OPTIONSMENU_H
 #define _OPTIONSMENU_H

@@ -12,6 +12,8 @@
 #ifndef _TREAD_H
 #define _TREAD_H
 
+#include "d3dx8_shim.h"
+
 class	CCullingBounds;
 class	CFrustum;
 

@@ -14,6 +14,8 @@
 #ifndef _ANIMATEDMESHSEGMENT_H
 #define _ANIMATEDMESHSEGMENT_H
 
+#include "d3dx8_shim.h"
+
 class	CAnimatedMesh;
 class	CAnimatedSubMesh;
 class	CMaterial;

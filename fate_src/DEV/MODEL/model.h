@@ -12,6 +12,8 @@
 #ifndef _MODEL_H
 #define _MODEL_H
 
+#include "d3dx8_shim.h"
+
 
 
 #include "../MEDIA/materialconstants.h"

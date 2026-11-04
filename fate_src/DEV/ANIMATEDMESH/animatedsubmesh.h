@@ -12,6 +12,8 @@
 #ifndef _ANIMATEDSUBMESH_H
 #define _ANIMATEDSUBMESH_H
 
+#include "d3dx8_shim.h"
+
 #include <assert.h>
 
 class	CAnimatedMeshSegment;

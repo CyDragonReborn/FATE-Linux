@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

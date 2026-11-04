@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # One-shot prep: copy the source tree (if needed), fix case, patch Steam out, generate CMake.
-# Safe to re-run.   Usage:  ./setup.sh [path to original Source dir]
+# Safe to re-run.   Usage:  bash setup.sh [path to original Source dir]
 set -euo pipefail
 TOOLS="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(dirname "$TOOLS")"
@@ -10,15 +10,32 @@ echo "tools: $TOOLS"; echo "src:   $SRC"
 
 echo "== checking tools"
 miss=0
-for t in python3 cmake ninja i686-w64-mingw32-g++ i686-w64-mingw32-gcc i686-w64-mingw32-windres; do
-  command -v "$t" >/dev/null || { echo "  MISSING: $t"; miss=1; }
-done
-[ $miss = 0 ] || { echo "install: sudo pacman -S --needed mingw-w64-gcc cmake ninja python"; exit 1; }
-SYS=/usr/i686-w64-mingw32/lib
-for l in d3d8 dinput8 dxguid winmm odbc32 version; do
-  [ -e "$SYS/lib$l.a" ] || echo "  note: lib$l.a not in $SYS (build may fail to link)"
-done
-for l in vfw32 avifil32 msvfw32; do [ -e "$SYS/lib$l.a" ] && echo "  have lib$l.a"; done
+for t in python3 cmake ninja wine; do command -v "$t" >/dev/null || { echo "  MISSING: $t"; miss=1; }; done
+[ $miss = 0 ] || { echo "install: sudo pacman -S --needed wine cmake ninja python"; exit 1; }
+
+# MSVC (msvc-wine) is the recommended compiler: the code is VS2003-era.
+MSVC_DIR="${MSVC_DIR:-}"
+if [ -z "$MSVC_DIR" ]; then
+  for d in "$ROOT/msvc" /mnt/Media2/msvc; do [ -x "$d/bin/x86/cl" ] && { MSVC_DIR="$d"; break; }; done
+fi
+if [ -n "$MSVC_DIR" ] && [ -x "$MSVC_DIR/bin/x86/cl" ]; then
+  echo "  MSVC: $MSVC_DIR  ($("$MSVC_DIR/bin/x86/cl" 2>&1 | head -1))"
+else
+  echo "  MSVC not found. Install it (several GB):"
+  echo "    git clone https://github.com/mstorsjo/msvc-wine $ROOT/msvc-wine && cd $ROOT/msvc-wine"
+  echo "    ./vsdownload.py --accept-license --dest $ROOT/msvc && ./install.sh $ROOT/msvc"
+fi
+
+# d3d8 headers: the Windows SDK has none, MinGW-w64 / Wine do.
+H="$TOOLS/shims/d3d8_headers"; mkdir -p "$H"
+if [ ! -f "$H/d3d8.h" ]; then
+  for d in /usr/i686-w64-mingw32/include /usr/x86_64-w64-mingw32/include /usr/include/wine/windows /usr/include/wine/wine/windows; do
+    if [ -f "$d/d3d8.h" ] && [ -f "$d/d3d8types.h" ] && [ -f "$d/d3d8caps.h" ]; then
+      cp -L "$d/d3d8.h" "$d/d3d8types.h" "$d/d3d8caps.h" "$H/"; echo "  d3d8 headers copied from $d"; break
+    fi
+  done
+fi
+[ -f "$H/d3d8.h" ] || { echo "ERROR: no d3d8.h found. sudo pacman -S mingw-w64-headers  (or put d3d8.h, d3d8types.h, d3d8caps.h in $H)"; exit 1; }
 
 if [ ! -f "$SRC/DEV/Game.vcproj" ]; then
   echo "== copying $ORIG -> $SRC"
@@ -34,4 +51,4 @@ echo "== patching Steam out (NO_STEAM)"
 python3 "$TOOLS/patch_steam.py" "$SRC/DEV"
 echo "== generating CMakeLists.txt"
 python3 "$TOOLS/gen_cmake.py" "$SRC/DEV" "$TOOLS/shims"
-echo; echo "Done. Next:  $TOOLS/build.sh"
+echo; echo "Done. Next:  bash $TOOLS/build.sh"

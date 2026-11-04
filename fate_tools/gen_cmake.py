@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Generate CMakeLists.txt for Fate (MinGW-w64 cross build) from Game.vcproj, Release|Win32.
+"""Generate CMakeLists.txt for Fate from Game.vcproj, Release|Win32.
+
+The output builds with MSVC (msvc-wine, recommended: the code is VS2003-era) or MinGW-w64.
 
   python3 gen_cmake.py <Source/DEV> <shims dir>
 
@@ -41,7 +43,7 @@ defs = [d for d in cl.get("PreprocessorDefinitions", "").split(",") if d.strip()
 rel_incs = [p.replace("\\", "/").rstrip("/") for p in cl.get("AdditionalIncludeDirectories", "").split(";")
             if p and ":" not in p and not p.startswith("/")]
 # system libs from the vcproj, minus the ones the shims replace / that need special handling
-skip = {"d3dx8", "fmodvc", "steam_api", "odbccp32"}
+skip = {"d3dx8", "d3d8", "fmodvc", "steam_api"}
 syslibs = []
 for lib in ln.get("AdditionalDependencies", "").split():
     name = lib[:-4] if lib.lower().endswith(".lib") else lib
@@ -78,17 +80,24 @@ a(f'set(FATE_SHIMS "{shims}" CACHE PATH "d3dx8/FSOUND replacement sources")')
 a('option(NO_STEAM "Build without the Steam client (needs patch_steam.py applied)" ON)')
 a('option(FATE_USE_RC "Compile the .rc resource file" ON)')
 a("")
-a("# --- shims: replace D3DX8 and FMOD 3.75 -------------------------------------------")
+a("# --- shims: replace D3DX8 and FMOD 3.75, load d3d8.dll at runtime ---------------------")
 a("add_library(fateshims STATIC")
-a("    ${FATE_SHIMS}/d3dx8_shim.cpp ${FATE_SHIMS}/fmod_shim.cpp ${FATE_SHIMS}/shim_stb_vorbis.c)")
+a("    ${FATE_SHIMS}/d3dx8_shim.cpp ${FATE_SHIMS}/fmod_shim.cpp ${FATE_SHIMS}/d3d8_loader.cpp ${FATE_SHIMS}/shim_stb_vorbis.c)")
 a("target_include_directories(fateshims PUBLIC ${FATE_SHIMS})")
-a("target_compile_options(fateshims PRIVATE -w -O2)")
-a("set_target_properties(fateshims PROPERTIES CXX_STANDARD 11 CXX_STANDARD_REQUIRED ON C_STANDARD 99)")
+a("set_target_properties(fateshims PROPERTIES CXX_STANDARD 14 CXX_STANDARD_REQUIRED ON C_STANDARD 99)")
+a("if(MSVC)")
+a("    # d3d8.h / d3d8types.h / d3d8caps.h copied from MinGW-w64 by setup.sh (the Windows SDK has no D3D8)")
+a("    target_include_directories(fateshims PUBLIC ${FATE_SHIMS}/d3d8_headers)")
+a("    target_compile_options(fateshims PRIVATE /W0 /O2)")
+a("    target_compile_definitions(fateshims PRIVATE _CRT_SECURE_NO_WARNINGS)")
+a("else()")
+a("    target_compile_options(fateshims PRIVATE -w -O2)")
+a("endif()")
 a("")
 a("# --- the game ------------------------------------------------------------------------")
 a("add_executable(Fate WIN32")
-for s in sources:
-    a(f"    {s}")
+for s_ in sources:
+    a(f"    {s_}")
 a(")")
 if rc:
     a("if(FATE_USE_RC)")
@@ -96,29 +105,43 @@ if rc:
     a("endif()")
 a("")
 a("target_include_directories(Fate BEFORE PRIVATE ${FATE_SHIMS} ${CMAKE_CURRENT_SOURCE_DIR}")
-for p in rel_incs:
-    a("    ${CMAKE_CURRENT_SOURCE_DIR}/" + p)
+for p_ in rel_incs:
+    a("    ${CMAKE_CURRENT_SOURCE_DIR}/" + p_)
 a(")")
 a("target_compile_definitions(Fate PRIVATE " + " ".join(defs + ["_MBCS"]) + " $<$<BOOL:${NO_STEAM}>:NO_STEAM>)")
-a("# 2003-era C++: old dialect, permissive, no warning spam")
-a("target_compile_options(Fate PRIVATE $<$<COMPILE_LANGUAGE:CXX>:-std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2>)")
-a("target_link_options(Fate PRIVATE -static -mwindows)")
 a("target_link_libraries(Fate PRIVATE fateshims)")
 a("")
-a("foreach(l " + " ".join(syslibs) + ")")
-a("    find_library(FATE_LIB_${l} ${l})")
-a("    if(FATE_LIB_${l})")
-a("        target_link_libraries(Fate PRIVATE ${FATE_LIB_${l}})")
+a("if(MSVC)")
+a("    # VS2003 semantics: loop variables leak out of for(), wchar_t is a typedef, static CRT")
+a("    target_include_directories(Fate BEFORE PRIVATE ${FATE_SHIMS}/d3d8_headers)")
+a("    target_compile_definitions(Fate PRIVATE _CRT_SECURE_NO_WARNINGS _CRT_NONSTDC_NO_DEPRECATE _CRT_SECURE_NO_DEPRECATE)")
+a("    target_compile_options(Fate PRIVATE /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h)")
+a("    set_property(TARGET Fate fateshims PROPERTY MSVC_RUNTIME_LIBRARY MultiThreaded)")
+a("    target_link_options(Fate PRIVATE /SUBSYSTEM:WINDOWS /IGNORE:4098)")
+a("    target_link_libraries(Fate PRIVATE " + " ".join(l + ".lib" for l in syslibs) + ")")
+a('    set(STEAM_LIB "${CMAKE_CURRENT_SOURCE_DIR}/../steam/lib/steam_api.lib")')
+a("    if(EXISTS ${STEAM_LIB})")
+a("        target_link_libraries(Fate PRIVATE ${STEAM_LIB})")
 a("    else()")
-a('        message(WARNING "system library \'${l}\' not found in the MinGW sysroot (skipped)")')
+a('        message(WARNING "steam_api.lib not found: SteamAPI_* symbols will be unresolved")')
 a("    endif()")
-a("endforeach()")
-a("")
-a('set(STEAM_LIB "${CMAKE_CURRENT_SOURCE_DIR}/../steam/lib/steam_api.lib")')
-a("if(EXISTS ${STEAM_LIB})")
-a("    target_link_libraries(Fate PRIVATE ${STEAM_LIB})")
 a("else()")
-a('    message(WARNING "steam_api.lib not found: SteamAPI_* symbols will be unresolved")')
+a("    # MinGW-w64: NOTE the game relies on MSVC for-scope leakage that GCC cannot do; expect source errors.")
+a("    target_compile_options(Fate PRIVATE $<$<COMPILE_LANGUAGE:CXX>:-std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2>)")
+a('    target_compile_options(Fate PRIVATE "SHELL:-include stddef.h" "SHELL:-include stdlib.h")')
+a("    target_link_options(Fate PRIVATE -static -mwindows)")
+a("    foreach(l " + " ".join(syslibs) + ")")
+a("        find_library(FATE_LIB_${l} ${l})")
+a("        if(FATE_LIB_${l})")
+a("            target_link_libraries(Fate PRIVATE ${FATE_LIB_${l}})")
+a("        else()")
+a('            message(WARNING "system library \'${l}\' not found in the MinGW sysroot (skipped)")')
+a("        endif()")
+a("    endforeach()")
+a('    set(STEAM_LIB "${CMAKE_CURRENT_SOURCE_DIR}/../steam/lib/steam_api.lib")')
+a("    if(EXISTS ${STEAM_LIB})")
+a("        target_link_libraries(Fate PRIVATE ${STEAM_LIB})")
+a("    endif()")
 a("endif()")
 a("")
 a('set_target_properties(Fate PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../gamefiles")')

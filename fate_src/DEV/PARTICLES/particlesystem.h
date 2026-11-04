@@ -12,6 +12,8 @@
 #ifndef _PARTICLESYSTEM_H
 #define _PARTICLESYSTEM_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/llist.h"
 #include "../UTILITIES/constants.h"
 

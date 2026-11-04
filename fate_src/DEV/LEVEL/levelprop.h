@@ -12,6 +12,8 @@
 #ifndef _LEVELPROP_H
 #define _LEVELPROP_H
 
+#include "d3dx8_shim.h"
+
 #include "template.h"
 #include "fmod.h"
 

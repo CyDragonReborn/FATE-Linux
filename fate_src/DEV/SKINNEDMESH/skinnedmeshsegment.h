@@ -13,6 +13,8 @@
 #ifndef _SKINNEDMESHSEGMENT_H
 #define _SKINNEDMESHSEGMENT_H
 
+#include "d3dx8_shim.h"
+
 class	CAnimatedMesh;
 class	CAnimatedSubMesh;
 class	CMaterial;

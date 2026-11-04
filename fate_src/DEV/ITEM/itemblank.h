@@ -12,6 +12,8 @@
 #ifndef _ITEMBLANK_H
 #define _ITEMBLANK_H
 
+#include "d3dx8_shim.h"
+
 #include "item.h"
 class CLevel;
 class CRefManager;

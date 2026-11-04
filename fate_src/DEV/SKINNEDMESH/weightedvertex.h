@@ -12,6 +12,8 @@
 #ifndef _WEIGHTEDVERTEX_H
 #define _WEIGHTEDVERTEX_H
 
+#include "d3dx8_shim.h"
+
 
 #include <d3d8.h>
 #include <d3dx8.h>

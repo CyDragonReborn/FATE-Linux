@@ -1,10 +1,11 @@
+#include "d3dx8_shim.h"
 /*
  * d3dx8_shim.cpp -- texture / surface half of the D3DX8 replacement.
  * Works on the real D3D8 API (Wine/DXVK/native D3D8), uses stb_image for decoding.
  * Pixel work is done on RGBA8 buffers and packed into the destination format.
  */
 #include "d3dx8.h"
-
+#include "d3dx8math.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -234,7 +235,7 @@ HRESULT D3DXCreateCubeTexture(LPDIRECT3DDEVICE8 dev, UINT size, UINT mips, DWORD
     return dev->CreateCubeTexture(w, mips, usage, fmt, pool, ppCube);
 }
 
-static D3DXIMAGE_FILEFORMAT FormatFromName(const char *name)
+static D3DFORMAT FormatFromName(const char* name) { ... }
 {
     std::string s(name); size_t dot = s.rfind('.'); std::string e = dot == std::string::npos ? "" : s.substr(dot + 1);
     for (size_t i = 0; i < e.size(); i++) e[i] = (char)tolower((unsigned char)e[i]);

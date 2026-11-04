@@ -12,6 +12,8 @@
 #ifndef _COLLISIONSCENE_H
 #define _COLLISIONSCENE_H
 
+#include "d3dx8_shim.h"
+
 #include "../MEDIA/materialconstants.h"
 #include "../UTILITIES/octree.h"
 #include "../UTILITIES/quadtree.h"

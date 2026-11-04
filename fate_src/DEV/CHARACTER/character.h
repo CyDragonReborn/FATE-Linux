@@ -12,6 +12,8 @@
 #ifndef _CHARACTER_H
 #define _CHARACTER_H
 
+#include "d3dx8_shim.h"
+
 #include "fmod.h"
 
 #include "../UTILITIES/constants.h"

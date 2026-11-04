@@ -11,6 +11,8 @@
 #ifndef _SCREENFADE_H
 #define _SCREENFADE_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/constants.h"
 class CSettings;
 

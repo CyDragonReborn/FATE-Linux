@@ -13,6 +13,8 @@
 #ifndef _ANIMATEDMESH_H
 #define _ANIMATEDMESH_H
 
+#include "d3dx8_shim.h"
+
 #include <d3dx8.h>
 #include "../MEDIA/refmanager.h"
 #include "AnimatedGeometry.h"

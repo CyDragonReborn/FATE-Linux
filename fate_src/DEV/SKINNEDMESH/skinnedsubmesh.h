@@ -12,6 +12,8 @@
 #ifndef _SKINNEDSUBMESH_H
 #define _SKINNEDSUBMESH_H
 
+#include "d3dx8_shim.h"
+
 #include <assert.h>
 
 

@@ -12,6 +12,8 @@
 #ifndef _SUBSCENE_H
 #define _SUBSCENE_H
 
+#include "d3dx8_shim.h"
+
 #include <assert.h>
 
 class	CSubSceneSegment;

@@ -13,6 +13,8 @@
 #ifndef _CAMERA_H
 #define _CAMERA_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/frustum.h"
 
 class	CSettings;

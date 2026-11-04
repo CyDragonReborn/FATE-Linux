@@ -12,6 +12,8 @@
 #ifndef _SHADOWVOLUME_H
 #define _SHADOWVOLUME_H
 
+#include "d3dx8_shim.h"
+
 #include "facelist.h"
 const uint32	KMaxShadowVertices	=	32000;
 

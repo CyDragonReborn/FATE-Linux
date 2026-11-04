@@ -12,6 +12,8 @@
 #ifndef _SUBSCENESEGMENT_H
 #define _SUBSCENESEGMENT_H
 
+#include "d3dx8_shim.h"
+
 class	CSubScene;
 class	CMaterial;
 class	CRefManager;

@@ -12,6 +12,8 @@
 #ifndef _TREADMANAGER_H
 #define _TREADMANAGER_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/llist.h"
 #include "../UTILITIES/constants.h"
 

@@ -12,6 +12,8 @@
 #ifndef _SPRITE_H
 #define _SPRITE_H
 
+#include "d3dx8_shim.h"
+
 #include <string>
 #include "../UTILITIES/constants.h"
 

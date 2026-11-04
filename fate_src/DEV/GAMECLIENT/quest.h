@@ -12,6 +12,8 @@
 #ifndef _QUEST_H
 #define _QUEST_H
 
+#include "d3dx8_shim.h"
+
 #include "gamerules.h"
 #include "../CHARACTER/charactertemplate.h"
 #include "../CHARACTER/character.h"

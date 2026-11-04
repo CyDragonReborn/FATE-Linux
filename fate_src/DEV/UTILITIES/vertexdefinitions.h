@@ -1,3 +1,6 @@
+#include <d3d8.h>
+#include <d3d8types.h>
+#include "d3dx8.h"
 /*
 	vertexdefinitions.h
 
@@ -11,6 +14,8 @@
 
 #ifndef VERTEXDEFINITIONS_H
 #define VERTEXDEFINITIONS_H
+
+#include "d3dx8_shim.h"
 
 #include <D3D8.h>
 #include <d3dx8.h>

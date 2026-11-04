@@ -12,6 +12,8 @@
 #ifndef _SUBMODEL_H
 #define _SUBMODEL_H
 
+#include "d3dx8_shim.h"
+
 #include <assert.h>
 
 class	CSubModelSegment;

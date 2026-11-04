@@ -12,6 +12,8 @@
 #ifndef _LIGHTMANAGER_H
 #define _LIGHTMANAGER_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/llist.h"
 
 class CDataLight;

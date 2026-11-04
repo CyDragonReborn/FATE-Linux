@@ -13,6 +13,8 @@
 #ifndef _GAMEUI_H
 #define _GAMEUI_H
 
+#include "d3dx8_shim.h"
+
 #include "../IO/keyhandler.h"
 #include "../IO/mousehandler.h"
 #include "../GAME/gamestatemanager.h"

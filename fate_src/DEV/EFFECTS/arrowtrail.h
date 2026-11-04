@@ -12,6 +12,8 @@
 #ifndef _ARROWTRAIL_H
 #define _ARROWTRAIL_H
 
+#include "d3dx8_shim.h"
+
 
 #include "../UTILITIES/constants.h"
 #include "../UTILITIES/macros.h"

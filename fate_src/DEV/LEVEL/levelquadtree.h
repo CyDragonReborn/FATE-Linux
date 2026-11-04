@@ -13,6 +13,8 @@
 #ifndef _LEVELQUADTREE_H
 #define _LEVELQUADTREE_H
 
+#include "d3dx8_shim.h"
+
 #include <D3D8.h>
 #include <d3dx8.h>
 #include <stdio.h>

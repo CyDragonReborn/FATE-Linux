@@ -12,6 +12,8 @@
 #ifndef _LEVELMESH_H
 #define _LEVELMESH_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/quadtree.h"
 
 

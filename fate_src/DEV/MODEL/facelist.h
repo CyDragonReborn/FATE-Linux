@@ -12,6 +12,8 @@
 #ifndef _FACELIST_H
 #define _FACELIST_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/math3d.h"
 
 /// The FaceList is used primarily for performing collisions on a set of faces,

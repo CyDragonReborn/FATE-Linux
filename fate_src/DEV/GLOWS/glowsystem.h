@@ -12,6 +12,8 @@
 #ifndef _GLOWSYSTEM_H
 #define _GLOWSYSTEM_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/llist.h"
 #include "../UTILITIES/constants.h"
 

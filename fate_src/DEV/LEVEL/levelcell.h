@@ -12,6 +12,8 @@
 #ifndef _LEVELCELL_H
 #define _LEVELCELL_H
 
+#include "d3dx8_shim.h"
+
 
 class CRefManager;
 class CSettings;

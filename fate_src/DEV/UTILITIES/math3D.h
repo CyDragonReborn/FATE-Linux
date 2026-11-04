@@ -12,10 +12,14 @@
 #ifndef MATH3D_H
 #define MATH3D_H
 
-#include <D3D8.h>
-#include <d3dx8.h>
+#include "d3dx8_shim.h"
+
+// Ensure Direct3D math types (D3DXVECTOR3, D3DXMATRIX, D3DXQUATERNION) are defined
+#include <d3d8.h>
+#include <d3dx8math.h> // Or "d3d8_headers/d3dx8math.h" depending on your shim layout
 
 #include <vector>
+#include <cmath>
 #include "constants.h"
 using namespace std;
 

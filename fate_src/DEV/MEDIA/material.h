@@ -1,3 +1,6 @@
+#include <d3d8.h>
+#include <d3d8types.h>
+#include "d3dx8.h"
 /*
 	material.h
 
@@ -11,6 +14,8 @@
 
 #ifndef _MATERIAL_H
 #define _MATERIAL_H
+
+#include "d3dx8_shim.h"
 
 #include <D3D8.h>
 #include <d3dx8.h>

@@ -12,6 +12,8 @@
 #ifndef _CHARACTERTEMPLATE_H
 #define _CHARACTERTEMPLATE_H
 
+#include "d3dx8_shim.h"
+
 
 #include "../UTILITIES/constants.h"
 #include "../UTILITIES/macros.h"

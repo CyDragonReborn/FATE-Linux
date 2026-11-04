@@ -12,6 +12,8 @@
 #ifndef _SOUNDBANK_H
 #define _SOUNDBANK_H
 
+#include "d3dx8_shim.h"
+
 #include "fmod.h"
 
 #include "../UTILITIES/constants.h"

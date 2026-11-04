@@ -1,3 +1,4 @@
+#include "d3dx8.h"
 /*
 	subscene.cpp
 

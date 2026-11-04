@@ -12,6 +12,8 @@
 #ifndef _ITEM_H
 #define _ITEM_H
 
+#include "d3dx8_shim.h"
+
 #include "itemtemplate.h"
 #include "fmod.h"
 #include "../GAMEOBJECTS/genericmodel.h"

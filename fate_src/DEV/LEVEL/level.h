@@ -12,6 +12,8 @@
 #ifndef _LEVEL_H
 #define _LEVEL_H
 
+#include "d3dx8_shim.h"
+
 #include "maze.h"
 #include "levelmesh.h"
 

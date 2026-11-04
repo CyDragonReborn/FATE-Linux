@@ -1,3 +1,5 @@
+#include "d3dx8_shim.h"
+#include "d3dx8.h"
 /*
 	movie.cpp
 
@@ -9,7 +11,7 @@
 
 */
 
-#include <stdexcpt.h>
+#include <stdexcept>
 #include <D3D8.h>
 #include <D3DX8.h>
 

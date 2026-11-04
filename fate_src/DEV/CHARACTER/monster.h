@@ -12,6 +12,8 @@
 #ifndef _MONSTER_H
 #define _MONSTER_H
 
+#include "d3dx8_shim.h"
+
 #include "character.h"
 class CLevel;
 class CRefManager;

@@ -12,6 +12,8 @@
 #ifndef _LEVELMESHPATCH_H
 #define _LEVELMESHPATCH_H
 
+#include "d3dx8_shim.h"
+
 #include "../UTILITIES/vertexdefinitions.h"
 #include "level.h"
 // how many tiles wide/high per patch?

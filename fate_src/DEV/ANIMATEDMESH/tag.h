@@ -1,3 +1,5 @@
+
+#include "d3dx8_shim.h"
 /*
 	tag.cpp
 
