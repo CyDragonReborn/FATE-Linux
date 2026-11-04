@@ -1,28 +1,26 @@
 #!/usr/bin/env python3
-"""Generate CMakeLists.txt for FATE from Game.vcproj (Release|Win32 config).
+"""Generate CMakeLists.txt for Fate (MinGW-w64 cross build) from Game.vcproj, Release|Win32.
 
-Usage:  python3 gen_cmake.py /mnt/Media2/FATE/FATE/Source/DEV
-Writes: <DEV>/CMakeLists.txt
+  python3 gen_cmake.py <Source/DEV> <shims dir>
 
-- Resolves source paths case-insensitively (vcproj says Direct3d/, disk says DIRECT3D/).
-- Takes defines and system libs from the Release|Win32 configuration.
-- Leaves DX8 SDK / FMOD 3.75 locations as CMake cache variables.
+Writes <Source/DEV>/CMakeLists.txt.  Source paths are resolved case-insensitively.
+d3dx8 and FMOD are NOT linked: the shims in <shims dir> replace them.
 """
 import os
 import sys
 import xml.etree.ElementTree as ET
 
-dev = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else ".")
-tree = ET.parse(os.path.join(dev, "Game.vcproj"))
-root = tree.getroot()
+if len(sys.argv) < 3:
+    sys.exit(__doc__)
+dev = os.path.abspath(sys.argv[1])
+shims = os.path.abspath(sys.argv[2])
+root = ET.parse(os.path.join(dev, "Game.vcproj")).getroot()
 CFG = "Release|Win32"
 
 
 def resolve(rel):
-    """Case-insensitive path resolution relative to dev. Returns None if missing."""
-    parts = [p for p in rel.replace("\\", "/").split("/") if p not in ("", ".")]
     cur, out = dev, []
-    for p in parts:
+    for p in [p for p in rel.replace("\\", "/").split("/") if p not in ("", ".")]:
         try:
             names = os.listdir(cur)
         except OSError:
@@ -35,89 +33,99 @@ def resolve(rel):
     return "/".join(out)
 
 
-# --- configuration ---------------------------------------------------------
 cfg = next(c for c in root.iter("Configuration") if c.get("Name") == CFG)
 cl = next(t for t in cfg.iter("Tool") if t.get("Name") == "VCCLCompilerTool")
 ln = next(t for t in cfg.iter("Tool") if t.get("Name") == "VCLinkerTool")
 
 defs = [d for d in cl.get("PreprocessorDefinitions", "").split(",") if d.strip()]
-libs = ln.get("AdditionalDependencies", "").split()
-# libs provided by the DX8 SDK / FMOD / Steam get their own search dirs below
-rel_incs = [p for p in cl.get("AdditionalIncludeDirectories", "").split(";")
-            if p and not os.path.isabs(p.replace("\\", "/")) and ":" not in p]
+rel_incs = [p.replace("\\", "/").rstrip("/") for p in cl.get("AdditionalIncludeDirectories", "").split(";")
+            if p and ":" not in p and not p.startswith("/")]
+# system libs from the vcproj, minus the ones the shims replace / that need special handling
+skip = {"d3dx8", "fmodvc", "steam_api", "odbccp32"}
+syslibs = []
+for lib in ln.get("AdditionalDependencies", "").split():
+    name = lib[:-4] if lib.lower().endswith(".lib") else lib
+    name = name.lower()
+    if name not in skip and name not in syslibs:
+        syslibs.append(name)
+for extra in ("avifil32", "msvfw32", "ole32", "uuid"):   # MSVC's Vfw32.lib bundles AVI/ICM; mingw splits them
+    if extra not in syslibs:
+        syslibs.append(extra)
 
-# --- sources ---------------------------------------------------------------
-sources, missing, rc = [], [], []
+sources, rc, missing = [], [], []
 for f in root.iter("File"):
     rel = f.get("RelativePath", "")
     ext = rel.lower().rsplit(".", 1)[-1]
     if ext not in ("cpp", "c", "rc"):
         continue
-    excluded = any(
-        fc.get("Name") == CFG and any(t.get("ExcludedFromBuild") == "TRUE" for t in fc.iter("Tool"))
-        for fc in f.iter("FileConfiguration")
-    )
-    if excluded:
+    if any(fc.get("Name") == CFG and any(t.get("ExcludedFromBuild") == "TRUE" for t in fc.iter("Tool"))
+           for fc in f.iter("FileConfiguration")):
         continue
     real = resolve(rel)
     if real is None:
         missing.append(rel)
         continue
     (rc if ext == "rc" else sources).append(real)
+sources, rc = sorted(set(sources)), sorted(set(rc))
 
-sources = sorted(set(sources))
-rc = sorted(set(rc))
-
-# --- emit ------------------------------------------------------------------
 L = []
-L.append("cmake_minimum_required(VERSION 3.20)")
-L.append("project(Fate C CXX" + (" RC" if rc else "") + ")")
-L.append("")
-L.append("# Point these at your old SDKs (headers + 32-bit import libs):")
-L.append('set(DX8_INC   "" CACHE PATH "dir with d3d8.h d3dx8.h dinput.h")')
-L.append('set(DX8_LIB   "" CACHE PATH "dir with d3d8.lib d3dx8.lib dinput8.lib dxguid.lib")')
-L.append('set(FMOD_INC  "" CACHE PATH "dir with fmod.h (FMOD 3.75)")')
-L.append('set(FMOD_LIB  "" CACHE PATH "dir with fmodvc.lib (FMOD 3.75)")')
-L.append("option(NO_STEAM \"Build with Steam stubbed out (needs #ifdef NO_STEAM in the code)\" ON)")
-L.append("")
-L.append("add_executable(Fate WIN32")
-for s in sources + rc:
-    L.append(f"    {s}")
-L.append(")")
-L.append("")
-L.append("target_compile_definitions(Fate PRIVATE")
-for d in defs + ["_MBCS"]:
-    L.append(f"    {d}")
-L.append("    $<$<BOOL:${NO_STEAM}>:NO_STEAM>")
-L.append(")")
-L.append("")
-L.append("target_include_directories(Fate PRIVATE")
-L.append("    ${CMAKE_CURRENT_SOURCE_DIR}")
+a = L.append
+a("# Generated by gen_cmake.py from Game.vcproj (Release|Win32). Re-run it instead of editing by hand.")
+a("cmake_minimum_required(VERSION 3.20)")
+a("project(Fate C CXX" + (" RC)" if rc else ")"))
+a("")
+a(f'set(FATE_SHIMS "{shims}" CACHE PATH "d3dx8/FSOUND replacement sources")')
+a('option(NO_STEAM "Build without the Steam client (needs patch_steam.py applied)" ON)')
+a('option(FATE_USE_RC "Compile the .rc resource file" ON)')
+a("")
+a("# --- shims: replace D3DX8 and FMOD 3.75 -------------------------------------------")
+a("add_library(fateshims STATIC")
+a("    ${FATE_SHIMS}/d3dx8_shim.cpp ${FATE_SHIMS}/fmod_shim.cpp ${FATE_SHIMS}/shim_stb_vorbis.c)")
+a("target_include_directories(fateshims PUBLIC ${FATE_SHIMS})")
+a("target_compile_options(fateshims PRIVATE -w -O2)")
+a("set_target_properties(fateshims PROPERTIES CXX_STANDARD 11 CXX_STANDARD_REQUIRED ON C_STANDARD 99)")
+a("")
+a("# --- the game ------------------------------------------------------------------------")
+a("add_executable(Fate WIN32")
+for s in sources:
+    a(f"    {s}")
+a(")")
+if rc:
+    a("if(FATE_USE_RC)")
+    a("    target_sources(Fate PRIVATE " + " ".join(rc) + ")")
+    a("endif()")
+a("")
+a("target_include_directories(Fate BEFORE PRIVATE ${FATE_SHIMS} ${CMAKE_CURRENT_SOURCE_DIR}")
 for p in rel_incs:
-    L.append("    ${CMAKE_CURRENT_SOURCE_DIR}/" + p.replace("\\", "/").rstrip("/"))
-L.append("    ${DX8_INC} ${FMOD_INC}")
-L.append(")")
-L.append("")
-L.append("# VS2003 defaults: wchar_t is a typedef, EH on, 32-bit, static CRT (/MT), MBCS")
-L.append("if(MSVC)")
-L.append("    target_compile_options(Fate PRIVATE /EHsc /Zc:wchar_t- /MT /W3 /wd4996 /permissive /Zc:strictStrings-)")
-L.append("    target_link_options(Fate PRIVATE /SUBSYSTEM:WINDOWS)")
-L.append("endif()")
-L.append("")
-L.append("target_link_directories(Fate PRIVATE ${DX8_LIB} ${FMOD_LIB}")
-L.append("    ${CMAKE_CURRENT_SOURCE_DIR}/../steam/lib)")
-L.append("target_link_libraries(Fate PRIVATE")
-for lib in libs:
-    L.append(f"    {lib}")
-L.append(")")
-L.append("")
-L.append('set_target_properties(Fate PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../gamefiles")')
+    a("    ${CMAKE_CURRENT_SOURCE_DIR}/" + p)
+a(")")
+a("target_compile_definitions(Fate PRIVATE " + " ".join(defs + ["_MBCS"]) + " $<$<BOOL:${NO_STEAM}>:NO_STEAM>)")
+a("# 2003-era C++: old dialect, permissive, no warning spam")
+a("target_compile_options(Fate PRIVATE $<$<COMPILE_LANGUAGE:CXX>:-std=gnu++98 -fpermissive -fno-strict-aliasing -w -O2>)")
+a("target_link_options(Fate PRIVATE -static -mwindows)")
+a("target_link_libraries(Fate PRIVATE fateshims)")
+a("")
+a("foreach(l " + " ".join(syslibs) + ")")
+a("    find_library(FATE_LIB_${l} ${l})")
+a("    if(FATE_LIB_${l})")
+a("        target_link_libraries(Fate PRIVATE ${FATE_LIB_${l}})")
+a("    else()")
+a('        message(WARNING "system library \'${l}\' not found in the MinGW sysroot (skipped)")')
+a("    endif()")
+a("endforeach()")
+a("")
+a('set(STEAM_LIB "${CMAKE_CURRENT_SOURCE_DIR}/../steam/lib/steam_api.lib")')
+a("if(EXISTS ${STEAM_LIB})")
+a("    target_link_libraries(Fate PRIVATE ${STEAM_LIB})")
+a("else()")
+a('    message(WARNING "steam_api.lib not found: SteamAPI_* symbols will be unresolved")')
+a("endif()")
+a("")
+a('set_target_properties(Fate PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../gamefiles")')
 
-with open(os.path.join(dev, "CMakeLists.txt"), "w") as fh:
-    fh.write("\n".join(L) + "\n")
-
-print(f"sources: {len(sources)}  rc: {len(rc)}  defines: {defs}")
-print(f"libs: {libs}")
+open(os.path.join(dev, "CMakeLists.txt"), "w").write("\n".join(L) + "\n")
+print(f"CMakeLists.txt written: {len(sources)} sources, {len(rc)} rc, libs: {' '.join(syslibs)}")
+print("include dirs from vcproj:", rel_incs)
 if missing:
     print(f"MISSING ({len(missing)}):")
     for m in missing:
