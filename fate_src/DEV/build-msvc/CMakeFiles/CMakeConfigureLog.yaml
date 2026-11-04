@@ -34,7 +34,6 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/mnt/Media2/msvc/bin/x86/uname"
       - "/home/mick0/.local/bin/uname"
@@ -57,7 +56,6 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -101,7 +99,6 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/mnt/Media2/msvc/bin/x86/ninja-build"
       - "/mnt/Media2/msvc/bin/x86/ninja"
@@ -133,60 +130,6 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "cl"
-    candidate_directories:
-      - "/mnt/Media2/msvc/bin/x86/"
-      - "/home/mick0/.local/bin/"
-      - "/opt/devkitpro/tools/bin/"
-      - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/local/sbin/"
-      - "/opt/android-ndk/"
-      - "/opt/cuda/bin/"
-      - "/var/lib/flatpak/exports/bin/"
-      - "/usr/lib/jvm/default/bin/"
-      - "/usr/bin/site_perl/"
-      - "/usr/bin/vendor_perl/"
-      - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/"
-    found: "/mnt/Media2/msvc/bin/x86/cl"
-    search_context:
-      ENV{PATH}:
-        - "/mnt/Media2/msvc/bin/x86"
-        - "/home/mick0/.local/bin"
-        - "/opt/devkitpro/tools/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/local/sbin"
-        - "/opt/android-ndk"
-        - "/opt/cuda/bin"
-        - "/var/lib/flatpak/exports/bin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -228,7 +171,6 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -311,7 +253,6 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/"
     found: "/mnt/Media2/msvc/bin/x86/link"
     search_context:
       ENV{PATH}:
@@ -329,7 +270,6 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -366,7 +306,6 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/mnt/Media2/msvc/bin/x86/lld-link"
       - "/home/mick0/.local/bin/lld-link"
@@ -389,7 +328,6 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -424,7 +362,6 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/"
     found: "/mnt/Media2/msvc/bin/x86/link"
     search_context:
       ENV{PATH}:
@@ -442,7 +379,6 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -477,7 +413,6 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/"
     found: "/mnt/Media2/msvc/bin/x86/mt"
     search_context:
       ENV{PATH}:
@@ -495,7 +430,6 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -530,7 +464,6 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/"
     found: "/mnt/Media2/msvc/bin/x86/lib"
     search_context:
       ENV{PATH}:
@@ -548,60 +481,6 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:71 (_cmake_find_compiler_path)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_CXX_COMPILER_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "cl"
-    candidate_directories:
-      - "/mnt/Media2/msvc/bin/x86/"
-      - "/home/mick0/.local/bin/"
-      - "/opt/devkitpro/tools/bin/"
-      - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/local/sbin/"
-      - "/opt/android-ndk/"
-      - "/opt/cuda/bin/"
-      - "/var/lib/flatpak/exports/bin/"
-      - "/usr/lib/jvm/default/bin/"
-      - "/usr/bin/site_perl/"
-      - "/usr/bin/vendor_perl/"
-      - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/"
-    found: "/mnt/Media2/msvc/bin/x86/cl"
-    search_context:
-      ENV{PATH}:
-        - "/mnt/Media2/msvc/bin/x86"
-        - "/home/mick0/.local/bin"
-        - "/opt/devkitpro/tools/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/local/sbin"
-        - "/opt/android-ndk"
-        - "/opt/cuda/bin"
-        - "/var/lib/flatpak/exports/bin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -643,7 +522,6 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -699,8 +577,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-wJnq0N"
-      binary: "/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-wJnq0N"
+      source: "/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-yzu4yX"
+      binary: "/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-yzu4yX"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -710,11 +588,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-wJnq0N'
+        Change Dir: '/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-yzu4yX'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_3fc0f
-        [1/2] /mnt/Media2/msvc/bin/x86/cl  /nologo -D_MBCS  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles/cmTC_3fc0f.dir/CMakeCCompilerABI.c.obj /FdCMakeFiles/cmTC_3fc0f.dir/ /FS -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
-        [2/2] : && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles/cmTC_3fc0f.dir --rc=rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests  -- /mnt/Media2/msvc/bin/x86/link /nologo CMakeFiles/cmTC_3fc0f.dir/CMakeCCompilerABI.c.obj  /out:cmTC_3fc0f.exe /implib:cmTC_3fc0f.lib /pdb:cmTC_3fc0f.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_57aca
+        [1/2] /mnt/Media2/msvc/bin/x86/cl  /nologo -D_MBCS  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles/cmTC_57aca.dir/CMakeCCompilerABI.c.obj /FdCMakeFiles/cmTC_57aca.dir/ /FS -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        [2/2] : && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles/cmTC_57aca.dir --rc=/mnt/Media2/msvc/bin/x86/rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests  -- /mnt/Media2/msvc/bin/x86/link /nologo CMakeFiles/cmTC_57aca.dir/CMakeCCompilerABI.c.obj  /out:cmTC_57aca.exe /implib:cmTC_57aca.lib /pdb:cmTC_57aca.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && :
         
       exitCode: 0
   -
@@ -727,7 +605,7 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(link|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(link|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        link line: [[2/2] : && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles/cmTC_3fc0f.dir --rc=rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests  -- /mnt/Media2/msvc/bin/x86/link /nologo CMakeFiles/cmTC_3fc0f.dir/CMakeCCompilerABI.c.obj  /out:cmTC_3fc0f.exe /implib:cmTC_3fc0f.lib /pdb:cmTC_3fc0f.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && :] ==> linker [/mnt/Media2/msvc/bin/x86/link]
+        link line: [[2/2] : && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles/cmTC_57aca.dir --rc=/mnt/Media2/msvc/bin/x86/rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests  -- /mnt/Media2/msvc/bin/x86/link /nologo CMakeFiles/cmTC_57aca.dir/CMakeCCompilerABI.c.obj  /out:cmTC_57aca.exe /implib:cmTC_57aca.lib /pdb:cmTC_57aca.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && :] ==> linker [/mnt/Media2/msvc/bin/x86/link]
         linker tool for 'C': /mnt/Media2/msvc/bin/x86/link 
         implicit libs: []
         implicit objs: []
@@ -755,8 +633,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-seWxYM"
-      binary: "/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-seWxYM"
+      source: "/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-2jirf5"
+      binary: "/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-2jirf5"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -767,11 +645,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-seWxYM'
+        Change Dir: '/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc/CMakeFiles/CMakeScratch/TryCompile-2jirf5'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_f9cd3
-        [1/2] /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -D_MBCS  /DWIN32 /D_WINDOWS /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles/cmTC_f9cd3.dir/CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles/cmTC_f9cd3.dir/ /FS -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-        [2/2] : && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles/cmTC_f9cd3.dir --rc=rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests  -- /mnt/Media2/msvc/bin/x86/link /nologo CMakeFiles/cmTC_f9cd3.dir/CMakeCXXCompilerABI.cpp.obj  /out:cmTC_f9cd3.exe /implib:cmTC_f9cd3.lib /pdb:cmTC_f9cd3.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_41965
+        [1/2] /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -D_MBCS  /DWIN32 /D_WINDOWS /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles/cmTC_41965.dir/CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles/cmTC_41965.dir/ /FS -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        [2/2] : && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles/cmTC_41965.dir --rc=/mnt/Media2/msvc/bin/x86/rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests  -- /mnt/Media2/msvc/bin/x86/link /nologo CMakeFiles/cmTC_41965.dir/CMakeCXXCompilerABI.cpp.obj  /out:cmTC_41965.exe /implib:cmTC_41965.lib /pdb:cmTC_41965.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && :
         
       exitCode: 0
   -
@@ -784,7 +662,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(link|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(link|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        link line: [[2/2] : && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles/cmTC_f9cd3.dir --rc=rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests  -- /mnt/Media2/msvc/bin/x86/link /nologo CMakeFiles/cmTC_f9cd3.dir/CMakeCXXCompilerABI.cpp.obj  /out:cmTC_f9cd3.exe /implib:cmTC_f9cd3.lib /pdb:cmTC_f9cd3.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && :] ==> linker [/mnt/Media2/msvc/bin/x86/link]
+        link line: [[2/2] : && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles/cmTC_41965.dir --rc=/mnt/Media2/msvc/bin/x86/rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests  -- /mnt/Media2/msvc/bin/x86/link /nologo CMakeFiles/cmTC_41965.dir/CMakeCXXCompilerABI.cpp.obj  /out:cmTC_41965.exe /implib:cmTC_41965.lib /pdb:cmTC_41965.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && :] ==> linker [/mnt/Media2/msvc/bin/x86/link]
         linker tool for 'CXX': /mnt/Media2/msvc/bin/x86/link 
         implicit libs: []
         implicit objs: []

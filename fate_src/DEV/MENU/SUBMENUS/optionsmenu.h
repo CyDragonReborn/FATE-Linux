@@ -190,14 +190,14 @@ const std::string KGlowNames[KGlows] =
 	LoadLocalizedString(1059),
 	LoadLocalizedString(1052),
 };
-const KResolutionCode( 1000 );
-const KShadowCode( 2000 );
-const KShadowSizeCode( 3000 );
-const KParticleCode( 4000 );
-const KFSAACode( 5000 );
-const KGlowCode( 6000 );
-const KVSYNCCode( 7000 );
-const KFogCode( 8000 );
+const int KResolutionCode = 1000;
+const int KShadowCode = 2000;
+const int KShadowSizeCode = 3000;
+const int KParticleCode = 4000;
+const int KFSAACode = 5000;
+const int KGlowCode = 6000;
+const int KVSYNCCode = 7000;
+const int KFogCode = 8000;
 
 
 

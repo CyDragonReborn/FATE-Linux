@@ -1,610 +1,599 @@
 ninja: Entering directory `/mnt/Media2/FATE-Linux/fate_src/DEV/build-msvc'
-[1/134] Building CXX object CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/d3dx8_shim.cpp.obj
+[1/129] Building CXX object CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/d3dx8_shim.cpp.obj
 FAILED: [code=2] CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/d3dx8_shim.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -D_CRT_SECURE_NO_WARNINGS -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++14 -MT /W0 /O2 /showIncludes /FoCMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/d3dx8_shim.cpp.obj /FdCMakeFiles/fateshims.dir/fateshims.pdb /FS -c /mnt/Media2/FATE-Linux/fate_tools/shims/d3dx8_shim.cpp
 z:/mnt/Media2/FATE-Linux/fate_tools/shims/d3dx8_shim.cpp(1): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[2/134] Building CXX object CMakeFiles/Fate.dir/CDA/cdamanager.cpp.obj
-cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-[3/134] Building C object CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/shim_stb_vorbis.c.obj
-[4/134] Building CXX object CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_loader.cpp.obj
-[5/134] Building CXX object CMakeFiles/Fate.dir/GAME/gamestatemanager.cpp.obj
+[2/129] Building CXX object CMakeFiles/Fate.dir/GAME/gamestatemanager.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAME/gamestatemanager.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAME/gamestatemanager.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAME/gamestatemanager.cpp
 Notecl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 : including file:      /mnt/Media2/msvc/kits/10/include/10.0.26100.0/um/prsht.h
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAME\../MODEL/model.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[6/134] Building CXX object CMakeFiles/Fate.dir/DIRECT3D/getdxver.cpp.obj
+[3/129] Building CXX object CMakeFiles/Fate.dir/DIRECT3D/getdxver.cpp.obj
 10/include/10.0.26100.0/ucrt/tchar.h
-[7/134] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmeshsegment.cpp.obj
+[4/129] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmeshsegment.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmeshsegment.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ANIMATEDMESH/animatedmeshsegment.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedmeshsegment.cpp
 231/include/sstream
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\ANIMATEDMESH\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[8/134] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedsubmesh.cpp.obj
+[5/129] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedmesh.cpp
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\ANIMATEDMESH\AnimatedMesh.h(16): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+[6/129] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedsubmesh.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedsubmesh.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ANIMATEDMESH/animatedsubmesh.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedsubmesh.cpp
 include/sstream
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\ANIMATEDMESH\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[9/134] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ANIMATEDMESH/animatedmesh.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedmesh.cpp
-         /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/cerrno
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\ANIMATEDMESH\AnimatedMesh.h(16): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[10/134] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedgeometry.cpp
-    /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/stdexcept
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\ANIMATEDMESH\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[11/134] Building CXX object CMakeFiles/Fate.dir/GAME/game.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAME/game.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAME/game.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAME/game.cpp
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-[12/134] Building CXX object CMakeFiles/Fate.dir/DIRECT3D/dx8app.cpp.obj
-c/14.51.36231/include/ios
-[13/134] Building CXX object CMakeFiles/Fate.dir/DIRECT3D/d3denumeration.cpp.obj
-c/14.51.36231/include/iterator
-[14/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/bottommenu.cpp.obj
+[7/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/bottommenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/bottommenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/bottommenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/bottommenu.cpp
 /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[15/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/buysellmenu.cpp.obj
+[8/129] Building CXX object CMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ANIMATEDMESH/animatedgeometry.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ANIMATEDMESH/animatedgeometry.cpp
+    /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/stdexcept
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\ANIMATEDMESH\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[9/129] Building CXX object CMakeFiles/Fate.dir/GAME/game.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAME/game.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAME/game.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAME/game.cpp
+   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/xcall_once.h
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[10/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/buysellmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/buysellmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/buysellmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/buysellmenu.cpp
  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[16/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/confirmmenu.cpp.obj
+[11/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/confirmmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/confirmmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/confirmmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/confirmmenu.cpp
  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[17/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/enchantmenu.cpp.obj
+[12/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/enchantmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/enchantmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/enchantmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/enchantmenu.cpp
  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[18/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/fatemenu.cpp.obj
+[13/129] Building CXX object CMakeFiles/Fate.dir/DIRECT3D/dx8app.cpp.obj
+c/14.51.36231/include/ios
+[14/129] Building CXX object CMakeFiles/Fate.dir/DIRECT3D/d3denumeration.cpp.obj
+c/14.51.36231/include/iterator
+[15/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/fatemenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/fatemenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/fatemenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/fatemenu.cpp
-nt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[19/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/gameclient.cpp.obj
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+[16/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/gameclient.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/gameclient.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/gameclient.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameclient.cpp
 am
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMECLIENT\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[20/134] Building CXX object CMakeFiles/fateshims.dir/mnt/Media2/FATE-Linux/fate_tools/shims/fmod_shim.cpp.obj
-[21/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameui.cpp
-/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMECLIENT\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[22/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/inventorymenu.cpp
-Note: including file:cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[23/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/gameoptionsmenu.cpp.obj
+[17/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/gameoptionsmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/gameoptionsmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/gameoptionsmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameoptionsmenu.cpp
 Note: including filcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 e:   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[24/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/helpmenu.cpp.obj
+[18/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/gameui.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/gameui.cpp
+/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMECLIENT\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[19/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/helpmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/helpmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/helpmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/helpmenu.cpp
 e/__msvc_bit_utils.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[25/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/journalmenu.cpp
- /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
+[20/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/inventorymenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/inventorymenu.cpp
+Note: including file:cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[26/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/messagemenu.cpp
- /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[27/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petinventorymenu.cpp
-Note: including ficl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-le:   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[28/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/petsellinventorymenu.cpp.obj
+[21/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/petsellinventorymenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/petsellinventorymenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/petsellinventorymenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petsellinventorymenu.cpp
 Note: includincl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 g file:   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[29/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petstatsmenu.cpp
-  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
+[22/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/messagemenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/messagemenu.cpp
+ /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[30/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/questdescriptions.cpp.obj
+[23/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/journalmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/journalmenu.cpp
+ /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[24/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/questdescriptions.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/questdescriptions.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/questdescriptions.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/questdescriptions.cpp
 rc.h
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMECLIENT\quest.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[31/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/questmenu.cpp.obj
+[25/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/petstatsmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petstatsmenu.cpp
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+[26/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/petinventorymenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/petinventorymenu.cpp
+Note: including ficl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+le:   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[27/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/questmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/questmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/questmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/questmenu.cpp
 mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[32/134] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/blurlayer.cpp.obj
+[28/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/skillmenu.cpp
+mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[29/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/spellmenu.cpp
+mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[30/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/statsmenu.cpp
+mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[31/129] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/blurlayer.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMEOBJECTS/blurlayer.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMEOBJECTS/blurlayer.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/blurlayer.cpp
 Note: inclucl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 ding file:      /mnt/Media2/msvc/kits/10/include/10.0.26100.0/um/prsht.h
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMEOBJECTS\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[33/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/skillmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/skillmenu.cpp
-mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[34/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/spellmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/spellmenu.cpp
-mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[35/134] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/fillshadow.cpp.obj
+[32/129] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/fillshadow.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMEOBJECTS/fillshadow.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMEOBJECTS/fillshadow.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/fillshadow.cpp
 Note: inclcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 uding file:      /mnt/Media2/msvc/kits/10/include/10.0.26100.0/um/prsht.h
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMEOBJECTS\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[36/134] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/screenfade.cpp.obj
+[33/129] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/screenfade.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMEOBJECTS/screenfade.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMEOBJECTS/screenfade.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/screenfade.cpp
 Note: inclcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 uding file:      /mnt/Media2/msvc/kits/10/include/10.0.26100.0/um/prsht.h
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMEOBJECTS\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[37/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/statsmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/statsmenu.cpp
-mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[38/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/tipmenu.cpp.obj
+[34/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/tipmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMECLIENT/tipmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMECLIENT/tipmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMECLIENT/tipmenu.cpp
 t/Media2/msvc/vc/tools/msvc/14.51.36231/include/string
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[39/134] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/camera.cpp
-edia2/msvc/vc/tools/msvc/14.51.36231/include/xstring
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMEOBJECTS\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[40/134] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/genericmodel.cpp.obj
+[35/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/templatemanifest.cpp.obj
+vc/14.51.36231/include/xerrc.h
+[36/129] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/genericmodel.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMEOBJECTS/genericmodel.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMEOBJECTS/genericmodel.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/genericmodel.cpp
 Note: inccl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 luding file:     /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[41/134] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/lightmanager.cpp.obj
+[37/129] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMEOBJECTS/camera.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/camera.cpp
+edia2/msvc/vc/tools/msvc/14.51.36231/include/xstring
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMEOBJECTS\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[38/129] Building CXX object CMakeFiles/Fate.dir/GAMEOBJECTS/lightmanager.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GAMEOBJECTS/lightmanager.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GAMEOBJECTS/lightmanager.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GAMEOBJECTS/lightmanager.cpp
    /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\GAMEOBJECTS\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[42/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/templatemanifest.cpp.obj
-vc/14.51.36231/include/xerrc.h
-[43/134] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/tips.cpp.obj
-Note: incl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-cluding file:          /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/atomic
-[44/134] Building CXX object CMakeFiles/Fate.dir/GLOWS/glowmanager.cpp.obj
+[39/129] Building CXX object CMakeFiles/Fate.dir/GLOWS/glowmanager.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GLOWS/glowmanager.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GLOWS/glowmanager.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GLOWS/glowmanager.cpp
 nt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\GLOWS\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[45/134] Building CXX object CMakeFiles/Fate.dir/GLOWS/glowsystem.cpp.obj
+[40/129] Building CXX object CMakeFiles/Fate.dir/GLOWS/glowsystem.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/GLOWS/glowsystem.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/GLOWS/glowsystem.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/GLOWS/glowsystem.cpp
 /msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\GLOWS\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[46/134] Building CXX object CMakeFiles/Fate.dir/IO/joystick.cpp.obj
+[41/129] Building CXX object CMakeFiles/Fate.dir/IO/keyhandler.cpp.obj
+/include/xerrc.h
+[42/129] Building CXX object CMakeFiles/Fate.dir/IO/joystick.cpp.obj
 Note: icl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 ncluding file:          /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/stdexcept
-[47/134] Building CXX object CMakeFiles/Fate.dir/IO/keyhandler.cpp.obj
-/include/xerrc.h
-[48/134] Building CXX object CMakeFiles/Fate.dir/ITEM/item.cpp.obj
+[43/129] Building CXX object CMakeFiles/Fate.dir/GAMECLIENT/tips.cpp.obj
+Note: incl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+cluding file:          /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/atomic
+[44/129] Building CXX object CMakeFiles/Fate.dir/ITEM/item.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/ITEM/item.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ITEM/item.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/item.cpp
 c/vc/tools/msvc/14.51.36231/include/cerrno
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\ITEM\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[49/134] Building CXX object CMakeFiles/Fate.dir/IO/mousehandler.cpp.obj
+[45/129] Building CXX object CMakeFiles/Fate.dir/IO/mousehandler.cpp.obj
 31/include/xerrc.h
-[50/134] Building CXX object CMakeFiles/Fate.dir/ITEM/itemblank.cpp.obj
+[46/129] Building CXX object CMakeFiles/Fate.dir/ITEM/itemblank.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/ITEM/itemblank.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ITEM/itemblank.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemblank.cpp
 dia2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[51/134] Building CXX object CMakeFiles/Fate.dir/ITEM/itemgold.cpp.obj
+[47/129] Building CXX object CMakeFiles/Fate.dir/ITEM/itemgold.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/ITEM/itemgold.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ITEM/itemgold.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemgold.cpp
 ia2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[52/134] Building CXX object CMakeFiles/Fate.dir/ITEM/itemtemplate.cpp.obj
+[48/129] Building CXX object CMakeFiles/Fate.dir/ITEM/itemtemplate.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/ITEM/itemtemplate.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ITEM/itemtemplate.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/itemtemplate.cpp
 c/14.51.36231/include/__msvc_system_error_abi.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\ITEM\effect.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[53/134] Building CXX object CMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/spelltemplate.cpp
-
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[54/134] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelcollision.cpp.obj
+[49/129] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelcollision.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/levelcollision.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/levelcollision.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelcollision.cpp
 t/Media2/msvc/vc/tools/msvc/14.51.36231/include/cerrno
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/quadtree.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[55/134] Building CXX object CMakeFiles/Fate.dir/LEVEL/level.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/level.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/level.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/level.cpp
-231/include/sstream
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[56/134] Building CXX object CMakeFiles/Fate.dir/MEDIA/movie.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/MEDIA/movie.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MEDIA/movie.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/movie.cpp
-cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-z:/mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/movie.cpp(1): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[57/134] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelhistory.cpp.obj
+[50/129] Building CXX object CMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/ITEM/spelltemplate.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/ITEM/spelltemplate.cpp
+
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[51/129] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelhistory.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/levelhistory.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/levelhistory.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelhistory.cpp
 Media2/msvc/vc/tools/msvc/14.51.36231/include/cerrno
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/quadtree.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[58/134] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelmesh.cpp.obj
+[52/129] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelmesh.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/levelmesh.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/levelmesh.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelmesh.cpp
 ostream.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[59/134] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelmeshpatch.cpp.obj
+[53/129] Building CXX object CMakeFiles/Fate.dir/LEVEL/level.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/level.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/level.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/level.cpp
+231/include/sstream
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[54/129] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelmeshpatch.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/levelmeshpatch.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/levelmeshpatch.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelmeshpatch.cpp
 t/Media2/msvc/vc/tools/msvc/14.51.36231/include/cerrno
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[60/134] Building CXX object CMakeFiles/Fate.dir/MEDIA/bitmap.cpp.obj
-Note: includincl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-g file:      /mnt/Media2/msvc/kits/10/include/10.0.26100.0/um/prsht.h
-[61/134] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelprop.cpp
-ia2/msvc/vc/tools/msvc/14.51.36231/include/cerrno
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[62/134] Building CXX object CMakeFiles/Fate.dir/LEVEL/maze.cpp.obj
+[55/129] Building CXX object CMakeFiles/Fate.dir/LEVEL/maze.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/maze.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/maze.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/maze.cpp
 de/__msvc_system_error_abi.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\template.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[63/134] Building CXX object CMakeFiles/Fate.dir/LEVEL/modeltemplate.cpp.obj
+[56/129] Building CXX object CMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/levelprop.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/levelprop.cpp
+ia2/msvc/vc/tools/msvc/14.51.36231/include/cerrno
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[57/129] Building CXX object CMakeFiles/Fate.dir/MEDIA/movie.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/MEDIA/movie.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MEDIA/movie.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/movie.cpp
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+z:/mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/movie.cpp(1): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[58/129] Building CXX object CMakeFiles/Fate.dir/LEVEL/modeltemplate.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/modeltemplate.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/modeltemplate.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/modeltemplate.cpp
 cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[64/134] Building CXX object CMakeFiles/Fate.dir/LEVEL/template.cpp.obj
+[59/129] Building CXX object CMakeFiles/Fate.dir/MEDIA/bitmap.cpp.obj
+Note: includincl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+g file:      /mnt/Media2/msvc/kits/10/include/10.0.26100.0/um/prsht.h
+[60/129] Building CXX object CMakeFiles/Fate.dir/LEVEL/template.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/LEVEL/template.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/LEVEL/template.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/LEVEL/template.cpp
 Ncl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 ote: including file:   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/cctype
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\LEVEL\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[65/134] Building CXX object CMakeFiles/Fate.dir/MEDIA/material.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/MEDIA/material.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MEDIA/material.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/material.cpp
-Note: incl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-cluding file:       /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/streambuf
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[66/134] Building CXX object CMakeFiles/Fate.dir/MEDIA/cubemap.cpp.obj
+[61/129] Building CXX object CMakeFiles/Fate.dir/MEDIA/cubemap.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MEDIA/cubemap.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MEDIA/cubemap.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/cubemap.cpp
 Note: inccl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 luding file:       /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/streambuf
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\material.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[67/134] Building CXX object CMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/refmanager.cpp
-Note: includcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-ing file:  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/sstream
+[62/129] Building CXX object CMakeFiles/Fate.dir/MEDIA/material.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/MEDIA/material.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MEDIA/material.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/material.cpp
+Note: incl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+cluding file:       /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/streambuf
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[68/134] Building CXX object CMakeFiles/Fate.dir/MEDIA/texture.cpp.obj
+[63/129] Building CXX object CMakeFiles/Fate.dir/MEDIA/texture.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MEDIA/texture.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MEDIA/texture.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/texture.cpp
 Note: inccl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 luding file:       /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/streambuf
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\texture.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[69/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestordifficultymenu.cpp
-z:\mnt\Media2\FATE-Linucl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-x\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[70/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestormenu.cpp.obj
+[64/129] Building CXX object CMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MEDIA/refmanager.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MEDIA/refmanager.cpp
+Note: includcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+ing file:  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/sstream
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[65/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestormenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestormenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/ancestormenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestormenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_srccl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 \DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[71/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestorpetmenu.cpp.obj
+[66/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/ancestordifficultymenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestordifficultymenu.cpp
+z:\mnt\Media2\FATE-Linucl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+x\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[67/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestorpetmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/ancestorpetmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/ancestorpetmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/ancestorpetmenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[72/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/continuegamemenu.cpp.obj
+[68/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/continuegamemenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/continuegamemenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/continuegamemenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/continuegamemenu.cpp
 z:\mnt\Media2\FATE-Linux\fatecl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 _src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[73/134] Building CXX object CMakeFiles/Fate.dir/MEDIA/soundmanager.cpp.obj
-6231/include/system_error
-[74/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/creditsmenu.cpp
-z:\mnt\Media2\FATE-Linux\fate_src\cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[75/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/difficultymenu.cpp.obj
+[69/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/difficultymenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/difficultymenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/difficultymenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/difficultymenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_scl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 rc\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[76/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/intromenu.cpp.obj
+[70/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/creditsmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/creditsmenu.cpp
+z:\mnt\Media2\FATE-Linux\fate_src\cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[71/129] Building CXX object CMakeFiles/Fate.dir/MEDIA/soundmanager.cpp.obj
+6231/include/system_error
+[72/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/intromenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/intromenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/intromenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/intromenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 V\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[77/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/introquestmenu.cpp.obj
+[73/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/introquestmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/introquestmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/introquestmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/introquestmenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_scl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 rc\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[78/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/logomenu.cpp.obj
+[74/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/logomenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/logomenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/logomenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/logomenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEVcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 \MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[79/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/newgamemenu.cpp
-z:\mnt\Media2\FATE-Linux\fate_src\cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[80/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/mainmenu.cpp.obj
+[75/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/mainmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/mainmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/mainmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/mainmenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEVcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 \MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[81/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/newpetmenu.cpp.obj
+[76/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/newgamemenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/newgamemenu.cpp
+z:\mnt\Media2\FATE-Linux\fate_src\cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[77/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/newpetmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/newpetmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/newpetmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/newpetmenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_src\Dcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 EV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[82/134] Building CXX object CMakeFiles/Fate.dir/OBJECTS/curve.cpp.obj
+[78/129] Building CXX object CMakeFiles/Fate.dir/OBJECTS/curve.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/OBJECTS/curve.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/OBJECTS/curve.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/OBJECTS/curve.cpp
 cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\OBJECTS\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[83/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/optionsmenu.cpp.obj
+[79/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/optionsmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/optionsmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/optionsmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/optionsmenu.cpp
 clude/iosfwd
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MENU\SUBMENUS\../../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[84/134] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/retiremenu.cpp.obj
+[80/129] Building CXX object CMakeFiles/Fate.dir/MENU/SUBMENUS/retiremenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/SUBMENUS/retiremenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/SUBMENUS/retiremenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/SUBMENUS/retiremenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_src\Dcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 EV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[85/134] Building CXX object CMakeFiles/Fate.dir/OBJECTS/path.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/OBJECTS/path.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/OBJECTS/path.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/OBJECTS/path.cpp
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\OBJECTS\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-[86/134] Building CXX object CMakeFiles/Fate.dir/MENU/dropdown.cpp.obj
+[81/129] Building CXX object CMakeFiles/Fate.dir/MENU/dropdown.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/dropdown.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/dropdown.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/dropdown.cpp
-Note: includincl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-g file:     /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_sanitizer_annotate_container.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MENU\../MEDIA/material.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[87/134] Building CXX object CMakeFiles/Fate.dir/MENU/loadingmenu.cpp.obj
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+[82/129] Building CXX object CMakeFiles/Fate.dir/MENU/loadingmenu.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/loadingmenu.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/loadingmenu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/loadingmenu.cpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 IES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[88/134] Building CXX object CMakeFiles/Fate.dir/MENU/menu.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/MENU/menu.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/menu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/menu.cpp
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(1cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-5): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[89/134] Building CXX object CMakeFiles/Fate.dir/MENU/menumanager.cpp.obj
+[83/129] Building CXX object CMakeFiles/Fate.dir/MENU/menumanager.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MENU/menumanager.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/menumanager.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/menumanager.cpp
 include/__msvc_system_error_abi.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MENU\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[90/134] Building CXX object CMakeFiles/Fate.dir/MODEL/facelist.cpp.obj
+[84/129] Building CXX object CMakeFiles/Fate.dir/MODEL/facelist.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MODEL/facelist.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MODEL/facelist.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/facelist.cpp
  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/stdexcept
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MODEL\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[91/134] Building CXX object CMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/PATHFINDING/astar.cpp
+[85/129] Building CXX object CMakeFiles/Fate.dir/MENU/menu.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/MENU/menu.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MENU/menu.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MENU/menu.cpp
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(1cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+5): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[86/129] Building CXX object CMakeFiles/Fate.dir/OBJECTS/path.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/OBJECTS/path.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/OBJECTS/path.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/OBJECTS/path.cpp
 cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-z:/mnt/Media2/FATE-Linux/fate_src/DEV/PATHFINDING/astar.cpp(1): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[92/134] Building CXX object CMakeFiles/Fate.dir/MODEL/model.cpp.obj
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\OBJECTS\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[87/129] Building CXX object CMakeFiles/Fate.dir/MODEL/model.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MODEL/model.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MODEL/model.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/model.cpp
 Note: incl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 cluding file:  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/sstream
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MODEL\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[93/134] Building CXX object CMakeFiles/Fate.dir/MODEL/shadowvolume.cpp.obj
+[88/129] Building CXX object CMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/PATHFINDING/astar.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/PATHFINDING/astar.cpp
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+z:/mnt/Media2/FATE-Linux/fate_src/DEV/PATHFINDING/astar.cpp(1): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[89/129] Building CXX object CMakeFiles/Fate.dir/MODEL/shadowvolume.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MODEL/shadowvolume.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MODEL/shadowvolume.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/shadowvolume.cpp
   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/cerrno
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MODEL\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[94/134] Building CXX object CMakeFiles/Fate.dir/MODEL/submodel.cpp.obj
+[90/129] Building CXX object CMakeFiles/Fate.dir/MODEL/submodel.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MODEL/submodel.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MODEL/submodel.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/submodel.cpp
 Note:cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
  including file:   /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/istream
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MODEL\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[95/134] Building CXX object CMakeFiles/Fate.dir/MODEL/submodelsegment.cpp.obj
+[91/129] Building CXX object CMakeFiles/Fate.dir/MODEL/submodelsegment.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/MODEL/submodelsegment.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/MODEL/submodelsegment.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/MODEL/submodelsegment.cpp
 m
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MODEL\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[96/134] Building CXX object CMakeFiles/Fate.dir/PARTICLES/particlemanager.cpp.obj
+[92/129] Building CXX object CMakeFiles/Fate.dir/PARTICLES/particlemanager.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/PARTICLES/particlemanager.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/PARTICLES/particlemanager.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/PARTICLES/particlemanager.cpp
 Note: includcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 ing file:     /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\PARTICLES\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[97/134] Building CXX object CMakeFiles/Fate.dir/PARTICLES/particlesystem.cpp.obj
+[93/129] Building CXX object CMakeFiles/Fate.dir/PARTICLES/particlesystem.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/PARTICLES/particlesystem.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/PARTICLES/particlesystem.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/PARTICLES/particlesystem.cpp
 a2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\PARTICLES\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[98/134] Building CXX object CMakeFiles/Fate.dir/POSITIONALAUDIO/positionalaudiomanager.cpp.obj
+[94/129] Building CXX object CMakeFiles/Fate.dir/POSITIONALAUDIO/positionalaudiomanager.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/POSITIONALAUDIO/positionalaudiomanager.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/POSITIONALAUDIO/positionalaudiomanager.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/POSITIONALAUDIO/positionalaudiomanager.cpp
 lude/xstring
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[99/134] Building CXX object CMakeFiles/Fate.dir/SCENE/collisionscene.cpp.obj
+[95/129] Building CXX object CMakeFiles/Fate.dir/SCENE/collisionscene.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/SCENE/collisionscene.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SCENE/collisionscene.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/collisionscene.cpp
 
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\SCENE\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[100/134] Building CXX object CMakeFiles/Fate.dir/NAMES/namegenerator.cpp.obj
+[96/129] Building CXX object CMakeFiles/Fate.dir/NAMES/namegenerator.cpp.obj
 ate_src/steam/public/steam/isteamremotestorage.h
-[101/134] Building CXX object CMakeFiles/Fate.dir/SCENE/scene.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/SCENE/scene.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SCENE/scene.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/scene.cpp
-Note: incl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-cluding file:  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/sstream
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\SCENE\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[102/134] Building CXX object CMakeFiles/Fate.dir/SCENE/subscene.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/SCENE/subscene.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SCENE/subscene.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/subscene.cpp
-Ncl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-ote: including file:        /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/xiosbase
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\SCENE\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[103/134] Building CXX object CMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/subscenesegment.cpp
-m
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\SCENE\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[104/134] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedanimation.cpp
-Note: icl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-ncluding file:          /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/cerrno
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\SKINNEDMESH\../ANIMATEDMESH/tag.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[105/134] Building CXX object CMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/StatsAndAchievements.cpp
-cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\UTILITIES\../CHARACTER/character.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[106/134] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedgeometry.cpp
- /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/stdexcept
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\SKINNEDMESH\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[107/134] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmesh.cpp.obj
+[97/129] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmesh.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmesh.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SKINNEDMESH/skinnedmesh.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedmesh.cpp
 Note: incl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 cluding file:               /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/xmmintrin.h
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[108/134] Building CXX object CMakeFiles/Fate.dir/UI/button.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/UI/button.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/UI/button.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/UI/button.cpp
-lude/immintrin.h
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\UI\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[109/134] Building CXX object CMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/math3D.cpp
+[98/129] Building CXX object CMakeFiles/Fate.dir/SCENE/scene.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/SCENE/scene.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SCENE/scene.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/scene.cpp
+Note: incl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+cluding file:  /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/sstream
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\SCENE\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[99/129] Building CXX object CMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SCENE/subscenesegment.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/subscenesegment.cpp
+m
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\SCENE\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[100/129] Building CXX object CMakeFiles/Fate.dir/SCENE/subscene.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/SCENE/subscene.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SCENE/subscene.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SCENE/subscene.cpp
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\SCENE\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
 cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\UTILITIES\math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[110/134] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedsubmesh.cpp
-lude/sstream
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\SKINNEDMESH\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[111/134] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmeshsegment.cpp.obj
+[101/129] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SKINNEDMESH/skinnedanimation.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedanimation.cpp
+Note: icl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+ncluding file:          /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/cerrno
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\SKINNEDMESH\../ANIMATEDMESH/tag.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[102/129] Building CXX object CMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/UTILITIES/StatsAndAchievements.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/StatsAndAchievements.cpp
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\UTILITIES\../CHARACTER/character.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[103/129] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmeshsegment.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedmeshsegment.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SKINNEDMESH/skinnedmeshsegment.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedmeshsegment.cpp
 /include/sstream
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\SKINNEDMESH\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[112/134] Building CXX object CMakeFiles/Fate.dir/character/gamesave.cpp.obj
+[104/129] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SKINNEDMESH/skinnedgeometry.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedgeometry.cpp
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\SKINNEDMESH\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+[105/129] Building CXX object CMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/SKINNEDMESH/skinnedsubmesh.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/SKINNEDMESH/skinnedsubmesh.cpp
+lude/sstream
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\SKINNEDMESH\../UTILITIES/math3D.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[106/129] Building CXX object CMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/UTILITIES/math3D.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/math3D.cpp
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\UTILITIES\math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[107/129] Building CXX object CMakeFiles/Fate.dir/character/gamesave.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/character/gamesave.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/character/gamesave.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/gamesave.cpp
 cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\character\character.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[113/134] Building CXX object CMakeFiles/Fate.dir/UI/sprite.cpp.obj
+[108/129] Building CXX object CMakeFiles/Fate.dir/UI/button.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/UI/button.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/UI/button.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/UI/button.cpp
+lude/immintrin.h
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\UI\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[109/129] Building CXX object CMakeFiles/Fate.dir/UI/sprite.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/UI/sprite.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/UI/sprite.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/UI/sprite.cpp
 lude/immintrin.h
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\UI\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[114/134] Building CXX object CMakeFiles/Fate.dir/UI/text.cpp.obj
+[110/129] Building CXX object CMakeFiles/Fate.dir/UI/text.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/UI/text.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/UI/text.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/UI/text.cpp
 de/immintrin.h
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\UI\../UTILITIES/vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[115/134] Building CXX object CMakeFiles/Fate.dir/UTILITIES/UserLocaleInfo.cpp.obj
+[111/129] Building CXX object CMakeFiles/Fate.dir/UTILITIES/UserLocaleInfo.cpp.obj
 hared/guiddef.h
-[116/134] Building CXX object CMakeFiles/Fate.dir/UTILITIES/capabilities.cpp.obj
+[112/129] Building CXX object CMakeFiles/Fate.dir/UTILITIES/capabilities.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/UTILITIES/capabilities.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/UTILITIES/capabilities.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/UTILITIES/capabilities.cpp
 Ncl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 ote: including file:          /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_system_error_abi.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\UTILITIES\vertexdefinitions.h(18): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[117/134] Building CXX object CMakeFiles/Fate.dir/UTILITIES/textfile.cpp.obj
+[113/129] Building CXX object CMakeFiles/Fate.dir/UTILITIES/textfile.cpp.obj
 tools/msvc/14.51.36231/include/wmmintrin.h
-[118/134] Building CXX object CMakeFiles/Fate.dir/character/charactertemplate.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/character/charactertemplate.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/character/charactertemplate.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp
-a2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_system_error_abi.hpp
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\character\../ITEM/effect.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[119/134] Building CXX object CMakeFiles/Fate.dir/character/character.cpp.obj
+[114/129] Building CXX object CMakeFiles/Fate.dir/character/character.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/character/character.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/character/character.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/character.cpp
 Note: including filecl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 :    /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/xstring
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\character\../UTILITIES/frustum.h(2): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[120/134] Building CXX object CMakeFiles/Fate.dir/UTILITIES/loadlocalizedstring.cpp.obj
+[115/129] Building CXX object CMakeFiles/Fate.dir/character/charactertemplate.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/character/charactertemplate.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/character/charactertemplate.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/charactertemplate.cpp
+a2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_system_error_abi.hpp
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\character\../ITEM/effect.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[116/129] Building CXX object CMakeFiles/Fate.dir/UTILITIES/loadlocalizedstring.cpp.obj
 rstats.h
-[121/134] Building RC object CMakeFiles/Fate.dir/RESOURCES/WinMain.rc.res
-Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
-Copyright (C) Microsoft Corporation.  All rights reserved.
-
-[122/134] Building CXX object CMakeFiles/Fate.dir/character/inventory.cpp.obj
+[117/129] Building CXX object CMakeFiles/Fate.dir/character/inventory.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/character/inventory.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/character/inventory.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/inventory.cpp
 Note: including ficl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 le:     /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[123/134] Building CXX object CMakeFiles/Fate.dir/utilities/Spawn.cpp.obj
-its/10/include/10.0.26100.0/um/mcx.h
-[124/134] Building CXX object CMakeFiles/Fate.dir/utilities/randomizer.cpp.obj
-/corecrt_wprocess.h
-[125/134] Building CXX object CMakeFiles/Fate.dir/character/player.cpp.obj
-FAILED: [code=2] CMakeFiles/Fate.dir/character/player.cpp.obj 
-/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/character/player.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/player.cpp
-Note: including file:cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
-     /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
-z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[126/134] Building CXX object CMakeFiles/Fate.dir/character/monster.cpp.obj
+[118/129] Building CXX object CMakeFiles/Fate.dir/character/monster.cpp.obj
 FAILED: [code=2] CMakeFiles/Fate.dir/character/monster.cpp.obj 
 /mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/character/monster.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/monster.cpp
 Note: including filecl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 :     /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
 z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
-[127/134] Building CXX object CMakeFiles/Fate.dir/UTILITIES/utilities.cpp.obj
+[119/129] Building CXX object CMakeFiles/Fate.dir/utilities/Spawn.cpp.obj
+its/10/include/10.0.26100.0/um/mcx.h
+[120/129] Building CXX object CMakeFiles/Fate.dir/utilities/randomizer.cpp.obj
+/corecrt_wprocess.h
+[121/129] Building CXX object CMakeFiles/Fate.dir/character/player.cpp.obj
+FAILED: [code=2] CMakeFiles/Fate.dir/character/player.cpp.obj 
+/mnt/Media2/msvc/bin/x86/cl  /nologo /TP -DNDEBUG -DNO_STEAM -DWIN32 -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_MBCS -D_WINDOWS -I/mnt/Media2/FATE-Linux/fate_tools/shims/d3d8_headers -I/mnt/Media2/FATE-Linux/fate_tools/shims -I/mnt/Media2/FATE-Linux/fate_src/DEV -I/mnt/Media2/FATE-Linux/fate_src/DEV/../Pal/include -I/mnt/Media2/FATE-Linux/fate_src/DEV/../steam/public/steam /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MT /Zc:forScope- /Zc:wchar_t- /EHsc /GR /W0 /O2 /FIstddef.h /FIstdlib.h /showIncludes /FoCMakeFiles/Fate.dir/character/player.cpp.obj /FdCMakeFiles/Fate.dir/ /FS -c /mnt/Media2/FATE-Linux/fate_src/DEV/character/player.cpp
+Note: including file:cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+     /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/__msvc_string_view.hpp
+z:\mnt\Media2\FATE-Linux\fate_src\DEV\MEDIA\../UTILITIES/math3d.h(15): fatal error C1083: Cannot open include file: 'd3dx8_shim.h': No such file or directory
+[122/129] Building CXX object CMakeFiles/Fate.dir/UTILITIES/utilities.cpp.obj
 Media2/msvc/kits/10/include/10.0.26100.0/ucrt/share.h
-[128/134] Building CXX object CMakeFiles/Fate.dir/UTILITIES/settings.cpp.obj
+[123/129] Building CXX object CMakeFiles/Fate.dir/UTILITIES/settings.cpp.obj
 Note: including filcl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
 e:         /mnt/Media2/msvc/vc/tools/msvc/14.51.36231/include/system_error
-[129/134] Building CXX object CMakeFiles/Fate.dir/main.cpp.obj
+[124/129] Building CXX object CMakeFiles/Fate.dir/main.cpp.obj
 E-Linux/fate_src/steam/public/steam/isteamhttp.h
-[130/134] Building CXX object CMakeFiles/Fate.dir/utilities/SaveFile.cpp.obj
+[125/129] Building CXX object CMakeFiles/Fate.dir/utilities/SaveFile.cpp.obj
 /msvc/vc/tools/msvc/14.51.36231/include/atomic
-[131/134] Building CXX object CMakeFiles/Fate.dir/utilities/datafile.cpp.obj
+[126/129] Building CXX object CMakeFiles/Fate.dir/utilities/datafile.cpp.obj
 hpp
-[132/134] Building CXX object CMakeFiles/Fate.dir/utilities/vistafileutilities.cpp.obj
+[127/129] Building CXX object CMakeFiles/Fate.dir/utilities/vistafileutilities.cpp.obj
 svc/14.51.36231/include/xmmintrin.h
 ninja: build stopped: cannot make progress due to previous errors.

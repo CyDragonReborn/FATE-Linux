@@ -59,7 +59,7 @@ rule CXX_COMPILER__Fate_unscanned_Release
 rule RC_COMPILER__Fate_unscanned_Release
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}rc $DEFINES $INCLUDES $FLAGS /fo $out $in
+  command = ${LAUNCHER}${CODE_CHECK}/mnt/Media2/msvc/bin/x86/rc $DEFINES $INCLUDES $FLAGS /fo $out $in
   description = Building RC object $out
 
 
@@ -67,7 +67,7 @@ rule RC_COMPILER__Fate_unscanned_Release
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__Fate_Release
-  command = $PRE_LINK && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=$OBJECT_DIR --rc=rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests $MANIFESTS -- /mnt/Media2/msvc/bin/x86/link /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /usr/bin/cmake -E vs_link_exe --msvc-ver=1951 --intdir=$OBJECT_DIR --rc=/mnt/Media2/msvc/bin/x86/rc --mt=/mnt/Media2/msvc/bin/x86/mt --manifests $MANIFESTS -- /mnt/Media2/msvc/bin/x86/link /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 

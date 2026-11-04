@@ -21,8 +21,10 @@ CMAKE_AR:FILEPATH=/mnt/Media2/msvc/bin/x86/lib
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Release
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=/mnt/Media2/msvc/bin/x86/cl
+//Full path to the compiler used for language <LANG>. Set by CMake
+// during compiler detection on the first configure; users may
+// override on the command line to select a specific toolchain.
+CMAKE_CXX_COMPILER:UNINITIALIZED=cl
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /EHsc
@@ -42,8 +44,10 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
-//C compiler
-CMAKE_C_COMPILER:STRING=/mnt/Media2/msvc/bin/x86/cl
+//Full path to the compiler used for language <LANG>. Set by CMake
+// during compiler detection on the first configure; users may
+// override on the command line to select a specific toolchain.
+CMAKE_C_COMPILER:UNINITIALIZED=cl
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS
