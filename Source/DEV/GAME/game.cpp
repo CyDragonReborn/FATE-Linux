@@ -54,9 +54,11 @@ using namespace std;
 
 #include "../GAMECLIENT/demorules.h"
 
+#ifndef FATE_NO_STEAM
 //[BLG] IF (10-18-2013): Added for Steam Integration
 #include "steam_api.h"
 #include "../UTILITIES/StatsAndAchievements.h"
+#endif
 
 CGame::CGame( std::string Params ) :	// command line parameters 
 			m_pSettings( NULL ),
@@ -75,8 +77,11 @@ CGame::CGame( std::string Params ) :	// command line parameters
 			m_FirstFrameRendered( kFalse ),
 			m_FirstFrameInitialized( kFalse ),
 			m_VersionNumber( 1.39f ),
-			m_bSteamInitialized( kFalse ),
+			m_bSteamInitialized( kFalse )
+#ifndef FATE_NO_STEAM
+			,
 			m_CallbackGameOverlayActivated( this, &CGame::OnGameOverlayActivated )
+#endif
 {
 	SetWindowTitle( "FATE" );
 	std::string LocalPathToExe = GetLocalPath();
@@ -162,6 +167,10 @@ CGame::~CGame( void )
 //[BLG] IF Initialize Steam Before D3D Objects
 bool CGame::InitializeSteam()
 {
+#ifdef FATE_NO_STEAM
+	m_bSteamInitialized = kTrue;
+	return kTrue;
+#else
 	if(!m_bSteamInitialized)
 	{
 		if ( SteamAPI_RestartAppIfNecessary( k_uAppIdInvalid ) )
@@ -187,12 +196,15 @@ bool CGame::InitializeSteam()
 	}
 
 	return m_bSteamInitialized;
+#endif
 }
 
 void CGame::ShutDownSteam()
 {
+#ifndef FATE_NO_STEAM
 	// Shutdown the SteamAPI
 	SteamAPI_Shutdown();
+#endif
 }
 
 void CGame::SetFullscreenAfterPal()
@@ -345,8 +357,10 @@ void CGame::Initialize( void )
 									   *m_pSoundManager );
 
 	//[BLG] IF Create the Achievements Manager
+#ifndef FATE_NO_STEAM
 	CStatsAndAchievements* m_pStatsAndAchievements = new CStatsAndAchievements();
 	m_pStatsAndAchievements->Initialize();
+#endif
 
 	m_Initialized = kTrue;
 }
@@ -512,8 +526,10 @@ HRESULT CGame::FrameMove( void )
 
 	m_pGameStateManager->Update( TimeElapsed );
 
+#ifndef FATE_NO_STEAM
 	// [BLG] IF Steam Process
 	SteamAPI_RunCallbacks();
+#endif
 
 	//CStatsAndAchievements::GetInstance()->Update();
 
@@ -1430,6 +1446,7 @@ std::string CGame::GetLocaleString()
 	return localeString;
 }
 
+#ifndef FATE_NO_STEAM
 //Steam Overlay
 void CGame::OnGameOverlayActivated( GameOverlayActivated_t *pCallback )
 {
@@ -1443,3 +1460,4 @@ void CGame::OnGameOverlayActivated( GameOverlayActivated_t *pCallback )
 		}
 	}
 }
+#endif

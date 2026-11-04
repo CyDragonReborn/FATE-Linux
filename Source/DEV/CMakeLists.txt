@@ -7,6 +7,11 @@ find_package(OpenGL REQUIRED)
 find_package(JPEG REQUIRED)
 find_package(PNG REQUIRED)
 
+option(FATE_ENABLE_STEAM "Enable Steamworks integration in the native game target" OFF)
+if(NOT FATE_ENABLE_STEAM)
+	add_compile_definitions(FATE_NO_STEAM)
+endif()
+
 set(FMOD_SDK_ROOT "" CACHE PATH "Path to the FMOD Engine SDK root")
 if(NOT FMOD_SDK_ROOT AND DEFINED ENV{FMOD_SDK_ROOT})
 	set(FMOD_SDK_ROOT "$ENV{FMOD_SDK_ROOT}")

@@ -10,7 +10,9 @@
 */
 
 //TODO: [BLG] IF (10/18/2013) Fix this, only set for development and testing purposes
+#ifndef FATE_NO_STEAM
 #define STEAM_BUILD
+#endif
 
 
 #define STRICT

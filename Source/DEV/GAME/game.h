@@ -15,7 +15,9 @@
 
 #include "../DIRECT3D/Dx8App.h"
 #include "../UTILITIES/UserLocaleInfo.h"
+#ifndef FATE_NO_STEAM
 #include "steam_api.h"
+#endif
 
 class CSettings;
 class CCapabilities;
@@ -51,7 +53,9 @@ public:
 	bool					InitializeSteam(); //Initializes Steam Library and Process
 	void					ShutDownSteam(); //Initializes Steam Library and Process
 
+#ifndef FATE_NO_STEAM
 	STEAM_CALLBACK( CGame, OnGameOverlayActivated, GameOverlayActivated_t, m_CallbackGameOverlayActivated );
+#endif
 
 private:
 	static HMODULE localizedDLL;  //TDC
