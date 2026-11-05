@@ -79,12 +79,12 @@ CTemplate::~CTemplate( void )
 	}
 	m_pPropTemplate.clear();
 
-	for( i = 0; i < KPropLocations; i++ )
+	for( int32 i = 0; i < KPropLocations; i++ )
 	{
 		m_pPropTemplateForLocation[i].clear();
 	}
 
-	for( i = 0; i < m_pTileTemplate.size(); i++ )
+	for( int32 i = 0; i < m_pTileTemplate.size(); i++ )
 	{
 		m_pRefManager.RemoveMaterial( m_pWallMaterial[i] );
 		for( uint32 j = 0; j < m_pTileTemplate[i].size(); j++ )
@@ -100,7 +100,7 @@ CTemplate::~CTemplate( void )
 	m_pTileTemplate.clear();
 	m_pWallMaterial.clear();
 
-	for( i = 0; i < m_pTileCollisionTemplate.size(); i++ )
+	for( int32 i = 0; i < m_pTileCollisionTemplate.size(); i++ )
 	{
 		for( uint32 j = 0; j < m_pTileCollisionTemplate[i].size(); j++ )
 		{
@@ -115,7 +115,7 @@ CTemplate::~CTemplate( void )
 	m_pTileCollisionTemplate.clear();
 
 
-	for( i = 0; i < m_pGroundMaterial.size(); i++ )
+	for( int32 i = 0; i < m_pGroundMaterial.size(); i++ )
 	{
 		m_pRefManager.RemoveMaterial( m_pGroundMaterial[i] );
 	}

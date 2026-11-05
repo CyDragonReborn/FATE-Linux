@@ -297,7 +297,7 @@ void CSkillMenu::CreateMenus( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d device
 								   KJustifyCenter ) );
 
 	float32 StepSize = 1.0f / (float32)KHighlightColors;
-	for( i = 0; i < KHighlightColors; i++ )
+	for( int32 i = 0; i < KHighlightColors; i++ )
 	{
 		m_pHighlight[i] = new CSprite( pD3DDevice,
 									   m_pFontHighlightMaterial,

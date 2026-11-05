@@ -20,12 +20,8 @@ namespace System
 namespace IO
 {
 
-//Forward declarations
-namespace FileMode {enum Enum;}
-namespace FileAccess {enum Enum;}
-namespace FileShare {enum Enum;}
 
-const enum FileMode1
+enum FileMode1
 {
 	KAppend,
 	KCreate,
@@ -34,19 +30,19 @@ const enum FileMode1
 	KOpenOrCreate,
 	KTruncate
 };
-const enum FileAccess1
+enum FileAccess1
 {
 	KRead,
 	KWrite,
 	KReadWrite
 };
-const enum FileShare1
+enum FileShare1
 {
 	KInheritable,
 	KOtherI
 };
 //A type of save file
-const enum EType
+enum EType
 {
 	KTypeCache,		 //A cache file, which is always deleted on game uninstall.
 	KTypePersistent, //A persistent file, which may survive a game uninstall.

@@ -104,13 +104,13 @@ bool CSkinnedAnimation::Load( std::string FileName,			// path to the SMA file
 		TagNames.push_back( ReadString( File ) );
 	}
 	std::vector< std::vector< D3DXMATRIX > >	TagXForm( TagCount );
-	for( i = 0; i < TagCount; i++ )
+	for( int32 i = 0; i < TagCount; i++ )
 	{
 		TagXForm[i].resize( m_CompressedFrames );
 	}
 	for( uint32 k = 0; k < m_CompressedFrames; k++ )
 	{
-		for( i = 0; i < TagCount; i++ )
+		for( int32 i = 0; i < TagCount; i++ )
 		{
 			TagXForm[i][k]._41 = ReadFloat( File ) * ModelScale;
 			TagXForm[i][k]._42 = ReadFloat( File ) * ModelScale;
@@ -132,13 +132,13 @@ bool CSkinnedAnimation::Load( std::string FileName,			// path to the SMA file
 	}
 	int32* TagIndices = new int32[TagCount];
 
-	for( k = 0; k < m_TagList.size(); k++ )
+	for( int32 k = 0; k < m_TagList.size(); k++ )
 	{
 		m_TagList[k] = NULL;
 	}
 	// convert the tag Position/orientation data to usable vectors and quaternions,
 	// for quick calculation later
-	for( k = 0; k < TagCount; k++ )
+	for( int32 k = 0; k < TagCount; k++ )
 	{
 		int32 index = pParent->TagIndex( TagNames[k] );
 		if( index != -1 )
@@ -156,7 +156,7 @@ bool CSkinnedAnimation::Load( std::string FileName,			// path to the SMA file
 	D3DXVECTOR3		EmptyPosition( 0, 0, 0 );
 	D3DXQUATERNION	EmptyOrientation;
 	// place empty tags in any vacant slots
-	for( k = 0; k < m_TagList.size(); k++ )
+	for( int32 k = 0; k < m_TagList.size(); k++ )
 	{
 		if( m_TagList[k] == NULL )
 		{
@@ -197,13 +197,13 @@ bool CSkinnedAnimation::Load( std::string FileName,			// path to the SMA file
 	m_BoneTransforms.resize( m_CompressedFrames );
 
 	std::vector< D3DXMATRIX >	BoneXForm( m_Bones );
-	for( k = 0; k < m_Bones; k++ )
+	for( int32 k = 0; k < m_Bones; k++ )
 	{
 		m_BoneNames.push_back( ReadString( File ) );
 	}
 
 
-	for( l = 0; l < m_CompressedFrames; l++ )
+	for( int32 l = 0; l < m_CompressedFrames; l++ )
 	{
 		m_BoneTransforms[l].resize( m_Bones );
 
@@ -304,7 +304,7 @@ void CSkinnedAnimation::MapToAnimation( CSkinnedAnimation* pAnimation )	// anima
 	}
 	BoneNames.resize( Bones() );
 
-	for( i = 0; i < Bones(); i++ )
+	for( int32 i = 0; i < Bones(); i++ )
 	{
 		uint32 NewIndex = pAnimation->IndexOfBone( m_BoneNames[i] );
 		if( NewIndex != -1 && NewIndex < Bones() )

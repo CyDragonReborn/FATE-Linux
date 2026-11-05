@@ -1,9 +1,9 @@
 //#include "basetypes.h"
 
-#include ".\constants.h"
+#include "constants.h"
 #include <shlobj.h>
 #include <assert.h>
-#include ".\vistafileutilities.h"
+#include "vistafileutilities.h"
 #include "windows.h"
 #include "SaveFile.h"
 

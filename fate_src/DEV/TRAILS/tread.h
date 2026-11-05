@@ -30,7 +30,7 @@ const float32 KTimePerSegment( .05f );
 // tread types should match the tread texture used by the tread manager,
 // the texture should, left to right, match the tread types.
 // None does not count, but it must ALWAYS exist
-const enum ETreadType
+enum ETreadType
 {
 	KTreadNone,
 	KTreadPavement,

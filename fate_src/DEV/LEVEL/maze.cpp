@@ -266,7 +266,7 @@ void CMaze::Generate( void )
 		VisitCell( i, 0 );
 		VisitCell( i, m_MazeHeight - 1 );
 	}
-	for( i = 0; i < m_MazeHeight; i++ )
+	for( int32 i = 0; i < m_MazeHeight; i++ )
 	{
 		VisitCell( 0, i );
 		VisitCell( m_MazeWidth - 1, i );
@@ -280,7 +280,7 @@ void CMaze::Generate( void )
 
 	CountRoomExits();
 
-	for( i = 0; i < (int32)m_RoomIsolated.size(); i++ )
+	for( int32 i = 0; i < (int32)m_RoomIsolated.size(); i++ )
 	{
 		if( m_RoomExits[i] == 0 && !m_RoomIsolated[i] )
 		{
@@ -712,7 +712,7 @@ void CMaze::GenerateProps( void )
 	}
 
 	// find fishing holes
-	for( X = 1; X < m_MazeWidth - 1; X++ )
+	for( int32 X = 1; X < m_MazeWidth - 1; X++ )
 	{
 		for( int32 Y = 1; Y < m_MazeHeight - 1; Y++ )
 		{
@@ -2086,7 +2086,7 @@ void CMaze::GenerateRoom( int32 BestX,		// top left x
 				}
 			}
 		}
-		for( RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
+		for( int32 RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
 		{
 			for( int32 RoomY = BestY - 1; RoomY < BestY + Height + 2; RoomY++ )
 			{
@@ -2097,7 +2097,7 @@ void CMaze::GenerateRoom( int32 BestX,		// top left x
 			}
 		}
 
-		for( RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
+		for( int32 RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
 		{
 			for( int32 RoomY = BestY - 1; RoomY < BestY + Height + 2; RoomY++ )
 			{
@@ -2116,7 +2116,7 @@ void CMaze::GenerateRoom( int32 BestX,		// top left x
 
 		// now we have the best coordinates
 		// so we carve out the space
-		for( RoomX = BestX; RoomX < BestX + Width; RoomX++ )
+		for( int32 RoomX = BestX; RoomX < BestX + Width; RoomX++ )
 		{
 			for( int32 RoomY = BestY; RoomY < BestY + Height; RoomY++ )
 			{
@@ -2235,7 +2235,7 @@ void CMaze::GenerateOvalRoom( int32 BestX,		// top left x
 				}
 			}
 		}
-		for( RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
+		for( int32 RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
 		{
 			for( int32 RoomY = BestY - 1; RoomY < BestY + Height + 2; RoomY++ )
 			{
@@ -2253,7 +2253,7 @@ void CMaze::GenerateOvalRoom( int32 BestX,		// top left x
 			}
 		}
 
-		for( RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
+		for( int32 RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
 		{
 			for( int32 RoomY = BestY - 1; RoomY < BestY + Height + 2; RoomY++ )
 			{
@@ -2274,7 +2274,7 @@ void CMaze::GenerateOvalRoom( int32 BestX,		// top left x
 
 		// now we have the best coordinates
 		// so we carve out the space
-		for( RoomX = BestX; RoomX < BestX + Width; RoomX++ )
+		for( int32 RoomX = BestX; RoomX < BestX + Width; RoomX++ )
 		{
 			for( int32 RoomY = BestY; RoomY < BestY + Height; RoomY++ )
 			{
@@ -2342,7 +2342,7 @@ void CMaze::GenerateRingRoom( int32 BestX,		// top left x
 				}
 			}
 		}
-		for( RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
+		for( int32 RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
 		{
 			for( int32 RoomY = BestY - 1; RoomY < BestY + Height + 2; RoomY++ )
 			{
@@ -2360,7 +2360,7 @@ void CMaze::GenerateRingRoom( int32 BestX,		// top left x
 			}
 		}
 
-		for( RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
+		for( int32 RoomX = BestX - 1; RoomX < BestX + Width + 2; RoomX++ )
 		{
 			for( int32 RoomY = BestY - 1; RoomY < BestY + Height + 2; RoomY++ )
 			{
@@ -2381,7 +2381,7 @@ void CMaze::GenerateRingRoom( int32 BestX,		// top left x
 
 		// now we have the best coordinates
 		// so we carve out the space
-		for( RoomX = BestX; RoomX < BestX + Width; RoomX++ )
+		for( int32 RoomX = BestX; RoomX < BestX + Width; RoomX++ )
 		{
 			for( int32 RoomY = BestY; RoomY < BestY + Height; RoomY++ )
 			{
@@ -2668,7 +2668,7 @@ void CMaze::GeneratePit( int32 BestX,		// top left x
 
 			}
 		}
-		for( RoomX = BestX; RoomX < BestX + Width; RoomX++ )
+		for( int32 RoomX = BestX; RoomX < BestX + Width; RoomX++ )
 		{
 			for( int32 RoomY = BestY; RoomY < BestY + Height; RoomY++ )
 			{
@@ -2682,7 +2682,7 @@ void CMaze::GeneratePit( int32 BestX,		// top left x
 				//SetWallBorder( RoomX, RoomY, (uint16)NewWallType );
 			}
 		}
-		for( RoomX = BestX - 1; RoomX < BestX + Width; RoomX++ )
+		for( int32 RoomX = BestX - 1; RoomX < BestX + Width; RoomX++ )
 		{
 			for( int32 RoomY = BestY - 1; RoomY < BestY + Height; RoomY++ )
 			{
@@ -2695,7 +2695,7 @@ void CMaze::GeneratePit( int32 BestX,		// top left x
 				}
 			}
 		}
-		for( RoomX = BestX + 1; RoomX < BestX + Width; RoomX++ )
+		for( int32 RoomX = BestX + 1; RoomX < BestX + Width; RoomX++ )
 		{
 			for( int32 RoomY = BestY + 1; RoomY < BestY + Height; RoomY++ )
 			{
@@ -2703,7 +2703,7 @@ void CMaze::GeneratePit( int32 BestX,		// top left x
 			}
 		}
 
-		for( RoomX = BestX; RoomX <= BestX + Width; RoomX++ )
+		for( int32 RoomX = BestX; RoomX <= BestX + Width; RoomX++ )
 		{
 			for( int32 RoomY = BestY; RoomY <= BestY + Height; RoomY++ )
 			{

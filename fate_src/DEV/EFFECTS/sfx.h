@@ -196,7 +196,7 @@ public:
 		{
 			m_pGlowList[i]->m_RequestingRemoval = kTrue;
 		}
-		for( i = 0; i < m_pModelGlowList.size(); i++ )
+		for( int32 i = 0; i < m_pModelGlowList.size(); i++ )
 		{
 			m_pModelGlowList[i]->m_RequestingRemoval = kTrue;
 		}
@@ -609,7 +609,7 @@ public:
 		}
 
 
-		for( i = 0; i < m_pGenericModel->GetTagCount(); i++ )
+		for( int32 i = 0; i < m_pGenericModel->GetTagCount(); i++ )
 		{
 			std::string Name = StringUpper( m_pGenericModel->GetTagName( i ) );
 			if( Name.length() >= 8 && Name.substr( 0, 8 ) == "PARTICLE" )
@@ -647,20 +647,20 @@ public:
 			m_pParticleManager.AddParticle( m_ParticleType[i], Transform );
 		}
 
-		for( i = 0; i < m_TagParticleType.size(); i++ )
+		for( int32 i = 0; i < m_TagParticleType.size(); i++ )
 		{
 			D3DXMATRIX Transform = m_pGenericModel->GetTransformedTag( m_TagParticleIndex[i] );
 			Transform *= m_Transformation;
 			m_pParticleManager.AddParticle( m_TagParticleType[i], Transform );
 		}
 
-		for( i = 0; i < m_pGlowList.size(); i++ )
+		for( int32 i = 0; i < m_pGlowList.size(); i++ )
 		{
 			D3DXVECTOR3 Position = m_pGenericModel->GetTagPosition( m_GlowIndex[i] );
 			D3DXVec3TransformCoord( &Position, &Position, &m_Transformation );
 			m_pGlowList[i]->m_Position = Position;
 		}
-		for( i = 0; i < m_pModelGlowList.size(); i++ )
+		for( int32 i = 0; i < m_pModelGlowList.size(); i++ )
 		{
 			D3DXVECTOR3 Position = m_pGenericModel->GetPoint( m_ModelGlowIndex[i] ).Position();
 			D3DXVec3TransformCoord( &Position, &Position, &m_Transformation );

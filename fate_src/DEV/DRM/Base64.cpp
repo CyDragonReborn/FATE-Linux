@@ -26,7 +26,7 @@ std::string Base64::Encode( char* Data,		// char array of Data to encode
 
 	auto     std::string             ret;
 
-    for ( i = 0; i < Length; ++i )
+    for( int32 i = 0; i < Length; ++i )
     {
         c = (Data[i] >> 2) & 0x3f;
         ret.append(1, cvt[c]);
@@ -71,7 +71,7 @@ std::string Base64::Decode( const std::string& Data )	// string to decode
     auto     std::string::size_type  Length = Data.length();
     auto     std::string             ret;
 
-    for (i = 0; i < Length; ++i)
+    for( int32 i = 0; i < Length; ++i)
     {
         c = (char) cvt.find(Data[i]);
         ++i;

@@ -888,7 +888,7 @@ void CSkinnedMesh::UpdateAnimation( float32 TimeElapsed )	// time elapsed in sec
 		}
 	}
 
-	for( i = 1; i < (int32)m_ActiveAnimations.size(); i++ )
+	for( int32 i = 1; i < (int32)m_ActiveAnimations.size(); i++ )
 	{
 		if( m_ActiveAnimations[i]->Complete() )
 		{

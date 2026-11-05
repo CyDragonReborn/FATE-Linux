@@ -68,7 +68,7 @@ void CTips::Load( const std::string& Path )	// path to folder
 	}
 
 	Tips = pDataFile->DataGroups( "CONTEXT_TIP" );
-	for( i = 0; i < Tips; i++ )
+	for( int32 i = 0; i < Tips; i++ )
 	{
 		CDataGroup* pGroup = pDataFile->GetDataGroup( "CONTEXT_TIP", i );
 		std::string Type = StringUpper( pGroup->Item( 0 ) );

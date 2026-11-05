@@ -140,7 +140,7 @@ void CAnimatedSubMesh::CreateVB( LPDIRECT3DDEVICE8 pD3DDevice,		// direct3d devi
 		m_pNormals[k] = Normals[k];
 	}
 
-	for ( k = 0; k < VerticesPerFrame; k++ )
+	for( int32 k = 0; k < VerticesPerFrame; k++ )
 	{
 		pVertices->v = Vertices[k];
 		pVertices->n = Normals[k];
@@ -298,7 +298,7 @@ void CAnimatedSubMesh::UpdateVB( const std::deque < CActiveAnimation* >& ActiveA
 
 	// for each frame, lerp between the current vert position and the next by the specified
 	// interpolation factor
-	for ( k = 0; k < m_FrameVertices; k++ )
+	for( int32 k = 0; k < m_FrameVertices; k++ )
 	{		
 
 				
@@ -530,7 +530,7 @@ void CAnimatedSubMesh::CleanIB( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d device
 	DWORD				AttributeCount( 0 );
 	MeshToOptimize->GetAttributeTable( pAttributeTable, &AttributeCount );
 
-	for( i = 0; i < m_pAnimatedMeshSegments.size(); i++ )
+	for( int32 i = 0; i < m_pAnimatedMeshSegments.size(); i++ )
 	{
 		m_pAnimatedMeshSegments[pAttributeTable[i].AttribId]->SetIBIndex( pAttributeTable[i].FaceStart * 3 );
 		m_pAnimatedMeshSegments[pAttributeTable[i].AttribId]->SetTotalFaces( pAttributeTable[i].FaceCount );

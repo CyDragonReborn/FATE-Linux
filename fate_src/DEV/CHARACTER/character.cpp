@@ -296,7 +296,7 @@ CCharacter::CCharacter( CRefManager& pRefManager,						// pointer to the referen
 		m_SkillPoints[i] = 0;
 	}
 
-	for( i = 0; i < KJournalStatistics; i++ )
+	for( int32 i = 0; i < KJournalStatistics; i++ )
 	{
 		m_JournalStats[i] = 0;
 	}
@@ -312,7 +312,7 @@ CCharacter::CCharacter( CRefManager& pRefManager,						// pointer to the referen
 	m_StrikeParticle = m_pParticleManager.GetParticleType( "HITSPARK" );
 	m_DustParticle = m_pParticleManager.GetParticleType( "DUST" );
 
-	for( i = 0; i < KDamageTypes; i++ )
+	for( int32 i = 0; i < KDamageTypes; i++ )
 	{
 		if( KDamageParticles[i].length() > 0 )
 		{
@@ -373,7 +373,7 @@ CCharacter::CCharacter( CRefManager& pRefManager,						// pointer to the referen
 	CalculateEffectValues();
 
 	// clear default resistances
-	for( i = 0; i < KDamageTypes; i++ )
+	for( int32 i = 0; i < KDamageTypes; i++ )
 	{
 		m_DamageResistance[i] = 0;
 	}
@@ -406,7 +406,7 @@ CCharacter::~CCharacter( void )
 	DELETE_SAFELY( m_pMissSounds );
 	DELETE_SAFELY( m_pCharacterSounds );
 
-	for( i = 0; i < m_UnarmedAttacks.size(); i++ )
+	for( int32 i = 0; i < m_UnarmedAttacks.size(); i++ )
 	{
 		DELETE_SAFELY( m_UnarmedAttacks[i] );
 	}
@@ -536,7 +536,7 @@ void CCharacter::ClearState( void )
 			}
 		}
 	}
-	for( i = 0; i < KActivationTypes; i++ )
+	for( int32 i = 0; i < KActivationTypes; i++ )
 	{
 		for( int32 j = 0; j < (int32)m_pNaturalEffects[i].size(); j++ )
 		{
@@ -814,7 +814,7 @@ void CCharacter::CompleteSpell( CLevel& pLevel )	// level to send effects to
 				pLevel.FindCharactersInArea( m_pCastingCharacterTarget->Position(), 
 											m_pCastingSpell->Range(),
 											CharacterList );
-				for( i = 0; i < CharacterList.size(); i++ )
+				for( int32 i = 0; i < CharacterList.size(); i++ )
 				{
 					if( CharacterList[i]->Alive() &&
 						( CharacterList[i]->Alignment() == TargetAlignment ||
@@ -860,7 +860,7 @@ void CCharacter::CompleteSpell( CLevel& pLevel )	// level to send effects to
 										m_pCastingSpell->Range(),
 										CharacterList );
 			m_pCastingSpell->PerformFX( pLevel, this, this );
-			for( i = 0; i < CharacterList.size(); i++ )
+			for( int32 i = 0; i < CharacterList.size(); i++ )
 			{
 				if( CharacterList[i]->Alive() &&
 					( CharacterList[i]->Alignment() == TargetAlignment ||
@@ -907,7 +907,7 @@ void CCharacter::CompleteSpell( CLevel& pLevel )	// level to send effects to
 			break;
 		case KTargetUserAndPets :
 			m_pCastingSpell->Cast( pLevel, this, this );
-			for( i = 0; i < Pets(); i++ )
+			for( int32 i = 0; i < Pets(); i++ )
 			{
 				if( Pet( i )->AvailableForKeyCommand() )
 				{
@@ -917,7 +917,7 @@ void CCharacter::CompleteSpell( CLevel& pLevel )	// level to send effects to
 			Success = kTrue;
 			break;
 		case KTargetUserPets :
-			for( i = 0; i < Pets(); i++ )
+			for( int32 i = 0; i < Pets(); i++ )
 			{
 				if( Pet( i )->AvailableForKeyCommand() )
 				{
@@ -955,7 +955,7 @@ void CCharacter::CompleteSpell( CLevel& pLevel )	// level to send effects to
 					m_pCastingCharacterTarget->RespondToAttack( this );
 				}
 
-				for( i = 0; i < m_pCastingCharacterTarget->Pets(); i++ )
+				for( int32 i = 0; i < m_pCastingCharacterTarget->Pets(); i++ )
 				{
 					if( m_pCastingCharacterTarget->Pet( i )->AvailableForKeyCommand() )
 					{
@@ -988,7 +988,7 @@ void CCharacter::CompleteSpell( CLevel& pLevel )	// level to send effects to
 				  TargetAlignment == KAllAlignments ) )
 			{
 
-				for( i = 0; i < m_pCastingCharacterTarget->Pets(); i++ )
+				for( int32 i = 0; i < m_pCastingCharacterTarget->Pets(); i++ )
 				{
 					m_pCastingSpell->Cast( pLevel, this, m_pCastingCharacterTarget->Pet( i ) );
 					Success = kTrue;
@@ -1106,7 +1106,7 @@ void CCharacter::CycleSpell( int32 Direction )	// cycle direction
 		// we wrapped around, so take the first spell
 		if( Spells > 1 )
 		{
-			for( i = 0; i < KMagicSpheres; i++ )
+			for( int32 i = 0; i < KMagicSpheres; i++ )
 			{
 				for( int32 j = 0; j < KMaximumSpellsPerSphere; j++ )
 				{
@@ -1146,7 +1146,7 @@ void CCharacter::CycleSpell( int32 Direction )	// cycle direction
 		// we wrapped around, so take the first spell
 		if( Spells > 1 )
 		{
-			for( i = KMagicSpheres - 1; i >= 0; i-- )
+			for( int32 i = KMagicSpheres - 1; i >= 0; i-- )
 			{
 				for( int32 j = KMaximumSpellsPerSphere - 1; j >= 0; j-- )
 				{
@@ -1576,7 +1576,7 @@ void CCharacter::NotifyOfDeletion( CCharacter* pCharacter )	// character being d
 			}
 		}
 	}
-	for( i = 0; i < KActivationTypes; i++ )
+	for( int32 i = 0; i < KActivationTypes; i++ )
 	{
 		for( int32 j = 0; j < (int32)m_pNaturalEffects[i].size(); j++ )
 		{
@@ -5928,7 +5928,7 @@ void CCharacter::FindAttachmentPoints( void )
 			}
 		}
 	}
-	for( i = 0; i < KEquipmentSlots; i++ )
+	for( int32 i = 0; i < KEquipmentSlots; i++ )
 	{
 		if( HasAttachment( KItemAttachments[i] ) )
 		{
@@ -5969,7 +5969,7 @@ void CCharacter::ClearParticles( void )
 	{
 		m_pGlowList[i]->m_RequestingRemoval = kTrue;
 	}
-	for( i = 0; i < m_pModelGlowList.size(); i++ )
+	for( int32 i = 0; i < m_pModelGlowList.size(); i++ )
 	{
 		m_pModelGlowList[i]->m_RequestingRemoval = kTrue;
 	}
@@ -6010,7 +6010,7 @@ void CCharacter::FindParticles( void )
 		}
 	}
 
-	for( i = 0; i < m_pModel->GetTagCount(); i++ )
+	for( int32 i = 0; i < m_pModel->GetTagCount(); i++ )
 	{
 		std::string Name = StringUpper( GetTagName( i ) );
 		if( Name.length() >= 8 && Name.substr( 0, 8 ) == "PARTICLE" )
@@ -6077,20 +6077,20 @@ void CCharacter::EmitParticles( void )
 		m_pParticleManager.AddParticle( m_ParticleType[i], Transform, D3DXVECTOR3( 0, 0, 0 ), m_Scale );
 	}
 
-	for( i = 0; i < m_TagParticleType.size(); i++ )
+	for( int32 i = 0; i < m_TagParticleType.size(); i++ )
 	{
 		D3DXMATRIX Transform = GetTransformedTag( m_TagParticleIndex[i] );
 		Transform *= m_DisplayMatrix;
 		m_pParticleManager.AddParticle( m_TagParticleType[i], Transform, D3DXVECTOR3( 0, 0, 0 ), m_Scale );
 	}
 
-	for( i = 0; i < m_pGlowList.size(); i++ )
+	for( int32 i = 0; i < m_pGlowList.size(); i++ )
 	{
 		D3DXVECTOR3 Position = GetTagPosition( m_GlowIndex[i] );
 		D3DXVec3TransformCoord( &Position, &Position, &m_DisplayMatrix );
 		m_pGlowList[i]->m_Position = Position;
 	}
-	for( i = 0; i < m_pModelGlowList.size(); i++ )
+	for( int32 i = 0; i < m_pModelGlowList.size(); i++ )
 	{
 		D3DXVECTOR3 Position;
 		D3DXVec3TransformCoord( &Position,  &m_GlowPosition[i], &m_DisplayMatrix );
@@ -6131,7 +6131,7 @@ void CCharacter::EmitParticles( void )
 		{
 			CItem* pItem = m_pInventory->GetItemFromSlot( KSlotLeftHand );
 			D3DXMATRIX OriginalTransform = GetTransformedTag( m_AttachmentTagIndex[KAttachLeftHand] );
-			for( i = 0; i < pItem->DamageBonuses(); i++ )
+			for( int32 i = 0; i < pItem->DamageBonuses(); i++ )
 			{
 				D3DXMATRIX Transform = OriginalTransform * m_DisplayMatrix;
 				if( m_DamageParticle[pItem->DamageBonusType( i )] != -1 )
@@ -6159,7 +6159,7 @@ void CCharacter::EmitParticles( void )
 		{
 			CItem* pItem = m_pInventory->GetItemFromSlot( KSlotRightHand );
 			D3DXMATRIX OriginalTransform = GetTransformedTag( m_AttachmentTagIndex[KAttachRightHand] );
-			for( i = 0; i < pItem->DamageBonuses(); i++ )
+			for( int32 i = 0; i < pItem->DamageBonuses(); i++ )
 			{
 				D3DXMATRIX Transform = OriginalTransform * m_DisplayMatrix;
 				if( m_DamageParticle[pItem->DamageBonusType( i )] != -1 )
@@ -7847,7 +7847,7 @@ bool CCharacter::RollAttack( CLevel& pLevel,			// level to send text events to
 
 			if( pActiveWeapon != NULL )
 			{
-				for( i = 0; i < pActiveWeapon->Effects( KActivationUsage ); i++ )
+				for( int32 i = 0; i < pActiveWeapon->Effects( KActivationUsage ); i++ )
 				{
 					int32 Chance = RandomIntegerBetween( 0, 100 );
 					if( pCurrentAttack->Effect( KActivationUsage, i )->Type() != KEffectKnockback &&
@@ -8417,7 +8417,7 @@ void CCharacter::ApplyInstantEffect( CLevel& pLevel,	// level to send event effe
 		break;
 	case KEffectDispel :
 		// de-summon any summoned creatures
-		for( i = 0; i < Pets(); i++ )
+		for( int32 i = 0; i < Pets(); i++ )
 		{
 			if( Pet( i )->IsSummoned() )
 			{
@@ -8635,7 +8635,7 @@ float32 CCharacter::CalculateEffectValue( EEffectType Type )				// type of effec
 		}
 	}
 
-	for( i = 0; i < KActivationTypes; i++ )
+	for( int32 i = 0; i < KActivationTypes; i++ )
 	{
 		for( uint32 j = 0; j < m_pNaturalEffects[i].size(); j++ )
 		{
@@ -9830,7 +9830,7 @@ void CCharacter::MakeUnique( const std::string& Name,			// name of unique monste
 
 	// learn a few random spells!
 	uint32 Spells = RandomIntegerBetween( 0, 10 );
-	for( i = 0; i < Spells; i++ )
+	for( int32 i = 0; i < Spells; i++ )
 	{
 		uint32 Sphere = RandomIntegerBetween( 0, KMagicSpheres - 1 );
 		uint32 Spell = RandomIntegerBetween( 0, m_pSpellManifest.Spells( (EMagicSphere)Sphere ) - 1 );
@@ -10312,7 +10312,7 @@ void CCharacter::Die( CLevel& pLevel )	// level to drop items to
 		}
 	}
 
-	for( i = 0; i < 20; i++ )
+	for( int32 i = 0; i < 20; i++ )
 	{
 		m_pParticleManager.AddParticle( m_BloodParticle, m_Position );
 	}
@@ -10759,7 +10759,7 @@ void CCharacter::FillInstance( CCharacterSaveInstance& pInstance,	// description
 
 	pInstance.m_IsPlayer = IsPlayer();
 
-	for( i = 0; i < KJournalStatistics; i++ )
+	for( int32 i = 0; i < KJournalStatistics; i++ )
 	{
 		pInstance.m_JournalStats[i] = m_JournalStats[i];
 	}
@@ -10827,11 +10827,11 @@ void CCharacter::FillInstance( CCharacterSaveInstance& pInstance,	// description
 	pInstance.m_UnusedStatPoints = m_UnusedStatPoints;
 	pInstance.m_UnusedSkillPoints = m_UnusedSkillPoints;
 
-	for( i = 0; i < KSkills; i++ )
+	for( int32 i = 0; i < KSkills; i++ )
 	{
 		pInstance.m_SkillPoints[i] = m_SkillPoints[i];
 	}
-	for( i = 0; i < KMagicSpheres; i++ )
+	for( int32 i = 0; i < KMagicSpheres; i++ )
 	{
 		for( uint32 j = 0; j < KMaximumSpellsPerSphere; j++ )
 		{
@@ -10867,7 +10867,7 @@ void CCharacter::FillInstance( CCharacterSaveInstance& pInstance,	// description
 
 	pInstance.m_Gold = m_pInventory->Gold();
 
-	for( i = 0; i < KActivationTypes; i++ )
+	for( int32 i = 0; i < KActivationTypes; i++ )
 	{
 		for( uint32 j = 0; j < m_pEffects[i].size(); j++ )
 		{
@@ -10890,7 +10890,7 @@ void CCharacter::FillInstance( CCharacterSaveInstance& pInstance,	// description
 		Root = Root->Next();
 	}
 
-	for( i = 0; i < Quests(); i++ )
+	for( int32 i = 0; i < Quests(); i++ )
 	{
 		pInstance.m_pQuests.push_back( new CQuest( *Quest( i ) ) );
 	}
@@ -10942,7 +10942,7 @@ void CCharacter::ApplyInstance( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 
 	GiveGold( pInstance.m_Gold );
 
-	for( i = 0; i < KJournalStatistics; i++ )
+	for( int32 i = 0; i < KJournalStatistics; i++ )
 	{
 		m_JournalStats[i] = pInstance.m_JournalStats[i];
 	}
@@ -11031,13 +11031,13 @@ void CCharacter::ApplyInstance( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 	m_UnusedStatPoints = pInstance.m_UnusedStatPoints;
 	m_UnusedSkillPoints = pInstance.m_UnusedSkillPoints;
 
-	for( i = 0; i < KSkills; i++ )
+	for( int32 i = 0; i < KSkills; i++ )
 	{
 		m_SkillPoints[i] = pInstance.m_SkillPoints[i];
 	}
 
 	ClearSpellbook();
-	for( i = 0; i < KMagicSpheres; i++ )
+	for( int32 i = 0; i < KMagicSpheres; i++ )
 	{
 		for( uint32 j = 0; j < KMaximumSpellsPerSphere; j++ )
 		{
@@ -11049,7 +11049,7 @@ void CCharacter::ApplyInstance( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 	}
 
 	m_pActiveSpell = NULL;
-	for( i = 0; i < KMagicSpheres; i++ )
+	for( int32 i = 0; i < KMagicSpheres; i++ )
 	{
 		for( uint32 j = 0; j < KMaximumSpellsPerSphere; j++ )
 		{
@@ -11075,7 +11075,7 @@ void CCharacter::ApplyInstance( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 	m_RunningSpeed = pInstance.m_RunningSpeed;
 
 
-	for( i = 0; i < KActivationTypes; i++ )
+	for( int32 i = 0; i < KActivationTypes; i++ )
 	{
 		for( uint32 j = 0; j < pInstance.m_pEffects[i].size(); j++ )
 		{
@@ -11083,7 +11083,7 @@ void CCharacter::ApplyInstance( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 		}
 	}
 
-	for( i = 0; i < pInstance.m_pItemInstances.size(); i++ )
+	for( int32 i = 0; i < pInstance.m_pItemInstances.size(); i++ )
 	{
 		CItemDescription* pDescription = pItemManifest.ItemDescription( pInstance.m_pItemInstances[i]->m_BaseName );
 		CItem* pItem = NULL;
@@ -11132,7 +11132,7 @@ void CCharacter::ApplyInstance( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 
 	}
 
-	for( i = 0; i < pInstance.m_pQuests.size(); i++ )
+	for( int32 i = 0; i < pInstance.m_pQuests.size(); i++ )
 	{
 		m_pQuests.push_back( new CQuest( *pInstance.m_pQuests[i] ) );
 	}
@@ -11263,7 +11263,7 @@ void CCharacter::ApplyDescription( LPDIRECT3DDEVICE8 pD3DDevice,			// direct3d d
 		m_CanRun = kFalse;
 	}
 
-	for( i = 0; i < pDescription.UnarmedAttacks(); i++ )
+	for( int32 i = 0; i < pDescription.UnarmedAttacks(); i++ )
 	{
 		CAttackDescription* pAttack = new CAttackDescription( pDescription.UnarmedAttack( i ) );
 		pAttack->SetAnimationIndex( m_pModel->GetAnimationIndex( pAttack->Animation() ) );
@@ -11272,12 +11272,12 @@ void CCharacter::ApplyDescription( LPDIRECT3DDEVICE8 pD3DDevice,			// direct3d d
 
 	}
 
-	for( i = 0; i < KSkills; i++ )
+	for( int32 i = 0; i < KSkills; i++ )
 	{
 		m_SkillPoints[i] = pDescription.SkillPoints( (ESkill)i );
 	}
 
-	for( i = 0; i < KDamageTypes; i++ )
+	for( int32 i = 0; i < KDamageTypes; i++ )
 	{
 		m_DamageResistance[i] = pDescription.DamageResistance( (EDamageType)i );
 	}
@@ -11292,71 +11292,71 @@ void CCharacter::ApplyDescription( LPDIRECT3DDEVICE8 pD3DDevice,			// direct3d d
 
 	m_SoundRadius = pDescription.SoundRadius();
 
-	for( i = 0; i < pDescription.AttackSounds(); i++ )
+	for( int32 i = 0; i < pDescription.AttackSounds(); i++ )
 	{
 		assert( m_pModel->GetAnimationIndex( pDescription.AttackSoundAnimation( i ) ) != -1 );
 		m_pAttackSounds->AddSample( m_pModel->GetAnimationIndex( pDescription.AttackSoundAnimation( i ) ),
 									pDescription.AttackSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.StrikeSounds(); i++ )
+	for( int32 i = 0; i < pDescription.StrikeSounds(); i++ )
 	{
 		assert( m_pModel->GetAnimationIndex( pDescription.StrikeSoundAnimation( i ) ) != -1 );
 		m_pStrikeSounds->AddSample( m_pModel->GetAnimationIndex( pDescription.StrikeSoundAnimation( i ) ),
 									pDescription.StrikeSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.MissSounds(); i++ )
+	for( int32 i = 0; i < pDescription.MissSounds(); i++ )
 	{
 		assert( m_pModel->GetAnimationIndex( pDescription.MissSoundAnimation( i ) ) != -1 );
 		m_pMissSounds->AddSample( m_pModel->GetAnimationIndex( pDescription.MissSoundAnimation( i ) ),
 								  pDescription.MissSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.DieSounds(); i++ )
+	for( int32 i = 0; i < pDescription.DieSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundDie,
 									   pDescription.DieSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.GreetSounds(); i++ )
+	for( int32 i = 0; i < pDescription.GreetSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundGreet,
 									   pDescription.GreetSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.StepSounds(); i++ )
+	for( int32 i = 0; i < pDescription.StepSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundStep,
 									   pDescription.StepSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.ArmedAttackSounds(); i++ )
+	for( int32 i = 0; i < pDescription.ArmedAttackSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundAttack,
 									   pDescription.ArmedAttackSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.IdleSounds(); i++ )
+	for( int32 i = 0; i < pDescription.IdleSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundIdle,
 									   pDescription.IdleSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.UniqueIdleSounds(); i++ )
+	for( int32 i = 0; i < pDescription.UniqueIdleSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundUniqueIdle,
 									   pDescription.UniqueIdleSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.RoarSounds(); i++ )
+	for( int32 i = 0; i < pDescription.RoarSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundRoar,
 									   pDescription.RoarSound( i ) );
 	}
 
 	m_GreetMessages.clear();
-	for( i = 0; i < pDescription.GreetMessages(); i++ )
+	for( int32 i = 0; i < pDescription.GreetMessages(); i++ )
 	{
 		m_GreetMessages.push_back( pDescription.GreetMessage( i ) );
 	}
@@ -11382,7 +11382,7 @@ void CCharacter::ApplyDescription( LPDIRECT3DDEVICE8 pD3DDevice,			// direct3d d
 		}
 	}
 
-	for( i = 0; i < pDescription.Spells(); i++ )
+	for( int32 i = 0; i < pDescription.Spells(); i++ )
 	{
 		CSpellDescription* pSpellDescription;
 		pSpellDescription = m_pSpellManifest.SpellDescription( pDescription.Spell( i ) );
@@ -11396,12 +11396,12 @@ void CCharacter::ApplyDescription( LPDIRECT3DDEVICE8 pD3DDevice,			// direct3d d
 		}
 	}
 
-	for( i = 0; i < pDescription.SupportedEquipment(); i++ )
+	for( int32 i = 0; i < pDescription.SupportedEquipment(); i++ )
 	{
 		m_pInventory->SetSupportsItemType( pDescription.SupportedEquipment( i ), kTrue );
 	}
 
-	for( i = 0; i < KActivationTypes; i++ )
+	for( int32 i = 0; i < KActivationTypes; i++ )
 	{
 		for( int32 j = 0; j < (int32)pDescription.Effects( (EEffectActivation)i ); j++ )
 		{
@@ -11550,13 +11550,13 @@ void CCharacter::ApplyTransformationDescription( LPDIRECT3DDEVICE8 pD3DDevice,		
 		m_CanRun = kFalse;
 	}
 
-	for( i = 0; i < m_UnarmedAttacks.size(); i++ )
+	for( int32 i = 0; i < m_UnarmedAttacks.size(); i++ )
 	{
 		DELETE_SAFELY( m_UnarmedAttacks[i] );
 	}
 	m_UnarmedAttacks.clear();
 
-	for( i = 0; i < pDescription.UnarmedAttacks(); i++ )
+	for( int32 i = 0; i < pDescription.UnarmedAttacks(); i++ )
 	{
 		CAttackDescription* pAttack = new CAttackDescription( pDescription.UnarmedAttack( i ) );
 		pAttack->SetAnimationIndex( m_pModel->GetAnimationIndex( pAttack->Animation() ) );
@@ -11565,12 +11565,12 @@ void CCharacter::ApplyTransformationDescription( LPDIRECT3DDEVICE8 pD3DDevice,		
 
 	}
 
-	for( i = 0; i < KSkills; i++ )
+	for( int32 i = 0; i < KSkills; i++ )
 	{
 		m_SkillPoints[i] = pDescription.SkillPoints( (ESkill)i );
 	}
 
-	for( i = 0; i < KDamageTypes; i++ )
+	for( int32 i = 0; i < KDamageTypes; i++ )
 	{
 		m_DamageResistance[i] = pDescription.DamageResistance( (EDamageType)i );
 	}
@@ -11604,63 +11604,63 @@ void CCharacter::ApplyTransformationDescription( LPDIRECT3DDEVICE8 pD3DDevice,		
 	m_pCharacterSounds->AddSample( KSoundLevelUp,
 								   "SOUNDS\\FX\\levelup.wav" );
 
-	for( i = 0; i < pDescription.AttackSounds(); i++ )
+	for( int32 i = 0; i < pDescription.AttackSounds(); i++ )
 	{
 		assert( m_pModel->GetAnimationIndex( pDescription.AttackSoundAnimation( i ) ) != -1 );
 		m_pAttackSounds->AddSample( m_pModel->GetAnimationIndex( pDescription.AttackSoundAnimation( i ) ),
 									pDescription.AttackSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.StrikeSounds(); i++ )
+	for( int32 i = 0; i < pDescription.StrikeSounds(); i++ )
 	{
 		assert( m_pModel->GetAnimationIndex( pDescription.StrikeSoundAnimation( i ) ) != -1 );
 		m_pStrikeSounds->AddSample( m_pModel->GetAnimationIndex( pDescription.StrikeSoundAnimation( i ) ),
 									pDescription.StrikeSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.MissSounds(); i++ )
+	for( int32 i = 0; i < pDescription.MissSounds(); i++ )
 	{
 		assert( m_pModel->GetAnimationIndex( pDescription.MissSoundAnimation( i ) ) != -1 );
 		m_pMissSounds->AddSample( m_pModel->GetAnimationIndex( pDescription.MissSoundAnimation( i ) ),
 								  pDescription.MissSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.DieSounds(); i++ )
+	for( int32 i = 0; i < pDescription.DieSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundDie,
 									   pDescription.DieSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.GreetSounds(); i++ )
+	for( int32 i = 0; i < pDescription.GreetSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundGreet,
 									   pDescription.GreetSound( i ) );
 	}
-	for( i = 0; i < pDescription.StepSounds(); i++ )
+	for( int32 i = 0; i < pDescription.StepSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundStep,
 									   pDescription.StepSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.ArmedAttackSounds(); i++ )
+	for( int32 i = 0; i < pDescription.ArmedAttackSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundAttack,
 									   pDescription.ArmedAttackSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.IdleSounds(); i++ )
+	for( int32 i = 0; i < pDescription.IdleSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundIdle,
 									   pDescription.IdleSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.UniqueIdleSounds(); i++ )
+	for( int32 i = 0; i < pDescription.UniqueIdleSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundUniqueIdle,
 									   pDescription.UniqueIdleSound( i ) );
 	}
 
-	for( i = 0; i < pDescription.RoarSounds(); i++ )
+	for( int32 i = 0; i < pDescription.RoarSounds(); i++ )
 	{
 		m_pCharacterSounds->AddSample( KSoundRoar,
 									   pDescription.RoarSound( i ) );
@@ -11668,7 +11668,7 @@ void CCharacter::ApplyTransformationDescription( LPDIRECT3DDEVICE8 pD3DDevice,		
 
 
 	m_GreetMessages.clear();
-	for( i = 0; i < pDescription.GreetMessages(); i++ )
+	for( int32 i = 0; i < pDescription.GreetMessages(); i++ )
 	{
 		m_GreetMessages.push_back( pDescription.GreetMessage( i ) );
 	}
@@ -11679,7 +11679,7 @@ void CCharacter::ApplyTransformationDescription( LPDIRECT3DDEVICE8 pD3DDevice,		
 	// unlearn all spells
 	ClearSpellbook();
 	// learn any spells unique to this character type
-	for( i = 0; i < pDescription.Spells(); i++ )
+	for( int32 i = 0; i < pDescription.Spells(); i++ )
 	{
 		CSpellDescription* pSpellDescription;
 		pSpellDescription = m_pSpellManifest.SpellDescription( pDescription.Spell( i ) );
@@ -11713,7 +11713,7 @@ void CCharacter::ApplyTransformationDescription( LPDIRECT3DDEVICE8 pD3DDevice,		
 		}
 	}
 
-	for( i = 0; i < KActivationTypes; i++ )
+	for( int32 i = 0; i < KActivationTypes; i++ )
 	{
 		for( int32 j = 0; j < (int32)pDescription.Effects( (EEffectActivation)i ); j++ )
 		{
@@ -11744,14 +11744,14 @@ CCharacterSaveInstance::~CCharacterSaveInstance( void )
 			m_pEffects[i].clear();
 		}
 
-		for( i = 0; i < m_pItemInstances.size(); i++ )
+		for( int32 i = 0; i < m_pItemInstances.size(); i++ )
 		{
 			DELETE_SAFELY( m_pItemInstances[i] );
 		}
 		m_pItemInstances.clear();
 
 
-		for( i = 0; i < m_pQuests.size(); i++ )
+		for( int32 i = 0; i < m_pQuests.size(); i++ )
 		{
 			DELETE_SAFELY( m_pQuests[i] );
 		}
@@ -11864,13 +11864,13 @@ void CCharacterSaveInstance::Save( FILE* pFile )	// open file to save to
 			fwrite( &m_DamageResistance[i], sizeof( int32 ), 1, pFile );
 		}
 
-		for( i = 0; i < KSkills; i++ )
+		for( int32 i = 0; i < KSkills; i++ )
 		{
 			int32 Point = m_SkillPoints[i];
 			fwrite( &Point, sizeof( int32 ), 1, pFile );
 		}
 
-		for( i = 0; i < KMagicSpheres; i++ )
+		for( int32 i = 0; i < KMagicSpheres; i++ )
 		{
 			for( uint32 j = 0; j < KMaximumSpellsPerSphere; j++ )
 			{
@@ -11977,14 +11977,14 @@ void CCharacterSaveInstance::Save( FILE* pFile )	// open file to save to
 
 		uint32 SubItems = m_pItemInstances.size();
 		fwrite( &SubItems , sizeof( uint32 ), 1, pFile );
-		for( j = 0; j < SubItems; j++ )
+		for( int32 j = 0; j < SubItems; j++ )
 		{
 			m_pItemInstances[j]->Save( pFile );
 		}
 
 		uint32 Quests = m_pQuests.size();
 		fwrite( &Quests , sizeof( uint32 ), 1, pFile );
-		for( j = 0; j < Quests; j++ )
+		for( int32 j = 0; j < Quests; j++ )
 		{
 			m_pQuests[j]->Save( pFile );
 		}
@@ -12108,14 +12108,14 @@ void CCharacterSaveInstance::Save( FILE* pFile )	// open file to save to
 			fread( &m_DamageResistance[i], sizeof( int32 ), 1, pFile );
 		}
 
-		for( i = 0; i < KSkills; i++ )
+		for( int32 i = 0; i < KSkills; i++ )
 		{
 			int32 Point;
 			fread( &Point, sizeof( int32 ), 1, pFile );
 			m_SkillPoints[i] = Point;
 		}
 
-		for( i = 0; i < KMagicSpheres; i++ )
+		for( int32 i = 0; i < KMagicSpheres; i++ )
 		{
 			for( uint32 j = 0; j < KMaximumSpellsPerSphere; j++ )
 			{
@@ -12254,7 +12254,7 @@ void CCharacterSaveInstance::Save( FILE* pFile )	// open file to save to
 
 		uint32 SubItems( 0 );
 		fread( &SubItems , sizeof( uint32 ), 1, pFile );
-		for( j = 0; j < SubItems; j++ )
+		for( int32 j = 0; j < SubItems; j++ )
 		{
 			CItemSaveInstance* pInstance = new CItemSaveInstance();
 			m_pItemInstances.push_back( pInstance );
@@ -12263,7 +12263,7 @@ void CCharacterSaveInstance::Save( FILE* pFile )	// open file to save to
 
 		uint32 Quests( 0 );
 		fread( &Quests , sizeof( uint32 ), 1, pFile );
-		for( j = 0; j < Quests; j++ )
+		for( int32 j = 0; j < Quests; j++ )
 		{
 			CQuest* pQuest = new CQuest();
 			m_pQuests.push_back( pQuest );

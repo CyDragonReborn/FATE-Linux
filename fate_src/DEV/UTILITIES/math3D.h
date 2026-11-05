@@ -12,11 +12,13 @@
 #ifndef MATH3D_H
 #define MATH3D_H
 
+#ifdef FATE_NATIVE
+#include "fate/legacy_math.hpp"
+#else
 #include "d3dx8_shim.h"
-
-// Ensure Direct3D math types (D3DXVECTOR3, D3DXMATRIX, D3DXQUATERNION) are defined
 #include <d3d8.h>
-#include <d3dx8math.h> // Or "d3d8_headers/d3dx8math.h" depending on your shim layout
+#include <d3dx8math.h>
+#endif
 
 #include <vector>
 #include <cmath>
@@ -27,20 +29,20 @@ typedef 	std::vector <D3DXVECTOR3>	D3DXVECTOR3List;
 
 const float32	KCollisionInvalid( 99999 );
 
-const enum EFaceClassification
+enum EFaceClassification
 {
 	KNormalMaxX,
 	KNormalMaxY,
 	KNormalMaxZ
 };
 
-const enum ESortType
+enum ESortType
 {
 	KSortOctree,
 	KSortQuadtree
 };
 
-const enum EPlaneClassification
+enum EPlaneClassification
 {
 	KPlaneFront,
 	KPlaneBack,

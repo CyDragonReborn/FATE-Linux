@@ -126,7 +126,7 @@ public :
 		}
 		UpdateTransformation();
 
-		for( i = 0; i < Bones(); i++ )
+		for( int32 i = 0; i < Bones(); i++ )
 		{
 			pPose->SetTransformation( m_BoneAnimationMap[i], m_pBoneMap[i]->WorldspaceTransformation() );
 		}

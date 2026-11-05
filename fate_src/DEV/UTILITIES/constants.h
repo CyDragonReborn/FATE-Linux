@@ -11,6 +11,9 @@
 #ifndef _CONSTANTS_H
 #define _CONSTANTS_H
 
+#include <stddef.h>
+#include <stdint.h>
+
 #pragma warning(disable: 4786) 
 
 #define 	kTrue   			1 
@@ -22,10 +25,18 @@
 
 typedef 	char			int8; 
 typedef 	short			int16; 
-typedef 	long			int32; 
+#ifdef FATE_NATIVE
+typedef 	int32_t			int32;
+#else
+typedef 	long			int32;
+#endif 
 typedef 	unsigned char	uint8; 
 typedef 	unsigned short	uint16; 
-typedef 	unsigned long	uint32; 
+#ifdef FATE_NATIVE
+typedef 	uint32_t		uint32;
+#else
+typedef 	unsigned long	uint32;
+#endif 
 typedef 	float			float32; 
 typedef 	double			float64; 
 //typedef     bool  			  boolean; 

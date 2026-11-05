@@ -590,7 +590,7 @@ void CText::Update( LPDIRECT3DDEVICE8 pD3DDevice,		// our direct3d device
 
 	bool BoldShift( kFalse );
 	D3DXVECTOR3 Vertex;
-	for ( i = 0; i < m_TextCharacters; i++ )
+	for( int32 i = 0; i < m_TextCharacters; i++ )
 	{
 		bool	CarriageReturn = kFalse;
 		bool	Blank = kFalse;
@@ -746,7 +746,7 @@ void CText::Update( LPDIRECT3DDEVICE8 pD3DDevice,		// our direct3d device
 		}
 
 		// create the index buffer for the characters
-		for ( i = 0; i < m_TextCharacters; i++ )
+		for( int32 i = 0; i < m_TextCharacters; i++ )
 		{
 			*pIndices++ = (WORD)i * 4 + 0;
 			*pIndices++ = (WORD)i * 4 + 1;

@@ -1,1 +1,6 @@
 .svn/
+/build/
+/fate_src/DEV/build-linux/
+/fate_src/DEV/build-mingw/
+
+/fate_src/gamefiles/Fate-linux.exe

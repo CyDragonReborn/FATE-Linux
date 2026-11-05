@@ -551,7 +551,7 @@ void CCharacterTemplate::ParseTemplate( CParticleManager& pParticleManager,	// p
 
 		uint32 Skills = pMasterGroup->SubDataGroups( "SKILL" );
 
-		for( r = 0; r < Skills; r++ )
+		for( uint32 r = 0; r < Skills; r++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "SKILL", r );
 
@@ -642,7 +642,7 @@ void CCharacterTemplate::ParseTemplate( CParticleManager& pParticleManager,	// p
 		}
 
 		uint32 Greetings = pMasterGroup->SubDataGroups( "GREET_MESSAGE" );
-		for( i = 0; i < Greetings; i++ )
+		for( int32 i = 0; i < Greetings; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "GREET_MESSAGE", i );
 			std::string Message = pSubGroup->Item( 0 );
@@ -674,21 +674,21 @@ void CCharacterTemplate::ParseTemplate( CParticleManager& pParticleManager,	// p
 		}
 
 		uint32 PreferredWeapons = pMasterGroup->SubDataGroups( "PREFERRED_WEAPON" );
-		for( i = 0; i < PreferredWeapons; i++ )
+		for( int32 i = 0; i < PreferredWeapons; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "PREFERRED_WEAPON", i );
 			pDescription->AddPreferredWeapon( StringUpper( pSubGroup->Item( 0 ) ) );
 		}
 
 		uint32 PreferredArmor = pMasterGroup->SubDataGroups( "PREFERRED_ARMOR" );
-		for( i = 0; i < PreferredArmor; i++ )
+		for( int32 i = 0; i < PreferredArmor; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "PREFERRED_ARMOR", i );
 			pDescription->AddPreferredArmor( StringUpper( pSubGroup->Item( 0 ) ) );
 		}
 
 		uint32 PreferredShield = pMasterGroup->SubDataGroups( "PREFERRED_SHIELD" );
-		for( i = 0; i < PreferredShield; i++ )
+		for( int32 i = 0; i < PreferredShield; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "PREFERRED_SHIELD", i );
 			pDescription->AddPreferredShield( StringUpper( pSubGroup->Item( 0 ) ) );
@@ -1067,84 +1067,84 @@ void CCharacterTemplate::ParseTemplate( CParticleManager& pParticleManager,	// p
 			pDescription->SetBloodParticle( pSubGroup->Item( 0 ) );
 		}
 		uint32 Idles = pMasterGroup->SubDataGroups( "UNIQUE_IDLE" );
-		for( i = 0; i < Idles; i++ )
+		for( int32 i = 0; i < Idles; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "UNIQUE_IDLE", i );
 			pDescription->AddUniqueIdle( pSubGroup->Item( 0 ) );
 		}
 
 		uint32 Spells = pMasterGroup->SubDataGroups( "SPELL" );
-		for( i = 0; i < Spells; i++ )
+		for( int32 i = 0; i < Spells; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "SPELL", i );
 			pDescription->AddSpell( pSubGroup->Item( 0 ) );
 		}
 
 		uint32 Sounds = pMasterGroup->SubDataGroups( "DEATH_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "DEATH_SOUND", i );
 			pDescription->AddDieSound( pSubGroup->Item( 0 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "GREET_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "GREET_SOUND", i );
 			pDescription->AddGreetSound( pSubGroup->Item( 0 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "STEP_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "STEP_SOUND", i );
 			pDescription->AddStepSound( pSubGroup->Item( 0 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "IDLE_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "IDLE_SOUND", i );
 			pDescription->AddIdleSound( pSubGroup->Item( 0 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "UNIQUE_IDLE_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "UNIQUE_IDLE_SOUND", i );
 			pDescription->AddUniqueIdleSound( pSubGroup->Item( 0 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "ROAR_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "ROAR_SOUND", i );
 			pDescription->AddRoarSound( pSubGroup->Item( 0 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "ARMED_ATTACK_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "ARMED_ATTACK_SOUND", i );
 			pDescription->AddArmedAttackSound( pSubGroup->Item( 0 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "ATTACK_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "ATTACK_SOUND", i );
 			pDescription->AddAttackSound( pSubGroup->Item( 0 ), pSubGroup->Item( 1 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "STRIKE_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "STRIKE_SOUND", i );
 			pDescription->AddStrikeSound( pSubGroup->Item( 0 ), pSubGroup->Item( 1 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "MISS_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "MISS_SOUND", i );
 			pDescription->AddMissSound( pSubGroup->Item( 0 ), pSubGroup->Item( 1 ) );

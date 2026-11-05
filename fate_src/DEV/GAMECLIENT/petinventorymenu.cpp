@@ -265,7 +265,7 @@ void CPetInventoryMenu::CreateMenus( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d devic
 
 	// add invisible buttons for equipment slots
 
-	for( i = 0; i < KEquipmentSlots; i++ )
+	for( int32 i = 0; i < KEquipmentSlots; i++ )
 	{
 		m_pEquipmentButton[i] = AddButton( new CButton( pD3DDevice,
 														NULL,

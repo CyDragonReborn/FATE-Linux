@@ -400,7 +400,7 @@ void CLevelMesh::Render( CLevel& pLevel,						// parent level
 				pD3DDevice->SetTexture( 0, pMaterialReference->GetTexture() );
 			}
 
-			for( i = 0; i < m_pSortedPatches.size(); i++ )
+			for( int32 i = 0; i < m_pSortedPatches.size(); i++ )
 			{
 				m_pSortedPatches[i]->RenderCeiling( pD3DDevice,
 												    pLightManager,
@@ -527,7 +527,7 @@ void CLevelMesh::RenderWater( LPDIRECT3DDEVICE8 pD3DDevice,			// direct3d device
 
 	// render water elements
 	pD3DDevice->SetTexture( 0, m_pWaterMaterial->GetIlluminationTexture() );
-	for( i = 0; i < m_pSortedPatches.size(); i++ )
+	for( int32 i = 0; i < m_pSortedPatches.size(); i++ )
 	{
 		m_pSortedPatches[i]->RenderWater( pD3DDevice,
 										  pLightManager,
@@ -793,7 +793,7 @@ void CLevelMesh::RenderShadowPass( LPDIRECT3DDEVICE8 pD3DDevice,			// direct3d d
 		pD3DDevice->SetTexture( 0, pLightMaterial->GetTexture() );
 	}
 
-	for( i = 0; i < m_pSortedPatches.size(); i++ )
+	for( int32 i = 0; i < m_pSortedPatches.size(); i++ )
 	{
 		m_pSortedPatches[i]->RenderCeiling( pD3DDevice,
 											NULL,

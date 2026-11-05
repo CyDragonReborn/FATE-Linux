@@ -303,7 +303,7 @@ void CSubModel::CreateBuffers(  LPDIRECT3DDEVICE8 pD3DDevice,				// direct3d dev
 
 	m_ExpandedVertices.resize( m_TotalVertices );
 
-	for ( k = 0; k < m_TotalVertices; k++ )
+	for( int32 k = 0; k < m_TotalVertices; k++ )
 	{
 		*pVertices = VBVertices[k];
 		m_ExpandedVertices[k] = VBVertices[k].v;
@@ -520,7 +520,7 @@ void CSubModel::CleanIB( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d device
 	DWORD				AttributeCount( 0 );
 	MeshToOptimize->GetAttributeTable( pAttributeTable, &AttributeCount );
 
-	for( i = 0; i < m_pSubModelSegments.size(); i++ )
+	for( int32 i = 0; i < m_pSubModelSegments.size(); i++ )
 	{
 		m_pSubModelSegments[pAttributeTable[i].AttribId]->SetIBIndex( pAttributeTable[i].FaceStart * 3 );
 		m_pSubModelSegments[pAttributeTable[i].AttribId]->SetTotalFaces( pAttributeTable[i].FaceCount );

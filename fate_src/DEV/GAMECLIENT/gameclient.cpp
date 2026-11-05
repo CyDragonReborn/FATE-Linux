@@ -405,7 +405,7 @@ void CGameClient::SaveCharacter( void )
 		fwrite( Hotkey.c_str(), sizeof( char ) * Size, 1, pFile );
 	}
 
-	for( j = 0; j < KContextTips; j++ )
+	for( int32 j = 0; j < KContextTips; j++ )
 	{
 		bool TipSeen = m_pTips->TipSeen( (EContextTip)j );
 		fwrite( &TipSeen, sizeof( bool ), 1, pFile );
@@ -433,7 +433,7 @@ void CGameClient::SaveCharacter( void )
 	uint32 Histories = m_pPlayer->LevelHistories();
 	fwrite( &Histories, sizeof( uint32 ), 1, pFile );
 
-	for( i = 0; i < Histories; i++ )
+	for( int32 i = 0; i < Histories; i++ )
 	{
 		m_pPlayer->GetLevelHistoryByIndex( i )->Save( pFile );
 	}
@@ -519,7 +519,7 @@ void CGameClient::LoadCharacter( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d devic
 
 	m_pGameUI->SetHotkeysChanged();
 
-	for( j = 0; j < KContextTips; j++ )
+	for( int32 j = 0; j < KContextTips; j++ )
 	{
 		bool TipSeen;
 		fread( &TipSeen, sizeof( bool ), 1, pFile );
@@ -569,7 +569,7 @@ void CGameClient::LoadCharacter( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d devic
 	uint32 Histories( 0 );
 	fread( &Histories, sizeof( uint32 ), 1, pFile );
 
-	for( i = 0; i < Histories; i++ )
+	for( int32 i = 0; i < Histories; i++ )
 	{
 		CLevelHistory* pHistory = new CLevelHistory( 0, 0, 0 );
 		pHistory->Load( pFile );
@@ -1275,7 +1275,7 @@ void CGameClient::Render( LPDIRECT3DDEVICE8 pD3DDevice )			// direct3d device
 								}
 							}
 
-							for( i = 0; i < m_pHeirloomItem->m_DamageBonusValue.size(); i++ )
+							for( int32 i = 0; i < m_pHeirloomItem->m_DamageBonusValue.size(); i++ )
 							{
 								m_pHeirloomItem->m_DamageBonusValue[i] += (int32)ceil( m_pHeirloomItem->m_DamageBonusValue[i] * .25f );
 							}
@@ -2693,7 +2693,7 @@ void CGameClient::GenerateLevel( LPDIRECT3DDEVICE8 pD3DDevice,		// direct3d devi
 		}
 		m_pPlayer->RemovePets();
 		m_pPlayer->ClearState();
-		for( i = 0; i < pPets.size(); i++ )
+		for( int32 i = 0; i < pPets.size(); i++ )
 		{
 			m_pActiveLevel->RemoveCharacter( pPets[i] );
 			if( pPets[i]->AIState() != KAIInTown )
@@ -3075,7 +3075,7 @@ void CGameClient::GenerateLevel( LPDIRECT3DDEVICE8 pD3DDevice,		// direct3d devi
 			}
 		}
 
-		for( i = 0; i < pHistory->Items(); i++ )
+		for( int32 i = 0; i < pHistory->Items(); i++ )
 		{
 			CItemSaveInstance* pInstance = pHistory->GetItem( i );
 			if( pInstance->m_BaseName == "Gold" )

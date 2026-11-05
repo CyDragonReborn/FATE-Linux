@@ -1,3 +1,6 @@
+#ifndef DIFEF_MODIFYIFNEEDED
+#define DIFEF_MODIFYIFNEEDED 0x00000010L
+#endif
 /*
 	joystick.cpp
 
@@ -41,7 +44,7 @@ CJoystick::CJoystick( HWND hWnd ) :				// this windows hWnd
 	}
 
 	// clear out axis positions
-	for ( i = 0; i < KJoystickAxes; i++ )
+	for( int32 i = 0; i < KJoystickAxes; i++ )
 	{
 		m_AxisPosition[i] = 0;
 		m_LastAxisPosition[i] = 0;
@@ -439,7 +442,7 @@ void CJoystick::Update( void )
 	m_AxisPosition[KThrottle2] = JoystickState.rglSlider[1] / 1000.0f;
 
 	// track the button states
-	for ( i = 0; i < 128; i++ )
+	for( int32 i = 0; i < 128; i++ )
 	{
 		if ( JoystickState.rgbButtons[i] & 0x80 )
 		{

@@ -109,13 +109,13 @@ void CLevelHistory::ClearVisibilityData( void )
 		}
 	}
 
-	for( i = 0; i < m_pCharacterHistory.size(); i++ )
+	for( int32 i = 0; i < m_pCharacterHistory.size(); i++ )
 	{
 		DELETE_SAFELY( m_pCharacterHistory[i] );
 	}
 	m_pCharacterHistory.clear();
 
-	for( i = 0; i < m_pItemHistory.size(); i++ )
+	for( int32 i = 0; i < m_pItemHistory.size(); i++ )
 	{
 		DELETE_SAFELY( m_pItemHistory[i] );
 	}
@@ -172,13 +172,13 @@ void CLevelHistory::Save( FILE* pFile )	// open file to save to
 
 	uint32 Size = m_pCharacterHistory.size();
 	fwrite( &Size, sizeof( uint32 ), 1, pFile );
-	for( i = 0; i < Size; i++ )
+	for( int32 i = 0; i < Size; i++ )
 	{
 		m_pCharacterHistory[i]->Save( pFile );
 	}
 	Size = m_pItemHistory.size();
 	fwrite( &Size, sizeof( uint32 ), 1, pFile );
-	for( i = 0; i < Size; i++ )
+	for( int32 i = 0; i < Size; i++ )
 	{
 		m_pItemHistory[i]->Save( pFile );
 	}
@@ -199,12 +199,12 @@ void CLevelHistory::Load( FILE* pFile )	// open file to load from
 	fread( &m_LastPopulationTime, sizeof( float32 ), 1, pFile );
 
 	m_VisibilityData = new bool*[m_Width];
-	for( i = 0; i < m_Width; i++ )
+	for( int32 i = 0; i < m_Width; i++ )
 	{
 		m_VisibilityData[i] = new bool[m_Height];
 	}
 
-	for( i = 0; i < m_Width; i++ )
+	for( int32 i = 0; i < m_Width; i++ )
 	{
 		for( uint32 j = 0; j < m_Height; j++ )
 		{
@@ -214,7 +214,7 @@ void CLevelHistory::Load( FILE* pFile )	// open file to load from
 
 	uint32 Size = m_pCharacterHistory.size();
 	fread( &Size, sizeof( uint32 ), 1, pFile );
-	for( i = 0; i < Size; i++ )
+	for( int32 i = 0; i < Size; i++ )
 	{
 		CCharacterSaveInstance* pInstance = new CCharacterSaveInstance();
 		pInstance->Load( pFile );
@@ -222,7 +222,7 @@ void CLevelHistory::Load( FILE* pFile )	// open file to load from
 	}
 	Size = m_pItemHistory.size();
 	fread( &Size, sizeof( uint32 ), 1, pFile );
-	for( i = 0; i < Size; i++ )
+	for( int32 i = 0; i < Size; i++ )
 	{
 		CItemSaveInstance* pInstance = new CItemSaveInstance();
 		pInstance->Load( pFile );

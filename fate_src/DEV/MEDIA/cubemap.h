@@ -21,7 +21,7 @@ class CMaterial;
 
 using namespace std;
 
-const enum ECubeMapType
+enum ECubeMapType
 {
 	KCubeFromFile,
 	KCubeFromFiles,

@@ -19,7 +19,7 @@
 
 class	CSettings;
 
-const enum EViewType
+enum EViewType
 {
 	KViewCovered,
 	KViewLeft,

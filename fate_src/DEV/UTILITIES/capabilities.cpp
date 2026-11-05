@@ -176,7 +176,7 @@ void CCapabilities::ResetCapabilityTables( void )
 	{
 		m_Capable[i] = kTrue;
 	}
-	for( i = 0; i < KCapabilitiesValueCount; i++ )
+	for( int32 i = 0; i < KCapabilitiesValueCount; i++ )
 	{
 		m_CapabilityValue[i] = 0;
 	}

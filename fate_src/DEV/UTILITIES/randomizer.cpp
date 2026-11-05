@@ -44,7 +44,7 @@ void CRandomizer::ComputeOdds( void )
 
 
 
-    for ( i = 0; i < (int32)m_Odds.size(); i++ )
+    for( int32 i = 0; i < (int32)m_Odds.size(); i++ )
     {
 		m_ComputedOdds[i] = float32( m_Odds[i] ) / float32( Total );    
 	}

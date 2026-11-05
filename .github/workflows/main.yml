@@ -12,13 +12,20 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Build SDL3 and OpenGL platform targets in Arch Linux
+      - name: Build and test SDL3/OpenGL platform in Arch Linux
         run: |
           docker run --rm \
             -v "${{ github.workspace }}":/work/src \
             -w /work/src \
-            archlinux:latest /bin/bash -lc "\
-              set -euo pipefail; \
-              pacman -Sy --noconfirm --needed base-devel cmake gcc pkgconf ninja sdl3 mesa libpng libjpeg-turbo && \
-              cmake -S . -B /tmp/fate-build -G Ninja -DCMAKE_BUILD_TYPE=Release -DFATE_BUILD_FMOD_COMPAT=OFF && \
-              cmake --build /tmp/fate-build --parallel"
+            archlinux:latest /bin/bash -lc '
+              set -euo pipefail
+              pacman -Syu --noconfirm --needed base-devel cmake ninja sdl3 mesa libgl
+              bash fate_tools/build.sh
+            '
+
+      - name: Upload platform demo (not the full game)
+        uses: actions/upload-artifact@v4
+        with:
+          name: fate-native-platform-demo
+          path: build/native/bin/fate-platform-demo
+          if-no-files-found: error

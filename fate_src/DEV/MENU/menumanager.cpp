@@ -339,7 +339,7 @@ void CMenuManager::FindObjects( void )
 		}
 	}
 
-	for( i = 0; i < m_pBackgroundScene->GetPointCount(); i++ )
+	for( int32 i = 0; i < m_pBackgroundScene->GetPointCount(); i++ )
 	{
 		CDataPoint& Point = m_pBackgroundScene->GetPoint( i );
 		std::string Name = StringUpper( Point.Name() );

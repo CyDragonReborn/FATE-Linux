@@ -31,7 +31,7 @@
 #include "math3d.h"
 #include "cullingbounds.h"
 
-const enum	EFrustumIntersect
+enum	EFrustumIntersect
 {
 	KFrustumOutside,
 	KFrustumInside,
@@ -88,7 +88,7 @@ public:
 		m_AABBMinBounds = m_FrustumBounds[0];
 		m_AABBMaxBounds = m_FrustumBounds[0];
 
-		for ( i = 1; i < 8; i++ )
+		for( int32 i = 1; i < 8; i++ )
 		{
 			ExpandBounds( m_AABBMinBounds, m_AABBMaxBounds, m_FrustumBounds[i] );
 
@@ -156,7 +156,7 @@ public:
 		m_AABBMinBounds = m_FrustumBounds[0];
 		m_AABBMaxBounds = m_FrustumBounds[0];
 
-		for ( i = 1; i < 8; i++ )
+		for( int32 i = 1; i < 8; i++ )
 		{
 			ExpandBounds( m_AABBMinBounds, m_AABBMaxBounds, m_FrustumBounds[i] );
 

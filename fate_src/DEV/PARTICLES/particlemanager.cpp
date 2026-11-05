@@ -576,7 +576,7 @@ void CParticleManager::Render( LPDIRECT3DDEVICE8 pD3DDevice,			// our direct3d d
 	// MULTIPLY PARTICLES
 	/////////////////////////////////////////////////////////////////
 
-	for( i = 0; i < m_pParticleSystem.size(); i++ )
+	for( int32 i = 0; i < m_pParticleSystem.size(); i++ )
 	{
 		if( m_pParticleTexture[i] != NULL &&
 			m_pParticleTexture[i]->IsValid() &&
@@ -604,7 +604,7 @@ void CParticleManager::Render( LPDIRECT3DDEVICE8 pD3DDevice,			// our direct3d d
 	// ADDITIVE PARTICLES
 	/////////////////////////////////////////////////////////////////
 
-	for( i = 0; i < m_pParticleSystem.size(); i++ )
+	for( int32 i = 0; i < m_pParticleSystem.size(); i++ )
 	{
 		if( m_pParticleTexture[i] != NULL &&
 			m_pParticleTexture[i]->IsValid() &&

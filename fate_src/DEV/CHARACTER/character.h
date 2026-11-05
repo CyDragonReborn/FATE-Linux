@@ -81,7 +81,7 @@ const float32 KHibernationRange( 64 );
 
 const float32 KGetGoldProximity( 6 );
 
-const enum EAttachmentPoint
+enum EAttachmentPoint
 {
 	KAttachHead,
 	KAttachChest,
@@ -108,7 +108,7 @@ const std::string KAttachmentNames[KAttachmentPoints] =
 	"NONE"
 };
 
-const enum ECharacterSounds
+enum ECharacterSounds
 {
 	KSoundDie,
 	KSoundStep,
@@ -164,7 +164,7 @@ const enum ECharacterSounds
 	KCharacterSounds
 };
 
-const enum EAIState
+enum EAIState
 {
 	KAIInactive,
 	KAIWander,

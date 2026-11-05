@@ -93,7 +93,8 @@ void CCurve::LoadFromFile( const std::string& Path ) // path to curve file
 // is below the left-hand
 uint32 CCurve::FindPointRight( float32 X ) // x value to find a point on the right of
 {
-	for ( uint32 i = 0; i < m_PointValues.size(); i++ )
+	uint32 i = 0;
+	for ( ; i < m_PointValues.size(); i++ )
 	{
 		if ( m_PointValues[i].x > X )
 		{
@@ -135,7 +136,8 @@ float32 CCurve::GetValue( float32 X ) // given this X Position, we will retrieve
 
 void CCurve::Multiply( float32 Multiplier )	// factor to multiply curve values by
 {
-	for ( uint32 i = 0; i < m_PointValues.size(); i++ )
+	uint32 i = 0;
+	for ( ; i < m_PointValues.size(); i++ )
 	{
 		m_PointValues[i].y *= Multiplier;
 	}
@@ -144,7 +146,8 @@ void CCurve::Multiply( float32 Multiplier )	// factor to multiply curve values b
 float32 CCurve::MaximumValue( void )	
 {
 	float32 Maximum( 0 );
-	for ( uint32 i = 0; i < m_PointValues.size(); i++ )
+	uint32 i = 0;
+	for ( ; i < m_PointValues.size(); i++ )
 	{
 		if( m_PointValues[i].y > Maximum )
 		{

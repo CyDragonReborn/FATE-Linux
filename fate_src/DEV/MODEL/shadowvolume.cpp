@@ -226,7 +226,7 @@ HRESULT CShadowVolume::BuildFromMesh( LPDIRECT3DVERTEXBUFFER8 pVB,	// vertex buf
 	m_Vertices = 0;
 
 
-	for ( i = 0; i < NumEdges; i ++ )
+	for( int32 i = 0; i < NumEdges; i ++ )
 	{
 		D3DXVECTOR3	v1	= pVertices[pEdges[2 * i + 0]].v;
 		D3DXVECTOR3	v2	= pVertices[pEdges[2 * i + 1]].v;
@@ -340,7 +340,7 @@ HRESULT CShadowVolume::BuildFromFaceList( const CFaceList& pFaceList,	// facelis
 
 	m_Vertices = 0;
 
-	for ( i = 0; i < NumEdges; i ++ )
+	for( int32 i = 0; i < NumEdges; i ++ )
 	{
 		D3DXVECTOR3	v1	= pVertices[pEdges[2 * i + 0]];
 		D3DXVECTOR3	v2	= pVertices[pEdges[2 * i + 1]];

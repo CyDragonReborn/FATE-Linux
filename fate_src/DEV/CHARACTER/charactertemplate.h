@@ -74,7 +74,7 @@ public :
 			m_pEffects[i].clear();
 		}
 
-		for( i = 0; i < KActivationTypes; i++ )
+		for( int32 i = 0; i < KActivationTypes; i++ )
 		{
 			for( uint32 j = 0; j < pDescription->Effects( (EEffectActivation)i ); j++ )
 			{
@@ -288,7 +288,7 @@ public:
 		{
 			m_DamageResistance[i] = 0;
 		}
-		for( i = 0; i < KSkills; i++ )
+		for( int32 i = 0; i < KSkills; i++ )
 		{
 			m_SkillPoints[i] = 0;
 		}
@@ -305,7 +305,7 @@ public:
 			m_pEffects[i].clear();
 		}
 
-		for( i = 0; i < m_UnarmedAttacks.size(); i++ )
+		for( int32 i = 0; i < m_UnarmedAttacks.size(); i++ )
 		{
 			DELETE_SAFELY( m_UnarmedAttacks[i] );
 		}

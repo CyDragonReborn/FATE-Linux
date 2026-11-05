@@ -42,7 +42,7 @@ class CNameGenerator;
 class CGlowManager;
 class CGlow;
 
-const enum EItemSounds
+enum EItemSounds
 {
 	KSoundActivate,
 	KSoundDeactivate,
@@ -102,7 +102,7 @@ public :
 			}
 		}
 
-		for( i = 0; i < pInstance.m_pItems.size(); i++ )
+		for( int32 i = 0; i < pInstance.m_pItems.size(); i++ )
 		{
 			m_pItems.push_back( new CItemSaveInstance( *pInstance.m_pItems[i] ) );
 		}
@@ -119,7 +119,7 @@ public :
 			m_pEffects[i].clear();
 		}
 
-		for( i = 0; i < m_pItems.size(); i++ )
+		for( int32 i = 0; i < m_pItems.size(); i++ )
 		{
 			DELETE_SAFELY( m_pItems[i] );
 		}
@@ -184,7 +184,7 @@ public :
 			fwrite( &Value, sizeof( int32 ), 1, pFile );
 		}
 
-		for( j = 0; j < KActivationTypes; j++ )
+		for( int32 j = 0; j < KActivationTypes; j++ )
 		{
 			int32 Effects( m_pEffects[j].size() );
 			fwrite( &Effects , sizeof( int32 ), 1, pFile );
@@ -257,7 +257,7 @@ public :
 
 		uint32 SubItems = m_pItems.size();
 		fwrite( &SubItems , sizeof( uint32 ), 1, pFile );
-		for( j = 0; j < SubItems; j++ )
+		for( int32 j = 0; j < SubItems; j++ )
 		{
 			m_pItems[j]->Save( pFile );
 		}
@@ -331,7 +331,7 @@ public :
 		}
 
 
-		for( j = 0; j < KActivationTypes; j++ )
+		for( int32 j = 0; j < KActivationTypes; j++ )
 		{
 			int32 Effects;
 			fread( &Effects , sizeof( int32 ), 1, pFile );
@@ -431,7 +431,7 @@ public :
 
 		uint32 SubItems( 0 );
 		fread( &SubItems , sizeof( uint32 ), 1, pFile );
-		for( j = 0; j < SubItems; j++ )
+		for( int32 j = 0; j < SubItems; j++ )
 		{
 			CItemSaveInstance* pInstance = new CItemSaveInstance();
 			m_pItems.push_back( pInstance );

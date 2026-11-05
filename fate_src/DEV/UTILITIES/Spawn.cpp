@@ -12,7 +12,7 @@
 #pragma warning ( disable : 4514 )
 #include <string.h>
 #include <assert.h>
-#include "..\UTILITIES\constants.h"
+#include "../UTILITIES/constants.h"
 #include "Spawn.h"
 
 

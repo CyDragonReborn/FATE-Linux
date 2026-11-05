@@ -401,7 +401,7 @@ void CGlowManager::Render( LPDIRECT3DDEVICE8 pD3DDevice,			// our direct3d devic
 	// ADDITIVE GLOWS
 	/////////////////////////////////////////////////////////////////
 
-	for( i = 0; i < m_pGlowSystem.size(); i++ )
+	for( int32 i = 0; i < m_pGlowSystem.size(); i++ )
 	{
 		if( m_pGlowTexture[i] != NULL &&
 			m_pGlowTexture[i]->IsValid() &&

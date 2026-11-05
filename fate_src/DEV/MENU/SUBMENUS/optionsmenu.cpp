@@ -559,7 +559,7 @@ void COptionsMenu::Create( LPDIRECT3DDEVICE8 pD3DDevice )		// d3d device
 												256 * m_pDropdownMaterial->PixelToU(),
 												127 * m_pDropdownMaterial->PixelToV() ) );
 
-		for( i = 0; i < KShadowSizes; i++ )
+		for( int32 i = 0; i < KShadowSizes; i++ )
 		{
 			pDropdown->AddElement( KShadowSizeNames[i],
 								   KShadowSizeCode + i );
@@ -644,7 +644,7 @@ void COptionsMenu::Create( LPDIRECT3DDEVICE8 pD3DDevice )		// d3d device
 											256 * m_pDropdownMaterial->PixelToU(),
 											127 * m_pDropdownMaterial->PixelToV() ) );
 
-	for( i = 0; i < KParticles; i++ )
+	for( int32 i = 0; i < KParticles; i++ )
 	{
 		pDropdown->AddElement( KParticleNames[i],
 							   KParticleCode + i );
@@ -729,7 +729,7 @@ void COptionsMenu::Create( LPDIRECT3DDEVICE8 pD3DDevice )		// d3d device
 											256 * m_pDropdownMaterial->PixelToU(),
 											127 * m_pDropdownMaterial->PixelToV() ) );
 
-	for( i = 0; i < KVSYNCs; i++ )
+	for( int32 i = 0; i < KVSYNCs; i++ )
 	{
 		pDropdown->AddElement( KVSYNCNames[i],
 							   KVSYNCCode + i );
@@ -816,7 +816,7 @@ void COptionsMenu::Create( LPDIRECT3DDEVICE8 pD3DDevice )		// d3d device
 											256 * m_pDropdownMaterial->PixelToU(),
 											127 * m_pDropdownMaterial->PixelToV() ) );
 
-	for( i = 0; i < KFogs; i++ )
+	for( int32 i = 0; i < KFogs; i++ )
 	{
 		pDropdown->AddElement( KFogNames[i],
 							   KFogCode + i );
@@ -899,7 +899,7 @@ void COptionsMenu::Create( LPDIRECT3DDEVICE8 pD3DDevice )		// d3d device
 											256 * m_pDropdownMaterial->PixelToU(),
 											127 * m_pDropdownMaterial->PixelToV() ) );
 
-	for( i = 0; i < KFSAA; i++ )
+	for( int32 i = 0; i < KFSAA; i++ )
 	{
 		pDropdown->AddElement( KFSAANames[i],
 							   KFSAACode + i );
@@ -1392,7 +1392,7 @@ void COptionsMenu::ResetButtons( LPDIRECT3DDEVICE8 pD3DDevice )
 
 	ResolutionText = KShadowSizeNames[0];
 	uint32 ShadowWidth = m_pSettings.GetSettings( KSetShadowResolution );
-	for( i = 0; i < KShadowSizes; i++ )
+	for( int32 i = 0; i < KShadowSizes; i++ )
 	{
 		if( KShadowSize[i] == ShadowWidth )
 		{

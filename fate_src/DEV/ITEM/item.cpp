@@ -278,32 +278,32 @@ CItem::CItem( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 									pItem.AttackSound( i ) );
 	}
 
-	for( i = 0; i < pItem.StrikeSounds(); i++ )
+	for( int32 i = 0; i < pItem.StrikeSounds(); i++ )
 	{
 		m_pStrikeSounds->AddSample( 0,
 									pItem.StrikeSound( i ) );
 	}
 
-	for( i = 0; i < pItem.MissSounds(); i++ )
+	for( int32 i = 0; i < pItem.MissSounds(); i++ )
 	{
 		m_pMissSounds->AddSample( 0,
 								  pItem.MissSound( i ) );
 	}
 
-	for( i = 0; i < pItem.ActivationSounds(); i++ )
+	for( int32 i = 0; i < pItem.ActivationSounds(); i++ )
 	{
 		m_pItemSounds->AddSample( KSoundActivate,
 								  pItem.ActivationSound( i ) );
 	}
 
-	for( i = 0; i < pItem.DeactivationSounds(); i++ )
+	for( int32 i = 0; i < pItem.DeactivationSounds(); i++ )
 	{
 		m_pItemSounds->AddSample( KSoundDeactivate,
 								  pItem.DeactivationSound( i ) );
 	}
 
 	// copy all effects from the item template
-	for( i = 0; i < pItem.Effects(); i++ )
+	for( int32 i = 0; i < pItem.Effects(); i++ )
 	{
 		AddEffect( pItem.Effect( i ) );
 
@@ -343,7 +343,7 @@ CItem::CItem( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 		m_CanInteract = kTrue;
 	}
 
-	for( i = 0; i < pItem.DamageBonuses(); i++ )
+	for( int32 i = 0; i < pItem.DamageBonuses(); i++ )
 	{
 		AddDamageBonus( pItem.DamageBonusType( i ), pItem.DamageBonusValue( i ) );
 	}
@@ -376,7 +376,7 @@ CItem::CItem( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 
 	m_MaximumDamage = pItem.MaximumDamage();
 
-	for( i = 0; i < pItem.SFXItems(); i++ )
+	for( int32 i = 0; i < pItem.SFXItems(); i++ )
 	{
 		m_pSFX.push_back( new CSFXDescription( pItem.SFX( i ) ) );
 	}
@@ -403,7 +403,7 @@ CItem::CItem( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 	m_BaseName = pItem.Name();
 
 	
-	for( i = 0; i < KRanks; i++ ) // modified by TDC 2008-04-22 Craig Miles
+	for( int32 i = 0; i < KRanks; i++ ) // modified by TDC 2008-04-22 Craig Miles
 	{
 		if(!CGame::GetLocaleString().compare("es")||!CGame::GetLocaleString().compare("it"))  
 		{				
@@ -488,7 +488,7 @@ CItem::CItem( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 		m_pModel->PlayAnimation( 0 , kFalse );
 	}
 
-	for( i = 0; i < m_pModel->GetAnimationCount(); i++ )
+	for( int32 i = 0; i < m_pModel->GetAnimationCount(); i++ )
 	{
 		std::string Name = StringUpper( m_pModel->GetAnimationName( i ) );
 		if( Name.length() >= 4 && Name.substr( 0, 4 ) == "IDLE" )
@@ -667,7 +667,7 @@ CItem::~CItem( void )
 	}
 	m_pItems.clear();
 
-	for( i = 0; i < m_pSFX.size(); i++ )
+	for( int32 i = 0; i < m_pSFX.size(); i++ )
 	{
 		DELETE_SAFELY( m_pSFX[i] );
 	}
@@ -693,11 +693,11 @@ CItem::~CItem( void )
 
 	DELETE_SAFELY( m_pCullingBounds );
 
-	for( i = 0; i < m_pGlowList.size(); i++ )
+	for( int32 i = 0; i < m_pGlowList.size(); i++ )
 	{
 		m_pGlowList[i]->m_RequestingRemoval = kTrue;
 	}
-	for( i = 0; i < m_pModelGlowList.size(); i++ )
+	for( int32 i = 0; i < m_pModelGlowList.size(); i++ )
 	{
 		m_pModelGlowList[i]->m_RequestingRemoval = kTrue;
 	}
@@ -874,7 +874,7 @@ void CItem::FillInstance( CItemSaveInstance& pInstance,		// description to fill
 	}
 	
 
-	for( i = 0; i < m_pItems.size(); i++ )
+	for( int32 i = 0; i < m_pItems.size(); i++ )
 	{
 		CItemSaveInstance* pItemInstance = new CItemSaveInstance();
 		m_pItems[i]->FillInstance( *pItemInstance, 0, kFalse );
@@ -941,7 +941,7 @@ void CItem::ApplyInstance( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d device
 
 	CalculateIdentifyLevel();
 
-	for( i = 0; i < pInstance.m_pItems.size(); i++ )
+	for( int32 i = 0; i < pInstance.m_pItems.size(); i++ )
 	{
 		if( pInstance.m_pItems[i]->m_BaseName == "Gold" ) // problem spot?
 		{
@@ -1122,12 +1122,12 @@ uint32 CItem::PurchaseValue( void )
 			PurchaseValue += 1000;
 		}
 	}
-	for( i = 0; i < EffectCount; i++ )
+	for( int32 i = 0; i < EffectCount; i++ )
 	{
 		PurchaseValue += (uint32)floor( Value() * Effect( KActivationPassive, i )->PriceMultiplier() );
 	}
 
-	for( i = 0; i < DamageBonuses(); i++ )
+	for( int32 i = 0; i < DamageBonuses(); i++ )
 	{
 		PurchaseValue += (uint32)floor( (float32)Value() * (float32)DamageBonusValue( i ) / 10.0f );
 	}
@@ -2280,7 +2280,7 @@ void CItem::FindParticles( void )
 		}
 	}
 
-	for( i = 0; i < m_pModel->GetTagCount(); i++ )
+	for( int32 i = 0; i < m_pModel->GetTagCount(); i++ )
 	{
 		std::string Name = StringUpper( m_pModel->GetTagName( i ) );
 		if( Name.length() >= 8 && Name.substr( 0, 8 ) == "PARTICLE" )
@@ -2326,7 +2326,7 @@ void CItem::EmitParticles( void )
 		m_pParticleManager.AddParticle( m_ParticleType[i], Transform );
 	}
 
-	for( i = 0; i < m_TagParticleType.size(); i++ )
+	for( int32 i = 0; i < m_TagParticleType.size(); i++ )
 	{
 		D3DXVECTOR3 Position;
 		D3DXMATRIX Transform = m_pModel->GetTransformedTag( m_TagParticleIndex[i] );
@@ -2357,7 +2357,7 @@ void CItem::UpdateGlows( void )
 		D3DXVec3TransformCoord( &Position, &Position, &m_TransformationMatrix );
 		m_pGlowList[i]->m_Position = Position;
 	}
-	for( i = 0; i < m_pModelGlowList.size(); i++ )
+	for( int32 i = 0; i < m_pModelGlowList.size(); i++ )
 	{
 		D3DXVECTOR3 Position;
 		D3DXVec3TransformCoord( &Position,  &m_GlowPosition[i], &m_TransformationMatrix );
@@ -2624,7 +2624,7 @@ void CItem::Open( CLevel& pLevel )			// a scene to collide with
 			pLevel.FindCharactersInArea( Position(), 
 										 8,
 										 CharacterList );
-			for( i = 0; i < CharacterList.size(); i++ )
+			for( int32 i = 0; i < CharacterList.size(); i++ )
 			{
 				if( CharacterList[i]->Alive() &&
 					CharacterList[i]->Alignment() != KNeutral )
@@ -2696,7 +2696,7 @@ void CItem::Open( CLevel& pLevel )			// a scene to collide with
 										 CharacterList );
 
 
-			for( i = 0; i < CharacterList.size(); i++ )
+			for( int32 i = 0; i < CharacterList.size(); i++ )
 			{
 				if( CharacterList[i]->Alive() &&
 					CharacterList[i]->Alignment() != KNeutral  )
@@ -3203,7 +3203,7 @@ void CItem::Use( CLevel& pLevel,		// level to add effects to
 		pTarget->AddEffect( pLevel, m_pEffects[KActivationUsage][i] );
 	}
 
-	for( i = 0; i < SFXItems(); i++ )
+	for( int32 i = 0; i < SFXItems(); i++ )
 	{
 		pLevel.AddSFX( *SFX( i ), 
 					   pUser,
@@ -3240,7 +3240,7 @@ void CItem::Use( CLevel& pLevel,		// level to add effects to
 		m_Uses--;
 	}
 
-	for( i = 0; i < SFXItems(); i++ )
+	for( int32 i = 0; i < SFXItems(); i++ )
 	{
 		pLevel.AddSFX( *SFX( i ), 
 					   pUser,
@@ -3431,7 +3431,7 @@ void CItem::SetInWorld( bool State )	// in world state
 		{
 			m_pGlowList[i]->m_Position = D3DXVECTOR3( -1000, -1000, -1000 );
 		}
-		for( i = 0; i < m_pModelGlowList.size(); i++ )
+		for( int32 i = 0; i < m_pModelGlowList.size(); i++ )
 		{
 			m_pModelGlowList[i]->m_Position = D3DXVECTOR3( -1000, -1000, -1000 );
 		}

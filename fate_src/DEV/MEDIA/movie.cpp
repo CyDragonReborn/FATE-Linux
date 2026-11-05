@@ -93,7 +93,7 @@ bool CMovie::Initialize( LPDIRECT3DDEVICE8 pD3DDevice )	// direct3d device
 
 	// allocate space to store the format information
 	m_SourceFormat = ( LPBITMAPINFOHEADER ) malloc( FormatLength );
-	m_TargetFormat = ( LPBITMAPV4HEADER ) malloc( max( FormatLength, sizeof( BITMAPV4HEADER ) ) );
+	m_TargetFormat = ( LPBITMAPV4HEADER ) malloc( max( (uint32)FormatLength, (uint32)sizeof( BITMAPV4HEADER ) ) );
 
 	ZeroMemory( m_TargetFormat, sizeof( BITMAPV4HEADER ) );
 
@@ -109,7 +109,7 @@ bool CMovie::Initialize( LPDIRECT3DDEVICE8 pD3DDevice )	// direct3d device
 	// copy source format to target format
 	memcpy( m_TargetFormat, m_SourceFormat, FormatLength );
 
-	m_TargetFormat->bV4Size = max( FormatLength, sizeof( BITMAPV4HEADER ) );
+	m_TargetFormat->bV4Size = max( (uint32)FormatLength, (uint32)sizeof( BITMAPV4HEADER ) );
 	// try for 32 bit color
 	m_TargetFormat->bV4BitCount = 32;
 	m_TargetFormat->bV4V4Compression = BI_RGB;
@@ -143,7 +143,7 @@ bool CMovie::Initialize( LPDIRECT3DDEVICE8 pD3DDevice )	// direct3d device
 	// if we can pull it off there
 	if ( m_DecompressorHandle == NULL )
 	{
-		m_TargetFormat->bV4Size = max( FormatLength, sizeof( BITMAPV4HEADER ) );
+		m_TargetFormat->bV4Size = max( (uint32)FormatLength, (uint32)sizeof( BITMAPV4HEADER ) );
 		m_TargetFormat->bV4BitCount = 16;
 		m_TargetFormat->bV4V4Compression = BI_BITFIELDS;
 

@@ -282,7 +282,7 @@ CGameUI::~CGameUI( void )
 	DELETE_SAFELY( m_pExclamation2 );
 	DELETE_SAFELY( m_pEventTextList );
 
-	for( i = 0; i < KHighlightColors; i++ )
+	for( int32 i = 0; i < KHighlightColors; i++ )
 	{
 		DELETE_SAFELY( m_pHighlight[i] );
 	}
@@ -812,7 +812,7 @@ void CGameUI::CreateMenus( LPDIRECT3DDEVICE8 pD3DDevice,			// d3d device
 									   KSpriteCenter );
 	}
 
-	for( i = 0; i < 10; i++ )
+	for( int32 i = 0; i < 10; i++ )
 	{
 		m_pPlayerEffects[i] = new CButton( pD3DDevice,
 													  m_pFontHighlightMaterial,
@@ -4449,7 +4449,7 @@ void CGameUI::Render( LPDIRECT3DDEVICE8 pD3DDevice,			// d3d device
 			if( m_pTargetCharacter != NULL &&
 				!m_pTargetCharacter->DisplayedAsItem() )
 			{
-				for( i = 0; i < m_pTargetCharacter->Effects( (EEffectActivation)j ); i++ )
+				for( int32 i = 0; i < m_pTargetCharacter->Effects( (EEffectActivation)j ); i++ )
 				{
 					if( m_pTargetCharacter->Effect( (EEffectActivation)j, i )->ParentSpell() != NULL &&
 						ActiveTargetEffect < 9 )
@@ -4510,7 +4510,7 @@ void CGameUI::Render( LPDIRECT3DDEVICE8 pD3DDevice,			// d3d device
 				}
 			}
 
-			for( i = 0; i < m_pPlayerCharacter->Effects( (EEffectActivation)j ); i++ )
+			for( int32 i = 0; i < m_pPlayerCharacter->Effects( (EEffectActivation)j ); i++ )
 			{
 				if( m_pPlayerCharacter->Effect( (EEffectActivation)j, i )->ParentSpell() != NULL &&
 					ActiveEffect < 9 )
@@ -5592,7 +5592,7 @@ void CGameUI::RenderTooltips( LPDIRECT3DDEVICE8 pD3DDevice,	// d3d device to use
 			}
 			Highlights.push_back( KHighlightLightPurple );
 
-			for( i = 0; i < m_pMouseOverSpell->Effects(); i++ )
+			for( int32 i = 0; i < m_pMouseOverSpell->Effects(); i++ )
 			{
 				CEffect* pEffect = m_pMouseOverSpell->Effect( i );
 				int32 EffectDuration = pEffect->Duration() + pEffect->DurationBonus() * SkillBonus;
@@ -5781,7 +5781,7 @@ void CGameUI::RenderTooltips( LPDIRECT3DDEVICE8 pD3DDevice,	// d3d device to use
 			}
 
 
-			for( i = 0; i < m_pMouseOverSpell->PayloadEffects(); i++ )
+			for( int32 i = 0; i < m_pMouseOverSpell->PayloadEffects(); i++ )
 			{
 				CEffect* pEffect = m_pMouseOverSpell->PayloadEffect( i );
 				int32 EffectDuration = pEffect->Duration() + pEffect->DurationBonus() * SkillBonus;
@@ -5959,7 +5959,7 @@ void CGameUI::RenderTooltips( LPDIRECT3DDEVICE8 pD3DDevice,	// d3d device to use
 			Description = Description + "\n";
 			Highlights.push_back( KHighlightColors );
 			
-			for( i = 0; i < m_pMouseOverSpell->Requirements(); i++ )
+			for( int32 i = 0; i < m_pMouseOverSpell->Requirements(); i++ )
 			{
 				if( m_pMouseOverSpell->RequirementStat( i ) == KStatLevel )
 				{

@@ -617,7 +617,7 @@ void CQuestMenu::Render( LPDIRECT3DDEVICE8 pD3DDevice,			// d3d device
 		}
 
 	}
-	for( i = m_pPlayerCharacter->Quests(); i < KMaximumActiveQuests ; i++ )
+	for( int32 i = m_pPlayerCharacter->Quests(); i < KMaximumActiveQuests ; i++ )
 	{
 		if( m_pQuestButton[i] != NULL )
 		{

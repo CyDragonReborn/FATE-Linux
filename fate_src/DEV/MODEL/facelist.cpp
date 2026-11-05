@@ -224,12 +224,12 @@ void CFaceList::AddFaceList( CFaceList* pFaceList,				// face list to add
 		AddVertex( TransformedVertex );
 	}
 
-	for( i = 0; i < pFaceList->GetColors().size(); i++ )
+	for( int32 i = 0; i < pFaceList->GetColors().size(); i++ )
 	{
 		AddColor( pFaceList->GetColors()[ i ] );
 	}
 
-	for( i = 0; i < pFaceList->Faces(); i++ )
+	for( int32 i = 0; i < pFaceList->Faces(); i++ )
 	{
 		if( MaterialID == -1 )
 		{
@@ -283,7 +283,7 @@ void CFaceList::Optimize( void )
 				m_pVertices[j] = m_pVertices[m_pVertices.size() - 1];
 				m_pVertices.pop_back();
 				// update all face indices
-				for( k = 0; k < m_pFaceA.size(); k++ )
+				for( int32 k = 0; k < m_pFaceA.size(); k++ )
 				{
 					if( m_pFaceA[k] == LostIndex )
 					{
@@ -327,7 +327,7 @@ void CFaceList::CalculateFaceBounds()
 	m_pMinFaceBoundsVEC3D.clear();
 	m_pMaxFaceBoundsVEC3D.clear();
 
-	for ( i = 0; i < m_pFaceA.size(); i++ )
+	for( int32 i = 0; i < m_pFaceA.size(); i++ )
 	{
 		// set the min and max Bounds for this face to it's first vertex
 		m_pMinFaceBoundsVEC3D.push_back( m_pVertices[m_pFaceA[i]] );

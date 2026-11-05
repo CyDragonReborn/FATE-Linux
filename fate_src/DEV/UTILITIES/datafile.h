@@ -14,6 +14,10 @@
 #ifndef _DATAFILE_H
 #define _DATAFILE_H
 
+#include <string>
+#include <vector>
+#include "constants.h"
+
 class CTextFile;
 
 // a data group is really just a vector of strings with a master keyword

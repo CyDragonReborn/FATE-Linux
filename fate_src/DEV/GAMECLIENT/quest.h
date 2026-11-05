@@ -801,7 +801,7 @@ public:
 
 			if( pDescription != NULL )
 			{
-				for( i = 0; i < m_QuestMinionCount; i++ )
+				for( int32 i = 0; i < m_QuestMinionCount; i++ )
 				{
 					pMinion = pLevel.AddMonster( *pDescription, pLevel.RandomOpenPosition( Position, 20 ) );
 					pLevel.OutfitCharacter( *pDescription,
@@ -833,7 +833,7 @@ public:
 
 			if( pDescription != NULL )
 			{
-				for( i = 0; i < m_QuestMinionCount; i++ )
+				for( int32 i = 0; i < m_QuestMinionCount; i++ )
 				{
 					pMinion = pLevel.AddMonster( *pDescription, pLevel.RandomOpenPosition( Position, 20 ) );
 					pLevel.OutfitCharacter( *pDescription,
@@ -875,7 +875,7 @@ public:
 
 			if( pDescription != NULL )
 			{
-				for( i = 0; i < m_QuestMinionCount; i++ )
+				for( int32 i = 0; i < m_QuestMinionCount; i++ )
 				{
 					pMinion = pLevel.AddMonster( *pDescription, pLevel.RandomOpenPosition( Position, 20 ) );
 					pLevel.OutfitCharacter( *pDescription,
@@ -906,7 +906,7 @@ public:
 
 			if( pDescription != NULL )
 			{
-				for( i = 0; i < m_QuestMonsterCount; i++ )
+				for( int32 i = 0; i < m_QuestMonsterCount; i++ )
 				{
 					pMonster = pLevel.AddMonster( *pDescription, pLevel.RandomOpenPosition() );
 					pLevel.OutfitCharacter( *pDescription,

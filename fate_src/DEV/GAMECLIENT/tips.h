@@ -14,7 +14,7 @@
 
 #include "../UTILITIES/constants.h"
 
-const enum EContextTip
+enum EContextTip
 {
 	KTipInventory,
 	KTipPetInventory,

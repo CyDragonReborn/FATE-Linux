@@ -19,7 +19,7 @@
 #include "../UTILITIES/constants.h"
 
 
-const enum EJoystickAxis
+enum EJoystickAxis
 {
 	KXAxis,
 	KYAxis,

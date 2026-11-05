@@ -40,7 +40,7 @@
 #include "bottommenu.h"
 
 
-const enum EMenuButtons
+enum EMenuButtons
 {
 	KBottomButtonStats,
 	KBottomButtonInventory,

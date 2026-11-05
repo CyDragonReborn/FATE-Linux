@@ -28,7 +28,7 @@
 
 #include "../UTILITIES/utilities.h"
 
-const enum ELightType
+enum ELightType
 {
 	KLightOmni,
 	KLightTargetSpot,

@@ -14,7 +14,7 @@
 #define _GAMESTATES_H
 
 
-const enum EMenu
+enum EMenu
 {
 	KMainMenu,
 	KNewGameMenu,
@@ -35,7 +35,7 @@ const enum EMenu
 	KMenus
 };
 
-const enum EGameState
+enum EGameState
 {
 	KGameStateNone,
 	KGameStateIntroMovie,

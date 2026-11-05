@@ -344,7 +344,7 @@ CLevel::~CLevel( void )
 
 	DELETE_SAFELY( m_pTorchLightSprite );
 
-	for( i = 0; i < m_pLevelProps.size(); i++ )
+	for( int32 i = 0; i < m_pLevelProps.size(); i++ )
 	{
 		DELETE_SAFELY( m_pLevelProps[i] );
 	}
@@ -356,7 +356,7 @@ CLevel::~CLevel( void )
 	m_pRefManager.RemoveCollisionScene( m_pLevelCollisionScene );
 
 	DELETE_SAFELY( m_pLevelMesh );
-	for( i = 0; i < m_PathingCellsWide; i++ )
+	for( int32 i = 0; i < m_PathingCellsWide; i++ )
 	{
 		DELETE_ARRAY_SAFELY( m_MapPassabilityData[i] );
 		DELETE_ARRAY_SAFELY( m_ObjectPassabilityData[i] );
@@ -773,7 +773,7 @@ CCharacter* CLevel::AddMerchant( CCharacterDescription& pDescription,	// charact
 
 		}
 		// always have some scrolls too
-		for( i = 0; i < 4; i++ )
+		for( int32 i = 0; i < 4; i++ )
 		{
 			uint32 Item = RandomIntegerBetween( 0, m_pItemManifest.Items( KItemScroll ) - 1 );
 			CItem* pItem = new CItem( m_pD3DDevice,
@@ -800,7 +800,7 @@ CCharacter* CLevel::AddMerchant( CCharacterDescription& pDescription,	// charact
 							pItem );
 
 		// always have some books too
-		for( i = 0; i < 2; i++ )
+		for( int32 i = 0; i < 2; i++ )
 		{
 			uint32 Item = RandomIntegerBetween( 0, m_pItemManifest.Items( KItemBook ) - 1 );
 			CItem* pItem = new CItem( m_pD3DDevice,
@@ -1133,13 +1133,13 @@ CCharacter* CLevel::AddMerchant( CCharacterDescription& pDescription,	// charact
 	std::sort( pItemList.begin(), pItemList.end(), SortItem() );
 
 	// first take them back out of the inventory to clear room
-	for( i = 0; i < pItemList.size(); i++ )
+	for( int32 i = 0; i < pItemList.size(); i++ )
 	{
 		pMonster->Inventory()->RemoveItem( pItemList[i] );
 	}
 
 	// now put them back in order
-	for( i = 0; i < pItemList.size(); i++ )
+	for( int32 i = 0; i < pItemList.size(); i++ )
 	{
 		pMonster->GiveItem( *this, pItemList[i] );
 	}
@@ -1617,7 +1617,7 @@ void CLevel::GenerateRandomItems( void )
 	uint32 Potions = RandomIntegerBetween( 2, 5 );
 	if( m_pItemManifest.Items( KItemPotion ) > 0 )
 	{
-		for( i = 0; i < Potions; i++ )
+		for( int32 i = 0; i < Potions; i++ )
 		{
 
 			uint32 Item = RandomPotion();
@@ -1627,7 +1627,7 @@ void CLevel::GenerateRandomItems( void )
 	}
 
 	// find possible treasure rooms
-	for( i = 0; i < m_pMaze->Rooms(); i++ )
+	for( int32 i = 0; i < m_pMaze->Rooms(); i++ )
 	{
 		// if the room only has 1 exit, and is below a certain size,
 		// then it is likely to become a treasure room...
@@ -2838,7 +2838,7 @@ void CLevel::Create( CLoadingMenu& pLoadingMenu,	// loading menu ( so that we ca
 											m_VisibilityCellsHigh );
 
 		m_VisibilityData = new bool*[m_VisibilityCellsWide];
-		for( i = 0; i < m_VisibilityCellsWide; i++ )
+		for( int32 i = 0; i < m_VisibilityCellsWide; i++ )
 		{
 			m_VisibilityData[i] = new bool[m_VisibilityCellsHigh];
 		}
@@ -3379,7 +3379,7 @@ void CLevel::CreateRandomizationTables( int32 PlayerLevel )	// level of player f
 			}
 		}
 	}
-	for( i = 0; i < m_pItemManifest.TakeableItems(); i++ )
+	for( int32 i = 0; i < m_pItemManifest.TakeableItems(); i++ )
 	{
 		CItemDescription* pDescription = m_pItemManifest.TakeableItemDescription( i );
 
@@ -3444,7 +3444,7 @@ void CLevel::CreateRandomizationTables( int32 PlayerLevel )	// level of player f
 		}
 	}
 
-	for( i = 0; i < m_pItemManifest.Items( KCategoryContainer ); i++ )
+	for( int32 i = 0; i < m_pItemManifest.Items( KCategoryContainer ); i++ )
 	{
 		CItemDescription* pDescription = m_pItemManifest.ItemDescription( KCategoryContainer, i );
 
@@ -3470,7 +3470,7 @@ void CLevel::CreateRandomizationTables( int32 PlayerLevel )	// level of player f
 		}
 	}
 
-	for( i = 0; i < m_pItemManifest.Items( KItemPotion ); i++ )
+	for( int32 i = 0; i < m_pItemManifest.Items( KItemPotion ); i++ )
 	{
 		CItemDescription* pDescription = m_pItemManifest.ItemDescription( KItemPotion, i );
 
@@ -3489,7 +3489,7 @@ void CLevel::CreateRandomizationTables( int32 PlayerLevel )	// level of player f
 		}
 	}
 
-	for( i = 0; i < m_pItemManifest.Items( KCategoryWeapon ); i++ )
+	for( int32 i = 0; i < m_pItemManifest.Items( KCategoryWeapon ); i++ )
 	{
 		CItemDescription* pDescription = m_pItemManifest.ItemDescription( KCategoryWeapon, i );
 
@@ -3522,7 +3522,7 @@ void CLevel::CreateRandomizationTables( int32 PlayerLevel )	// level of player f
 		}
 	}
 
-	for( i = 0; i < m_pItemManifest.Items( KCategoryEvent ); i++ )
+	for( int32 i = 0; i < m_pItemManifest.Items( KCategoryEvent ); i++ )
 	{
 		CItemDescription* pDescription = m_pItemManifest.ItemDescription( KCategoryEvent, i );
 
@@ -3542,7 +3542,7 @@ void CLevel::CreateRandomizationTables( int32 PlayerLevel )	// level of player f
 	}
 
 
-	for( i = 0; i < m_pItemManifest.Items( KCategoryArmor ); i++ )
+	for( int32 i = 0; i < m_pItemManifest.Items( KCategoryArmor ); i++ )
 	{
 		CItemDescription* pDescription = m_pItemManifest.ItemDescription( KCategoryArmor, i );
 
@@ -3561,7 +3561,7 @@ void CLevel::CreateRandomizationTables( int32 PlayerLevel )	// level of player f
 		}
 	}
 
-	for( i = 0; i < m_pItemManifest.Items( KItemShield ); i++ )
+	for( int32 i = 0; i < m_pItemManifest.Items( KItemShield ); i++ )
 	{
 		CItemDescription* pDescription = m_pItemManifest.ItemDescription( KItemShield, i );
 
@@ -3594,7 +3594,7 @@ void CLevel::CreateRandomizationTables( int32 PlayerLevel )	// level of player f
 		}
 	}
 
-	for( i = 0; i < m_pItemManifest.Items(); i++ )
+	for( int32 i = 0; i < m_pItemManifest.Items(); i++ )
 	{
 		CItemDescription* pDescription = m_pItemManifest.ItemDescription( i );
 
@@ -3624,7 +3624,7 @@ void CLevel::CreateRandomizationTables( int32 PlayerLevel )	// level of player f
 	{
 		FishingDepth = 3;
 	}
-	for( i = 0; i < m_pItemManifest.Items(); i++ )
+	for( int32 i = 0; i < m_pItemManifest.Items(); i++ )
 	{
 		CItemDescription* pDescription = m_pItemManifest.ItemDescription( i );
 
@@ -4509,7 +4509,7 @@ void CLevel::RenderProps( const D3DXVECTOR3& FocalPoint,		// point where the cam
 						   m_pSortedProps );
 	m_PropsRendered = 0;
 
-	for( i = 0; i < m_pSortedProps.size(); i++ )
+	for( int32 i = 0; i < m_pSortedProps.size(); i++ )
 	{
 		m_pSortedProps[i]->Render( m_pD3DDevice,
 								   pLightManager,

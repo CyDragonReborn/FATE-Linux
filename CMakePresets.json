@@ -1,0 +1,51 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "linux-native",
+      "displayName": "Native Linux platform and engine core (game integration pending)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/native",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "BUILD_TESTING": "ON"
+      }
+    },
+    {
+      "name": "linux-mingw",
+      "displayName": "Build on Linux for Wine (32-bit Windows)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/linux-mingw",
+      "toolchainFile": "${sourceDir}/fate_tools/mingw-i686.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "NO_STEAM": "ON",
+        "FATE_USE_RC": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "linux-native",
+      "configurePreset": "linux-native"
+    },
+    {
+      "name": "linux-mingw",
+      "configurePreset": "linux-mingw"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "linux-native",
+      "configurePreset": "linux-native",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

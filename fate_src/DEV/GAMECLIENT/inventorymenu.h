@@ -21,7 +21,7 @@
 #include "../CHARACTER/inventory.h"
 #include "../UTILITIES/loadlocalizedstring.h"
 
-const enum EInventoryMenuButtons
+enum EInventoryMenuButtons
 {
 	KInventoryButtonStats,
 	KInventoryButtonInventory,

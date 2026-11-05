@@ -151,7 +151,7 @@ void CTextFile::TokenizeNextLine( queue<std::string>* pList,		// queue of tokens
 		return;
 	}
 
-	uint32 CommentLocation = Line.find( CommentCharacter, 0 );
+	std::string::size_type CommentLocation = Line.find( CommentCharacter, 0 );
 	if ( CommentLocation != Line.npos )
 	{
 		Line = Line.erase( CommentLocation );
@@ -159,8 +159,8 @@ void CTextFile::TokenizeNextLine( queue<std::string>* pList,		// queue of tokens
 
 	int8	Delimiters[]	= " \t\n\r:";
 
-	int32 TokenStart = Line.find_first_not_of( ( int8 * ) Delimiters, 0 );
-	int32 TokenEnd;
+	std::string::size_type TokenStart = Line.find_first_not_of( ( int8 * ) Delimiters, 0 );
+	std::string::size_type TokenEnd;
 	while ( TokenStart != Line.npos )
 	{
 		TokenEnd = Line.find_first_of( ( int8 * ) Delimiters, TokenStart );
@@ -173,7 +173,7 @@ void CTextFile::TokenizeNextLine( queue<std::string>* pList,		// queue of tokens
 } // CTextFile::TokenizeNextLine()
 
 void CTextFile::TokenizeNextLine( queue<std::string>* pList,	// queue of tokens to fill Result
-								  int8* Delimiters,				// delimiters to use i.e. ".:/"
+								  const int8* Delimiters,				// delimiters to use i.e. ".:/"
 								  int8 CommentCharacter )		// comment character - default '#'
 {
 	std::string	Line;
@@ -195,15 +195,15 @@ void CTextFile::TokenizeNextLine( queue<std::string>* pList,	// queue of tokens 
 		return;
 	}
 
-	uint32 CommentLocation = Line.find( CommentCharacter, 0 );
+	std::string::size_type CommentLocation = Line.find( CommentCharacter, 0 );
 	if ( CommentLocation != Line.npos )
 	{
 		Line = Line.erase( CommentLocation );
 	}
 
 
-	int32 TokenStart = Line.find_first_not_of( ( int8 * ) Delimiters, 0 );
-	int32 TokenEnd;
+	std::string::size_type TokenStart = Line.find_first_not_of( ( int8 * ) Delimiters, 0 );
+	std::string::size_type TokenEnd;
 	while ( TokenStart != Line.npos )
 	{
 		TokenEnd = Line.find_first_of( ( int8 * ) Delimiters, TokenStart );

@@ -15,7 +15,7 @@
 
 const float32 KGravity( -200 );
 
-const enum EDirections
+enum EDirections
 {
 	KNorth,
 	KSouth,

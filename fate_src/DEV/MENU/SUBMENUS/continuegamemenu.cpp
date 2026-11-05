@@ -134,7 +134,7 @@ void CContinueGameMenu::ReloadProfiles( void )
 			}
 		}
 
-		for( j = 0; j < KContextTips; j++ )
+		for( int32 j = 0; j < KContextTips; j++ )
 		{
 			bool TipSeen;
 			fread( &TipSeen, sizeof( bool ), 1, pFile );
@@ -175,7 +175,7 @@ void CContinueGameMenu::ClearScrollWindow( void )
 		RemoveButton( m_pScrollWindowElements[i] );
 		DELETE_SAFELY( m_pScrollWindowElements[i] );
 	}
-	for( i = 0; i < m_pScrollWindowText.size(); i++ )
+	for( int32 i = 0; i < m_pScrollWindowText.size(); i++ )
 	{
 		RemoveText( m_pScrollWindowText[i] );
 		DELETE_SAFELY( m_pScrollWindowText[i] );
@@ -189,7 +189,7 @@ void CContinueGameMenu::DeleteProfiles( void )
 		DELETE_SAFELY( m_pProfileDescriptions[i] );
 	}
 	m_pProfileDescriptions.clear();
-	for( i = 0; i < m_pPetProfileDescriptions.size(); i++ )
+	for( int32 i = 0; i < m_pPetProfileDescriptions.size(); i++ )
 	{
 		DELETE_SAFELY( m_pPetProfileDescriptions[i] );
 	}

@@ -14,7 +14,8 @@
 #ifndef _TEXTFILE_H
 #define _TEXTFILE_H
 
-#include <windows.h>
+#include <cstdio>
+#include "constants.h"
 #include <queue>
 #include <string>
 
@@ -39,7 +40,7 @@ public:
 								  int8 CommentCharacter = '#' );	// comment character - default '#'
 
 	void		TokenizeNextLine( std::queue<std::string>* pList,	// queue of tokens to fill Result 
-								  int8* Delimiters,					// delimiters to use i.e. ".:/"
+								  const int8* Delimiters,					// delimiters to use i.e. ".:/"
 								  int8 CommentCharacter = '#' );	// comment character - default '#'
 private:
 

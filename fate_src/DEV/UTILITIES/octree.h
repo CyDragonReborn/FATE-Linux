@@ -28,7 +28,7 @@
 #include "macros.h"
 #include "frustum.h"
 
-const enum EOctreeNode
+enum EOctreeNode
 {
 	KNodeTopFrontLeft,
 	KNodeTopFrontRight,

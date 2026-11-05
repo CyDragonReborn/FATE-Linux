@@ -75,8 +75,10 @@ CGame::CGame( std::string Params ) :	// command line parameters
 			m_FirstFrameRendered( kFalse ),
 			m_FirstFrameInitialized( kFalse ),
 			m_VersionNumber( 1.39f ),
-			m_bSteamInitialized( kFalse ),
-			m_CallbackGameOverlayActivated( this, &CGame::OnGameOverlayActivated )
+			m_bSteamInitialized( kFalse )
+#ifndef NO_STEAM
+			, m_CallbackGameOverlayActivated( this, &CGame::OnGameOverlayActivated )
+#endif
 {
 	SetWindowTitle( "FATE" );
 	std::string LocalPathToExe = GetLocalPath();
@@ -1439,6 +1441,7 @@ std::string CGame::GetLocaleString()
 }
 
 //Steam Overlay
+#ifndef NO_STEAM
 void CGame::OnGameOverlayActivated( GameOverlayActivated_t *pCallback )
 {
 	if( m_pGameStateManager != NULL &&
@@ -1451,3 +1454,4 @@ void CGame::OnGameOverlayActivated( GameOverlayActivated_t *pCallback )
 		}
 	}
 }
+#endif

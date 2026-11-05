@@ -365,7 +365,7 @@ bool CAnimatedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devi
 	}
 
 	// load each material
-	for ( j = 0; j < Materials ; j++ )
+	for( int32 j = 0; j < Materials ; j++ )
 	{
 		bool	Duplicate			( kFalse );
 		bool	Opacity				( kFalse );
@@ -857,7 +857,7 @@ bool CAnimatedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devi
 	// uncompressed counterparts.
 	if( SupportsFrameMapping )
 	{
-		for( l = 0; l < m_AnimationFrames; l++ )
+		for( int32 l = 0; l < m_AnimationFrames; l++ )
 		{
 			m_FrameMap.push_back( ReadInt( File ) );
 		}
@@ -906,7 +906,7 @@ bool CAnimatedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devi
 		Triangles = new Triangle[SubHeader.Triangles];
 		fread(Triangles, sizeof(Triangle), SubHeader.Triangles, File);
 
-		for( j = 0; j < SubHeader.Triangles; j++ )
+		for( int32 j = 0; j < SubHeader.Triangles; j++ )
 		{
 			TotalFaces++;
 
@@ -933,7 +933,7 @@ bool CAnimatedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devi
 		TexCoords = new TexCoord[SubHeader.Vertices];
 		fread(TexCoords, sizeof(TexCoord), SubHeader.Vertices, File);
 		
-		for( j = 0; j < SubHeader.Vertices; j++ )
+		for( int32 j = 0; j < SubHeader.Vertices; j++ )
 		{
 			FinalUVs.push_back( D3DXVECTOR3( TexCoords[j].UV[0],
 								TexCoords[j].UV[1],
@@ -949,7 +949,7 @@ bool CAnimatedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devi
 		D3DXVECTOR3	MaxBounds		( -1, -1, -1 );	
 
 		uint32 CurrentVertex = 0;
-		for( j = 0; j < SubHeader.MeshFrames; j++ )
+		for( int32 j = 0; j < SubHeader.MeshFrames; j++ )
 		{
 			for( int32 k = 0; k < SubHeader.Vertices; k++ )
 			{
@@ -1055,7 +1055,7 @@ bool CAnimatedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devi
 
 	m_UserData.resize( m_TotalMaterials );
 
-	for( l = 0; l < MaterialReferences.size(); l++ )
+	for( int32 l = 0; l < MaterialReferences.size(); l++ )
 	{
 		m_pRefManager.RemoveMaterial( MaterialReferences[l] );
 		MaterialReferences[l] = NULL;
@@ -1916,7 +1916,7 @@ void CAnimatedGeometry::RenderUserData( LPDIRECT3DDEVICE8 pD3DDevice,			// direc
 
 
 	// now render any illumination maps that are on top of any previous materials
-	for( j = 0; j < KMaterialTypes; j ++ )
+	for( int32 j = 0; j < KMaterialTypes; j ++ )
 	{
 		RenderSegmentSetIllumination( pD3DDevice, m_pMaterialSegments[j], UserDataValue, KMaterialIllumination );
 	}
@@ -2057,7 +2057,7 @@ void  CAnimatedGeometry::RenderGlowPass( LPDIRECT3DDEVICE8 pD3DDevice,									/
 
 
 	// now we render any meshes that are not additive, but are marked as 'glowing'.
-	for ( i = 0 ; i < m_pMaterialSegments.size() ; i++ )
+	for( int32 i = 0 ; i < m_pMaterialSegments.size() ; i++ )
 	{
 		// only render objects that are totally opaque
 		if( i == KMaterialReflect ||

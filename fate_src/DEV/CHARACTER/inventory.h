@@ -31,7 +31,7 @@ const uint32 KMerchantInventorySlotsHigh( 11 );
 
 const uint32 KIconSlotSize( 48 );
 
-const enum EItemSlot
+enum EItemSlot
 {
 	KSlotHead,
 	KSlotChest,

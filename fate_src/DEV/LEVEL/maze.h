@@ -17,7 +17,7 @@
 class CTemplate;
 class CPropInstance;
 
-const enum ECellType
+enum ECellType
 {
 	KCTypeRoom,
 	KCTypeRoomWall,
@@ -45,7 +45,7 @@ const std::string KCellNames[KCellTypes] =
 	"STAIRDOWN"
 };
 
-const enum EWallType
+enum EWallType
 {
 	KWTypeOpen,
 	KWTypeNWSolid,
@@ -83,7 +83,7 @@ const enum EWallType
 	KWallTypes
 };
 
-const enum ETerrainType
+enum ETerrainType
 {
 	KTTypeOpen,
 	KTTypeNWDiagonal,
@@ -169,28 +169,28 @@ public:
 	uint32	Width( void )		{	return m_MazeWidth;		};
 	uint32	Height( void )		{	return m_MazeHeight;	};
 
-	CMaze::EWallType	WallTypeNW( int32 X,		// x location of cell to retrieve
+	EWallType	WallTypeNW( int32 X,		// x location of cell to retrieve
 								    int32 Y );		// y location of cell to retrieve
 
-	CMaze::EWallType	WallTypeNE( int32 X,		// x location of cell to retrieve
+	EWallType	WallTypeNE( int32 X,		// x location of cell to retrieve
 								    int32 Y );		// y location of cell to retrieve
 
-	CMaze::EWallType	WallTypeSW( int32 X,		// x location of cell to retrieve
+	EWallType	WallTypeSW( int32 X,		// x location of cell to retrieve
 								    int32 Y );		// y location of cell to retrieve
 
-	CMaze::EWallType	WallTypeSE( int32 X,		// x location of cell to retrieve
+	EWallType	WallTypeSE( int32 X,		// x location of cell to retrieve
 								    int32 Y );		// y location of cell to retrieve
 
-	CMaze::ETerrainType	TerrainTypeNW( int32 X,		// x location of cell to retrieve
+	ETerrainType	TerrainTypeNW( int32 X,		// x location of cell to retrieve
 									   int32 Y );		// y location of cell to retrieve
 
-	CMaze::ETerrainType	TerrainTypeNE( int32 X,		// x location of cell to retrieve
+	ETerrainType	TerrainTypeNE( int32 X,		// x location of cell to retrieve
 								       int32 Y );		// y location of cell to retrieve
 
-	CMaze::ETerrainType	TerrainTypeSW( int32 X,		// x location of cell to retrieve
+	ETerrainType	TerrainTypeSW( int32 X,		// x location of cell to retrieve
 								       int32 Y );		// y location of cell to retrieve
 
-	CMaze::ETerrainType	TerrainTypeSE( int32 X,		// x location of cell to retrieve
+	ETerrainType	TerrainTypeSE( int32 X,		// x location of cell to retrieve
 								       int32 Y );		// y location of cell to retrieve
 
 	float32				FloorHeight( int32 X,		// x cell to check

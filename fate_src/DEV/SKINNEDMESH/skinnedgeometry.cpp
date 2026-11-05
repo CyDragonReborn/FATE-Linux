@@ -259,7 +259,7 @@ bool CSkinnedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devic
 	}
 
 	// load each material
-	for ( j = 0; j < Materials ; j++ )
+	for( int32 j = 0; j < Materials ; j++ )
 	{
 		bool	Duplicate			( kFalse );
 		bool	Opacity				( kFalse );
@@ -722,7 +722,7 @@ bool CSkinnedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devic
 	uint32		MaterialOffset( 0 );
 	uint32		TotalFaces( 0 );
 	// for each mesh
-	for ( i=0; i < Meshes; i++ )
+	for( int32 i =0; i < Meshes; i++ )
 	{		
 		Triangle*				Triangles;
 		TexCoord*				TexCoords;
@@ -743,7 +743,7 @@ bool CSkinnedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devic
 		Triangles = new Triangle[SubHeader.Triangles];
 		fread(Triangles, sizeof(Triangle), SubHeader.Triangles, File);
 
-		for( j = 0; j < SubHeader.Triangles; j++ )
+		for( int32 j = 0; j < SubHeader.Triangles; j++ )
 		{
 			TotalFaces++;
 
@@ -770,7 +770,7 @@ bool CSkinnedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devic
 		TexCoords = new TexCoord[SubHeader.Vertices];
 		fread(TexCoords, sizeof(TexCoord), SubHeader.Vertices, File);
 		
-		for( j = 0; j < SubHeader.Vertices; j++ )
+		for( int32 j = 0; j < SubHeader.Vertices; j++ )
 		{
 			FinalUVs.push_back( D3DXVECTOR3( TexCoords[j].UV[0],
 								TexCoords[j].UV[1],
@@ -866,7 +866,7 @@ bool CSkinnedGeometry::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d devic
 	while( !Done )
 	{
 		Done = kTrue;
-		for( k = 0; k < Bones; k++ )
+		for( int32 k = 0; k < Bones; k++ )
 		{
 			if( !BoneParsed[k] )
 			{
@@ -1823,7 +1823,7 @@ void CSkinnedGeometry::RenderUserData( LPDIRECT3DDEVICE8 pD3DDevice,			// direct
 
 
 	// now render any illumination maps that are on top of any previous materials
-	for( j = 0; j < KMaterialTypes; j ++ )
+	for( int32 j = 0; j < KMaterialTypes; j ++ )
 	{
 		RenderSegmentSetIllumination( pD3DDevice, m_pMaterialSegments[j], UserDataValue, KMaterialIllumination );
 	}
@@ -1960,7 +1960,7 @@ void  CSkinnedGeometry::RenderGlowPass( LPDIRECT3DDEVICE8 pD3DDevice,									//
 
 
 	// now we render any meshes that are not additive, but are marked as 'glowing'.
-	for ( i = 0 ; i < m_pMaterialSegments.size() ; i++ )
+	for( int32 i = 0 ; i < m_pMaterialSegments.size() ; i++ )
 	{
 		// only render objects that are totally opaque
 		if( i == KMaterialReflect ||

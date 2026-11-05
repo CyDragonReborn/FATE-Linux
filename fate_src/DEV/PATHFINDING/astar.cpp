@@ -9,8 +9,8 @@
 	9/8/2004
 
 */
-#include <assert.H>
-#include <math.H>
+#include <assert.h>
+#include <math.h>
 #include "d3dx8.h"
 
 #include "../UTILITIES/macros.H"
@@ -577,7 +577,8 @@ void CAStar::GenerateSuccessor( AStarNode *pBestNode,		// node to generate succe
 
     if ( ( pOld = OpenNode( StartIndex ) ) != NULL ) 
     {
-        for( uint32 c = 0; c  <  KMaximumChildren; c ++  )
+        uint32 c;
+        for( c = 0; c  <  KMaximumChildren; c ++  )
         {
             if( pBestNode->m_pChild[c] == NULL )            
             {
@@ -595,7 +596,8 @@ void CAStar::GenerateSuccessor( AStarNode *pBestNode,		// node to generate succe
     }
     else if ( ( pOld = ClosedNode( StartIndex ) ) != NULL ) 
     {
-        for( uint32 c = 0; c <  KMaximumChildren; c ++  )
+        uint32 c;
+        for( c = 0; c <  KMaximumChildren; c ++  )
         {
             if ( pBestNode->m_pChild[c] == NULL )
                 break;
@@ -623,7 +625,8 @@ void CAStar::GenerateSuccessor( AStarNode *pBestNode,		// node to generate succe
         pSuccessor->Y = Y;
         pSuccessor->NodeNum = StartIndex;
         Insert( pSuccessor );    
-        for( uint32 c = 0; c  <  KMaximumChildren; c ++  )
+        uint32 c;
+        for( c = 0; c  <  KMaximumChildren; c ++  )
         {
             if ( pBestNode->m_pChild[c] == NULL )
                 break;

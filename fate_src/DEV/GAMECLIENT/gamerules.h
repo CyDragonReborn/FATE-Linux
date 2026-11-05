@@ -20,7 +20,7 @@
 
 const std::string KSaveExtension = "FFD";
 
-const enum ERank
+enum ERank
 {
 	KRankNormal,
 	KRankElite,
@@ -91,7 +91,7 @@ const float32 KRankPriceMultiplier[KRanks] =
 	6
 };
 
-const enum EHighlightColor
+enum EHighlightColor
 {
 	KHighlightLightPurple,
 	KHighlightRed,
@@ -106,7 +106,7 @@ const enum EHighlightColor
 	KHighlightColors
 };
 
-const enum EGrade
+enum EGrade
 {
 	KGradeNormal,
 	KGradeSuperior,
@@ -115,7 +115,7 @@ const enum EGrade
 	KGrades
 };
 
-const enum EJournalStatistic
+enum EJournalStatistic
 {
 	KJournalStatTimePlayed,
 	KJournalStatStepsTaken,
@@ -225,14 +225,14 @@ const std::string KFameName[KFameLevels] =
 	LoadLocalizedString(255)
 };
 
-const enum EGender
+enum EGender
 {
 	KMale,
 	KFemale,
 	KGenders
 };
 
-const enum EDifficulty
+enum EDifficulty
 {
 	KDifficultyPage,
 	KDifficultyAdventurer,
@@ -281,7 +281,7 @@ const std::string KDifficultyName[KDifficulties] =
 	LoadLocalizedString(259)
 };
 
-const enum EQuestType 
+enum EQuestType 
 {
 	KQuestKillMonster,
 	KQuestKillMonsters,
@@ -296,7 +296,7 @@ const enum EQuestType
 //	KQuestClearLevel,
 };
 
-const enum EMiniMapDolly
+enum EMiniMapDolly
 {
 	KMapNormal,
 	KMapHigh,
@@ -317,7 +317,7 @@ const std::string KQuestName[KQuestTypes] =
 //	"CLEARLEVEL"
 };
 
-const enum ETrapType
+enum ETrapType
 {
 	KTrapNone,
 	KTrapExplosion,
@@ -327,7 +327,7 @@ const enum ETrapType
 	KTrapTypes
 };
 
-const enum EAlignment
+enum EAlignment
 {
 	KNeutral,
 	KGood,
@@ -344,7 +344,7 @@ const std::string KAlignmentName[KAlignments] =
 	"ALL"
 };
 
-const enum ESFXType
+enum ESFXType
 {
 	KSFXStationaryTarget,
 	KSFXStationaryOwner,
@@ -375,7 +375,7 @@ const std::string KSFXTypeName[KSFXTypes] =
 	"PROJECTILECHARACTERERRATIC",
 };
 
-const enum ETactic
+enum ETactic
 {
 	KTacticsFighter,
 	KTacticsMage,
@@ -393,7 +393,7 @@ const std::string KTacticNames[KTactics] =
 };
 
 
-const enum EMagicSphere
+enum EMagicSphere
 {
 	KMagicAttack,
 	KMagicDefense,
@@ -416,7 +416,7 @@ const std::string KMagicSphereShortName[KMagicSpheres] =
 	LoadLocalizedString(262)
 };
 
-const enum EAttackSpeed
+enum EAttackSpeed
 {
 	KAttackSlowest,
 	KAttackSlow,
@@ -426,7 +426,7 @@ const enum EAttackSpeed
 	KAttackSpeeds
 };
 
-const enum EDamageType
+enum EDamageType
 {
 	KDamagePiercing,
 	KDamageSlashing,
@@ -523,7 +523,7 @@ const std::string KDamageParticlesSecondary[KDamageTypes] =
 	""
 };
 
-const enum EStatistic
+enum EStatistic
 {
 	KStatStrength,
 	KStatDexterity,
@@ -621,7 +621,7 @@ const std::string KAttackSpeedName[KAttackSpeeds] =
 };
 
 
-const enum ESkill
+enum ESkill
 {
 	KSkillSword,
 	KSkillClub,
@@ -698,7 +698,7 @@ const std::string KSkillExplanation[KSkills] =
 	LoadLocalizedString(332)
 };
 
-const enum EItemCategory
+enum EItemCategory
 {
 	KCategoryBlank,
 	KCategoryGold,
@@ -711,7 +711,7 @@ const enum EItemCategory
 	KItemCategories
 };
 
-const enum EItemType
+enum EItemType
 {
 	KItemNone,
 	KItemStairsUp,
@@ -762,7 +762,7 @@ const enum EItemType
 	KItemTypes
 };
 
-const enum EMerchant
+enum EMerchant
 {
 	KMerchantTraveling,
 	KMerchantGoods,
@@ -1251,7 +1251,7 @@ const std::string KWeaponAnimationLeft[KItemTypes] =
 	"NONE"
 };
 
-const enum EEffectActivation
+enum EEffectActivation
 {
 	KActivationPassive,
 	KActivationUsage,
@@ -1264,7 +1264,7 @@ const std::string KActivationNames[KActivationTypes] =
 	"USAGE"
 };
 
-const enum ETarget
+enum ETarget
 {
 	KTargetUser,
 	KTargetCharacter,
@@ -1311,7 +1311,7 @@ const std::string KTargetNames[KTargets] =
 };
 
 
-const enum EEffectType
+enum EEffectType
 {
 	KEffectStrength,
 	KEffectDexterity,
@@ -1401,14 +1401,14 @@ const EEffectType KDamageResistance[KDamageTypes] =
 	KEffectPercentFireResistance
 };
 
-const enum EBonusType
+enum EBonusType
 {
 	KBonusValue,
 	KBonusPercentage,
 	KBonusTypes
 };
 
-const enum EBonusPositive
+enum EBonusPositive
 {
 	KBonusPositive,
 	KBonusNegative
@@ -2423,7 +2423,7 @@ const int32		 KUnlimitedUses( -9999 );
 const int32		 KDurationInstant( -900 );
 const int32		 KDurationAlways( -1000 );
 
-const enum EEffectTarget
+enum EEffectTarget
 {
 	KEffectUser,
 	KEffectTarget,

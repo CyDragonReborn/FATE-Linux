@@ -18,7 +18,7 @@ const uint32	KMaximumChildren( 8 );
 // max number of nodes in a tree
 const uint32	KMaximumTreeDepth( 150 );
 
-const enum ENodeDirection
+enum ENodeDirection
 {
 	KDirStill,
 	KDirNorth,

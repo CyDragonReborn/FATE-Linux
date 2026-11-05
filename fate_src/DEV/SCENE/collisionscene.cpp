@@ -72,13 +72,13 @@ CCollisionScene::~CCollisionScene()
 	}
 	m_Lights.clear();
 
-	for( i =0; i < m_Paths.size(); i++ )
+	for( int32 i =0; i < m_Paths.size(); i++ )
 	{
 		DELETE_SAFELY( m_Paths[i] );
 	}
 	m_Paths.clear();
 
-	for( i =0; i < m_Points.size(); i++ )
+	for( int32 i =0; i < m_Points.size(); i++ )
 	{
 		DELETE_SAFELY( m_Points[i] );
 	}
@@ -152,7 +152,7 @@ void CCollisionScene::Load( std::string FileName,			// path to the mesh file
 	m_MaterialNames.resize( m_TotalMaterials );
 
 	// load the material ids into their indices
-	for( i = 0; i < TotalMaterials; i++ )
+	for( int32 i = 0; i < TotalMaterials; i++ )
 	{
 		m_MaterialNames[i]	= ReadString( File );
 
@@ -207,7 +207,7 @@ void CCollisionScene::Load( std::string FileName,			// path to the mesh file
 		std::vector <D3DXVECTOR3>	Vertices		( ActualVertices );
 
 		// parse the actual vertex values 
-		for ( k = 0; k < ActualVertices; k++ )
+		for( int32 k = 0; k < ActualVertices; k++ )
 		{
 			x = PivotX + ReadFloat( File ) * SceneScale;
 			y = PivotY + ReadFloat( File ) * SceneScale;
@@ -226,7 +226,7 @@ void CCollisionScene::Load( std::string FileName,			// path to the mesh file
 			}
 		}
 
-		for ( k = 0; k < TotalVertices; k++ )
+		for( int32 k = 0; k < TotalVertices; k++ )
 		{
 			m_pFaceList->AddVertex( Vertices[VertexReferences[k]] );
 		}
@@ -234,7 +234,7 @@ void CCollisionScene::Load( std::string FileName,			// path to the mesh file
 		// parse vertex colors
 		uint32						ActualVertexColors	= ReadInt( File );
 
-		for ( k = 0; k < TotalVertices; k++ )
+		for( int32 k = 0; k < TotalVertices; k++ )
 		{
 			if ( k >= ActualVertexColors )
 			{
@@ -341,7 +341,7 @@ void CCollisionScene::Load( std::string FileName,			// path to the mesh file
 
 	// read all light data in the file - a type, position, quaternion (which we'll convert to a ray )
 	// and a color
-	for( i = 0; i < Lights; i ++ )
+	for( int32 i = 0; i < Lights; i ++ )
 	{
 		std::string Name = ReadString( File );
 
@@ -392,7 +392,7 @@ void CCollisionScene::Load( std::string FileName,			// path to the mesh file
 	}
 
 	// read all the points in the file - each has a position and location
-	for( i = 0; i < Points; i ++ )
+	for( int32 i = 0; i < Points; i ++ )
 	{
 		std::string Name = ReadString( File );
 
@@ -428,7 +428,7 @@ void CCollisionScene::Load( std::string FileName,			// path to the mesh file
 
 
 	// read all the paths in the file - each has a position and location
-	for( i = 0; i < Paths; i ++ )
+	for( int32 i = 0; i < Paths; i ++ )
 	{
 		std::string Name = ReadString( File );
 
@@ -497,7 +497,7 @@ void CCollisionScene::Load( std::string FileName,			// path to the mesh file
 										   SmallestFace);
 
 		// sort face data into an octree
-		for( i = 0; i < m_pFaceList->Faces() ; i++ )
+		for( int32 i = 0; i < m_pFaceList->Faces() ; i++ )
 		{
 			m_pOctree->AddData( i, 
 								m_pFaceList->GetMinFaceBounds( i ),
@@ -511,7 +511,7 @@ void CCollisionScene::Load( std::string FileName,			// path to the mesh file
 											   SmallestFace);
 
 		// sort face data into a quadtree
-		for( i = 0; i < m_pFaceList->Faces() ; i++ )
+		for( int32 i = 0; i < m_pFaceList->Faces() ; i++ )
 		{
 			m_pQuadtree->AddData( i, 
 								  m_pFaceList->GetMinFaceBounds( i ),

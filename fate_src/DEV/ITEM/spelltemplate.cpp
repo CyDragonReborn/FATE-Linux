@@ -47,7 +47,7 @@ CSpellTemplate::~CSpellTemplate( void )
 
 	// the rest do not have to be deleted, as they were pointers
 	// to objects in the base spell description list
-	for( i = 0; i < KMagicSpheres; i++ )
+	for( int32 i = 0; i < KMagicSpheres; i++ )
 	{
 		m_pSpellsBySphere[i].clear();
 	}
@@ -482,7 +482,7 @@ void CSpellTemplate::ParseTemplate( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d de
 
 // payload effects
 		Effects = pMasterGroup->SubDataGroups( "PAYLOADEFFECT" );
-		for( e = 0; e < Effects; e++ )
+		for( int32 e = 0; e < Effects; e++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "PAYLOADEFFECT", e );
 
@@ -779,7 +779,7 @@ void CSpellTemplate::ParseTemplate( LPDIRECT3DDEVICE8 pD3DDevice,	// direct3d de
 		}
 
 		SFXItems = pMasterGroup->SubDataGroups( "PAYLOADSFX" );
-		for( s = 0; s < SFXItems; s++ )
+		for( int32 s = 0; s < SFXItems; s++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "PAYLOADSFX", s );
 

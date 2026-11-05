@@ -102,7 +102,7 @@ CLevelMeshPatch::CLevelMeshPatch( LPDIRECT3DDEVICE8 pD3DDevice,		// direct3d dev
 		}
 	}
 
-	for( X = 0; X < KPatchTiles+4; X ++ )
+	for( int32 X = 0; X < KPatchTiles+4; X ++ )
 	{
 		for( uint32 Y = 0; Y < KPatchTiles+4; Y ++ )
 		{
@@ -114,7 +114,7 @@ CLevelMeshPatch::CLevelMeshPatch( LPDIRECT3DDEVICE8 pD3DDevice,		// direct3d dev
 
 	m_pWallIB.resize( m_WallLayers );
 
-	for( i = 0; i < m_WallLayers; i++ )
+	for( int32 i = 0; i < m_WallLayers; i++ )
 	{
 		m_pWallIB[i] = NULL;
 		m_WallIndices[i] = 0;
@@ -130,7 +130,7 @@ CLevelMeshPatch::~CLevelMeshPatch( void )
 		RELEASE_SAFELY( m_pFloorIB[i] );
 	}
 	RELEASE_SAFELY( m_pWallVB );
-	for( i = 0; i < m_WallLayers; i++ )
+	for( int32 i = 0; i < m_WallLayers; i++ )
 	{
 		RELEASE_SAFELY( m_pWallIB[i] );
 	}
@@ -188,11 +188,11 @@ void CLevelMeshPatch::AddWall( CLevel& pLevel,				// parent level
 
 			m_CollisionVertices.push_back( FinalVertex );
 		}
-		for( i = 0; i <  CollisionVertexReferences.size(); i++ )
+		for( int32 i = 0; i <  CollisionVertexReferences.size(); i++ )
 		{
 			m_CollisionVertexReferences.push_back( CollisionVertexReferences[i] + VertexCount );
 		}
-		for( i = 0; i < CollisionTriangles.size(); i++ )
+		for( int32 i = 0; i < CollisionTriangles.size(); i++ )
 		{
 			D3DXVECTOR4 Triangle = CollisionTriangles[i];
 
@@ -247,27 +247,27 @@ void CLevelMeshPatch::AddWall( CLevel& pLevel,				// parent level
 
 		m_Vertices.push_back( FinalVertex );
 	}
-	for( i = 0; i <  VertexReferences.size(); i++ )
+	for( int32 i = 0; i <  VertexReferences.size(); i++ )
 	{
 		m_VertexReferences.push_back( VertexReferences[i] + VertexCount );
 	}
-	for( i = 0; i <  UVs.size(); i++ )
+	for( int32 i = 0; i <  UVs.size(); i++ )
 	{
 		m_UVs.push_back( UVs[i] );
 	}
-	for( i = 0; i <  UVReferences.size(); i++ )
+	for( int32 i = 0; i <  UVReferences.size(); i++ )
 	{
 		m_UVReferences.push_back( UVReferences[i] + UVCount );
 	}
-	for( i = 0; i <  Normals.size(); i++ )
+	for( int32 i = 0; i <  Normals.size(); i++ )
 	{
 		m_Normals.push_back( Normals[i] );
 	}
-	for( i = 0; i <  NormalReferences.size(); i++ )
+	for( int32 i = 0; i <  NormalReferences.size(); i++ )
 	{
 		m_NormalReferences.push_back( NormalReferences[i] + NormalCount );
 	}
-	for( i = 0; i < Triangles.size(); i++ )
+	for( int32 i = 0; i < Triangles.size(); i++ )
 	{
 		D3DXVECTOR4 Triangle = Triangles[i];
 
@@ -290,7 +290,7 @@ void CLevelMeshPatch::SupplyCollision( CFaceList& pFaceList )	// face list to ad
 			pFaceList.AddVertex( m_CollisionVertices[i] );
 		}
 
-		for( i = 0; i < m_CollisionTriangles.size(); i++ )
+		for( int32 i = 0; i < m_CollisionTriangles.size(); i++ )
 		{
 			pFaceList.AddFace( m_CollisionVertexReferences[( int32 )m_CollisionTriangles[i].z] + CurrentVertices,
 							m_CollisionVertexReferences[( int32 )m_CollisionTriangles[i].y] + CurrentVertices,
@@ -307,7 +307,7 @@ void CLevelMeshPatch::SupplyCollision( CFaceList& pFaceList )	// face list to ad
 			pFaceList.AddVertex( m_Vertices[i] );
 		}
 
-		for( i = 0; i < m_Triangles.size(); i++ )
+		for( int32 i = 0; i < m_Triangles.size(); i++ )
 		{
 			pFaceList.AddFace( m_VertexReferences[( int32 )m_Triangles[i].z] + CurrentVertices,
 							m_VertexReferences[( int32 )m_Triangles[i].y] + CurrentVertices,
@@ -453,7 +453,7 @@ void CLevelMeshPatch::CreateVisibility( CLevel& pLevel,					// parent level
 		return;
 	}
 	uint32 FaceIndex( 0 );
-	for( y = 0; y < m_VisibilityTilesHigh; y++ )
+	for( int32 y = 0; y < m_VisibilityTilesHigh; y++ )
 	{
 		for( uint32 x = 0; x < m_VisibilityTilesWide; x++ )
 		{
@@ -539,7 +539,7 @@ void CLevelMeshPatch::UpdateVisibility( CLevel& pLevel,				// parent level
 			return;
 		}
 
-		for( X = 0; X <= (int32)m_VisibilityTilesWide; X ++ )
+		for( int32 X = 0; X <= (int32)m_VisibilityTilesWide; X ++ )
 		{
 			for( int32 Y = 0; Y <= (int32)m_VisibilityTilesHigh; Y ++ )
 			{
@@ -711,7 +711,7 @@ void CLevelMeshPatch::CreateMiniMap( CLevel& pLevel,					// parent level
 		return;
 	}
 	uint32 FaceIndex( 0 );
-	for( y = 0; y < KPatchTiles; y++ )
+	for( int32 y = 0; y < KPatchTiles; y++ )
 	{
 		for( uint32 x = 0; x < KPatchTiles; x++ )
 		{
@@ -747,7 +747,7 @@ void CLevelMeshPatch::UpdateMiniMap( CLevel& pLevel,				// parent level
 	bool   Visible( kTrue );
 	int32	TopLeftX( (int32)m_TopLeftCellX );
 	int32	TopLeftY( (int32)m_TopLeftCellY );
-	for( X = -1; X < (int32)KPatchTiles; X ++ )
+	for( int32 X = -1; X < (int32)KPatchTiles; X ++ )
 	{
 		for( int32 Y = -1; Y < (int32)KPatchTiles; Y ++ )
 		{
@@ -836,7 +836,7 @@ void CLevelMeshPatch::UpdateMiniMap( CLevel& pLevel,				// parent level
 		}
 	}
 
-	for( X = 0; X <= KPatchTiles; X ++ )
+	for( int32 X = 0; X <= KPatchTiles; X ++ )
 	{
 		for( uint32 Y = 0; Y <= KPatchTiles; Y ++ )
 		{
@@ -860,7 +860,7 @@ void CLevelMeshPatch::UpdateMiniMap( CLevel& pLevel,				// parent level
 			return;
 		}
 
-		for( X = -1; X < (int32)KPatchTiles; X ++ )
+		for( int32 X = -1; X < (int32)KPatchTiles; X ++ )
 		{
 			for( int32 Y = -1; Y < (int32)KPatchTiles; Y ++ )
 			{
@@ -955,7 +955,7 @@ void CLevelMeshPatch::CreateFloorLayer( uint32 Layer,					// layer to create
 		Height --;
 	}
 
-	for( X = 0; X < Width; X ++ )
+	for( int32 X = 0; X < Width; X ++ )
 	{
 		for( int32 Y = 0; Y < Height; Y ++ )
 		{
@@ -1150,7 +1150,7 @@ void CLevelMeshPatch::CreateFloorLayer( uint32 Layer,					// layer to create
 		return;
 	}
 	// plug in our indices
-	for( i = 0; i < m_FloorIndices[Layer]; i++ )
+	for( int32 i = 0; i < m_FloorIndices[Layer]; i++ )
 	{
 		*pIndices++ = ( WORD ) ( FaceIndices[i] );
 	}
@@ -1529,7 +1529,7 @@ void CLevelMeshPatch::CreateCeilingLayer( CLevel& pLevel,					// parent level
 		Height --;
 	}
 
-	for( X = 0; X < Width; X ++ )
+	for( int32 X = 0; X < Width; X ++ )
 	{
 		for(  int32 Y = 0; Y < Height; Y ++ )
 		{
@@ -1688,7 +1688,7 @@ void CLevelMeshPatch::CreateCeilingLayer( CLevel& pLevel,					// parent level
 		return;
 	}
 	// plug in our indices
-	for( i = 0; i < m_CeilingIndices; i++ )
+	for( int32 i = 0; i < m_CeilingIndices; i++ )
 	{
 		*pIndices++ = ( WORD ) ( FaceIndices[i] );
 	}
@@ -2178,7 +2178,7 @@ void CLevelMeshPatch::CreateWater( CLevel& pLevel,					// parent level
 		return;
 	}
 	// plug in our indices
-	for( i = 0; i < m_WaterIndices; i++ )
+	for( int32 i = 0; i < m_WaterIndices; i++ )
 	{
 		*pIndices++ = ( WORD ) ( FaceIndices[i] );
 	}
@@ -2276,7 +2276,7 @@ void CLevelMeshPatch::CreateWalls( CLevel& pLevel,					// parent level
 
 	// recalculate upward facing normals to make them follow the ground,
 	// and take into account any 'rippling' that we did
-	for( k = 0; k < m_WallVertices; k++ )
+	for( int32 k = 0; k < m_WallVertices; k++ )
 	{
 		if( VBVertices[k].n.y > .8f )
 		{
@@ -2337,7 +2337,7 @@ void CLevelMeshPatch::CreateWalls( CLevel& pLevel,					// parent level
 		return;
 	}
 
-	for ( k = 0; k < m_WallVertices; k++ )
+	for( int32 k = 0; k < m_WallVertices; k++ )
 	{
 		*pVertices = VBVertices[k];
 		pVertices++;

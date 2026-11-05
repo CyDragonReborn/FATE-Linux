@@ -387,7 +387,7 @@ void CRefManager::UpdateMaterials( float32 TimeElapsed )	// time elapsed, in sec
 	}
 #endif
 
-	for( i = 0; i < m_Materials.size() ; i++ )
+	for( int32 i = 0; i < m_Materials.size() ; i++ )
 	{
 		m_Materials[i]->Material->Update( TimeElapsed );
 	}
@@ -1507,7 +1507,7 @@ void CRefManager::RemoveUnused()
 #endif
 
 #ifdef _SUPPORT_SCENE
-	for( i = 0; i < m_Scenes.size() ; i++ )
+	for( int32 i = 0; i < m_Scenes.size() ; i++ )
 	{
 		if ( i < m_Scenes.size() && 
 			m_Scenes[i]->References <= 0 )
@@ -1521,7 +1521,7 @@ void CRefManager::RemoveUnused()
 #endif
 
 #ifdef _SUPPORT_COLLISIONSCENE
-	for( i = 0; i < m_CollisionScenes.size() ; i++ )
+	for( int32 i = 0; i < m_CollisionScenes.size() ; i++ )
 	{
 		if ( i < m_CollisionScenes.size() && 
 			m_CollisionScenes[i]->References <= 0 )
@@ -1535,7 +1535,7 @@ void CRefManager::RemoveUnused()
 #endif
 
 #ifdef _SUPPORT_ANIMATEDMESH
-	for( i = 0; i < m_AnimatedMeshes.size() ; i++ )
+	for( int32 i = 0; i < m_AnimatedMeshes.size() ; i++ )
 	{
 		if ( i < m_AnimatedMeshes.size() && 
 			m_AnimatedMeshes[i]->References <= 0 )
@@ -1547,7 +1547,7 @@ void CRefManager::RemoveUnused()
 		}
 	}
 
-	for( i = 0; i < m_Animations.size() ; i++ )
+	for( int32 i = 0; i < m_Animations.size() ; i++ )
 	{
 		if ( i < m_Animations.size() && 
 			m_Animations[i]->References <= 0 )
@@ -1561,7 +1561,7 @@ void CRefManager::RemoveUnused()
 #endif
 
 #ifdef _SUPPORT_SKINNEDMESH
-	for( i = 0; i < m_SkinnedMeshes.size() ; i++ )
+	for( int32 i = 0; i < m_SkinnedMeshes.size() ; i++ )
 	{
 		if ( i < m_SkinnedMeshes.size() && 
 			m_SkinnedMeshes[i]->References <= 0 )
@@ -1572,7 +1572,7 @@ void CRefManager::RemoveUnused()
 			i--;
 		}
 	}
-	for( i = 0; i < m_Skins.size() ; i++ )
+	for( int32 i = 0; i < m_Skins.size() ; i++ )
 	{
 		if ( i < m_Skins.size() && 
 			m_Skins[i]->References <= 0 )
@@ -1583,7 +1583,7 @@ void CRefManager::RemoveUnused()
 			i--;
 		}
 	}
-	for( i = 0; i < m_SkinnedAnimations.size() ; i++ )
+	for( int32 i = 0; i < m_SkinnedAnimations.size() ; i++ )
 	{
 		if ( i < m_SkinnedAnimations.size() && 
 			m_SkinnedAnimations[i]->References <= 0 )
@@ -1598,7 +1598,7 @@ void CRefManager::RemoveUnused()
 #endif
 
 #ifdef _SUPPORT_MATERIAL
-	for( i = 0; i < m_Materials.size() ; i++ )
+	for( int32 i = 0; i < m_Materials.size() ; i++ )
 	{
 		if ( i < m_Materials.size() && 
 			m_Materials[i]->References <= 0 )
@@ -1612,7 +1612,7 @@ void CRefManager::RemoveUnused()
 #endif
 
 #ifdef _SUPPORT_SOUND
-	for( i = 0; i < m_Sounds.size() ; i++ )
+	for( int32 i = 0; i < m_Sounds.size() ; i++ )
 	{
 		if ( i < m_Sounds.size() && 
 			m_Sounds[i]->References <= 0 )
@@ -1626,7 +1626,7 @@ void CRefManager::RemoveUnused()
 #endif
  
 #ifdef _SUPPORT_MOVIE
-	for( i = 0; i < m_Movies.size() ; i++ )
+	for( int32 i = 0; i < m_Movies.size() ; i++ )
 	{
 		if ( i < m_Movies.size() && 
 			m_Movies[i]->References <= 0 )
@@ -1640,7 +1640,7 @@ void CRefManager::RemoveUnused()
 #endif
 
 #ifdef _SUPPORT_CUBEMAP
-	for( i = 0; i < m_CubeMaps.size() ; i++ )
+	for( int32 i = 0; i < m_CubeMaps.size() ; i++ )
 	{
 		if ( i < m_CubeMaps.size() && 
 			m_CubeMaps[i]->References <= 0 )
@@ -1654,7 +1654,7 @@ void CRefManager::RemoveUnused()
 #endif
 
 #ifdef _SUPPORT_FONTMETRIC
-	for( i = 0; i < m_FontMetrics.size() ; i++ )
+	for( int32 i = 0; i < m_FontMetrics.size() ; i++ )
 	{
 		if ( i < m_FontMetrics.size() && 
 			m_FontMetrics[i]->References <= 0 )
@@ -1681,7 +1681,7 @@ void CRefManager::RemoveAll()
 #endif
 
 #ifdef _SUPPORT_SCENE
-	for( i = 0; i < m_Scenes.size() ; i++ )
+	for( int32 i = 0; i < m_Scenes.size() ; i++ )
 	{
 		DELETE_SAFELY( m_Scenes [i]);
 	}
@@ -1689,7 +1689,7 @@ void CRefManager::RemoveAll()
 #endif
 
 #ifdef _SUPPORT_COLLISIONSCENE
-	for( i = 0; i < m_CollisionScenes.size() ; i++ )
+	for( int32 i = 0; i < m_CollisionScenes.size() ; i++ )
 	{
 		DELETE_SAFELY( m_CollisionScenes [i]);
 	}
@@ -1697,12 +1697,12 @@ void CRefManager::RemoveAll()
 #endif
 
 #ifdef _SUPPORT_ANIMATEDMESH
-	for( i = 0; i < m_AnimatedMeshes.size() ; i++ )
+	for( int32 i = 0; i < m_AnimatedMeshes.size() ; i++ )
 	{
 		DELETE_SAFELY( m_AnimatedMeshes[i] );
 	}
 
-	for( i = 0; i < m_Animations.size() ; i++ )
+	for( int32 i = 0; i < m_Animations.size() ; i++ )
 	{
 		DELETE_SAFELY( m_Animations[i] );
 	}
@@ -1712,17 +1712,17 @@ void CRefManager::RemoveAll()
 #endif
 
 #ifdef _SUPPORT_SKINNEDMESH
-	for( i = 0; i < m_SkinnedMeshes.size() ; i++ )
+	for( int32 i = 0; i < m_SkinnedMeshes.size() ; i++ )
 	{
 		DELETE_SAFELY( m_SkinnedMeshes[i] );
 	}
 
-	for( i = 0; i < m_Skins.size() ; i++ )
+	for( int32 i = 0; i < m_Skins.size() ; i++ )
 	{
 		DELETE_SAFELY( m_Skins[i] );
 	}
 
-	for( i = 0; i < m_SkinnedAnimations.size() ; i++ )
+	for( int32 i = 0; i < m_SkinnedAnimations.size() ; i++ )
 	{
 		DELETE_SAFELY( m_SkinnedAnimations[i] );
 	}
@@ -1732,7 +1732,7 @@ void CRefManager::RemoveAll()
 #endif
 
 #ifdef _SUPPORT_MATERIAL
-	for( i = 0; i < m_Materials.size() ; i++ )
+	for( int32 i = 0; i < m_Materials.size() ; i++ )
 	{
 		DELETE_SAFELY( m_Materials[i] );
 	}
@@ -1740,7 +1740,7 @@ void CRefManager::RemoveAll()
 #endif
 
 #ifdef _SUPPORT_SOUND
-	for( i = 0; i < m_Sounds.size() ; i++ )
+	for( int32 i = 0; i < m_Sounds.size() ; i++ )
 	{
 		DELETE_SAFELY( m_Sounds[i] );
 	}
@@ -1748,7 +1748,7 @@ void CRefManager::RemoveAll()
 #endif
 
 #ifdef _SUPPORT_MOVIE
-	for( i = 0; i < m_Movies.size() ; i++ )
+	for( int32 i = 0; i < m_Movies.size() ; i++ )
 	{
 		DELETE_SAFELY( m_Movies[i] );
 	}
@@ -1756,7 +1756,7 @@ void CRefManager::RemoveAll()
 #endif
 
 #ifdef _SUPPORT_CUBEMAP
-	for( i = 0; i < m_CubeMaps.size() ; i++ )
+	for( int32 i = 0; i < m_CubeMaps.size() ; i++ )
 	{
 		DELETE_SAFELY( m_CubeMaps[i] );
 	}
@@ -1765,7 +1765,7 @@ void CRefManager::RemoveAll()
 
 #ifdef _SUPPORT_FONTMETRIC
 
-	for( i = 0; i < m_FontMetrics.size() ; i++ )
+	for( int32 i = 0; i < m_FontMetrics.size() ; i++ )
 	{
 		DELETE_SAFELY( m_FontMetrics[i] );
 	}
@@ -1780,22 +1780,22 @@ void CRefManager::InvalidateDeviceObjects( void )
 		m_Animations[i]->AnimatedGeometry->InvalidateDeviceObjects();
 	}
 
-	for( i = 0; i < m_Skins.size() ; i++ )
+	for( int32 i = 0; i < m_Skins.size() ; i++ )
 	{
 		m_Skins[i]->SkinnedGeometry->InvalidateDeviceObjects();
 	}
 
-	for( i = 0; i < m_Models.size() ; i++ )
+	for( int32 i = 0; i < m_Models.size() ; i++ )
 	{
 		m_Models[i]->Model->InvalidateDeviceObjects();
 	}
 
-	for( i = 0; i < m_CubeMaps.size() ; i++ )
+	for( int32 i = 0; i < m_CubeMaps.size() ; i++ )
 	{
 		m_CubeMaps[i]->CubeMap->InvalidateDeviceObjects();
 	}
 
-	for( i = 0; i < m_Materials.size() ; i++ )
+	for( int32 i = 0; i < m_Materials.size() ; i++ )
 	{
 		m_Materials[i]->Material->InvalidateDeviceObjects();
 	}
@@ -1809,22 +1809,22 @@ void CRefManager::RestoreDeviceObjects( LPDIRECT3DDEVICE8 pD3DDevice )	// direct
 		m_Animations[i]->AnimatedGeometry->RestoreDeviceObjects( pD3DDevice );
 	}
 
-	for( i = 0; i < m_Skins.size() ; i++ )
+	for( int32 i = 0; i < m_Skins.size() ; i++ )
 	{
 		m_Skins[i]->SkinnedGeometry->RestoreDeviceObjects( pD3DDevice );
 	}
 
-	for( i = 0; i < m_Models.size() ; i++ )
+	for( int32 i = 0; i < m_Models.size() ; i++ )
 	{
 		m_Models[i]->Model->RestoreDeviceObjects( pD3DDevice );
 	}
 
-	for( i = 0; i < m_CubeMaps.size() ; i++ )
+	for( int32 i = 0; i < m_CubeMaps.size() ; i++ )
 	{
 		m_CubeMaps[i]->CubeMap->RestoreDeviceObjects( pD3DDevice );
 	}
 
-	for( i = 0; i < m_Materials.size() ; i++ )
+	for( int32 i = 0; i < m_Materials.size() ; i++ )
 	{
 		m_Materials[i]->Material->RestoreDeviceObjects( pD3DDevice );
 	}

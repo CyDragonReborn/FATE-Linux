@@ -33,7 +33,7 @@ class CDataFile;
 class CSettings;
 class CParticleManager;
 
-const enum ECastSound
+enum ECastSound
 {
 	KCastSoundSuccess,
 	KCastSoundFail,
@@ -100,19 +100,19 @@ public:
 		}
 		m_pEffects.clear();
 
-		for( i = 0; i < m_pPayloadEffects.size(); i++ )
+		for( int32 i = 0; i < m_pPayloadEffects.size(); i++ )
 		{
 			DELETE_SAFELY( m_pPayloadEffects[i] );
 		}
 		m_pPayloadEffects.clear();
 
-		for( i = 0; i < m_pSFX.size(); i++ )
+		for( int32 i = 0; i < m_pSFX.size(); i++ )
 		{
 			DELETE_SAFELY( m_pSFX[i] );
 		}
 		m_pSFX.clear();
 
-		for( i = 0; i < m_pPayloadSFX.size(); i++ )
+		for( int32 i = 0; i < m_pPayloadSFX.size(); i++ )
 		{
 			DELETE_SAFELY( m_pPayloadSFX[i] );
 		}
@@ -629,7 +629,7 @@ public:
 		float32 DurationBonus = Bonus * m_DurationBonus;
 
 
-		for( i = 0; i < SFXItems(); i++ )
+		for( int32 i = 0; i < SFXItems(); i++ )
 		{
 			pLevel.AddSFX( *SFX( i ), 
 						   pUser,
@@ -750,7 +750,7 @@ public:
 				break;
 			}
 		}
-		for( i = 0; i < m_pPayloadEffects.size(); i++ )
+		for( int32 i = 0; i < m_pPayloadEffects.size(); i++ )
 		{
 			switch( m_pPayloadEffects[i]->Type() )
 			{
@@ -808,7 +808,7 @@ public:
 				break;
 			}
 		}
-		for( i = 0; i < m_pPayloadEffects.size(); i++ )
+		for( int32 i = 0; i < m_pPayloadEffects.size(); i++ )
 		{
 			float32 Value = m_pPayloadEffects[i]->Value();
 			Value += m_pPayloadEffects[i]->ValueBonus() * (float32)Bonus;
@@ -868,7 +868,7 @@ public:
 				break;
 			}
 		}
-		for( i = 0; i < m_pPayloadEffects.size(); i++ )
+		for( int32 i = 0; i < m_pPayloadEffects.size(); i++ )
 		{
 			float32 Value = ( m_pPayloadEffects[i]->Value() +m_pPayloadEffects[i]->ValueBonus() * Bonus );
 			Value = Value + Value * m_pPayloadEffects[i]->ValueBonusPercent() / 100.0f * Bonus;
@@ -932,7 +932,7 @@ public:
 				break;
 			}
 		}
-		for( i = 0; i < m_pPayloadEffects.size(); i++ )
+		for( int32 i = 0; i < m_pPayloadEffects.size(); i++ )
 		{
 			float32 Value = ( m_pPayloadEffects[i]->Value() +m_pPayloadEffects[i]->ValueBonus() * Bonus );
 			Value = Value + Value * m_pPayloadEffects[i]->ValueBonusPercent() / 100.0f * Bonus;

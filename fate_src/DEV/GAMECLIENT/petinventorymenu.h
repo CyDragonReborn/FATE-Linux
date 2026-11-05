@@ -20,7 +20,7 @@
 #include "../GAME/gamestatemanager.h"
 #include "../CHARACTER/inventory.h"
 
-const enum EPetInventoryMenuButtons
+enum EPetInventoryMenuButtons
 {
 	KPetInventoryButtonStats,
 	KPetInventoryButtonInventory,

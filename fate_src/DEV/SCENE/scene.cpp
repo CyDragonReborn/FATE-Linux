@@ -154,25 +154,25 @@ CScene::~CScene()
 		m_pMaterialReferences[i] = NULL;
 	}
 
-	for( i = 0; i < m_ModelList.size(); i++ )
+	for( int32 i = 0; i < m_ModelList.size(); i++ )
 	{
 		DELETE_SAFELY( m_ModelList[i] );
 	}
 	m_ModelList.clear();
 
-	for( i =0; i < m_Lights.size(); i++ )
+	for( int32 i =0; i < m_Lights.size(); i++ )
 	{
 		DELETE_SAFELY( m_Lights[i] );
 	}
 	m_Lights.clear();
 
-	for( i =0; i < m_Paths.size(); i++ )
+	for( int32 i =0; i < m_Paths.size(); i++ )
 	{
 		DELETE_SAFELY( m_Paths[i] );
 	}
 	m_Paths.clear();
 
-	for( i =0; i < m_Points.size(); i++ )
+	for( int32 i =0; i < m_Points.size(); i++ )
 	{
 		DELETE_SAFELY( m_Points[i] );
 	}
@@ -325,7 +325,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 
 	m_pMaterialSegments.resize( KMaterialTypes );
 	m_pSortedMaterialSegments.resize( KMaterialTypes );
-	for( j = 0; j < KMaterialTypes; j ++ )
+	for( int32 j = 0; j < KMaterialTypes; j ++ )
 	{
 		m_pMaterialSegments[j].resize( m_TotalMaterials );
 		m_pSortedMaterialSegments[j].resize( m_TotalMaterials );
@@ -333,7 +333,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 
 
 	// load each material
- 	for ( j = 0; j < m_Materials ; j++ )
+ 	for( int32 j = 0; j < m_Materials ; j++ )
 	{
 		bool	Duplicate			( kFalse );
 		bool	Opacity				( kFalse );
@@ -773,7 +773,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 								// so that we can keep triangle refs in sync
 
 	// now parse the individual sub-models within the file
-	for ( j = 0; j < Objects; j ++ )
+	for( int32 j = 0; j < Objects; j ++ )
 	{
 
 		CSubScene*	SubScene					= new CSubScene();
@@ -815,7 +815,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 		std::vector <D3DXVECTOR3>	Vertices		( ActualVertices );
 
 		// parse the actual vertex values 
-		for ( k = 0; k < ActualVertices; k++ )
+		for( int32 k = 0; k < ActualVertices; k++ )
 		{
 			x = PivotX + ReadFloat( File ) * SceneScale;
 			y = PivotY + ReadFloat( File ) * SceneScale;
@@ -833,7 +833,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 				ExpandBounds( MinBounds, MaxBounds, Vertices[k] );
 			}
 		}
-		for ( k = 0; k < TotalVertices; k++ )
+		for( int32 k = 0; k < TotalVertices; k++ )
 		{
 			assert( VertexReferences[k] < ActualVertices );
 
@@ -847,7 +847,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 
 		if ( m_HasCollision )
 		{
-			for ( k = 0; k < TotalVertices; k++ )
+			for( int32 k = 0; k < TotalVertices; k++ )
 			{
 				m_pFaceList->AddVertex( Vertices[VertexReferences[k]] );
 			}
@@ -858,7 +858,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 		std::vector <uint32>	UVReferences		( TotalVertices );
 		std::vector <uint32>	ShadowUVReferences	( TotalVertices );
 
-		for ( k = 0; k < TotalVertices; k++ )
+		for( int32 k = 0; k < TotalVertices; k++ )
 		{
 			uint32	Index	( 0 );
 			uint32	ShadowIndex	( 0 );
@@ -889,7 +889,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 			ActualUVs = ReadInt( File );
 			UVs.resize( ActualUVs );
 
-			for ( k = 0 ; k < ActualUVs; k++ )
+			for( int32 k = 0 ; k < ActualUVs; k++ )
 			{
 				x = ReadFloat( File );
 				y = ReadFloat( File ) * -1;
@@ -899,7 +899,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 		}
 		else
 		{
-			for ( k = 0 ; k < ActualUVs; k++ )
+			for( int32 k = 0 ; k < ActualUVs; k++ )
 			{
 				UVs[k] = D3DXVECTOR3( 0, 0, 0 );
 			}
@@ -914,7 +914,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 
 		if( HasNormals > 0 )
 		{
-			for ( k = 0; k < TotalVertices; k++ )
+			for( int32 k = 0; k < TotalVertices; k++ )
 			{
 				NormalReferences[k] = ReadInt( File );
 			}
@@ -923,7 +923,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 			ActualNormals = ReadInt( File );
 			Normals.resize( ActualNormals );
 
-			for ( k = 0 ; k < ActualNormals; k++ )
+			for( int32 k = 0 ; k < ActualNormals; k++ )
 			{
 				int32 AU = ReadByte( File );
 				int32 AV = ReadByte( File );
@@ -938,7 +938,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 		uint32						ActualVertexColors	= ReadInt( File );
 
 		std::vector <D3DCOLOR>	VertexColors		( TotalVertices );
-		for ( k = 0; k < TotalVertices; k++ )
+		for( int32 k = 0; k < TotalVertices; k++ )
 		{
 			if ( k >= ActualVertexColors )
 			{
@@ -1204,7 +1204,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 		
 		// sort references to each subsegment into a bucket
 		// of the appropriate material type, for optimized rendering later
-		for ( i = 0 ; i < m_ModelList.size() ; i++ )
+		for( int32 i = 0 ; i < m_ModelList.size() ; i++ )
 		{
 			for ( uint32 j = 0; j < m_ModelList[i]->SubSceneSegments() ; j++ )
 			{
@@ -1226,7 +1226,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 		
 		// sort references to each subsegment into a bucket
 		// of the appropriate material type, for optimized rendering later
-		for ( i = 0 ; i < m_ModelList.size() ; i++ )
+		for( int32 i = 0 ; i < m_ModelList.size() ; i++ )
 		{
 			for ( uint32 j = 0; j < m_ModelList[i]->SubSceneSegments() ; j++ )
 			{
@@ -1253,7 +1253,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 
 			uint32 Faces = m_pFaceList->Faces();
 			// sort face data into an octtree
-			for( i = 0; i < Faces ; i++ )
+			for( int32 i = 0; i < Faces ; i++ )
 			{
 				m_pCollisionOctree->AddData( i, 
 											 m_pFaceList->GetMinFaceBounds( i ),
@@ -1268,7 +1268,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 
 			uint32 Faces = m_pFaceList->Faces();
 			// sort face data into a quadtree
-			for( i = 0; i < Faces ; i++ )
+			for( int32 i = 0; i < Faces ; i++ )
 			{
 				m_pCollisionQuadtree->AddData( i,
 											   m_pFaceList->GetMinFaceBounds( i ),
@@ -1277,7 +1277,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 		}
 	}
 
-	for( i = 0; i < KMaterialTypes; i ++ )
+	for( int32 i = 0; i < KMaterialTypes; i ++ )
 	{
 		m_pMaterialSegments[i].resize( MaterialCounts[i] );
 		m_pSortedMaterialSegments[i].resize( MaterialCounts[i] );
@@ -1287,7 +1287,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 
 	// read all light data in the file - a type, position, quaternion (which we'll convert to a ray )
 	// and a color
-	for( i = 0; i < Lights; i ++ )
+	for( int32 i = 0; i < Lights; i ++ )
 	{
 		std::string Name = ReadString( File );
 
@@ -1338,7 +1338,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 	}
 
 	// read all the points in the file - each has a position and location
-	for( i = 0; i < Points; i ++ )
+	for( int32 i = 0; i < Points; i ++ )
 	{
 		std::string Name = ReadString( File );
 
@@ -1374,7 +1374,7 @@ void CScene::Load( LPDIRECT3DDEVICE8 pD3DDevice,		// the direct3d device - neede
 
 
 	// read all the paths in the file - each has a position and location
-	for( i = 0; i < Paths; i ++ )
+	for( int32 i = 0; i < Paths; i ++ )
 	{
 		std::string Name = ReadString( File );
 
@@ -2117,7 +2117,7 @@ void CScene::Render( LPDIRECT3DDEVICE8 pD3DDevice,				// direct3d device
 						pMaterialSegments[KMaterialMultiply] );
 
 		// now render any multiply illumination maps that are on top of any previous materials
-		for( j = 0; j < KMaterialTypes; j ++ )
+		for( int32 j = 0; j < KMaterialTypes; j ++ )
 		{
 			RenderSegmentSetIllumination( pD3DDevice, pMaterialSegments[j], KMaterialMultiply );
 		}
@@ -2251,7 +2251,7 @@ void CScene::Render( LPDIRECT3DDEVICE8 pD3DDevice,				// direct3d device
 
 
 		// now render any illumination maps that are on top of any previous materials
-		for( j = 0; j < KMaterialTypes; j ++ )
+		for( int32 j = 0; j < KMaterialTypes; j ++ )
 		{
 			RenderSegmentSetIllumination( pD3DDevice, pMaterialSegments[j], KMaterialIllumination );
 		}
@@ -2399,7 +2399,7 @@ void CScene::RenderGlowPass( LPDIRECT3DDEVICE8 pD3DDevice,				// direct3d device
 
 	pCurrentSubScene = NULL;
 	// now we render any meshes that are not additive, but are marked as 'glowing'.
-	for ( i = 0 ; i < pMaterialSegments.size() ; i++ )
+	for( int32 i = 0 ; i < pMaterialSegments.size() ; i++ )
 	{
 		// only render objects that are totally opaque
 		if( i == KMaterialReflect ||

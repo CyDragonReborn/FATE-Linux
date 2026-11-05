@@ -16,7 +16,7 @@
 #ifdef USES_PAL
 #include "Pal.h"
 #endif
-const enum EDemoStats
+enum EDemoStats
 {
 	KDemoPlayerLevel = 6,
 	KDemoDungeonLevel = 3

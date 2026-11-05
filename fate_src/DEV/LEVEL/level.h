@@ -24,7 +24,7 @@
 #include "../UTILITIES/randomizer.h"
 #include "../UTILITIES/quadtree.h"
 
-const enum EMiniMapCharacterIcon
+enum EMiniMapCharacterIcon
 {
 	KMiniMapCharacter,
 	KMiniMapNeutral,
@@ -76,7 +76,7 @@ const float32 KMaximumLevelRespawnTime( 1800 );
 
 const uint32 KSmallRandomizationTableSize( 500 );
 //
-const enum EWorldRenderState
+enum EWorldRenderState
 {
 	KWRSRenderAll,
 	KWRSNoRenderCharacters,

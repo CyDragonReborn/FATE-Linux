@@ -100,7 +100,7 @@ void CSettings::AssignDefaultSettingValues( void )
 	}
 
 
-	for( i = 0; i < KSetFloatCount; i++ )
+	for( int32 i = 0; i < KSetFloatCount; i++ )
 	{
 		m_SettingsFloatValues[i] = KSettingsFloat[i].m_DefaultValue;
 	}
@@ -220,7 +220,7 @@ HRESULT CSettings::Load( std::string FileName )	// name of config file to open
 		}
 
 		// see if this entry matches any of the float32 based settings
-		for( i = 0; i < KSetFloatCount; i++ )
+		for( int32 i = 0; i < KSetFloatCount; i++ )
 		{
 			if( Tokens.front() == KSettingsFloat[i].m_Name )
 			{
@@ -242,7 +242,7 @@ HRESULT CSettings::Load( std::string FileName )	// name of config file to open
 		}
 
 		// see if this entry matches any of the string based settings
-		for( i = 0; i < KSetStringCount; i++ )
+		for( int32 i = 0; i < KSetStringCount; i++ )
 		{
 			if( Tokens.front() == KSettingsStrings[i].m_Name )
 			{
@@ -360,7 +360,7 @@ void CSettings::Save()
 				     pFile );
 		}
 
-		for( i = 0; i < KSetFloatCount; i++ )
+		for( int32 i = 0; i < KSetFloatCount; i++ )
 		{
 
 			fputs( ( KSettingsFloat[i].m_Name + ":" + 
@@ -368,14 +368,14 @@ void CSettings::Save()
 				     pFile );
 		}
 
-		for( i = 0; i < KSetStringCount; i++ )
+		for( int32 i = 0; i < KSetStringCount; i++ )
 		{
 			fputs( ( KSettingsStrings[i].m_Name + ":" + 
 				     m_SettingsStringValues[i] + "\n" ).c_str(), 
 				     pFile );
 		}
 
-		for( i = 0; i < 255; i ++ )
+		for( int32 i = 0; i < 255; i ++ )
 		{
 			if( IsKeyMapped( i ) )
 			{

@@ -127,7 +127,7 @@ public:
 		}
 		m_pEffects.clear();
 
-		for( i = 0; i < m_pSFX.size(); i++ )
+		for( int32 i = 0; i < m_pSFX.size(); i++ )
 		{
 			DELETE_SAFELY( m_pSFX[i] );
 		}

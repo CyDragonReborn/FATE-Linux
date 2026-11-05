@@ -18,7 +18,7 @@
 #include "utilities.h"
 
 // machine performance rankings for auto-detection
-const enum	EMachineRanking
+enum	EMachineRanking
 {
 	KRankingLowest,
 	KRankingLow,
@@ -29,7 +29,7 @@ const enum	EMachineRanking
 };
 
 // settings used by the game
-const enum ESettingsString
+enum ESettingsString
 {
 	KSetGameName,
 	KSetGUID,
@@ -37,7 +37,7 @@ const enum ESettingsString
 };
 
 // settings used by the game
-const enum ESettings
+enum ESettings
 {
 	KSetScreenWidth,
 	KSetScreenHeight,
@@ -103,7 +103,7 @@ const enum ESettings
 };
 
 // settings used by the game
-const enum ESettingsFloat
+enum ESettingsFloat
 {
 	KSetNearClip,
 	KSetFarClip,

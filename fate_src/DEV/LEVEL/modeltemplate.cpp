@@ -56,19 +56,19 @@ CModelTemplate::~CModelTemplate()
 
 	DELETE_SAFELY( m_pCollisionList );
 
-	for( i =0; i < m_Lights.size(); i++ )
+	for( int32 i =0; i < m_Lights.size(); i++ )
 	{
 		DELETE_SAFELY( m_Lights[i] );
 	}
 	m_Lights.clear();
 
-	for( i =0; i < m_Paths.size(); i++ )
+	for( int32 i =0; i < m_Paths.size(); i++ )
 	{
 		DELETE_SAFELY( m_Paths[i] );
 	}
 	m_Paths.clear();
 
-	for( i =0; i < m_Points.size(); i++ )
+	for( int32 i =0; i < m_Points.size(); i++ )
 	{
 		DELETE_SAFELY( m_Points[i] );
 	}
@@ -178,7 +178,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 	}
 
 	// load each material
-	for ( j = 0; j < Materials ; j++ )
+	for( int32 j = 0; j < Materials ; j++ )
 	{
 		bool	Duplicate			( kFalse );
 		bool	Opacity				( kFalse );
@@ -606,7 +606,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 	m_pCollisionList = new CFaceList();
 
 	// now parse the individual sub-models within the file
-	for ( j = 0; j < Objects; j ++ )
+	for( int32 j = 0; j < Objects; j ++ )
 	{
 		// offset into the list of merged vertices
 		int32 VerticesLoaded = m_Vertices.size();
@@ -647,7 +647,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 		int32						ActualVertices	= ReadInt( File );
 
 		// parse the actual vertex values 
-		for ( k = 0; k < ActualVertices; k++ )
+		for( int32 k = 0; k < ActualVertices; k++ )
 		{
 			x = PivotX + ReadFloat( File ) * ModelScale;
 			y = PivotY + ReadFloat( File ) * ModelScale;
@@ -671,7 +671,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 		// parse UV references
 		int32					HasUVs			= ReadShort( File );
 
-		for ( k = 0; k < TotalVertices; k++ )
+		for( int32 k = 0; k < TotalVertices; k++ )
 		{
 			uint32	Index	( 0 );
 
@@ -690,7 +690,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 		{
 			ActualUVs = ReadInt( File );
 
-			for ( k = 0 ; k < ActualUVs; k++ )
+			for( int32 k = 0 ; k < ActualUVs; k++ )
 			{
 				x = ReadFloat( File );
 				y = ReadFloat( File );
@@ -700,7 +700,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 		}
 		else
 		{
-			for ( k = 0 ; k < ActualUVs; k++ )
+			for( int32 k = 0 ; k < ActualUVs; k++ )
 			{
 				m_UVs.push_back( D3DXVECTOR3( 0, 0, 0 ) );
 			}
@@ -711,7 +711,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 
 		if( HasNormals > 0 )
 		{
-			for ( k = 0; k < TotalVertices; k++ )
+			for( int32 k = 0; k < TotalVertices; k++ )
 			{
 				m_NormalReferences.push_back( ReadInt( File ) + m_Normals.size() );
 			}
@@ -719,7 +719,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 			// parse the actual normals
 			int32 ActualNormals = ReadInt( File );
 
-			for ( k = 0 ; k < ActualNormals; k++ )
+			for( int32 k = 0 ; k < ActualNormals; k++ )
 			{
 				int32 AU = ReadByte( File );
 				int32 AV = ReadByte( File );
@@ -744,7 +744,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 		// parse vertex colors
 		int32						ActualVertexColors	= ReadInt( File );
 
-		for ( k = 0; k < TotalVertices; k++ )
+		for( int32 k = 0; k < TotalVertices; k++ )
 		{
 			if ( k >= ActualVertexColors )
 			{
@@ -833,7 +833,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 
 	// read all light data in the file - a type, position, quaternion (which we'll convert to a ray )
 	// and a color
-	for( i = 0; i < Lights; i ++ )
+	for( int32 i = 0; i < Lights; i ++ )
 	{
 		std::string Name = ReadString( File );
 
@@ -884,7 +884,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 	}
 
 	// read all the points in the file - each has a position and location
-	for( i = 0; i < Points; i ++ )
+	for( int32 i = 0; i < Points; i ++ )
 	{
 		std::string Name = ReadString( File );
 
@@ -920,7 +920,7 @@ void CModelTemplate::Load( LPDIRECT3DDEVICE8 pD3DDevice,	// the direct3d device 
 
 
 	// read all the paths in the file - each has a position and location
-	for( i = 0; i < Paths; i ++ )
+	for( int32 i = 0; i < Paths; i ++ )
 	{
 		std::string Name = ReadString( File );
 

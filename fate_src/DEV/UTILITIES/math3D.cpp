@@ -12,7 +12,7 @@
 
 
 #include "constants.h"
-#include "math3d.h"
+#include "math3D.h"
 
 float32	Percentage;
 float32	LineLength, DistanceFromPlane;

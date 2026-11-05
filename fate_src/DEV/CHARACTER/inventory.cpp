@@ -10,7 +10,8 @@
 
 */
 
-#include <D3D8.h>
+#include <algorithm>
+#include <d3d8.h>
 #include <d3dx8.h>
 
 #include "../UTILITIES/macros.h"
@@ -45,7 +46,7 @@ CInventory::CInventory( CCharacter& pCharacter,		// parent character
 		m_pEquippedItems[i] = NULL;
 		SetCanEquip( (EItemSlot)i, kFalse );
 	}
-	for( i = 0; i < KItemTypes; i++ )
+	for( int32 i = 0; i < KItemTypes; i++ )
 	{
 		SetSupportsItemType( (EItemType)i, kFalse );
 	}

@@ -15,14 +15,18 @@
 
 CGameSave::CGameSave()
 {
+#ifdef NO_STEAM
+    m_pSteamRemoteStorage = NULL;
+#else
     m_pSteamRemoteStorage = SteamRemoteStorage();
+#endif
 }
 
 bool CGameSave::SyncProfiles(std::string cachePath, std::string localization, 
 							 std::vector< std::string > ProfileFiles)
 {
 	
-	if(!m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return false;
+	if(!m_pSteamRemoteStorage || !m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return false;
 
 	int32 files = 0;
 	
@@ -53,7 +57,7 @@ bool CGameSave::SyncProfiles(std::string cachePath, std::string localization,
 
 int32 CGameSave::HasGameSaves(std::string localization)
 {
-	if(!m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return -1;
+	if(!m_pSteamRemoteStorage || !m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return -1;
 
 	int32 i = 0;	
 	
@@ -83,7 +87,7 @@ int32 CGameSave::NextAvailableSlot(std::string localization)
 	m_pSteamRemoteStorage->FileDelete("SAVE//2.ffd");
 	return 1;*/
 	
-	if(!m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return -1;
+	if(!m_pSteamRemoteStorage || !m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return -1;
 	
 	int32 files = 0;	
 	
@@ -103,7 +107,7 @@ int32 CGameSave::NextAvailableSlot(std::string localization)
 }
 bool CGameSave::StoreSlotOnCloud(int32 SlotIndex, std::string cachePath, std::string localization)
 {
-	if(!m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return false;
+	if(!m_pSteamRemoteStorage || !m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return false;
 	
 	FILE *pFileRead;
 	pFileRead = fopen ( cachePath.c_str(), "rb" );
@@ -124,7 +128,7 @@ bool CGameSave::StoreSlotOnCloud(int32 SlotIndex, std::string cachePath, std::st
 
 bool CGameSave::GetSlotDataFromCloud(int32 SlotIndex, std::string cachePath, std::string localization)
 {
-	if(!m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return false;
+	if(!m_pSteamRemoteStorage || !m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return false;
 	
 	std::string savePath = "SAVE//" + localization + "//" + IntegerToString( SlotIndex ) + "." + KSaveExtension;
 	//get file size
@@ -148,7 +152,7 @@ bool CGameSave::GetSlotDataFromCloud(int32 SlotIndex, std::string cachePath, std
 
 bool CGameSave::DeleteProfile(int32 SlotIndex, std::string localization)
 {
-	if(!m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return false;
+	if(!m_pSteamRemoteStorage || !m_pSteamRemoteStorage->IsCloudEnabledForAccount()) return false;
 
 	return m_pSteamRemoteStorage->FileDelete( ("SAVE//" + localization + "//" + IntegerToString( SlotIndex ) + "." + KSaveExtension).c_str());
 }

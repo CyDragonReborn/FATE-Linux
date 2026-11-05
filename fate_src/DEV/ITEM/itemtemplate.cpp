@@ -39,12 +39,12 @@ CItemTemplate::~CItemTemplate( void )
 	// to objects in the base item description list
 	m_pContainers.clear();
 	m_pTakeableItems.clear();
-	for( i = 0; i < KItemTypes; i++ )
+	for( int32 i = 0; i < KItemTypes; i++ )
 	{
 		m_pItemsByType[i].clear();
 	}
 	
-	for( i = 0; i < KItemCategories; i++ )
+	for( int32 i = 0; i < KItemCategories; i++ )
 	{
 		m_pItemsByCategory[i].clear();
 	}
@@ -667,7 +667,7 @@ void CItemTemplate::ParseTemplate( const std::string& Path,		// path to template
 			pItem->AddRequirement( Statistic, (uint32)( atof( pSubGroup->Item( 1 ).c_str() ) * KRankRequirementMultiplier[Rank] ) );
 		}
 
-		pSubGroup = pMasterGroup->GetSubDataGroup( "GRADE", Requirement );
+		pSubGroup = pMasterGroup->GetSubDataGroup( "GRADE", Requirements );
 		if( pSubGroup != NULL )
 		{
 			EGrade Grade = KGradeNormal;
@@ -752,7 +752,7 @@ void CItemTemplate::ParseTemplate( const std::string& Path,		// path to template
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "DEACTIVATE_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "DEACTIVATE_SOUND", i );
 			pItem->AddDeactivationSound( pSubGroup->Item( 0 ) );
@@ -804,21 +804,21 @@ void CItemTemplate::ParseTemplate( const std::string& Path,		// path to template
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "ATTACK_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "ATTACK_SOUND", i );
 			pItem->AddAttackSound( pSubGroup->Item( 0 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "STRIKE_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "STRIKE_SOUND", i );
 			pItem->AddStrikeSound( pSubGroup->Item( 0 ) );
 		}
 
 		Sounds = pMasterGroup->SubDataGroups( "MISS_SOUND" );
-		for( i = 0; i < Sounds; i++ )
+		for( int32 i = 0; i < Sounds; i++ )
 		{
 			pSubGroup = pMasterGroup->GetSubDataGroup( "MISS_SOUND", i );
 			pItem->AddMissSound( pSubGroup->Item( 0 ) );

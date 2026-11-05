@@ -66,7 +66,7 @@ CSkinnedSubMesh::~CSkinnedSubMesh( void )
 	}
 	m_pWeightedVertices.clear();
 
-	for( i = 0; i < m_pSkinnedMeshSegments.size(); i++ )
+	for( int32 i = 0; i < m_pSkinnedMeshSegments.size(); i++ )
 	{
 		DELETE_SAFELY( m_pSkinnedMeshSegments[i] );
 	}
@@ -425,7 +425,7 @@ void CSkinnedSubMesh::CleanIB( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d device
 	DWORD				AttributeCount( 0 );
 	MeshToOptimize->GetAttributeTable( pAttributeTable, &AttributeCount );
 
-	for( i = 0; i < m_pSkinnedMeshSegments.size(); i++ )
+	for( int32 i = 0; i < m_pSkinnedMeshSegments.size(); i++ )
 	{
 		m_pSkinnedMeshSegments[pAttributeTable[i].AttribId]->SetIBIndex( pAttributeTable[i].FaceStart * 3 );
 		m_pSkinnedMeshSegments[pAttributeTable[i].AttribId]->SetTotalFaces( pAttributeTable[i].FaceCount );
@@ -447,7 +447,7 @@ void CSkinnedSubMesh::CleanIB( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d device
 	}
 
 	DWORD* VertexIndex = ( DWORD* )VertexMap->GetBufferPointer();
-	for( m = 0; m < NewVertexCount ; m++ )
+	for( uint32 m = 0; m < NewVertexCount ; m++ )
 	{
 		uint32 index = VertexIndex[m];
 		// if we've already got an instance of this vert, we need to make a new one
@@ -462,7 +462,7 @@ void CSkinnedSubMesh::CleanIB( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d device
 		Touched[index] = kTrue;
 	}
 	// delete any un-kept vertices
-	for( m = 0; m < m_TotalVertices; m++ )
+	for( uint32 m = 0; m < m_TotalVertices; m++ )
 	{
 		if( !Touched[m] )
 		{

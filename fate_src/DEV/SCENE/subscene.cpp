@@ -123,7 +123,7 @@ void CSubScene::CreateBuffers( LPDIRECT3DDEVICE8 pD3DDevice,				// direct3d devi
 
 	m_pVertices.resize( m_TotalVertices );
 
-	for ( k = 0; k < m_TotalVertices; k++ )
+	for( int32 k = 0; k < m_TotalVertices; k++ )
 	{
 		*pVertices = VBVertices[k];
 		m_pVertices[k] = VBVertices[k].v;
@@ -221,7 +221,7 @@ void CSubScene::CreateBuffers( LPDIRECT3DDEVICE8 pD3DDevice,				// direct3d devi
 
 	m_pVertices.resize( TotalVertices );
 
-	for ( k = 0; k < TotalVertices; k++ )
+	for( int32 k = 0; k < TotalVertices; k++ )
 	{
 		*pVertices = VBVertices[k];
 		m_pVertices[k] = VBVertices[k].v;
@@ -315,7 +315,7 @@ void CSubScene::CreateBuffers( LPDIRECT3DDEVICE8 pD3DDevice,				// direct3d devi
 
 	m_pVertices.resize( m_TotalVertices );
 
-	for ( k = 0; k < m_TotalVertices; k++ )
+	for( int32 k = 0; k < m_TotalVertices; k++ )
 	{
 		*pVertices = VBVertices[k];
 		m_pVertices[k] = VBVertices[k].v;
@@ -418,7 +418,7 @@ void CSubScene::CreateBuffers( LPDIRECT3DDEVICE8 pD3DDevice,				// direct3d devi
 
 	m_pVertices.resize( m_TotalVertices );
 
-	for ( k = 0; k < m_TotalVertices; k++ )
+	for( int32 k = 0; k < m_TotalVertices; k++ )
 	{
 		*pVertices = VBVertices[k];
 		m_pVertices[k] = VBVertices[k].v;
@@ -687,7 +687,7 @@ void CSubScene::CleanIB( LPDIRECT3DDEVICE8 pD3DDevice )	// d3d device
 	DWORD				AttributeCount( 0 );
 	MeshToOptimize->GetAttributeTable( pAttributeTable, &AttributeCount );
 
-	for( i = 0; i < m_pSubSceneSegments.size(); i++ )
+	for( int32 i = 0; i < m_pSubSceneSegments.size(); i++ )
 	{
 		m_pSubSceneSegments[pAttributeTable[i].AttribId]->SetIBIndex( pAttributeTable[i].FaceStart * 3 );
 		m_pSubSceneSegments[pAttributeTable[i].AttribId]->SetTotalFaces( pAttributeTable[i].FaceCount );

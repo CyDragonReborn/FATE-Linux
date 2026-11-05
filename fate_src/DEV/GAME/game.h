@@ -51,7 +51,9 @@ public:
 	bool					InitializeSteam(); //Initializes Steam Library and Process
 	void					ShutDownSteam(); //Initializes Steam Library and Process
 
+#ifndef NO_STEAM
 	STEAM_CALLBACK( CGame, OnGameOverlayActivated, GameOverlayActivated_t, m_CallbackGameOverlayActivated );
+#endif
 
 private:
 	static HMODULE localizedDLL;  //TDC

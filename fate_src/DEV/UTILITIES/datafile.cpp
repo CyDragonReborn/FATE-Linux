@@ -19,12 +19,18 @@
 
 #include "constants.h"
 #include "macros.h"
-#include "utilities.h"
 
 #include "textfile.h"
 #include "datafile.h"
 
 using namespace std;
+
+namespace {
+void ClearTokens( std::queue<std::string>& Tokens )
+{
+	while( !Tokens.empty() ) Tokens.pop();
+}
+}
 
 /////////////////////////////////////////////
 // Data File
@@ -72,7 +78,7 @@ void CDataFile::ParseFile( void )
 		// we have to have at LEAST 2 tokens to get a data group
 		if ( Tokens.size() < 1 )
 		{
-			ClearQueue( Tokens );
+			ClearTokens( Tokens );
 			continue;
 		}
 
@@ -111,7 +117,7 @@ void CDataFile::ParseFile( void )
 			}
 		}
 
-		ClearQueue( Tokens );
+		ClearTokens( Tokens );
 	}
 } // CDataFile::ParseFile()
 
@@ -259,7 +265,7 @@ void CDataGroup::ParseSubGroups( CTextFile& TextFile )	// file to parse sub-grou
 		// we have to have at LEAST 2 tokens to get a data group
 		if ( Tokens.size() < 1 )
 		{
-			ClearQueue( Tokens );
+			ClearTokens( Tokens );
 			continue;
 		}
 
@@ -306,7 +312,7 @@ void CDataGroup::ParseSubGroups( CTextFile& TextFile )	// file to parse sub-grou
 			}
 		}
 
-		ClearQueue( Tokens );
+		ClearTokens( Tokens );
 	}
 
 } // CDataGroup::ParseSubGroups()
